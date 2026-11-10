@@ -1,0 +1,21 @@
+[build-system]
+requires = ["hatchling>=1.27,<2"]
+build-backend = "hatchling.build"
+
+[project]
+name = "astra-video-studio"
+version = "0.1.0"
+description = "Local MCP automation for safe After Effects project creation"
+requires-python = ">=3.11"
+dependencies = ["mcp>=1.26,<2", "pydantic>=2.11,<3"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10"]
+
+[project.scripts]
+astra-studio = "astra_video_studio.cli:main"
+astra-mcp = "astra_video_studio.mcp_server:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["integration: starts an MCP subprocess; never starts After Effects", "ae_live: explicitly opt-in tests creating real After Effects projects"]
