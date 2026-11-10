@@ -1,0 +1,442 @@
+{
+  "scope": "Fixed CPU compositing fixtures in EC-0",
+  "upstream_revision": "a41ff5015c6687db15a6f074a47b870b8f09fece",
+  "binary_sha256": "b64387c8eaf2d7eee27a25504a0d536853ff4c6c6e740d8fbaaaf4a1322aab15",
+  "plan_sha256": "e3dd9868eac5f9a9e42729b5432de3e2222e471e86d9aa9f6c75e2792423d28f",
+  "source_hashes": {
+    "experimental/ec0/compositing-plan.json": "e3dd9868eac5f9a9e42729b5432de3e2222e471e86d9aa9f6c75e2792423d28f",
+    "experimental/ec0/run_compositing.py": "ed913109768546d102c789b109a16989f4987c14de1d39f778c0ed31a665a3b3",
+    "experimental/ec0/worker/Cargo.toml": "54318034aefc9ce8a000a80f5d441ac350f50d6a8d05a6d57420dcb43db3a958",
+    "experimental/ec0/worker/Cargo.lock": "647aee60ddc3ece52596bd868a7070a55a4455450b217df94d2651f77fdf0b89",
+    "experimental/ec0/worker/src/bin/astra-ec0-compositing.rs": "0c1b00ea20ff8fd674e133114e8952ea6aed76cde28e6a0d6d428e4dc94d0c16"
+  },
+  "threads": [
+    1,
+    2,
+    1
+  ],
+  "png_sha256": {
+    "alpha-matte-0.png": "8c0d54113a254a701b20b4df6e25e7b544831df8902fd1ea735b26e161d9955b",
+    "blur-0.png": "22c6523e9ccfc442307feb4066f687e3005158a38b917df9d353814520c5f968",
+    "fill-0.png": "023419ef8d380d84b96679dc28ca2099e215caccc9ecff1093420f87d3339a1c",
+    "luma-control-0.png": "8c0d54113a254a701b20b4df6e25e7b544831df8902fd1ea735b26e161d9955b",
+    "luma-matte-0.png": "0ae6fcf5f6d2489122207d7519b67b5905e195f8d0fd9cdbd1bc41b99bcac589",
+    "mask-0.png": "2e1ffbddf662ed4b7647767014f2911bd279e72078234905bc3d4081e478aa44",
+    "morph-0.png": "2a6df15392331b713c43bd38b1f2f6c559f96c1b5b831929d01931e7e8036325",
+    "morph-15.png": "a71556dbba8ebdc66a9019ab5b0e9b1612d672830efa1a75d90bea24e88865d2",
+    "morph-30.png": "4b2173c128f225d26e507196007b99c012cc5e04605a743b4a88d570030a2d55",
+    "precomp-parent-0.png": "4f614fd845126364708096428e4ca19ca087f67baa205f3175397ed5086f57e1",
+    "trim-0.png": "1bf5b2177d4bede573a64d52f00b9801da93f9e33746e1e65a8bfcc077c45f18",
+    "vectors-0.png": "6a43e62e597752c7735f0151bfbf903b2a63667212526a899bca5ef81fef9072"
+  },
+  "project_sha256": "7a24eaffd36937d35a37f8e3267af4413c11352a96408070fbf8e278f2488ff2",
+  "pixel_checks": {
+    "alpha-matte-0.png": [
+      {
+        "point": [
+          80,
+          60
+        ],
+        "rgba": [
+          0,
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "point": [
+          10,
+          60
+        ],
+        "rgba": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "blur-0.png": {
+      "edge_alpha": [
+        16,
+        80,
+        137,
+        208,
+        255,
+        255
+      ],
+      "mirrored_alpha": [
+        16,
+        80,
+        137,
+        208,
+        255,
+        255
+      ]
+    },
+    "fill-0.png": [
+      {
+        "point": [
+          80,
+          60
+        ],
+        "rgba": [
+          0,
+          255,
+          0,
+          255
+        ]
+      },
+      {
+        "point": [
+          10,
+          10
+        ],
+        "rgba": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "luma-control-0.png": [
+      {
+        "point": [
+          80,
+          60
+        ],
+        "rgba": [
+          0,
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "point": [
+          10,
+          60
+        ],
+        "rgba": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "luma-matte-0.png": {
+      "transparent_pixels": 19200
+    },
+    "mask-0.png": [
+      {
+        "point": [
+          50,
+          60
+        ],
+        "rgba": [
+          255,
+          255,
+          0,
+          255
+        ]
+      },
+      {
+        "point": [
+          80,
+          60
+        ],
+        "rgba": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "point": [
+          10,
+          60
+        ],
+        "rgba": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "morph-0.png": [
+      {
+        "point": [
+          48,
+          60
+        ],
+        "rgba": [
+          0,
+          0,
+          255,
+          255
+        ]
+      },
+      {
+        "point": [
+          80,
+          60
+        ],
+        "rgba": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "point": [
+          112,
+          60
+        ],
+        "rgba": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "morph-15.png": [
+      {
+        "point": [
+          48,
+          60
+        ],
+        "rgba": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "point": [
+          80,
+          60
+        ],
+        "rgba": [
+          0,
+          0,
+          255,
+          255
+        ]
+      },
+      {
+        "point": [
+          112,
+          60
+        ],
+        "rgba": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "morph-30.png": [
+      {
+        "point": [
+          48,
+          60
+        ],
+        "rgba": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "point": [
+          80,
+          60
+        ],
+        "rgba": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "point": [
+          112,
+          60
+        ],
+        "rgba": [
+          0,
+          0,
+          255,
+          255
+        ]
+      }
+    ],
+    "precomp-parent-0.png": [
+      {
+        "point": [
+          112,
+          60
+        ],
+        "rgba": [
+          255,
+          0,
+          255,
+          255
+        ]
+      },
+      {
+        "point": [
+          80,
+          60
+        ],
+        "rgba": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "trim-0.png": [
+      {
+        "point": [
+          40,
+          60
+        ],
+        "rgba": [
+          255,
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "point": [
+          72,
+          60
+        ],
+        "rgba": [
+          255,
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "point": [
+          104,
+          60
+        ],
+        "rgba": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "vectors-0.png": [
+      {
+        "point": [
+          44,
+          60
+        ],
+        "rgba": [
+          0,
+          255,
+          0,
+          255
+        ]
+      },
+      {
+        "point": [
+          80,
+          60
+        ],
+        "rgba": [
+          255,
+          0,
+          0,
+          255
+        ]
+      },
+      {
+        "point": [
+          112,
+          60
+        ],
+        "rgba": [
+          255,
+          0,
+          0,
+          255
+        ]
+      },
+      {
+        "point": [
+          10,
+          60
+        ],
+        "rgba": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    ]
+  },
+  "dependency_refusals": [
+    {
+      "case": "missing-parent",
+      "refusal": "missing-parent"
+    },
+    {
+      "case": "missing-matte",
+      "refusal": "missing-matte"
+    },
+    {
+      "case": "missing-precomp",
+      "refusal": "missing-precomp"
+    },
+    {
+      "case": "layer-cycle",
+      "refusal": "layer-cycle"
+    },
+    {
+      "case": "matte-cycle",
+      "refusal": "layer-cycle"
+    },
+    {
+      "case": "mixed-layer-cycle",
+      "refusal": "layer-cycle"
+    },
+    {
+      "case": "precomp-cycle",
+      "refusal": "precomp-cycle"
+    }
+  ],
+  "prior_aep_files_verified": 2439,
+  "reachable_packages": 95,
+  "gui_packages": [],
+  "local_verification": "ec0/compositing-a90e309d9b724d5b8853004cc5e288a0/verification.json",
+  "local_verification_sha256": "ca890ed4493dd04af3d041fb7d87d5bc9467352f099e1565146c3ff5923273c4",
+  "pending": [
+    "AE parity",
+    "SVG ingestion",
+    "AEP import/export",
+    "Performance and resource benchmarks",
+    "Complete license and notice audit"
+  ]
+}

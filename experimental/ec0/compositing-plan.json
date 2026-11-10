@@ -1,0 +1,21 @@
+{
+  "scope": "Fixed CPU compositing fixtures in EC-0",
+  "upstream_revision": "a41ff5015c6687db15a6f074a47b870b8f09fece",
+  "dimensions": [160, 120],
+  "threads": [1, 2, 1],
+  "pixel_channel_tolerance": 1,
+  "cases": {
+    "fill": "Opaque red rectangle becomes green. Exterior remains transparent.",
+    "blur": "White rectangle gains an alpha halo. Horizontal edge samples increase inward and mirrored samples agree within one byte.",
+    "vectors": "Green and red native paths overlap. Red paints in front. Exclusive regions retain each path's color.",
+    "trim": "First half of a left-to-right open path is painted. Second half is transparent.",
+    "morph": "Equal-topology native rectangle keys translate the path 64px over one second. The middle pose is halfway.",
+    "mask": "Rectangular Add mask with a smaller Subtract hole.",
+    "alpha-matte": "Invisible black matte reveals target inside its alpha coverage.",
+    "luma-matte": "Invisible black matte suppresses the target. White control matte reveals it.",
+    "precomp-parent": "Nested composition renders a child translated by a 2D null."
+  },
+  "graph_refusals": ["missing-parent", "missing-matte", "missing-precomp", "layer-cycle", "matte-cycle", "mixed-layer-cycle", "precomp-cycle"],
+  "checks": ["Exact save/reopen", "Pixel probes after PNG decode", "Identical PNG hashes per case across thread counts", "Original AEP hashes unchanged"],
+  "pending": ["AE parity", "SVG ingestion", "AEP import/export", "Performance and resource benchmarks", "Complete license and notice audit"]
+}

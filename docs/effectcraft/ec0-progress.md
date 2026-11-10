@@ -59,4 +59,10 @@ Três frames da primeira execução bem-sucedida foram extraídos do MP4 corresp
 
 `workspace/ec0/text-curves-current.json` aponta o ensaio final. Seu diretório contém o plano/amendment, grafo/metadata fixados, baseline AEP, stdout/stderr/exits, métricas/oráculos, hashes e outputs; a primeira execução e seus frames vistos continuam preservados. Relatórios compactos versionados: `ec0-text-curves-milestone.json` e `ec0-text-curves-dependency-inventory.json`.
 
-Próximo recorte: Fill/Blur, paths e máscaras/mattes/dependências, seguido das comparações AE/EC e dos gates de corpus/performance/licenças. EC-0 continua em andamento; EC-1 não foi iniciada. A aprovação artística do projeto AE e a aceitação externa Claude9.3 permanecem independentes.
+## Terceiro marco — efeitos e composição
+
+Os testes CPU verificaram Fill, o halo e a simetria do Gaussian Blur, a ordem de pintura entre duas camadas vetoriais, Trim Paths e a interpolação de um path com topologia compatível. Também verificaram uma máscara Add com abertura Subtract, mattes alfa e luminância, e uma camada 2D ligada a um null dentro de uma precomp. Os testes de luminância usaram mattes preto e branco para confirmar supressão e revelação.
+
+O projeto reabriu com estado idêntico. Três execuções com 1, 2 e 1 threads produziram os mesmos 12 PNGs. O validador do experimento recusou três referências ausentes e quatro ciclos envolvendo parentesco, matte ou precomp. Os 2.439 AEPs e snapshots conservaram seus hashes.
+
+O [plano](../../experimental/ec0/compositing-plan.json) define os casos. O [relatório](ec0-compositing-milestone.json) registra os pixels medidos, os hashes e as recusas. Os projetos e PNGs de cada job ficam em `workspace/ec0/compositing-runs`. O escopo vetorial desta etapa começa em paths nativos. A importação SVG e a comparação de pixels e propriedades com o AE seguem pendentes, assim como o corpus AEP, desempenho, recursos e a auditoria completa de licenças e notices.
