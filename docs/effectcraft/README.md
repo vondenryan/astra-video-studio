@@ -12,4 +12,4 @@ Não foram copiados upstream executável, binários, fonts ou pacotes para a imp
 
 ## Execução EC-0 — 10/11/2026
 
-A orientação posterior do operador retomou a trilha. O primeiro marco de build/render CPU isolado está verificado; a EC-0 completa continua em andamento. [Andamento e gates](ec0-progress.md) e [harness experimental](../../experimental/ec0/README.md). A avaliação acima permanece histórica e não foi reescrita como se já contivesse testes de execução.
+A orientação posterior do operador retomou a trilha. Os marcos de build/render CPU e do recorte fixo de texto/fontes/curvas manuais estão verificados; a EC-0 completa continua em andamento. [Andamento e gates](ec0-progress.md) e [harness experimental](../../experimental/ec0/README.md). A avaliação acima permanece histórica e não foi reescrita como se já contivesse testes de execução.

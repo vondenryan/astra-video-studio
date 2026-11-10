@@ -13,6 +13,9 @@ effectcraft-project = { git = "https://github.com/storytold/effectcraft", rev = 
 effectcraft-render = { git = "https://github.com/storytold/effectcraft", rev = "a41ff5015c6687db15a6f074a47b870b8f09fece" }
 effectcraft-color = { git = "https://github.com/storytold/effectcraft", rev = "a41ff5015c6687db15a6f074a47b870b8f09fece" }
 effectcraft-time = { git = "https://github.com/storytold/effectcraft", rev = "a41ff5015c6687db15a6f074a47b870b8f09fece" }
+effectcraft-text = { git = "https://github.com/storytold/effectcraft", rev = "a41ff5015c6687db15a6f074a47b870b8f09fece" }
+effectcraft-keyframe = { git = "https://github.com/storytold/effectcraft", rev = "a41ff5015c6687db15a6f074a47b870b8f09fece" }
+sha2 = "0.10"
 serde_json = "1"
 image = { version = "0.25", default-features = false, features = ["png"] }
 

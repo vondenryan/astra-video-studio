@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "scope": "EC0 second milestone only; no AE parity or production adapter acceptance",
+  "upstream_revision": "a41ff5015c6687db15a6f074a47b870b8f09fece",
+  "fixture": {"width": 640, "height": 360, "fps": 30, "frames": 61, "point_text": "AÇÃO COM PROPÓSITO", "box_text": "Texto em caixa.\nCurvas com movimento suave.", "style_range_codepoints": [0, 4]},
+  "font": {"postscript": "Inter-Regular", "sha256": "40d692fce188e4471e2b3cba937be967878f631ad3ebbbdcd587687c7ebe0c82", "origin": "pinned upstream bundled bytes", "license": "OFL-1.1"},
+  "negative_cases": ["missing-font", "unsupported-glyph", "wrong-font-hash"],
+  "scalar_tracks": {"frames": [0, 60], "values": [0, 100], "types": ["linear", "hold", "bezier"], "bezier_speed": 0, "bezier_influence": 0.3333333333333333},
+  "spatial_track": {"frames": [0, 30, 60], "values": [[100, 300, 0], [320, 240, 0], [540, 300, 0]], "out_tangents": [[0, -40, 0], [100, 0, 0], [0, 0, 0]], "in_tangents": [[0, 0, 0], [-100, 0, 0], [0, -40, 0]], "join_speed_px_s": 180, "endpoint_speed_px_s": 0, "influence": 0.3333333333333333, "automatic_flags": false},
+  "gates": {"scalar_abs_relative_error_max": 0.00001, "spatial_error_px_max": 0.1, "text_raster_bounds_error_px_max": 1, "cpu_runs": 3, "thread_counts": [1, 2, 1], "arc_oracle_segments_per_piece": 16384, "join_probe_dt_seconds": 0.0001, "join_velocity_error_px_s_max": 0.2, "receipt_bytes_max": 8192, "evidence_file_bytes_max": 16777216},
+  "rules": ["Freeze this plan into a new attempt before evaluation", "Reject missing/hash-mismatched fonts and unsupported glyphs before creating output slot", "No system font scan or per-glyph substitution", "Compare reopened keys/styles/state with original", "Retain uncertain attempts and do not kill/replay", "Keep old plans/reports/renders unchanged", "No AE commands, backend switch or additional MCP tools", "AE text bounds/parity, general automatic tracks and rich text animators remain separate"]
+}

@@ -123,6 +123,8 @@ Jobs incertos ficam protegidos para inspeção. O Astra não mata o After Effect
 
 Um motor alternativo baseado no EffectCraft está em [avaliação experimental isolada](experimental/ec0/README.md). O backend padrão continua sendo o After Effects; o experimento não adiciona ferramentas à API de produção.
 
+A avaliação cobre persistência e recortes de render CPU, texto com fonte fixada e curvas manuais. Esses testes ainda não representam paridade geral com o After Effects.
+
 ## Desenvolvimento
 
 Execute a suíte funcional:

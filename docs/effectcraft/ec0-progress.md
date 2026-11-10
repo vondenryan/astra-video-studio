@@ -2,7 +2,7 @@
 
 Data:10/11/2026. A nova orientação do operador retoma a trilha anteriormente adiada. **EC-0 em andamento; não encerrada.** EC-1–4 continuam condicionadas aos gates e a decisões específicas.
 
-## Escopo executado
+## Escopo executado — primeiro marco
 
 - Rust1.95.0/x64 MSVC instalado em `workspace/ec0`, sem alterar o PATH global. Instalador Rustup1.28.2 oficial com SHA-256 verificado; SDK/linker MSVC já existentes no computador.
 - Worker próprio mínimo, com crates do EffectCraft fixados em `a41ff5015c6687db15a6f074a47b870b8f09fece`. Lockfile próprio versionado. Nenhum fork ou alteração do upstream.
@@ -22,8 +22,8 @@ O build inicial do recorte levou1m33s em perfil dev, sem representar benchmark d
 | Persistência/reabertura | Verificada apenas na fixture fixa de sólidos; sem edição/revisão geral. |
 | Render headless e encode/decode independente | Verificados na fixture estática; o harness inicia o processo sem janela. |
 | Determinismo CPU | Três execuções, incluindo1/2 threads, verificadas para a fixture estática. |
-| Fontes/texto/missing-font | Pendente. |
-| Curvas, tangentes, boundaries e semântica de tempo | Pendente. |
+| Fontes/texto/missing-font | Segundo marco: Inter-Regular embutida por hash, point/box e faixa de cor por pontos de código verificados; fontes arbitrárias e animadores de texto pendentes. |
+| Curvas, tangentes, boundaries e semântica de tempo | Segundo marco: fixtures manuais Linear/Hold/Bezier, tangentes espaciais, amostras fora das chaves, start/stretch e conversão de frames verificadas; edição/retiming geral e comparação AE pendentes. |
 | Fill/Blur, vetores, máscaras/mattes e dependências | Pendente. |
 | Identidade Astra/IR/revisões/conflicts | Pendente; IDs internos EC não foram apresentados como IDs AE. |
 | AEP dry-run/corpus e limitações permanentes | Pendente. |
@@ -43,4 +43,20 @@ Os limites do roadmap estão fixados em `experimental/ec0/acceptance-plan.json`,
 
 Em timeout/erro do worker, o marcador de intenção/execução permanece. O harness recusa novos ensaios enquanto houver pendência; não mata nem reenvia o processo. Isso não implementa ainda a recuperação/ownership completa do adapter de produção.
 
-Próximo recorte: fixtures de fontes exatas/texto e curvas temporais/espaciais, antes de efeitos e comparação AE/EC. A aprovação artística do projeto AE e a aceitação externa Claude9.3 permanecem independentes.
+## Segundo marco — texto e curvas manuais
+
+O worker adicional valida Inter-Regular por identidade PostScript e SHA-256 dos bytes embutidos no upstream. Não usa descoberta de fontes do sistema, síntese de estilo nem fallback por glifo. Fonte inexistente, hash incorreto e caractere sem cobertura foram recusados antes de criar arquivos de saída. Isso é um recorte fixo, não um resolvedor geral de fontes instaladas.
+
+A fixture640×360/30fps tem61frames, texto point/box e uma faixa de cor nos quatro primeiros pontos de código de “AÇÃO”. O mapeamento UTF-8 é explícito e a persistência/reabertura preserva texto, estilos, propriedades e chaves sem reparações. O primeiro preflight de caixa falhou com ink0,563156px acima da caixa; o ajuste de baseline-2px foi registrado em amendment separado. Os logs falhos e o plano inicial foram preservados; não houve relaxamento de overflow.
+
+Linear/Hold/Bezier escalar foram comparados a formas fechadas; o caminho espacial usa um oráculo independente por comprimento de arco, não uma reimplementação usada para renderizar. Foram verificadas63amostras, incluindo antes/depois do intervalo,9casos de start/stretch e16conversões frame/tick. A passagem intermediária tem controle de velocidade180px/s; sondas finitas dos dois lados foram compatíveis dentro do limite0,2px/s. Isso não promete continuidade automática para outros tracks.
+
+Resultados medidos: erro escalar máximo2,85e-14; erro espacial máximo2,70e-7px; erro de velocidade da passagem0,03575px/s; diferença entre as duas sondas0,00433px/s. Bounds de texto confrontados com pixels do raster EC ficaram em1px, limite fixado antes dos testes. Essa comparação interna não fecha o gate de bounds/paridade com AE.
+
+Três execuções1/2/1 threads produziram sequências PNG idênticas; o movimento gerou frames distintos ao longo do tempo. H.264,61frames/30fps e decode completo passaram.2.439 AEPs/snapshots conservaram hashes, sem comandos ao AE. O grafo atual tem95pacotes alcançáveis e nenhum frontend GUI identificado; o inventário histórico de87pacotes do primeiro marco permanece preservado. Os sete assets de fonte OFL do crate são inventariados sem redistribuir arquivos de fonte; auditoria completa de dependências/notices continua pendente.
+
+Três frames da primeira execução bem-sucedida foram extraídos do MP4 correspondente e realmente vistos: texto legível, sem clipping/colisão aparente nessas amostras, e posições do elemento móvel distintas. Não houve playback completo, audição ou aprovação artística humana.
+
+`workspace/ec0/text-curves-current.json` aponta o ensaio final. Seu diretório contém o plano/amendment, grafo/metadata fixados, baseline AEP, stdout/stderr/exits, métricas/oráculos, hashes e outputs; a primeira execução e seus frames vistos continuam preservados. Relatórios compactos versionados: `ec0-text-curves-milestone.json` e `ec0-text-curves-dependency-inventory.json`.
+
+Próximo recorte: Fill/Blur, paths e máscaras/mattes/dependências, seguido das comparações AE/EC e dos gates de corpus/performance/licenças. EC-0 continua em andamento; EC-1 não foi iniciada. A aprovação artística do projeto AE e a aceitação externa Claude9.3 permanecem independentes.

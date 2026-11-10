@@ -1,0 +1,231 @@
+{
+  "schema_version": 1,
+  "status": "ec0_in_progress_second_milestone_verified",
+  "upstream_revision": "a41ff5015c6687db15a6f074a47b870b8f09fece",
+  "scope": "EC0 second milestone, fixed text and manual curves, no AE parity",
+  "binary_sha256": "57b74b151ae33035004ff585e7d4a962ff289e9f5833934eac3ccccf5dafd56e",
+  "plan_sha256": "68f1601951bed7c65f8ac4b4fd0839e7d4e656844938be19af3cdf95d7ce4493",
+  "layout_amendment_sha256": "255e5c0d36010566fa7c15abb5c69789571dac6b8aa47343bf1709c8f8969941",
+  "cargo_lock_sha256": "6e99fb1d88a4625c87ab3e802897c9c1a76a9576888f6b90a6c884c4457b3d72",
+  "source_hashes": {
+    "experimental/ec0/run_text_curves.py": "60508fb94dccfecc86c5e0c818d9d26b737dcf11ab3e6b58a52f2091737c53a6",
+    "experimental/ec0/text_curves_oracles.py": "ac88e80d0bc089d5a0acb8de2d10a611325d2b15a8b54cb1b5fdfd8bd30148c9",
+    "experimental/ec0/run_smoke.py": "70920c3fbe7f1ecbf74c2ac24697184d0438b4a471c62e12ec68eebe4856e9ab",
+    "experimental/ec0/worker/Cargo.toml": "2b5f70a51b3987629a4df2be6a63909bb40a1e68b259fd9de165a87929ac22b1",
+    "experimental/ec0/worker/Cargo.lock": "6e99fb1d88a4625c87ab3e802897c9c1a76a9576888f6b90a6c884c4457b3d72",
+    "experimental/ec0/worker/src/bin/astra-ec0-text-curves.rs": "d0c30e9249568998f278227a336185287936d0b67941bc16bb289cf91bf22d03",
+    "experimental/ec0/text-curves-plan.json": "68f1601951bed7c65f8ac4b4fd0839e7d4e656844938be19af3cdf95d7ce4493",
+    "experimental/ec0/text-curves-layout-amendment-01.json": "255e5c0d36010566fa7c15abb5c69789571dac6b8aa47343bf1709c8f8969941",
+    "experimental/ec0/font-assets-manifest.json": "673c216223744b33f0c1ed13e6ca45bd646f8ea8c3d9387d9858f38480515b3d",
+    "tests/unit/test_ec0_text_curves.py": "190c8c0faa119f37054f9ac3d8d22944c016f41052abbeea8661631953eb8277"
+  },
+  "fixture": {
+    "width": 640,
+    "height": 360,
+    "fps": 30,
+    "frames": 61,
+    "font_postscript": "Inter-Regular",
+    "font_sha256": "40d692fce188e4471e2b3cba937be967878f631ad3ebbbdcd587687c7ebe0c82"
+  },
+  "positive_runs": [
+    {
+      "job_id": "4168d293a1074852a9f56a7f525a0bf6",
+      "threads": 1,
+      "png_sequence_sha256": "1c52cda16850fcb2c443dfa2f8720bec0062153aa34319baded74cf5b58e7ce8",
+      "distinct_frames": 60,
+      "metrics": {
+        "scalar_max_abs_error": 2.842170943040401e-14,
+        "spatial_max_error_px": 2.6912235943070386e-07,
+        "join_velocity_error_px_s": 0.03574741416914963,
+        "join_velocity_jump_px_s": 0.004321609310409258,
+        "sample_count": 63,
+        "timing_cases": 9,
+        "frame_tick_cases": 16
+      },
+      "text_bounds": {
+        "point": {
+          "geometry_pixel_bounds": [
+            40,
+            41,
+            451,
+            82
+          ],
+          "raster_pixel_bounds": [
+            40,
+            41,
+            451,
+            83
+          ],
+          "max_error_px": 1
+        },
+        "box": {
+          "geometry_pixel_bounds": [
+            41,
+            101,
+            387,
+            149
+          ],
+          "raster_pixel_bounds": [
+            41,
+            101,
+            388,
+            150
+          ],
+          "max_error_px": 1
+        }
+      }
+    },
+    {
+      "job_id": "cfe10384e44b46d7987c30ec4c30acd0",
+      "threads": 2,
+      "png_sequence_sha256": "1c52cda16850fcb2c443dfa2f8720bec0062153aa34319baded74cf5b58e7ce8",
+      "distinct_frames": 60,
+      "metrics": {
+        "scalar_max_abs_error": 2.842170943040401e-14,
+        "spatial_max_error_px": 2.6912235943070386e-07,
+        "join_velocity_error_px_s": 0.03574741416914963,
+        "join_velocity_jump_px_s": 0.004321609310409258,
+        "sample_count": 63,
+        "timing_cases": 9,
+        "frame_tick_cases": 16
+      },
+      "text_bounds": {
+        "point": {
+          "geometry_pixel_bounds": [
+            40,
+            41,
+            451,
+            82
+          ],
+          "raster_pixel_bounds": [
+            40,
+            41,
+            451,
+            83
+          ],
+          "max_error_px": 1
+        },
+        "box": {
+          "geometry_pixel_bounds": [
+            41,
+            101,
+            387,
+            149
+          ],
+          "raster_pixel_bounds": [
+            41,
+            101,
+            388,
+            150
+          ],
+          "max_error_px": 1
+        }
+      }
+    },
+    {
+      "job_id": "de875437efbc468393fd6004e87cca77",
+      "threads": 1,
+      "png_sequence_sha256": "1c52cda16850fcb2c443dfa2f8720bec0062153aa34319baded74cf5b58e7ce8",
+      "distinct_frames": 60,
+      "metrics": {
+        "scalar_max_abs_error": 2.842170943040401e-14,
+        "spatial_max_error_px": 2.6912235943070386e-07,
+        "join_velocity_error_px_s": 0.03574741416914963,
+        "join_velocity_jump_px_s": 0.004321609310409258,
+        "sample_count": 63,
+        "timing_cases": 9,
+        "frame_tick_cases": 16
+      },
+      "text_bounds": {
+        "point": {
+          "geometry_pixel_bounds": [
+            40,
+            41,
+            451,
+            82
+          ],
+          "raster_pixel_bounds": [
+            40,
+            41,
+            451,
+            83
+          ],
+          "max_error_px": 1
+        },
+        "box": {
+          "geometry_pixel_bounds": [
+            41,
+            101,
+            387,
+            149
+          ],
+          "raster_pixel_bounds": [
+            41,
+            101,
+            388,
+            150
+          ],
+          "max_error_px": 1
+        }
+      }
+    }
+  ],
+  "negative_runs": [
+    {
+      "job_id": "9cb03c6df52c494988bd3937f72330a5",
+      "case": "missing-font",
+      "error": "FONT_MISSING: exact PostScript identity absent or ambiguous",
+      "system_fonts_scanned": false,
+      "refused_before_output": true
+    },
+    {
+      "job_id": "9448b9a3518046f184fddda6c5b149bf",
+      "case": "unsupported-glyph",
+      "error": "GLYPH_UNSUPPORTED: no per-character fallback allowed",
+      "system_fonts_scanned": false,
+      "refused_before_output": true
+    },
+    {
+      "job_id": "6aabc9787e594018aa6955247ff6f694",
+      "case": "wrong-font-hash",
+      "error": "FONT_HASH_MISMATCH",
+      "system_fonts_scanned": false,
+      "refused_before_output": true
+    }
+  ],
+  "reachable_package_count": 95,
+  "gui_packages": [],
+  "prior_aep_files_verified": 2439,
+  "cpu_png_deterministic": true,
+  "full_decode_passed": true,
+  "video_sha256": "802732f0b25460ce47b4f7356e3ab2cf56231b600ce16554899418fd8c178497",
+  "local_verification": "ec0/text-curves-03f19e0df7eb4464a925da6e041fd602/verification.json",
+  "local_verification_sha256": "eba643ba28ee946976e3e7179ce22f6ef24bdeb5143ddf6338455652d8eb006b",
+  "sampled_visual_review": {
+    "local_path": "ec0/text-curves-1e19b5bea136423e825977fc04e27d74/sampled-review/review.json",
+    "sha256": "2c73ba4ba02726bf906d306cd46653017a3b97e36443225efc168ad0e38b822b",
+    "scope": "Three actually viewed matching MP4 frames of first successful run; not full playback or AE parity"
+  },
+  "astra_regression": {
+    "passed": 499,
+    "skipped": 19,
+    "seconds": 94.39
+  },
+  "rust_tests": {
+    "passed": 4
+  },
+  "mcp_tools_unchanged": 77,
+  "default_backend_unchanged": "after_effects",
+  "preserved_failures": [
+    "text-curves-rust-tests.log",
+    "text-curves-rust-tests-02.log"
+  ],
+  "limits": [
+    "No AE parity or artistic approval",
+    "Manual fixed curves only; no general auto/continuous/roving edits",
+    "Point/box and one code-point color range; text animators pending",
+    "No AEP/effects/GPU/stress/full license acceptance",
+    "Specific finite nonzero-join velocity probes, not general automatic C1 continuity",
+    "Full dependency/font/notice/SBOM and performance gates remain pending"
+  ]
+}

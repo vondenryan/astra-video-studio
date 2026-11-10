@@ -1,0 +1,84 @@
+{
+  "upstream_revision": "a41ff5015c6687db15a6f074a47b870b8f09fece",
+  "scope": "Upstream text crate embedded assets; metadata only, no font binary redistributed in this repository",
+  "selected_fixture_font": "Inter-Regular",
+  "fonts": [
+    {
+      "file": "assets/fonts/Inter-Regular.ttf",
+      "sha256": "40d692fce188e4471e2b3cba937be967878f631ad3ebbbdcd587687c7ebe0c82",
+      "bytes": 411640,
+      "author": "The Inter Project Authors (Rasmus Andersson et al.)",
+      "source": "https://github.com/rsms/inter",
+      "license": "OFL-1.1",
+      "license_file": "assets/fonts/OFL-Inter.txt",
+      "license_sha256": "262481e844521b326f5ecd053e59b98c8b2da78c8ee1bdbb6e8174305e54935a",
+      "attribution_sha256": "3c6dba474d83a03ef433b54acf495cabdaca2e288741ff4dc5a8b6383e0acfb9"
+    },
+    {
+      "file": "assets/fonts/Inter-Medium.ttf",
+      "sha256": "97ad806f526e41546d46365bb3a393145f75b7b1568913db74549ad8b8dba872",
+      "bytes": 417300,
+      "author": "The Inter Project Authors (Rasmus Andersson et al.)",
+      "source": "https://github.com/rsms/inter",
+      "license": "OFL-1.1",
+      "license_file": "assets/fonts/OFL-Inter.txt",
+      "license_sha256": "262481e844521b326f5ecd053e59b98c8b2da78c8ee1bdbb6e8174305e54935a",
+      "attribution_sha256": "36d8f9319e543cb10ac35c54969fd16fc6c6354ed72a38e91387d31c4530aba6"
+    },
+    {
+      "file": "assets/fonts/Inter-SemiBold.ttf",
+      "sha256": "78a843fade9d4612a5567302fb595b56976eb5fcebf4fea5a5912d638bafcde3",
+      "bytes": 419744,
+      "author": "The Inter Project Authors (Rasmus Andersson et al.)",
+      "source": "https://github.com/rsms/inter",
+      "license": "OFL-1.1",
+      "license_file": "assets/fonts/OFL-Inter.txt",
+      "license_sha256": "262481e844521b326f5ecd053e59b98c8b2da78c8ee1bdbb6e8174305e54935a",
+      "attribution_sha256": "3d23c3c7585236563062a54229f1124f6af8d6ccd25b55ff59fe1a08a09693f8"
+    },
+    {
+      "file": "assets/fonts/Inter-Bold.ttf",
+      "sha256": "288316099b1e0a47a4716d159098005eef7c0066921f34e3200393dbdb01947f",
+      "bytes": 420428,
+      "author": "The Inter Project Authors (Rasmus Andersson et al.)",
+      "source": "https://github.com/rsms/inter (release v4.1, extras/ttf)",
+      "license": "OFL-1.1",
+      "license_file": "assets/fonts/OFL-Inter.txt",
+      "license_sha256": "262481e844521b326f5ecd053e59b98c8b2da78c8ee1bdbb6e8174305e54935a",
+      "attribution_sha256": "caf2a2e8ecdcd42abef2e0a05c41a97450eb7320381980599b555abd6b36771f"
+    },
+    {
+      "file": "assets/fonts/Inter-Italic.ttf",
+      "sha256": "bbc051dd204b5019a1aa0bc0ae2aa8a05ab13e7a3f979fa357631dc7feb6833a",
+      "bytes": 417388,
+      "author": "The Inter Project Authors (Rasmus Andersson et al.)",
+      "source": "https://github.com/rsms/inter (release v4.1, extras/ttf)",
+      "license": "OFL-1.1",
+      "license_file": "assets/fonts/OFL-Inter.txt",
+      "license_sha256": "262481e844521b326f5ecd053e59b98c8b2da78c8ee1bdbb6e8174305e54935a",
+      "attribution_sha256": "192adc49aca402eb8e60703c52024db425238e9fd3daf5e4c9da2ed98af99150"
+    },
+    {
+      "file": "assets/fonts/JetBrainsMono-Regular.ttf",
+      "sha256": "e6fd0d7e91550b3ed2b735d4312474362c4716edc4fc0577a0f61ed782d5aed1",
+      "bytes": 270224,
+      "author": "The JetBrains Mono Project Authors",
+      "source": "https://github.com/JetBrains/JetBrainsMono",
+      "license": "OFL-1.1",
+      "license_file": "assets/fonts/OFL-JetBrainsMono.txt",
+      "license_sha256": "a76abf002c49097d146e86740a3105a5d00450b1592e820a1109a8c5680cd697",
+      "attribution_sha256": "00599ced628e9da0445787ef90d93ac9c3008ba214f17aa588a42673d08c65f4"
+    },
+    {
+      "file": "assets/fonts/NotoSerif-Regular.ttf",
+      "sha256": "a15cfbbc1539d707115111d672d590a3d70d4f74b4c0a315956da20ae19a14e1",
+      "bytes": 482540,
+      "author": "The Noto Project Authors",
+      "source": "https://github.com/notofonts/notofonts.github.io (fonts/NotoSerif/unhinted/ttf)",
+      "license": "OFL-1.1",
+      "license_file": "assets/fonts/OFL-NotoSerif.txt",
+      "license_sha256": "cee9892f9f0cc8fe882c9e9537ee6a89621d86ee7ceaf70b02e2b2b1c25c061a",
+      "attribution_sha256": "d358224da9ac620fffd3bd00ca64bdac35c505dfd1a9ae113e03ad5b695126be"
+    }
+  ]
+}

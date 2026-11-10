@@ -2,6 +2,8 @@
 
 Primeiro marco experimental do Astra Studio com o núcleo de render CPU do EffectCraft. **Não é o adapter EC-1, não adiciona ferramentas MCP e não troca o backend After Effects.** A fixture é fixa: composição de160×90,30fps, seis frames e dois sólidos opacos originais. Não recebe JSX, scripts, cenas arbitrárias, mídia ou comandos do host upstream.
 
+O segundo marco acrescenta outro binário privado, `astra-ec0-text-curves`, com casos fixos de texto e curvas. O primeiro binário, plano e relatórios permanecem preservados.
+
 ## Referências fixadas
 
 - EffectCraft: `a41ff5015c6687db15a6f074a47b870b8f09fece`.
@@ -23,6 +25,18 @@ Instale antes o ambiente Python do Astra e as ferramentas de C++/SDK do Visual S
 .\.venv\Scripts\python.exe experimental/ec0/run_smoke.py
 ```
 
+Para a fixture de texto/curvas, após preparar metadata/build/test:
+
+```powershell
+.\.venv\Scripts\python.exe experimental/ec0/run_text_curves.py
+```
+
+Ela usa Inter-Regular dos bytes embutidos no upstream, verificados por SHA, sem varrer fontes do sistema. Recusa fonte ausente, hash incorreto e caractere sem cobertura antes de criar o slot. Verifica texto point/box, uma faixa de cor por pontos de código, 61frames640×360/30fps, curvas Linear/Hold/Bezier e trajetória espacial manual com passagem intermediária não parada. Amostras são comparadas a referências independentes em Python; três execuções1/2/1 threads devem produzir PNGs idênticos. A checagem de bounds confronta geometria e raster EC, sem alegar paridade com AE. Animadores de texto continuam pendentes.
+
+`text-curves-plan.json` fixa os critérios; `text-curves-layout-amendment-01.json` registra o ajuste explícito de baseline da caixa após um preflight reprovado, sem relaxar overflow ou tolerâncias. `font-assets-manifest.json` inventaria os sete arquivos OFL embutidos pelo crate de texto. Os fontes não são copiados para este repositório; o executável local usa os bytes do checkout fixado. Isso não fecha a auditoria de todas as dependências/notices.
+
+Cada execução nova usa `workspace/ec0/text-curves-<UUID>` e jobs novos em `workspace/ec0/text-curves-runs/<UUID>`. O ponteiro `text-curves-current.json` referencia a verificação por hash. Recusas conhecidas são verificadas por identidade/status/ausência de outputs antes de arquivar seus marcadores; erro inesperado ou timeout fica pendente, sem kill/replay. A confirmação e os arrays completos ficam em arquivos locais; stdout contém apenas receipt limitado.
+
 O ensaio salva e reabre `.ecproj`, recusa reparações inesperadas, verifica pixels de referência e publica PNGs. Repete com1/2/1 threads, compara hashes dos frames e usa FFmpeg/FFprobe para encode/contagem/decode completo. Verifica hashes dos AEPs preexistentes em `workspace/projects`, sem executar comandos no AE. O processo roda sem janela pelo controlador.
 
 Cada job usa uma pasta nova, exclusiva, sob `workspace/ec0/runs/<UUID>`. Plano, stdout/stderr, exit code e verificação ficam em `workspace/ec0/smoke-<UUID>`. Slots existentes não são sobrescritos. O controlador grava intenção antes de executar e mantém `pending.json` em erro/timeout; não mata/reenvia o worker. Uma pendência deve ser inspecionada antes de outro ensaio, sem apagar evidência para forçar continuação. Isso é um harness experimental, não o sistema de recuperação/filas de produção.
@@ -31,6 +45,6 @@ O inventário `dependency-closure.json` descreve o grafo efetivamente alcançáv
 
 ## O que falta para fechar EC-0
 
-Fonte exata e missing-font; texto; curvas temporais/espaciais; efeitos; paths/mattes/dependências; dry-run AEP com corpus obrigatório; comparação semântica/visual AE versus EC; benchmarks repetidos e memória; licenças/notices completos. GPU e encoders nativos têm validação separada. Este teste estático de sólidos não aprova essas capacidades, não mede paridade nem qualidade artística.
+Expandir fontes e animadores de texto além do recorte fixo; efeitos; paths/mattes/dependências; dry-run AEP com corpus obrigatório; comparação semântica/visual AE versus EC; benchmarks repetidos e memória; licenças/notices completos. GPU e encoders nativos têm validação separada. Os testes fixos de sólidos/texto/curvas não aprovam esses outros recursos, não medem paridade nem qualidade artística.
 
 Estado e evidências: [andamento da EC-0](../../docs/effectcraft/ec0-progress.md). A EC-1 continua condicionada ao relatório gate a gate e a uma decisão específica.

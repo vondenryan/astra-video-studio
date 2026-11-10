@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "parent_plan": "text-curves-plan.json",
+  "reason": "Initial native layout preflight found the Inter box text ink 0.563156px above its box. Upstream box first-baseline uses d-height, not full ascent. Do not accept clipping or relax overflow/geometry gates.",
+  "change": {"box_text_baseline_shift_px": -2},
+  "preserved": ["Text, font bytes, font size, leading, box dimensions and position", "Zero visible ink overflow", "All numeric/geometry/curve thresholds", "Original plan and failed Rust test logs"]
+}

@@ -40,7 +40,7 @@ def main():
     executable = settings.contained_path('ec0/target/debug/astra-ec0-probe.exe')
     if not executable.is_file(): raise ValueError('Build the pinned EC0 probe first')
     base = settings.contained_path('ec0'); runs = settings.contained_path('ec0/runs'); runs.mkdir(exist_ok=True)
-    if list(base.glob('smoke-*/pending.json')): raise ValueError('Retained EC0 pending run: inspect before continuing')
+    if list(base.glob('*/pending.json')): raise ValueError('Retained EC0 pending run: inspect before continuing')
     attempt = settings.contained_path('ec0/smoke-'+uuid4().hex); attempt.mkdir()
     shutil.copyfile(ROOT/'acceptance-plan.json',attempt/'acceptance-plan.json')
     assert digest(ROOT/'acceptance-plan.json')==digest(attempt/'acceptance-plan.json')
