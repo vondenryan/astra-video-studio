@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "scope": "EC-0 isolated proof of concept; not an Astra backend switch or EC-1 authorization",
+  "upstream": {"repository": "https://github.com/storytold/effectcraft", "revision": "a41ff5015c6687db15a6f074a47b870b8f09fece"},
+  "toolchain": {"rust": "1.95.0", "target": "x86_64-pc-windows-msvc"},
+  "initial_milestone": ["Compile minimal CPU render worker", "Inspect target-specific resolved dependency graph for GUI", "Save/reopen private synthetic project", "Render deterministic synthetic PNG frames without AE", "Encode/probe/full-decode using existing FFmpeg tools"],
+  "remaining_ec0_scope": ["Exact fonts and missing-font rejection", "Text and native effects", "Temporal/spatial curves and boundaries", "Dependencies, mattes, paths and paint order", "AEP dry-run with required corpus", "AE/EC pixel and semantic comparisons", "Stress and repeatable performance/resource measurements", "Complete dependency licenses/notices/SBOM", "Report each gate before EC-1 decision"],
+  "gates": {
+    "gui_dependency_count": 0,
+    "host_result_bytes_max": 8192,
+    "host_page_bytes_max": 16384,
+    "scalar_absolute_relative_error_max": 0.00001,
+    "position_error_px_max": 0.1,
+    "roi_ssim_min": 0.99,
+    "roi_mae_8bit_max": 2,
+    "text_bounds_error_px_max": 1,
+    "alpha_error_8bit_max": 1,
+    "sync_error_frames_max": 1,
+    "benchmark_cold_runs_min": 5,
+    "benchmark_warm_runs_min": 10,
+    "benchmark_p95_vs_ae_max": 1.25,
+    "rss_gib_budget": 4,
+    "determinism_cpu_runs_min": 3
+  },
+  "rules": ["Do not operate the current AE session", "Do not mutate original projects or old evidence", "No arbitrary JSX/shell/upstream commands exposed through MCP", "Do not silently fall back to another backend", "Retain failed or uncertain work; never replay automatically", "No GPU, codec, AEP or artistic acceptance inferred from CPU smoke test", "No font/plugin/binary distribution in this initial milestone"]
+}

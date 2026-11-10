@@ -14,3 +14,4 @@ htmlcov/
 build/
 tmp/
 deliveries/
+experimental/ec0/worker/target/

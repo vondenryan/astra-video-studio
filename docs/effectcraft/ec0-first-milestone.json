@@ -1,0 +1,200 @@
+{
+  "schema_version": 1,
+  "status": "ec0_in_progress_first_milestone_verified",
+  "upstream_revision": "a41ff5015c6687db15a6f074a47b870b8f09fece",
+  "toolchain": "Rust 1.95.0 x86_64-pc-windows-msvc",
+  "binary_sha256": "9dc8d0b6243247e7df03b3f1eaa58e09d6d41acabf070443bd696e34645400aa",
+  "plan_sha256": "b91b509f3ce6006fa9b4699b82f5615c94f05b7bdff84bee6ead60c518aff103",
+  "cargo_lock_sha256": "58570e6cf57c580ee47c6a50d3d475bdffdfd3d2614b80b5f8341cb5daf0744c",
+  "source_hashes": {
+    "experimental/ec0/acceptance-plan.json": "b91b509f3ce6006fa9b4699b82f5615c94f05b7bdff84bee6ead60c518aff103",
+    "experimental/ec0/check_dependencies.py": "85d3b7603202a49f146d73aa7e06a98949862758ec90816eb0de0686dd900922",
+    "experimental/ec0/prepare.ps1": "fd832d8a5f8e8f80f6600aa1f51978a3d8e910bb5a4322085e865f2981f30940",
+    "experimental/ec0/run_smoke.py": "61915bc20c4188f9c8cff6a9f618b23943b42fb1438a89b8015bf1c4eaf73f90",
+    "experimental/ec0/worker/Cargo.lock": "58570e6cf57c580ee47c6a50d3d475bdffdfd3d2614b80b5f8341cb5daf0744c",
+    "experimental/ec0/worker/Cargo.toml": "2b555c58a66fd3f82cd82a3e2a8d58b3432b7a8041ebf05ae02460bb819357a7",
+    "experimental/ec0/worker/rust-toolchain.toml": "453ae012c9a2ee6d14babdcbeb42009bd3e00da66fdf0526e9746266cbaf46ac",
+    "experimental/ec0/worker/src/main.rs": "d6e3ad4cdbb151bba6d8681d14c2a023f77e4c2308ab6c55a4d3983feb03f342"
+  },
+  "fixture": {
+    "kind": "fixed opaque solid layers",
+    "width": 160,
+    "height": 90,
+    "fps": 30,
+    "frame_count": 6
+  },
+  "runs": [
+    {
+      "job_id": "b5d13997b6404a9fb03340c025a252a9",
+      "threads": 1,
+      "files": [
+        {
+          "name": "project.ecproj",
+          "sha256": "d11654f4597a20d2a11cffa3b12c84d32cfef42bd669662827fd17a42e3e69c2",
+          "bytes": 33708
+        },
+        {
+          "name": "result.json",
+          "sha256": "bc7e35c55583dfb95d6c57a775c9637ff6c9fdf3b45daa40d67bdcf490368591",
+          "bytes": 433
+        },
+        {
+          "name": "frame-0000.png",
+          "sha256": "1cfc3325daa775a7135015d13a4223078bc1afa1cf9df6565cee68fa81d5ca52",
+          "bytes": 629
+        },
+        {
+          "name": "frame-0001.png",
+          "sha256": "1cfc3325daa775a7135015d13a4223078bc1afa1cf9df6565cee68fa81d5ca52",
+          "bytes": 629
+        },
+        {
+          "name": "frame-0002.png",
+          "sha256": "1cfc3325daa775a7135015d13a4223078bc1afa1cf9df6565cee68fa81d5ca52",
+          "bytes": 629
+        },
+        {
+          "name": "frame-0003.png",
+          "sha256": "1cfc3325daa775a7135015d13a4223078bc1afa1cf9df6565cee68fa81d5ca52",
+          "bytes": 629
+        },
+        {
+          "name": "frame-0004.png",
+          "sha256": "1cfc3325daa775a7135015d13a4223078bc1afa1cf9df6565cee68fa81d5ca52",
+          "bytes": 629
+        },
+        {
+          "name": "frame-0005.png",
+          "sha256": "1cfc3325daa775a7135015d13a4223078bc1afa1cf9df6565cee68fa81d5ca52",
+          "bytes": 629
+        }
+      ]
+    },
+    {
+      "job_id": "b3473dffa8ed4040919e22d08ce895d1",
+      "threads": 2,
+      "files": [
+        {
+          "name": "project.ecproj",
+          "sha256": "d11654f4597a20d2a11cffa3b12c84d32cfef42bd669662827fd17a42e3e69c2",
+          "bytes": 33708
+        },
+        {
+          "name": "result.json",
+          "sha256": "d13b9ab76278a268337130b15d256d93ec2943418633d9c070b619608f808a31",
+          "bytes": 433
+        },
+        {
+          "name": "frame-0000.png",
+          "sha256": "1cfc3325daa775a7135015d13a4223078bc1afa1cf9df6565cee68fa81d5ca52",
+          "bytes": 629
+        },
+        {
+          "name": "frame-0001.png",
+          "sha256": "1cfc3325daa775a7135015d13a4223078bc1afa1cf9df6565cee68fa81d5ca52",
+          "bytes": 629
+        },
+        {
+          "name": "frame-0002.png",
+          "sha256": "1cfc3325daa775a7135015d13a4223078bc1afa1cf9df6565cee68fa81d5ca52",
+          "bytes": 629
+        },
+        {
+          "name": "frame-0003.png",
+          "sha256": "1cfc3325daa775a7135015d13a4223078bc1afa1cf9df6565cee68fa81d5ca52",
+          "bytes": 629
+        },
+        {
+          "name": "frame-0004.png",
+          "sha256": "1cfc3325daa775a7135015d13a4223078bc1afa1cf9df6565cee68fa81d5ca52",
+          "bytes": 629
+        },
+        {
+          "name": "frame-0005.png",
+          "sha256": "1cfc3325daa775a7135015d13a4223078bc1afa1cf9df6565cee68fa81d5ca52",
+          "bytes": 629
+        }
+      ]
+    },
+    {
+      "job_id": "e369ed2cd2ae4088aee2aea6b112d40e",
+      "threads": 1,
+      "files": [
+        {
+          "name": "project.ecproj",
+          "sha256": "d11654f4597a20d2a11cffa3b12c84d32cfef42bd669662827fd17a42e3e69c2",
+          "bytes": 33708
+        },
+        {
+          "name": "result.json",
+          "sha256": "4b8f391556412c94f52adcdf7db7cc57e32429ccfcc6698dbce1bafd1857e0fd",
+          "bytes": 433
+        },
+        {
+          "name": "frame-0000.png",
+          "sha256": "1cfc3325daa775a7135015d13a4223078bc1afa1cf9df6565cee68fa81d5ca52",
+          "bytes": 629
+        },
+        {
+          "name": "frame-0001.png",
+          "sha256": "1cfc3325daa775a7135015d13a4223078bc1afa1cf9df6565cee68fa81d5ca52",
+          "bytes": 629
+        },
+        {
+          "name": "frame-0002.png",
+          "sha256": "1cfc3325daa775a7135015d13a4223078bc1afa1cf9df6565cee68fa81d5ca52",
+          "bytes": 629
+        },
+        {
+          "name": "frame-0003.png",
+          "sha256": "1cfc3325daa775a7135015d13a4223078bc1afa1cf9df6565cee68fa81d5ca52",
+          "bytes": 629
+        },
+        {
+          "name": "frame-0004.png",
+          "sha256": "1cfc3325daa775a7135015d13a4223078bc1afa1cf9df6565cee68fa81d5ca52",
+          "bytes": 629
+        },
+        {
+          "name": "frame-0005.png",
+          "sha256": "1cfc3325daa775a7135015d13a4223078bc1afa1cf9df6565cee68fa81d5ca52",
+          "bytes": 629
+        }
+      ]
+    }
+  ],
+  "cpu_png_deterministic": true,
+  "full_decode_passed": true,
+  "prior_aep_files_verified": 2439,
+  "reachable_packages": 87,
+  "gui_packages": [],
+  "astra_regression": {
+    "passed": 486,
+    "skipped": 19,
+    "seconds": 93.31
+  },
+  "rust_tests": {
+    "passed": 2
+  },
+  "mcp_tool_count_unchanged": 77,
+  "default_backend_unchanged": "after_effects",
+  "local_verification": "ec0/smoke-e19230ba7faa40f7a97a656bafc7a435/verification.json",
+  "local_verification_sha256": "0d4d9d5f7418b4c19b0a5dc16e12e0ba5b8b3c07fbee529d8d866662a33294f1",
+  "remaining_gates": [
+    "Exact fonts and missing-font rejection",
+    "Text and native effects",
+    "Temporal/spatial curves and boundaries",
+    "Dependencies, mattes, paths and paint order",
+    "AEP dry-run with required corpus",
+    "AE/EC pixel and semantic comparisons",
+    "Stress and repeatable performance/resource measurements",
+    "Complete dependency licenses/notices/SBOM",
+    "Report each gate before EC-1 decision"
+  ],
+  "limits": [
+    "Not full EC0 acceptance",
+    "No AE parity or render speed claim",
+    "Opaque solids only, no alpha/font/curve/effect/AEP acceptance",
+    "License manifest inventory, full notices/SBOM audit pending"
+  ]
+}

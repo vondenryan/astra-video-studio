@@ -1,8 +1,8 @@
 # Astra Video Studio — evolução para produção de motion profissional
 
-**Versão:** 1.3  
-**Data:** 8 de novembro de 2026 (origem: 6 de novembro)  
-**Estado:** Sprints 0–11 e Stints 9.1–9.2 implementados; evidências e limites em README.md e docs/test-report.md. Stint 9.3 autorizado: implementação e aceitação local entregues; identificação9.3 e paginação resumida reportadas no Claude Desktop, aceitação externa final das três rotas de edição pendente. Esta revisão incorpora também a avaliação EffectCraft EC-0. Sprints 12–13 permanecem propostas; a trilha EffectCraft foi adiada pelo operador em favor da implementação atual. A execução de9.3 foi solicitada posteriormente à revisão documental; isso não inicia EC-0, instala dependências ou substitui AE.  
+**Versão:** 1.4
+**Data:** 10 de novembro de 2026 (origem: 6 de novembro)
+**Estado:** Sprints 0–13 tecnicamente implementados e otimização de criação entregue;77 ferramentas. Aceite externo das três rotas de edição Claude Desktop9.3 permanece pendente. Nova orientação do operador retomou a trilha EffectCraft: EC-0 iniciada, com primeiro marco de build/render CPU isolado verificado. Gates completos da EC-0 ainda pendentes; EC-1–4 e troca do backend padrão não estão autorizadas por esse marco. Fontes e limites em docs/test-report.md e docs/effectcraft/ec0-progress.md.
 **Base:** MVP das Sprints 0–5, desenvolvido para After Effects 2025 no Windows.
 
 ## 1. Objetivo e uso deste documento
@@ -392,7 +392,7 @@ Esta entrega não iniciou Sprint12 nem EC-0. Implementar uma sprint por vez, ins
 
 ## 11. Trilha EffectCraft — validação e adoção condicionada
 
-**Prioridade atual:** trilha adiada pelo operador. Avaliação e proposta são mantidas como referência; não executar EC-0 antes de nova orientação explícita.
+**Prioridade atual:** retomada por orientação explícita do operador em10/11/2026. EC-0 em execução isolada, começando pelo núcleo CPU. A avaliação original continua como referência histórica; este início não autoriza EC-1–4, migração ou substituição do backend AE.
 
 ### 11.1 Base de decisão
 
@@ -410,7 +410,7 @@ IR próprio deverá explicitar UUIDs/dependências, tempo/FPS/frames, start/stre
 
 ### 11.3 EC-0 — prova de conceito isolada
 
-**Estado:** planejada; execução não iniciada. Aprovar resultado desta sprint não troca backend padrão nem autoriza migração geral/distribuição comercial.
+**Estado:** em execução. Primeiro marco verificado: worker CPU mínimo compilado sem frontends GUI no grafo alcançável, persistência/reabertura de fixture sintética, três renders determinísticos e encode/probe/decode independente. O restante dos gates abaixo continua pendente. Ver [andamento e evidências](docs/effectcraft/ec0-progress.md). Aprovar resultado desta sprint não troca backend padrão nem autoriza migração geral/distribuição comercial.
 
 **Entregas:** build Windows x64 fixado e grafo mínimo sem GUI; commands estruturados de composição/texto/curvas/Fill/Blur; persistência e inspeção; frames headless integrados experimentalmente ao pipeline Astra; comparação AE/EC CPU, depois GPU/encoder nativo em provas separadas. Manter PNG → FFmpeg/ffprobe/decode como verificação independente inicial. API experimental opt-in e fixtures/cópias privadas; não alterar a sessão aberta.
 
@@ -462,4 +462,4 @@ Prioridades seguintes, com critérios de qualidade:
 2. SFX: variantes por função, ataque mais suave e mix menos dominante; sincronismo verificável e A/B com a trilha. Curadoria/aprovação auditiva necessárias, sem confundir pico seguro com qualidade sonora.
 3. Perfil de tempo por etapa e benchmarks repetidos antes de metas gerais; depois avaliar lotes tipados de paths/estilos/áudio e custo das definições de ferramentas. Nunca acelerar removendo confirmação, snapshots ou verificação de integridade.
 
-As revisões artísticas do VÉRTICE não foram aplicadas nesta otimização. Paisagem ainda requer aprovação explícita antes da adaptação vertical. EffectCraft continua adiado; Claude Desktop9.3 continua com rotas de edição externas pendentes.
+As revisões artísticas do VÉRTICE não foram aplicadas nesta otimização. Paisagem ainda requer aprovação explícita antes da adaptação vertical. A orientação posterior de10/11 retomou EC-0 de forma isolada; Claude Desktop9.3 continua com rotas de edição externas pendentes.

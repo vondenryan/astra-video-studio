@@ -121,6 +121,8 @@ O escopo de edição é principalmente 2D. Expressões, tracks automáticos e op
 
 Jobs incertos ficam protegidos para inspeção. O Astra não mata o After Effects nem reenvia automaticamente uma operação cujo resultado seja desconhecido. Verificação técnica e revisão artística são etapas distintas.
 
+Um motor alternativo baseado no EffectCraft está em [avaliação experimental isolada](experimental/ec0/README.md). O backend padrão continua sendo o After Effects; o experimento não adiciona ferramentas à API de produção.
+
 ## Desenvolvimento
 
 Execute a suíte funcional:
