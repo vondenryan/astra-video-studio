@@ -1,6 +1,13 @@
 //! Native EffectCraft compositing fixtures, isolated from the Astra production backend.
 #![forbid(unsafe_code)]
 
+#[path = "../svg_fixture.rs"]
+mod svg_fixture;
+#[path = "../pinned_font.rs"]
+mod pinned_font;
+#[path = "../text_selector_fixture.rs"]
+mod text_selector_fixture;
+
 use effectcraft_color::Label;
 use effectcraft_keyframe::{Keyframe, ShapePath, Value};
 use effectcraft_project::{
@@ -247,12 +254,18 @@ fn exclusive(path: &Path) -> Result<File> {
 }
 
 fn run(args: &[String]) -> Result<Json> {
-    let [_, root_flag, root, job_flag, job] = args else { return Err("Invalid arguments".into()); };
+    let [_, root_flag, root, job_flag, job, mode @ ..] = args else { return Err("Invalid arguments".into()); };
     if root_flag != "--root" || job_flag != "--job" || job.len() != 32 ||
         !job.bytes().all(|byte| byte.is_ascii_digit() || (b'a'..=b'f').contains(&byte)) {
         return Err("Invalid job arguments".into());
     }
     let directory = Path::new(root).canonicalize()?.join(job);
+    match mode {
+        [flag] if flag == "--svg" => return svg_fixture::run(&directory, job),
+        [flag] if flag == "--text-selector" => return text_selector_fixture::run(&directory, job),
+        [] => {}
+        _ => return Err("Unsupported fixture".into()),
+    }
     let (project, cases) = fixture()?;
     validate_graph(&project)?;
     let refused = negative_cases()?;

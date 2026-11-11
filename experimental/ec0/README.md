@@ -41,6 +41,15 @@ Para testar a composição com a mesma preparação de metadata e build, execute
 
 O controlador compara amostras RGBA dos PNGs decodificados, verifica a reabertura do projeto e compara os hashes das imagens em três execuções. As recusas de dependências e os resultados completos ficam no diretório indicado por `workspace/ec0/compositing-current.json`.
 
+Os modos adicionais exercitam a importação pelo parser SVG do Astra e a animação de opacidade por um seletor de caracteres. Use o mesmo build.
+
+```powershell
+.\.venv\Scripts\python.exe experimental/ec0/run_compositing.py --svg
+.\.venv\Scripts\python.exe experimental/ec0/run_compositing.py --text-selector
+```
+
+O modo SVG guarda o input, os paths lidos após reabrir, o projeto editado e o diff de pixels. O modo de texto usa JetBrainsMono-Regular fixada no plano e confere a revelação nos frames 0, 15 e 30. Os ponteiros para as evidências são `workspace/ec0/svg-current.json` e `workspace/ec0/text-selector-current.json`. [Relatório](../../docs/effectcraft/ec0-svg-selector-milestone.json)
+
 Ela usa Inter-Regular dos bytes embutidos no upstream, verificados por SHA, sem varrer fontes do sistema. Recusa fonte ausente, hash incorreto e caractere sem cobertura antes de criar o slot. Verifica texto point/box, uma faixa de cor por pontos de código, 61frames640×360/30fps, curvas Linear/Hold/Bezier e trajetória espacial manual com passagem intermediária não parada. Amostras são comparadas a referências independentes em Python; três execuções1/2/1 threads devem produzir PNGs idênticos. A checagem de bounds confronta geometria e raster EC, sem alegar paridade com AE. Animadores de texto continuam pendentes.
 
 `text-curves-plan.json` fixa os critérios; `text-curves-layout-amendment-01.json` registra o ajuste explícito de baseline da caixa após um preflight reprovado, sem relaxar overflow ou tolerâncias. `font-assets-manifest.json` inventaria os sete arquivos OFL embutidos pelo crate de texto. Os fontes não são copiados para este repositório; o executável local usa os bytes do checkout fixado. Isso não fecha a auditoria de todas as dependências/notices.
@@ -55,6 +64,6 @@ O inventário `dependency-closure.json` descreve o grafo efetivamente alcançáv
 
 ## O que falta para fechar EC-0
 
-Expandir fontes e animadores de texto, testar importação SVG e dry-run AEP com corpus obrigatório, comparar propriedades e pixels entre AE e EC, medir desempenho e memória, e completar a auditoria de licenças e notices. GPU e encoders nativos têm validação própria.
+Comparar propriedades e pixels entre AE e EC, ampliar a cobertura de fontes e animadores, testar dry-run AEP com corpus obrigatório, medir desempenho e memória e completar a auditoria de licenças e notices. GPU e encoders nativos têm validação própria.
 
 Estado e evidências: [andamento da EC-0](../../docs/effectcraft/ec0-progress.md). A EC-1 continua condicionada ao relatório gate a gate e a uma decisão específica.

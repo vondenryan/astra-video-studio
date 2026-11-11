@@ -1,0 +1,228 @@
+{
+  "scope": "EC-0 SVG import and one native character opacity animation",
+  "upstream_revision": "a41ff5015c6687db15a6f074a47b870b8f09fece",
+  "source_hashes": {
+    "experimental/ec0/run_compositing.py": "9e8dd8437a094cb86e974cc2beafc98d2e2befc409c54e994db181e950d36ff6",
+    "experimental/ec0/svg-plan.json": "be865efb709899f05e45939b41c1d5dd641fc715a7b961c04645ef1eab3c0cd5",
+    "experimental/ec0/svg-fixture.svg": "6f2f5b0685e7f915fe6914a3aa1e92269961347c76bc9246f1794e98a8239bf7",
+    "experimental/ec0/text-selector-plan.json": "449a51e4679fb940667ceb815bddd8c70bbc3713bf6186f2124630fcdf4d4664",
+    "experimental/ec0/worker/Cargo.lock": "647aee60ddc3ece52596bd868a7070a55a4455450b217df94d2651f77fdf0b89",
+    "experimental/ec0/worker/src/bin/astra-ec0-compositing.rs": "961f854fb1095a56474eaba4bfa022ebe61340637227dc6ef706a5fe927a5911",
+    "experimental/ec0/worker/src/bin/astra-ec0-text-curves.rs": "2508ce85b2b1db87aef9cc919c8a56ba2d4b5568340717d210ac2f8c86597a87",
+    "experimental/ec0/worker/src/svg_fixture.rs": "a1d9b97b0db562f3c38c32945c2fe9974967c4e0fdfbe753b6eb78ec9d18824a",
+    "experimental/ec0/worker/src/pinned_font.rs": "9f3854506c3848f628e365b8850c6710ef7c1dc097fd93897a79e8786ab59076",
+    "experimental/ec0/worker/src/text_selector_fixture.rs": "3db2c139f663800aefd32e161835eca75062f7a17c659e4951c690076abcb420"
+  },
+  "runs": {
+    "svg": {
+      "local_verification": "ec0/svg-75e35bde6137401c9afb319cd83b1854/verification.json",
+      "local_verification_sha256": "f403aeda0d697c98fac4eaf94bb9baec5c5b64c2fb51c0cc95309833198b32d7",
+      "aep_files_verified": 2444,
+      "binary_sha256": "faa3091b9b9e3b6c84b79fe74152af3ccb3e8c00c7bb437695e096a734c0162a",
+      "plan_sha256": "be865efb709899f05e45939b41c1d5dd641fc715a7b961c04645ef1eab3c0cd5",
+      "threads": [
+        1,
+        2,
+        1
+      ],
+      "checks": {
+        "probes": [
+          {
+            "point": [
+              10,
+              10
+            ],
+            "before": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "after": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "point": [
+              40,
+              60
+            ],
+            "before": [
+              0,
+              255,
+              0,
+              255
+            ],
+            "after": [
+              0,
+              255,
+              0,
+              255
+            ]
+          },
+          {
+            "point": [
+              80,
+              60
+            ],
+            "before": [
+              128,
+              128,
+              0,
+              255
+            ],
+            "after": [
+              0,
+              128,
+              128,
+              255
+            ]
+          },
+          {
+            "point": [
+              120,
+              60
+            ],
+            "before": [
+              255,
+              0,
+              0,
+              128
+            ],
+            "after": [
+              0,
+              0,
+              255,
+              128
+            ]
+          },
+          {
+            "point": [
+              40,
+              102
+            ],
+            "before": [
+              255,
+              255,
+              255,
+              255
+            ],
+            "after": [
+              255,
+              255,
+              255,
+              255
+            ]
+          },
+          {
+            "point": [
+              74,
+              110
+            ],
+            "before": [
+              255,
+              255,
+              255,
+              255
+            ],
+            "after": [
+              255,
+              255,
+              255,
+              255
+            ]
+          }
+        ],
+        "changed_pixels": 4032
+      },
+      "native_pngs": {
+        "svg-after.png": "2e0c0b5f6dad94a0942c67c66a94b7268e8c0358fbe2185af57c29552782405e",
+        "svg-before.png": "9e992f4888a7c26bb7bca327e4e015dd7fa61d192774fe34789ab48b52e1bd15"
+      },
+      "project_sha256": "06cc5fc8214303d45ad2e068aeb6a012690918bb7ee25409cd97e3bce51e76b1",
+      "dependency_closure_sha256": "cf4eb07c8c94ffa8f3b1f8fdb1fc7b616f8b167233669a615f7d89c32c65fea8",
+      "svg_sha256": "6f2f5b0685e7f915fe6914a3aa1e92269961347c76bc9246f1794e98a8239bf7",
+      "native_paths": 3,
+      "svg_refusals": [
+        {
+          "case": "gradient",
+          "error": "SVG supports only hex/black/white/none solid colors"
+        },
+        {
+          "case": "transform",
+          "error": "Unsupported SVG attribute (including transforms/external references)"
+        },
+        {
+          "case": "image",
+          "error": "Unsupported SVG element: image"
+        }
+      ],
+      "edited_project_sha256": "e26eac2dc5aeb3932ad3c916f69d69cd36346a2bc318bf3086a6a13bcf9eee6e",
+      "paths_sha256": "9b04884d9af29d65997f1e0186471128614ded7800b3a512cfcc4856dcde7cca"
+    },
+    "text-selector": {
+      "local_verification": "ec0/text-selector-bca5831d38e84803bcc73fdb24188d50/verification.json",
+      "local_verification_sha256": "3645bd9f803322eccdea7c13393a4f34c29cd83570201ec96e489643a89423f5",
+      "aep_files_verified": 2442,
+      "binary_sha256": "faa3091b9b9e3b6c84b79fe74152af3ccb3e8c00c7bb437695e096a734c0162a",
+      "plan_sha256": "449a51e4679fb940667ceb815bddd8c70bbc3713bf6186f2124630fcdf4d4664",
+      "threads": [
+        1,
+        2,
+        1
+      ],
+      "checks": {
+        "visible_alpha_pixels_by_character_region": {
+          "0": [
+            0,
+            0
+          ],
+          "15": [
+            0,
+            482
+          ],
+          "30": [
+            477,
+            482
+          ]
+        }
+      },
+      "native_pngs": {
+        "selector-0.png": "0ae6fcf5f6d2489122207d7519b67b5905e195f8d0fd9cdbd1bc41b99bcac589",
+        "selector-15.png": "f755b89ac4f33ed46a4400452aab3c25fc177844ce18108945d5e8644dfcefca",
+        "selector-30.png": "fb170f55e9661808ccff6ce390411e99e9fbde01a230b86660b3cd75a3715d3a"
+      },
+      "project_sha256": "0bdd9ed45b865066edd441689bc29136c02c9223edc58aea3412cd43ec987bcf",
+      "dependency_closure_sha256": "cf4eb07c8c94ffa8f3b1f8fdb1fc7b616f8b167233669a615f7d89c32c65fea8",
+      "font": {
+        "font_postscript": "JetBrainsMono-Regular",
+        "font_sha256": "e6fd0d7e91550b3ed2b735d4312474362c4716edc4fc0577a0f61ed782d5aed1",
+        "system_fonts_scanned": false
+      }
+    },
+    "compositing": {
+      "local_verification": "ec0/compositing-b8d1ceec76a74558995161e5d27dceb2/verification.json",
+      "local_verification_sha256": "32d018d423b229dae217ca73b49c32f0bb1113075613e6982c5da73cfe997642",
+      "aep_files_verified": 2446,
+      "binary_sha256": "faa3091b9b9e3b6c84b79fe74152af3ccb3e8c00c7bb437695e096a734c0162a",
+      "plan_sha256": "e3dd9868eac5f9a9e42729b5432de3e2222e471e86d9aa9f6c75e2792423d28f"
+    },
+    "text-curves": {
+      "local_verification": "ec0/text-curves-f2eb411f26514be4b2fca39f91e5bc0a/verification.json",
+      "local_verification_sha256": "55b27ee9c205a6d5dadcfdf078464787dd73767a0aca3ec55d458890bd5a1ebc",
+      "aep_files_verified": 2448,
+      "binary_sha256": "4d0e388158c123880d02e5941e85e64516c73e6da1682fe774df8243cf245647",
+      "plan_sha256": "68f1601951bed7c65f8ac4b4fd0839e7d4e656844938be19af3cdf95d7ce4493"
+    }
+  },
+  "pending": [
+    "AE parity",
+    "General fonts and animator modes",
+    "AEP corpus",
+    "Performance and resource benchmarks",
+    "Complete license and notice audit"
+  ]
+}

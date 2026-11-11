@@ -1,0 +1,9 @@
+{
+  "scope": "Native character range selector animated with opacity and a second exact font",
+  "upstream_revision": "a41ff5015c6687db15a6f074a47b870b8f09fece",
+  "threads": [1, 2, 1],
+  "font": {"postscript": "JetBrainsMono-Regular", "sha256": "e6fd0d7e91550b3ed2b735d4312474362c4716edc4fc0577a0f61ed782d5aed1"},
+  "frames": [0, 15, 30],
+  "expected": ["both characters hidden", "first character hidden and second unchanged", "both characters visible"],
+  "pending": ["Additional fonts and animator modes", "AE comparison", "AEP corpus", "Performance and resource benchmarks", "Complete license and notice audit"]
+}

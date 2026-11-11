@@ -39,3 +39,7 @@
 ### EC-0 compositing milestone
 
 Fixed CPU fixtures passed for Fill, Gaussian Blur, native path paint order, Trim Paths, equal-topology morph, Add/Subtract masking, alpha and luma mattes, and nested composition parenting. Three runs at 1/2/1 threads matched 12 PNGs and the project hash. Seven missing-reference/cycle cases were refused by the fixture validator. The 2,439 AEP files retained their hashes. See docs/effectcraft/ec0-compositing-milestone.json. SVG ingestion, AE parity, AEP corpus, performance and the complete license audit are pending. Keep the fixed compositing experiment isolated from the production backend.
+
+### EC-0 SVG and text selector milestone
+
+The fixed SVG fixture uses the existing Astra subset parser and converts its normalized output into editable EffectCraft groups. Readback checks native geometry and paint. The isolated fill edit changes exactly 4,032 target pixels. The character opacity selector uses pinned JetBrainsMono-Regular and verifies zero, one and two visible glyphs. Three CPU runs per fixture match project and PNG hashes. See docs/effectcraft/ec0-svg-selector-milestone.json. Continue with AE comparisons and the remaining corpus, performance and dependency license gates.

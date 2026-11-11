@@ -1,0 +1,8 @@
+{
+  "scope": "Astra SVG subset imported as editable EffectCraft paths",
+  "upstream_revision": "a41ff5015c6687db15a6f074a47b870b8f09fece",
+  "threads": [1, 2, 1],
+  "pixel_channel_tolerance": 1,
+  "checks": ["Native path, tangent, fill and stroke readback", "SVG painter order with fractional alpha", "Independent interior and exterior pixel probes", "Reopen, edit one fill and save a new project", "Unchanged pixels outside the edited shape", "Identical hashes across CPU runs"],
+  "pending": ["General fonts and text animators", "AE comparison", "AEP corpus", "Performance and resource benchmarks", "Complete license and notice audit"]
+}

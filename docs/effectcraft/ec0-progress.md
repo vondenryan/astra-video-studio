@@ -65,4 +65,16 @@ Os testes CPU verificaram Fill, o halo e a simetria do Gaussian Blur, a ordem de
 
 O projeto reabriu com estado idêntico. Três execuções com 1, 2 e 1 threads produziram os mesmos 12 PNGs. O validador do experimento recusou três referências ausentes e quatro ciclos envolvendo parentesco, matte ou precomp. Os 2.439 AEPs e snapshots conservaram seus hashes.
 
-O [plano](../../experimental/ec0/compositing-plan.json) define os casos. O [relatório](ec0-compositing-milestone.json) registra os pixels medidos, os hashes e as recusas. Os projetos e PNGs de cada job ficam em `workspace/ec0/compositing-runs`. O escopo vetorial desta etapa começa em paths nativos. A importação SVG e a comparação de pixels e propriedades com o AE seguem pendentes, assim como o corpus AEP, desempenho, recursos e a auditoria completa de licenças e notices.
+Os projetos e PNGs de cada job ficam em `workspace/ec0/compositing-runs`. O escopo vetorial deste marco começa em paths nativos. [Plano](../../experimental/ec0/compositing-plan.json) · [Medições e hashes](ec0-compositing-milestone.json)
+
+## Quarto marco — importação SVG e animador de texto
+
+A prova SVG reutiliza o parser estrito do Astra e envia a geometria normalizada ao EffectCraft. O arquivo de teste usa viewBox deslocado, preenchimento herdado, um traço com segmentos quadrático e cúbico e um retângulo sobreposto com 50% de opacidade. A leitura após reabrir conferiu os três paths, tangentes, cores, opacidades, largura, cap e join. Gradientes, transforms e imagens externas foram recusados pelo parser neste recorte.
+
+O worker alterou somente a cor do preenchimento superior e salvou uma versão separada. A leitura do projeto comprovou a preservação das demais propriedades. As amostras RGBA confirmaram composição e transparência, e o diff completo marcou exatamente os 4.032 pixels do retângulo.
+
+A prova do animador usa JetBrainsMono-Regular fixada por PostScript e SHA-256. Um seletor nativo animou o fim do intervalo de caracteres e usou opacidade zero dentro da seleção. Os frames 0, 15 e 30 mostraram zero, um e dois caracteres respectivamente. O canal alfa do segundo caractere coincidiu exatamente nos frames 15 e 30.
+
+Cada prova repetiu a reabertura e o render com 1, 2 e 1 threads. Os hashes dos PNGs e dos projetos coincidiram em cada série. As evidências estão no workspace e os relatórios versionados registram os hashes e os pixels medidos. [Relatório SVG e seletor](ec0-svg-selector-milestone.json)
+
+O próximo recorte é a comparação de pixels e propriedades com o After Effects. O corpus AEP, a validação de fontes e seletores fora das fixtures, desempenho, recursos e a auditoria completa de licenças e notices seguem pendentes.

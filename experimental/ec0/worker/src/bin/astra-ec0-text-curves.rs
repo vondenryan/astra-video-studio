@@ -9,7 +9,9 @@ use effectcraft_text::{fonts, layout_doc};
 use effectcraft_time::{FrameRate, Tick};
 use image::ImageEncoder;
 use serde_json::{json, Value as Json};
-use sha2::{Digest, Sha256};
+#[path = "../pinned_font.rs"]
+mod pinned_font;
+use pinned_font::strict_font;
 use std::{fs::{self, File, OpenOptions}, io::Write, path::{Path, PathBuf}, process::ExitCode};
 
 const REV: &str = "a41ff5015c6687db15a6f074a47b870b8f09fece";
@@ -32,18 +34,6 @@ fn arguments(args: &[String]) -> Result<(PathBuf,String,String)> {
     if !root.is_dir() || job.len()!=32 || !job.bytes().all(|c| c.is_ascii_digit() || (b'a'..=b'f').contains(&c)) {return Err("INVALID_JOB".into());}
     if !["text-curves","missing-font","unsupported-glyph","wrong-font-hash"].contains(&case.as_str()) {return Err("UNSUPPORTED_CASE".into());}
     Ok((root.join(job),job.clone(),case.clone()))
-}
-
-fn strict_font(name: &str, text: &str, expected: &str) -> Result<fonts::FaceId> {
-    let candidates: Vec<_>=fonts::all_faces().into_iter().filter(|f| f.info.postscript.as_deref()==Some(name)).collect();
-    if candidates.len()!=1 {return Err("FONT_MISSING: exact PostScript identity absent or ambiguous".into());}
-    let face=candidates.first().ok_or("FONT_MISSING")?;
-    let fonts::FaceData::Static(bytes)=&face.info.data else {return Err("FONT_ORIGIN: only pinned bundled bytes accepted".into());};
-    if face.info.origin!="bundled" || format!("{:x}",Sha256::digest(bytes))!=expected {return Err("FONT_HASH_MISMATCH".into());}
-    if text.chars().any(|c| c!='\n' && !face.has_char(c)) {return Err("GLYPH_UNSUPPORTED: no per-character fallback allowed".into());}
-    let resolved=fonts::resolve(name,"Regular");
-    if resolved.missing || resolved.face!=face.id || resolved.synth_bold || resolved.synth_italic {return Err("FONT_SUBSTITUTION".into());}
-    Ok(face.id)
 }
 
 fn checked_layout(doc: &TextDoc) -> Result<Json> {

@@ -245,3 +245,7 @@ Second-milestone text/curve runs and negative cases passed; default499 passed/19
 ### 2026-11-10 — EC-0 compositing
 
 Use a separate fixture executable for the compositing milestone. Decode lossless RGBA PNGs to check alpha and selected pixels. Compare image and project hashes across thread counts. Use native paths for the overlap, Trim Paths and morph cases. Check missing parent, matte and precomp references plus cycles in the fixture before saving, and check the accepted graph again after reopening. SVG ingestion and AE comparisons remain separate gates.
+
+### EC-0 editable SVG and text selector
+
+Reuse the production Astra SVG subset for parsing. Convert its normalized groups to native EffectCraft paths in reverse document order to preserve SVG painting. Validate both reopened geometry and decoded pixels, then edit one fill in a separate project. Reuse the pinned font preflight for a second bundled face and check the animated character range with three rendered frames.
