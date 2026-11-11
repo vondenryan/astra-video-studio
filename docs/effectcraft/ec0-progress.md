@@ -77,4 +77,12 @@ A prova do animador usa JetBrainsMono-Regular fixada por PostScript e SHA-256. U
 
 Cada prova repetiu a reabertura e o render com 1, 2 e 1 threads. Os hashes dos PNGs e dos projetos coincidiram em cada série. As evidências estão no workspace e os relatórios versionados registram os hashes e os pixels medidos. [Relatório SVG e seletor](ec0-svg-selector-milestone.json)
 
-O próximo recorte é a comparação de pixels e propriedades com o After Effects. O corpus AEP, a validação de fontes e seletores fora das fixtures, desempenho, recursos e a auditoria completa de licenças e notices seguem pendentes.
+## Quinto marco — referência do After Effects e corpus AEP
+
+O ensaio conferiu o hash do AEP salvo, do resultado de inspeção confirmado pelo AE e do manifesto da sequência TIFF. A comparação usou os frames 72, 75 e 77 já renderizados no AE 25.5. O EffectCraft importou uma cópia do mesmo AEP em memória e renderizou o elemento gráfico com os mesmos bytes PNG. O título ficou desativado apenas na cópia do EffectCraft porque o arquivo da fonte original não acompanha a referência.
+
+As regiões interna e de borda passaram nos três frames. Todas tiveram SSIM 1, erro RGB médio 0 e erro alfa máximo 0. O ensaio também comparou posição, âncora, escala e opacidade do gráfico, seis keyframes de opacidade do título com interpolação e controles Bezier, e cinco amostras da curva. A propriedade de opacidade é escalar e a comparação de flags cobre os controles temporais aplicáveis.
+
+O dry run verificou os 20 hashes do corpus fixado e analisou os 17 AEP/AEPX sem resolver mídia ou fontes externas. Em modo estrito, 15 importaram em memória. Dois foram recusados, e a recusa preservou o projeto temporário. `effects.aep` registrou cinco perdas em efeitos ou parâmetros e `text.aep` registrou quatro perdas em recursos tipográficos. Fontes e mídias indisponíveis pelo desenho do ensaio aparecem separadamente. Os três arquivos FFX tiveram apenas verificação de hash.
+
+Continuam pendentes a suíte upstream com corpus obrigatório, a paridade visual de texto, efeitos e cenas animadas, as medições de desempenho e memória e a auditoria completa de licenças e notices. [Plano e tolerâncias](../../experimental/ec0/parity-plan.json) · [Medições e hashes](ec0-parity-milestone.json)

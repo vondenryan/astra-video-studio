@@ -1,0 +1,15 @@
+{
+  "scope": "Archived After Effects 25.5 evidence versus the pinned EffectCraft CPU importer and renderer",
+  "reference": "sprint11-native-424560b9381d4a9d8c89fb81fafb3885",
+  "native_operation": "5e037be9e4ae4f4a8c47b8873adbdc7a",
+  "render_job": "b87914e749e140d5a3e6ea60875d7121",
+  "source_sha256": "4a9679fdf5f1d9459d011fd2d94b20f3f4f433e8724696f633c959d94bb7ebe7",
+  "source_asset_sha256": "2cbcc417345d93e762ac4b1061cd79dfd5c8ad1e1f20d9ce204cc4b2b1bff427",
+  "frame_indices": [0, 3, 5],
+  "composition_frames": [72, 75, 77],
+  "rois": {"mark_interior": [368, 668, 432, 732], "mark_and_edges": [352, 652, 448, 748]},
+  "color_comparison": "8-bit native RGB with no working space, transparent pixels canonicalized to black, only binary alpha in the selected ROIs",
+  "thresholds": {"ssim_min": 0.99, "mae_bytes_max": 2, "alpha_error_bytes_max": 1, "scalar_absolute_relative": 0.00001, "position_error_px": 0.1},
+  "corpus_commit": "97262276f625afdeeb61787e4cbb74b3f17af510",
+  "corpus_policy": "Check all locked hashes, analyze each AEP/AEPX with no external media or font access, exercise strict import in scratch memory"
+}

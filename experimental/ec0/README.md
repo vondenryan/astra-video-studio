@@ -64,6 +64,8 @@ O inventário `dependency-closure.json` descreve o grafo efetivamente alcançáv
 
 ## O que falta para fechar EC-0
 
-Comparar propriedades e pixels entre AE e EC, ampliar a cobertura de fontes e animadores, testar dry-run AEP com corpus obrigatório, medir desempenho e memória e completar a auditoria de licenças e notices. GPU e encoders nativos têm validação própria.
+O quinto marco comparou um gráfico estático e uma curva escalar com evidência arquivada do AE. Também executou um dry run em 17 AEP/AEPX do corpus fixado. Restam a suíte upstream com corpus obrigatório, a ampliação da paridade visual e da cobertura de fontes e animadores, as medições de desempenho e memória e a auditoria de licenças e notices. GPU e encoders nativos têm validação própria.
+
+Para reproduzir a comparação no workspace que contém a referência da Sprint 11, mantenha o corpus fixado em `workspace/ec0/corpus-97262276`, atualize o inventário e compile com `prepare.ps1 -Action metadata` e `prepare.ps1 -Action build`. Execute `.\.venv\Scripts\python.exe experimental/ec0/run_parity.py` na raiz do repositório. Cada tentativa guarda cópias dos insumos verificados, o inventário, os relatórios e os hashes em `workspace/ec0/parity-<UUID>`. O controlador trabalha com arquivos arquivados e não se conecta ao AE.
 
 Estado e evidências: [andamento da EC-0](../../docs/effectcraft/ec0-progress.md). A EC-1 continua condicionada ao relatório gate a gate e a uma decisão específica.

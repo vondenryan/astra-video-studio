@@ -27,6 +27,7 @@ dependencies = [
 name = "astra-ec0-probe"
 version = "0.1.0"
 dependencies = [
+ "effectcraft-aep",
  "effectcraft-color",
  "effectcraft-effects",
  "effectcraft-keyframe",
@@ -178,6 +179,20 @@ checksum = "9ed9a281f7bc9b7576e61468ba615a66a5c8cfdff42420a70aa82701a3b1e292"
 dependencies = [
  "block-buffer",
  "crypto-common",
+]
+
+[[package]]
+name = "effectcraft-aep"
+version = "0.21.0"
+source = "git+https://github.com/storytold/effectcraft?rev=a41ff5015c6687db15a6f074a47b870b8f09fece#a41ff5015c6687db15a6f074a47b870b8f09fece"
+dependencies = [
+ "effectcraft-color",
+ "effectcraft-effects",
+ "effectcraft-keyframe",
+ "effectcraft-project",
+ "effectcraft-time",
+ "serde",
+ "thiserror",
 ]
 
 [[package]]

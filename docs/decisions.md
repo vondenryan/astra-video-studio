@@ -249,3 +249,9 @@ Use a separate fixture executable for the compositing milestone. Decode lossless
 ### EC-0 editable SVG and text selector
 
 Reuse the production Astra SVG subset for parsing. Convert its normalized groups to native EffectCraft paths in reverse document order to preserve SVG painting. Validate both reopened geometry and decoded pixels, then edit one fill in a separate project. Reuse the pinned font preflight for a second bundled face and check the animated character range with three rendered frames.
+
+### EC-0 comparison against archived AE evidence
+
+Use the hash-verified Sprint 11 AEP, acknowledged inspection and native TIFFs to avoid scheduling work in the active AE session. Compare a disjoint graphic region with binary alpha so transparent matte RGB can be canonicalized without guessing partial-alpha color conversion. Record the original title's opacity track separately. The historical font file is unavailable for pixel comparison.
+
+Use the upstream commit's corpus lock to verify the synthetic inputs. Deny external font and media lookup. Report losses, documented limitations and unresolved dependencies separately. Strict import refusal must preserve the scratch project. Acceptance in scratch leaves the production AE backend and original AEP files untouched.

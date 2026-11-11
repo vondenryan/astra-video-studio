@@ -1,0 +1,306 @@
+{
+  "plan_sha256": "c0ab05de70d27ad84ae112234ebc811cad85a9a2de45c3bcc828c8e01d16074c",
+  "effectcraft_revision": "a41ff5015c6687db15a6f074a47b870b8f09fece",
+  "worker_sha256": "0106b1d283a24ce0beef7ee18cd7276c0e4c4c1f4f9eb25b6bac39579a6e75d0",
+  "cargo_lock_sha256": "52f373b88a4e4af1661b3ba912e00411fbdfe20cfad0646b2a091f7aef76fe1e",
+  "dependency_closure_sha256": "584757d567c997b25dff52ac6a9801cae9555ef38d4da573b9a64db5ad9ad879",
+  "reachable_packages": 96,
+  "ffmpeg_version": "ffmpeg version 8.0.1-essentials_build-www.gyan.dev Copyright (c) 2000-2025 the FFmpeg developers",
+  "preexisting_managed_aeps_preserved": 2498,
+  "provenance": {
+    "ae_version": "25.5x4",
+    "ack_sha256": "483d7856d8301819b3d2cd09a40d937df3fef15ed019570140f6885a117a7f59",
+    "inspection_sha256": "4e7a4cd7779d6cf1e18d344dcedc85f732a25b08cb140bf0eb1e56858692a43e",
+    "render_job_sha256": "621d36b7b0f43e224e8bdf2365568d5825ec3f711d1cc6d893597938ebcba8e4",
+    "sequence_sha256": "763cb35505c46eecb67526cb0dc2bc5747ef3ad74d1550cef3c849b681e31fa7",
+    "native_frame_sha256": {
+      "0": "31393494ab951e6092c94278e76be10bf43a596b12d9b5f648fd14cd9bb44a89",
+      "3": "44e52e8b1fdd42665960d06b68404b09ac91a917474e028db34bdb495caa1266",
+      "5": "da17aebab7b5e68d726c0ce848fb804ede551253941da8da8992093e5363cf14"
+    },
+    "source_sha256": "4a9679fdf5f1d9459d011fd2d94b20f3f4f433e8724696f633c959d94bb7ebe7",
+    "mark_sha256": "2cbcc417345d93e762ac4b1061cd79dfd5c8ad1e1f20d9ce204cc4b2b1bff427"
+  },
+  "pixels": [
+    {
+      "frame": 72,
+      "effectcraft_sha256": "7d6c14ad81c78be67a5c466c2533a386ae89ae9b82d9d0e8225dcc11f09c7ffe",
+      "regions": {
+        "mark_interior": {
+          "ssim": 1.0,
+          "rgb_mae_bytes": 0.0,
+          "alpha_max_error_bytes": 0,
+          "pass": true
+        },
+        "mark_and_edges": {
+          "ssim": 1.0,
+          "rgb_mae_bytes": 0.0,
+          "alpha_max_error_bytes": 0,
+          "pass": true
+        }
+      }
+    },
+    {
+      "frame": 75,
+      "effectcraft_sha256": "7d6c14ad81c78be67a5c466c2533a386ae89ae9b82d9d0e8225dcc11f09c7ffe",
+      "regions": {
+        "mark_interior": {
+          "ssim": 1.0,
+          "rgb_mae_bytes": 0.0,
+          "alpha_max_error_bytes": 0,
+          "pass": true
+        },
+        "mark_and_edges": {
+          "ssim": 1.0,
+          "rgb_mae_bytes": 0.0,
+          "alpha_max_error_bytes": 0,
+          "pass": true
+        }
+      }
+    },
+    {
+      "frame": 77,
+      "effectcraft_sha256": "7d6c14ad81c78be67a5c466c2533a386ae89ae9b82d9d0e8225dcc11f09c7ffe",
+      "regions": {
+        "mark_interior": {
+          "ssim": 1.0,
+          "rgb_mae_bytes": 0.0,
+          "alpha_max_error_bytes": 0,
+          "pass": true
+        },
+        "mark_and_edges": {
+          "ssim": 1.0,
+          "rgb_mae_bytes": 0.0,
+          "alpha_max_error_bytes": 0,
+          "pass": true
+        }
+      }
+    }
+  ],
+  "semantics": {
+    "pass": true,
+    "key_count": 6,
+    "sample_count": 5,
+    "mismatches": []
+  },
+  "reference_import_report": {
+    "aeVersion": {
+      "fileVersion": "25.5.0x4",
+      "savedBy": "25.5.0x4",
+      "tested": true
+    },
+    "imported": {
+      "adjustmentLayers": 0,
+      "cameras": 0,
+      "compositions": 1,
+      "effects": 1,
+      "expressions": 0,
+      "folders": 0,
+      "footage": 1,
+      "footageLayers": 1,
+      "keyframes": 6,
+      "layerStyles": 0,
+      "layers": 2,
+      "lights": 0,
+      "markers": 0,
+      "masks": 0,
+      "nullLayers": 0,
+      "precompLayers": 0,
+      "shapeItems": 0,
+      "shapeLayers": 0,
+      "solidLayers": 0,
+      "solids": 0,
+      "textAnimators": 0,
+      "textLayers": 1,
+      "timeRemaps": 0,
+      "trackMattes": 0
+    },
+    "limitations": [
+      "Frame blending, 3D material options, audio levels, guides are not decoded and not imported.",
+      "Mask colour, lock, feather falloff, motion blur and RotoBezier are not decoded: imported masks get the default colour, unlocked, Smooth falloff, motion blur Same As Layer and no RotoBezier.",
+      "Text: per-character 3D, text on a path and several style slots of unknown meaning are not decoded (stored values that differ from the default are reported as text layer features).",
+      "Footage that is not a solid is linked by its stored path with its stored frame rate and duration; the importer never opens the files (use Reload Footage after the files are found)."
+    ],
+    "losses": [],
+    "missingFonts": [
+      "Arial-BoldMT"
+    ],
+    "missingFootage": []
+  },
+  "corpus": {
+    "commit": "97262276f625afdeeb61787e4cbb74b3f17af510",
+    "lock_sha256": "9de6530ea682374a4f0015af256855a60e8e732d6710261db6b5cea85413aabe",
+    "locked_files_verified": 20,
+    "statuses": {
+      "accepted_in_scratch": 15,
+      "refused_preserved_scratch": 2
+    },
+    "files": [
+      {
+        "name": "3d.aep",
+        "status": "analyzed",
+        "strict": "accepted_in_scratch",
+        "loss_count": 0,
+        "missing_fonts": 0,
+        "missing_footage": 0
+      },
+      {
+        "name": "aepx-pair.aep",
+        "status": "analyzed",
+        "strict": "accepted_in_scratch",
+        "loss_count": 0,
+        "missing_fonts": 1,
+        "missing_footage": 0
+      },
+      {
+        "name": "aepx-pair.aepx",
+        "status": "analyzed",
+        "strict": "accepted_in_scratch",
+        "loss_count": 0,
+        "missing_fonts": 1,
+        "missing_footage": 0
+      },
+      {
+        "name": "effects.aep",
+        "status": "analyzed",
+        "strict": "refused_preserved_scratch",
+        "loss_count": 5,
+        "missing_fonts": 0,
+        "missing_footage": 1,
+        "losses": [
+          {
+            "category": "effects",
+            "count": 5,
+            "details": [
+              "077-fx-dropdown-default: 'L' has the effect 'Dropdown Menu Control' (Pseudo/@@eUJdKC73RJq6ozfsBUW09Q)",
+              "323-fx-dropdown-5items: 'L' has the effect 'Dropdown Menu Control' (Pseudo/@@M4Qu8EGsTfqn8h6sIl8FuA)",
+              "324-fx-dropdown-5items-select3: 'L' has the effect 'Dropdown Menu Control' (Pseudo/@@j+snCAUCSmu46igpKKk2XA)",
+              "712-fx-eleven-effects-defaults-on-M: 'M' effect 'CC Radial Blur' (CC Radial Blur): parameter Type (CC Radial Blur-0001): item 'Scratch' has no counterpart, default used",
+              "905-fx-24-effects-set-one-comp: 'E14' effect 'CC Bend It' (CC Bend It): parameter Render Prestart (CC Bend It-0004): item 'Bend' has no counterpart, default used"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "empty.aep",
+        "status": "analyzed",
+        "strict": "accepted_in_scratch",
+        "loss_count": 0,
+        "missing_fonts": 0,
+        "missing_footage": 0
+      },
+      {
+        "name": "footage-precomp.aep",
+        "status": "analyzed",
+        "strict": "accepted_in_scratch",
+        "loss_count": 0,
+        "missing_fonts": 0,
+        "missing_footage": 9
+      },
+      {
+        "name": "fx-switch.aep",
+        "status": "analyzed",
+        "strict": "accepted_in_scratch",
+        "loss_count": 0,
+        "missing_fonts": 0,
+        "missing_footage": 0
+      },
+      {
+        "name": "keyframes.aep",
+        "status": "analyzed",
+        "strict": "accepted_in_scratch",
+        "loss_count": 0,
+        "missing_fonts": 0,
+        "missing_footage": 0
+      },
+      {
+        "name": "layers-comps.aep",
+        "status": "analyzed",
+        "strict": "accepted_in_scratch",
+        "loss_count": 0,
+        "missing_fonts": 0,
+        "missing_footage": 1
+      },
+      {
+        "name": "markers.aep",
+        "status": "analyzed",
+        "strict": "accepted_in_scratch",
+        "loss_count": 0,
+        "missing_fonts": 0,
+        "missing_footage": 0
+      },
+      {
+        "name": "masks.aep",
+        "status": "analyzed",
+        "strict": "accepted_in_scratch",
+        "loss_count": 0,
+        "missing_fonts": 0,
+        "missing_footage": 0
+      },
+      {
+        "name": "settings-a.aep",
+        "status": "analyzed",
+        "strict": "accepted_in_scratch",
+        "loss_count": 0,
+        "missing_fonts": 0,
+        "missing_footage": 0
+      },
+      {
+        "name": "settings-b.aep",
+        "status": "analyzed",
+        "strict": "accepted_in_scratch",
+        "loss_count": 0,
+        "missing_fonts": 0,
+        "missing_footage": 0
+      },
+      {
+        "name": "settings-c.aep",
+        "status": "analyzed",
+        "strict": "accepted_in_scratch",
+        "loss_count": 0,
+        "missing_fonts": 0,
+        "missing_footage": 1
+      },
+      {
+        "name": "shapes.aep",
+        "status": "analyzed",
+        "strict": "accepted_in_scratch",
+        "loss_count": 0,
+        "missing_fonts": 0,
+        "missing_footage": 0
+      },
+      {
+        "name": "styles.aep",
+        "status": "analyzed",
+        "strict": "accepted_in_scratch",
+        "loss_count": 0,
+        "missing_fonts": 1,
+        "missing_footage": 7
+      },
+      {
+        "name": "text.aep",
+        "status": "analyzed",
+        "strict": "refused_preserved_scratch",
+        "loss_count": 4,
+        "missing_fonts": 1,
+        "missing_footage": 0,
+        "losses": [
+          {
+            "category": "text_layers",
+            "count": 4,
+            "details": [
+              "552-text-nobreak-on: 'T': No Break is not imported",
+              "554-text-kerning-50: 'T': manual kerning is not imported",
+              "572-text-leadingtype-japanese: 'T': the Japanese leading model is not imported, Roman leading used",
+              "578-text-digitset-hindi: 'T': the digit set is not imported"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "worker_reports": {
+    "reference": "6578c60d71d8aac338b4e0457ad5963189504463085195d672993d0e1aec2512",
+    "corpus": "03cb2e59931cb3a7dc55c11141ba9aa264a0be37bfd9aecbadf698321577d31c"
+  }
+}

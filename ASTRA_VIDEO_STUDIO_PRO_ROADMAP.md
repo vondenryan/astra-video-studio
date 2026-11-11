@@ -2,7 +2,7 @@
 
 **Versão:** 1.4
 **Data:** 10 de novembro de 2026 (origem: 6 de novembro)
-**Estado:** Sprints 0–13 tecnicamente implementados e otimização de criação entregue;77 ferramentas. Aceite externo das três rotas de edição Claude Desktop9.3 permanece pendente. Nova orientação do operador retomou a trilha EffectCraft: EC-0 iniciada, com primeiro marco de build/render CPU isolado verificado. Gates completos da EC-0 ainda pendentes; EC-1–4 e troca do backend padrão não estão autorizadas por esse marco. Fontes e limites em docs/test-report.md e docs/effectcraft/ec0-progress.md.
+**Estado:** Sprints 0–13 tecnicamente implementados, otimização de criação entregue e 77 ferramentas disponíveis. O aceite externo das três rotas de edição no Claude Desktop 9.3 permanece pendente. A EC-0 chegou ao quinto marco, com comparação delimitada de propriedades e pixels do AE e dry run de 17 projetos AEP/AEPX. O fechamento da EC-0 e a decisão sobre EC-1–4 continuam pendentes. Ver docs/test-report.md e docs/effectcraft/ec0-progress.md.
 **Base:** MVP das Sprints 0–5, desenvolvido para After Effects 2025 no Windows.
 
 ## 1. Objetivo e uso deste documento
