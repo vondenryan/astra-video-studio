@@ -705,3 +705,15 @@ The initial run failed on a font path resolved relative to the crate. The correc
 Final evidence is under `workspace/ec0/license-audit-cec6c264c6854a789a4801f3e91a40af`. Versioned files are `docs/effectcraft/ec0-bom.cdx.json`, `ec0-third-party-notices.txt` and `ec0-license-milestone.json`. Marker coverage and schema validation leave distribution obligations, embedded-data/source-level review, trademarks, linked-binary attestation and full external encoder closure pending.
 
 Final Python regression passed 499 tests with 19 skips in 95.57 s. The three generated export files use explicit LF checkout rules so their recorded byte hashes survive Windows Git newline conversion.
+
+### 2026-11-12 — EC-0 ninth milestone
+
+Two pinned archived AEPs were strictly imported offline with no reported losses, missing footage or missing fonts. Current ArialMT and Arial-BoldMT bytes matched configured SHA/PostScript identities. Text resolution and coverage checks passed and the worker did not scan system fonts. Historical font bytes remain unattested.
+
+The design case passed 70 static transform checks. The animation case passed 304 checks covering 16 native transform keys and 20 samples, including applicable Bezier controls and temporal/spatial flags. Eight imported keys on the design card's other groups were outside that semantic comparison.
+
+Three design and four animation frames were compared against hash-verified H.264 previews. A separate one-frame codec control retained the original diagnostics. Four moving-title regions passed the fixed numeric SSIM/MAE limits. The twelve design regions and four sentinel regions remained outliers. Their bounds are measured in preview pixels. All 16 outlier regions in the codec control were inspected through five actually viewed contact sheets. No lossless parity, historical font identity, full playback or artistic approval is inferred.
+
+Evidence is under `workspace/ec0/visual-diagnostic-68893060beb44e79a7da49341113acd0`. The original summary, codec-control summary, sampled-review record and images retain separate hashes. The diagnostic preserved 2,598 preexisting managed AEP/snapshot hashes. Four Rust tests passed. The previous TIFF/corpus probe was rerun with the modified worker. See `docs/effectcraft/ec0-visual-diagnostic-milestone.json`.
+
+Final Python regression passed 499 tests with 19 skips in 99.24 s. The TIFF/corpus compatibility run passed in `workspace/ec0/parity-cc5b7ac1ef0e4736a3e9fc36f39a60e8`. Initial build errors in the new mode were corrected to use the unit Text source with its property document, Project::item and the PNG encoder's actual return type before execution.

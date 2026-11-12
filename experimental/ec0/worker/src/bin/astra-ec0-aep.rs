@@ -8,6 +8,7 @@ use effectcraft_render::{FootageSource, Image, RenderOpts, Renderer};
 use effectcraft_time::{FrameRate, Tick};
 use image::ImageEncoder;
 use serde_json::{Value as Json, json};
+use sha2::{Digest, Sha256};
 use std::{fs, io::{Read, Write}, path::Path, process::ExitCode, sync::Arc};
 
 type Result<T> = std::result::Result<T, Box<dyn std::error::Error>>;
@@ -153,6 +154,114 @@ fn reference(directory: &Path) -> Result<Json> {
     Ok(json!({"mode": "reference", "semantics": semantics, "import_report": imported.report}))
 }
 
+fn compare(directory: &Path) -> Result<Json> {
+    let config_bytes = fs::read(directory.join("scene.json"))?;
+    if config_bytes.len() > 16 * 1024 { return Err("Oversized scene configuration".into()); }
+    let config: Json = serde_json::from_slice(&config_bytes)?;
+    let mut faces = Vec::new();
+    let mut font_records = Vec::new();
+    for font in config["fonts"].as_array().ok_or("Missing fonts")? {
+        let file = font["file"].as_str().ok_or("Missing font file")?;
+        if !["arial.ttf", "arialbd.ttf"].contains(&file) { return Err("Unexpected font file".into()); }
+        let bytes = read_bounded(&directory.join(file))?;
+        if format!("{:x}", Sha256::digest(&bytes)) != font["sha256"].as_str().ok_or("Missing font hash")? {
+            return Err("Font hash changed".into());
+        }
+        let ids = effectcraft_text::fonts::add_font_data(bytes);
+        let [id] = ids.as_slice() else { return Err("Ambiguous font collection".into()); };
+        let face = effectcraft_text::fonts::face(*id);
+        if face.info.postscript.as_deref() != font["postscript"].as_str() {
+            return Err("Font PostScript identity changed".into());
+        }
+        faces.push(*id);
+        font_records.push(font.clone());
+    }
+    let has_font = |name: &str| {
+        let resolved = effectcraft_text::fonts::resolve(name, "Regular");
+        !resolved.missing && !resolved.synth_bold && !resolved.synth_italic && faces.contains(&resolved.face)
+    };
+    let options = ImportOptions { has_font: &has_font, ..ImportOptions::new(&|_| false) };
+    let mut project = Project::default();
+    let imported = match import(&mut project, &read_bounded(&directory.join("reference.aep"))?, &options) {
+        Ok(imported) => imported,
+        Err(AepImportError::Refused(report)) => return Ok(json!({
+            "mode": "compare", "status": "refused", "import_report": report,
+        })),
+        Err(error) => return Err(error.into()),
+    };
+    if !imported.report.missing_footage.is_empty() || !imported.report.missing_fonts.is_empty()
+        || imported.report.imported.expressions != 0 {
+        return Err("External dependency, missing font or expression in comparison input".into());
+    }
+    project.settings = imported.settings;
+    let [comp_id] = imported.comps.as_slice() else { return Err("Expected one comparison composition".into()); };
+    let comp = project.comp(*comp_id).ok_or("Missing comparison comp")?;
+    if config["composition"].as_str() != Some(comp_name(&project, *comp_id)?.as_str())
+        || config["native_width"].as_u64() != Some(u64::from(comp.width))
+        || config["native_height"].as_u64() != Some(u64::from(comp.height))
+        || comp.frame_rate != FrameRate::FPS_24 {
+        return Err("Unexpected comparison composition".into());
+    }
+    let sample_times = config["sample_times"].as_array().ok_or("Missing semantic samples")?;
+    if sample_times.len() > 8 { return Err("Too many semantic sample times".into()); }
+    let mut layers = Vec::new();
+    for layer in &comp.layers {
+        let mut tracks = serde_json::Map::new();
+        for name in ["position", "anchor", "scale", "rotation", "opacity"] {
+            let property = layer.props.prop(&format!("transform/{name}")).ok_or("Missing transform")?;
+            if property.expr.is_some() { return Err("Expression in comparison track".into()); }
+            let samples = sample_times.iter().map(|time| {
+                let time = time.as_f64().ok_or("Invalid sample time")?;
+                let value = effectcraft_keyframe::evaluate(&property.keys, Tick::from_seconds_f64(time), property.spatial)
+                    .unwrap_or_else(|| property.value.clone());
+                Ok(json!({"time": time, "value": value}))
+            }).collect::<Result<Vec<_>>>()?;
+            tracks.insert(name.into(), json!({"value": property.value, "spatial": property.spatial,
+                "keys": property.keys, "samples": samples}));
+        }
+        let text = match &layer.source {
+            LayerSource::Text => {
+                let Value::Text(doc) = &layer.props.prop("text/sourceText").ok_or("Missing source text")?.value
+                    else { return Err("Invalid source text value".into()); };
+                let resolved = effectcraft_text::fonts::resolve(&doc.font, &doc.style);
+                if resolved.missing || resolved.synth_bold || resolved.synth_italic || !faces.contains(&resolved.face) {
+                    return Err("Text font was substituted".into());
+                }
+                let face = effectcraft_text::fonts::face(resolved.face);
+                if doc.text.chars().any(|c| c != '\n' && c != '\r' && !face.has_char(c)) {
+                    return Err("Text requires a fallback glyph".into());
+                }
+                Some(json!(doc))
+            }
+            _ => None,
+        };
+        layers.push(json!({"name": layer.name, "tracks": tracks, "text": text}));
+    }
+    let frames = config["frames"].as_array().ok_or("Missing comparison frames")?;
+    if frames.is_empty() || frames.len() > 8 { return Err("Unexpected comparison frame count".into()); }
+    let bg = config["background"].as_array().ok_or("Missing native background")?;
+    if bg.len() != 3 { return Err("Invalid native background".into()); }
+    let background = [bg[0].as_f64().ok_or("Invalid background")? as f32,
+        bg[1].as_f64().ok_or("Invalid background")? as f32, bg[2].as_f64().ok_or("Invalid background")? as f32];
+    let renderer = Renderer::new(&project, &effectcraft_render::NoFootage, RenderOpts::default());
+    for frame in frames {
+        let frame = frame.as_i64().ok_or("Invalid comparison frame")?;
+        if frame < 0 || FrameRate::FPS_24.tick_of(frame) >= comp.duration {
+            return Err("Frame outside comparison composition".into());
+        }
+        let image = renderer.comp_frame(*comp_id, FrameRate::FPS_24.tick_of(frame));
+        let pixels = image.to_rgba8_over(background);
+        image::codecs::png::PngEncoder::new(fs::File::create_new(directory.join(format!("ec-{frame}.png")))?)
+            .write_image(&pixels, comp.width, comp.height, image::ExtendedColorType::Rgba8)?;
+    }
+    Ok(json!({"mode": "compare", "status": "rendered", "import_report": imported.report, "layers": layers, "fonts": font_records,
+        "font_system_scanned": effectcraft_text::fonts::system_scanned()}))
+}
+
+fn comp_name(project: &Project, id: ItemId) -> Result<String> {
+    Ok(project.item(id).ok_or("Missing composition item")?.name.clone())
+}
+
 fn run() -> Result<()> {
     let args: Vec<String> = std::env::args().collect();
     let [_, mode, directory] = args.as_slice() else { return Err("Expected mode and private directory".into()); };
@@ -160,6 +269,7 @@ fn run() -> Result<()> {
     let report = match mode.as_str() {
         "corpus" => corpus(&directory)?,
         "reference" => reference(&directory)?,
+        "compare" => compare(&directory)?,
         _ => return Err("Unsupported mode".into()),
     };
     write_json(&directory.join("worker-report.json"), &report)?;

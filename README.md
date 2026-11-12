@@ -129,6 +129,8 @@ O sétimo marco mediu cenas de 3, 40 e 80 camadas em 1080p e verificou uma sequ�
 
 O oitavo marco gerou um SBOM com 96 pacotes e sete fontes embutidas, acompanhado dos textos de licenças e avisos e de suas evidências de origem. A revisão para distribuição continua pendente. [Inventário e andamento](docs/effectcraft/ec0-progress.md)
 
+O nono marco acrescentou um diagnóstico com AEPs arquivados de vetores, texto e curvas. Os 16 keyframes de transformação e 20 amostras da animação coincidiram com a inspeção do AE. As diferenças visuais registradas continuam em investigação.
+
 A avaliação cobre persistência, fontes fixadas, animação de texto, curvas manuais e composição CPU com efeitos, importação SVG editável, máscaras e mattes. A comparação com o After Effects segue como etapa da avaliação.
 
 ## Desenvolvimento

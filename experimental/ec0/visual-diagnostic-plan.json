@@ -1,0 +1,115 @@
+{
+  "scope": "Offline comparison with archived AE H.264 previews. Diagnostic metrics only. Historical font binary identity and lossless native frames are unavailable.",
+  "thresholds": {
+    "ssim_min": 0.99,
+    "mae_bytes_max": 2,
+    "position_error_px": 0.1,
+    "scalar_absolute_relative": 1e-05
+  },
+  "font_policy": "Use explicit current Arial files with pinned SHA and PostScript identity. No system scan or substitution. No claim of historical byte identity.",
+  "cases": [
+    {
+      "name": "design",
+      "acceptance": "sprint7-acceptance.json",
+      "preview_key": "landscape_preview",
+      "job_id": "4212e399f2ec46e1af5492c5f8f35a93",
+      "source_sha256": "e86f37a3bc444610e8b2319ba4ea9ba7662fe488d5eb495e52cc8c09681d9092",
+      "video_sha256": "28db132d2eddad24b993bf285db32e7a21991a61c79601d0b0cc6d9014912667",
+      "native_operation": "a90d18585f0645c2b2f3fc04499122d3",
+      "composition": "Astra Pro — Brand Card",
+      "native_width": 1920,
+      "native_height": 1080,
+      "width": 960,
+      "height": 540,
+      "fps": 24,
+      "frames": [
+        0,
+        24,
+        60
+      ],
+      "background": [
+        0.02352941176471,
+        0.03529411764706,
+        0.06666666666667
+      ],
+      "rois": {
+        "logo": [
+          408,
+          48,
+          552,
+          184
+        ],
+        "title": [
+          280,
+          208,
+          680,
+          264
+        ],
+        "subtitle": [
+          352,
+          312,
+          608,
+          376
+        ],
+        "bezier_path": [
+          360,
+          392,
+          600,
+          480
+        ]
+      }
+    },
+    {
+      "name": "animation",
+      "acceptance": "sprint8-acceptance.json",
+      "preview_key": "after_preview",
+      "job_id": "733efe16e0b248bdadb81f661e3b68b3",
+      "source_sha256": "8e844209a8c04065650c8203bcffde20affb88e81d6f1acedcd0e24f852dfe6e",
+      "video_sha256": "31c63b257568a60641656d4a22d6b0445e7c8124f8f7f298e9bbe068384ed099",
+      "native_operation": "dd5903fb59fe4485a8bf3fe5f6f83cf8",
+      "composition": "Astra — Editor de Curvas",
+      "native_width": 960,
+      "native_height": 540,
+      "width": 960,
+      "height": 540,
+      "fps": 24,
+      "frames": [
+        12,
+        24,
+        60,
+        108
+      ],
+      "background": [
+        0.02352941176471,
+        0.03529411764706,
+        0.06666666666667
+      ],
+      "rois": {
+        "moving_title": [
+          0,
+          112,
+          960,
+          336
+        ],
+        "sentinel": [
+          320,
+          408,
+          640,
+          472
+        ]
+      }
+    }
+  ],
+  "fonts": [
+    {
+      "file": "arial.ttf",
+      "postscript": "ArialMT",
+      "sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a"
+    },
+    {
+      "file": "arialbd.ttf",
+      "postscript": "Arial-BoldMT",
+      "sha256": "e8f4e3baf6cc35fed6fcce3a540e8b39e8f6cda1d22a28f2ec8f526fef7a43f5"
+    }
+  ]
+}

@@ -273,3 +273,9 @@ Repeated performance samples span five fixed frames of a 30-second composition. 
 Build a CycloneDX 1.6 inventory from the frozen Windows Cargo graph and validate it offline against hash-pinned official schemas. Bind registry text evidence to locked crate archives and Git text evidence to fixed commits. Record inherited notices, standalone COPYRIGHT files and font attribution sidecars. Preserve both declared expressions and an explicit mapping for the legacy MIT/Apache-2.0 form.
 
 Marker checks report mechanical text coverage. Keep distribution-obligation review, embedded-data and trademark review, binary-content attestation and external FFmpeg/codec closure pending. Preserve exact source texts in the evidence bundle. Collect FFmpeg/FFprobe versions and executable hashes outside the Rust dependency BOM.
+
+### 2026-11-12 — EC-0 archived visual diagnostics
+
+Use verified historical AEPs, inline native acknowledgements and H.264 previews for an offline diagnostic. Load two explicit current Arial files by SHA/PostScript and check font resolution, glyph coverage and the absence of system scanning. Keep historical font identity and lossless pixel parity pending.
+
+Retain raw-frame comparisons and append a separately hashed codec-control analysis. One-frame CRF20/veryfast encoding approximates the preview path while leaving inter-frame coding differences unresolved. Keep SSIM/MAE limits fixed, measure bounds in preview pixels and preserve every outlier. Record sampled review only for contact sheets actually viewed. This diagnostic performs no AE dispatch.

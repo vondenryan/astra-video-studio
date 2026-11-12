@@ -97,3 +97,13 @@ A auditoria verifica os arquivos dos pacotes de registry contra os archives cujo
 O SBOM CycloneDX 1.6 descreve o grafo Cargo resolvido para Windows, suas features e as sete fontes embutidas declaradas no fonte do crate de texto. Os bytes das fontes, das licenças OFL e das atribuições são conferidos contra os hashes do inventário e os objetos Git. A expressão legada `MIT/Apache-2.0` tem uma normalização explícita no plano. O valor declarado e todos os textos coletados são preservados. A sintaxe de expressões está documentada pelo Cargo. [Referência Cargo](https://doc.rust-lang.org/cargo/reference/manifest.html#the-license-and-license-file-fields)
 
 Cada execução cria `workspace/ec0/license-audit-<UUID>` com SBOM, evidências por pacote, fontes, textos deduplicados e `THIRD-PARTY-NOTICES.txt`. Os marcadores textuais são uma checagem mecânica de cobertura. A revisão de obrigações de distribuição, dados incorporados, marcas e codecs externos continua pendente. O inventário registra o grafo resolvido e os arquivos consultados. A composição efetiva do binário precisa de comprovação própria.
+
+## Diagnóstico visual com referências arquivadas
+
+Compile o worker em modo padrão e execute `.\.venv\Scripts\python.exe experimental/ec0/run_visual_diagnostic.py`. O plano fixa dois AEPs das Sprints 7 e 8, seus resultados de inspeção confirmados, os MP4s e sete frames. O controlador confere os hashes e copia os insumos para uma nova pasta `workspace/ec0/visual-diagnostic-<UUID>`.
+
+As fontes ArialMT e Arial-BoldMT são lidas de dois arquivos explícitos do Windows e conferidas por SHA-256 e PostScript. O worker carrega os bytes em memória, verifica a resolução e cobertura dos textos e recusa dependências externas ou expressões. A versão histórica dos bytes dessas fontes permanece desconhecida. A inspeção transformacional compara valores, keys, ease e flags aplicáveis e amostras nos tempos nativos registrados.
+
+O diagnóstico compara regiões por SSIM e erro RGB com os limites fixados. A referência disponível é H.264. A aceitação definitiva exige dados sem perdas e identificação histórica das fontes. Para acrescentar o controle de codec, execute `.\.venv\Scripts\python.exe experimental/ec0/run_codec_control.py visual-diagnostic-<UUID>`. Esse comando cria um subdiretório novo e preserva os resultados originais.
+
+O controle codifica cada frame EC como um clipe H.264 de um frame com CRF 20 e preset veryfast, mede novamente e extrai bounds por contraste com o fundo. A referência usa compressão de uma sequência. Os bounds são medidos na resolução do preview. Relatórios e hashes ficam nos arquivos locais. O campo de passagem numérica descreve somente o diagnóstico.

@@ -1,0 +1,11 @@
+{
+  "scope": "Additional codec control for archived lossy previews; original diagnostic measurements remain intact",
+  "codec": "libx264",
+  "preset": "veryfast",
+  "crf": 20,
+  "pixel_format": "yuv420p",
+  "foreground_channel_distance": 24,
+  "bounds_reference_pixels_max": 1,
+  "limits": "Each candidate is encoded as a one-frame clip. The reference used multi-frame encoding. This control cannot prove lossless parity or historical font identity.",
+  "thresholds": {"ssim_min": 0.99, "mae_bytes_max": 2}
+}

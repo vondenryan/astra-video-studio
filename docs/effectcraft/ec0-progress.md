@@ -22,12 +22,12 @@ O build inicial do recorte levou1m33s em perfil dev, sem representar benchmark d
 | Persistência/reabertura | Verificada nas fixtures de sólidos, texto, curvas, composição, SVG e seletor de caracteres. Revisões gerais pendentes. |
 | Render headless e encode/decode independente | PNGs verificados nas fixtures e H.264 com decode completo nos marcos de sólidos e texto/curvas. |
 | Determinismo CPU | Séries de três execuções com 1/2/1 threads verificadas nas fixtures dos quatro primeiros marcos. |
-| Fontes/texto/missing-font | Inter-Regular e JetBrainsMono-Regular fixadas por hash, texto point/box, faixa de cor e seletor de caracteres verificados. Fontes arbitrárias e paridade tipográfica com AE pendentes. |
+| Fontes/texto/missing-font | Fixtures Inter e JetBrains verificadas. Nono marco carregou dois arquivos Arial fixados por SHA/PostScript para diagnóstico. Identidade histórica das fontes e paridade tipográfica com AE pendentes. |
 | Curvas, tangentes, boundaries e semântica de tempo | Fixtures manuais e comparação de uma curva escalar com inspeção AE verificadas. Edição e retiming gerais pendentes. |
 | Fill/Blur, vetores, máscaras/mattes e dependências | Terceiro e quarto marcos verificaram as fixtures CPU. Comparação visual equivalente com AE pendente. |
 | Identidade Astra/IR/revisões/conflicts | Pendente; IDs internos EC não foram apresentados como IDs AE. |
 | AEP dry-run/corpus e limitações permanentes | Quinto marco analisou 17 projetos do corpus fixado e verificou as recusas com perdas. Ver o sexto marco para a suíte upstream. |
-| Comparação visual/semântica com AE | Gráfico estático e curva escalar verificados no quinto marco. Texto e cenas animadas pendentes. |
+| Comparação visual/semântica com AE | Quinto marco passou no gráfico TIFF e curva escalar. Nono marco verificou 16 keys e 20 amostras de transformação e registrou outliers visuais em texto/vetores sobre referência H.264. Paridade ampla pendente. |
 | Stress1080p, memória,5cold/10warm e p95 | Sétimo marco verificou sólidos/precomp com 3/40/80 camadas, cinco processos novos e dez medições após aquecimento. Referência AE equivalente e cenas com texto/efeitos pendentes. |
 | Closure de licenças/notices/SBOM | Oitavo marco gerou SBOM validado e pacote de evidências com fontes e textos conferidos. Revisão de obrigações, dados incorporados, marcas e codecs externos pendente. |
 | GPU e encoder nativo | Não executados; têm gates separados. |
@@ -130,3 +130,15 @@ Todos os identificadores declarados encontraram os marcadores textuais previstos
 Os testes negativos recusaram um arquivo de origem adulterado, um archive com checksum incorreto, uma referência de dependência ausente e um identificador SPDX inventado. Os 2.578 AEPs e snapshots preexistentes conservaram seus hashes.
 
 A revisão de obrigações de distribuição, material incorporado e marcas continua pendente. FFmpeg e FFprobe têm versões e hashes registrados, com a auditoria integral de seus builds e codecs pendente. O status da EC-0 continua em andamento. [SBOM](ec0-bom.cdx.json) · [Textos coletados](ec0-third-party-notices.txt) · [Relatório](ec0-license-milestone.json)
+
+## Nono marco — diagnóstico de vetores, texto e curvas
+
+O ensaio importou os AEPs arquivados de um cartão de identidade da Sprint 7 e da edição de curvas da Sprint 8. Conferiu os hashes dos AEPs e MP4s e vinculou as inspeções confirmadas às versões e renders. A referência disponível desses projetos é H.264. Os TIFFs originais foram removidos pelos renders históricos. Dois arquivos Arial atuais foram copiados para o workspace e identificados por SHA-256 e PostScript, com carregamento explícito e cobertura dos textos conferida.
+
+Os dois imports estritos terminaram com zero perdas relatadas, zero mídia ausente e zero fontes ausentes. As limitações permanentes do importador permanecem no relatório. O cartão importou duas camadas vetoriais, duas de texto, uma de sólido e dois animadores de texto. A inspeção de suas transformações estáticas passou em 70 verificações. O projeto de curvas passou em 304 verificações, cobrindo 16 keys de posição, escala, rotação e opacidade, os controles e flags aplicáveis e 20 amostras registradas pelo AE. As oito keys importadas do cartão pertencem a outros grupos e ficaram fora dessa comparação transformacional.
+
+Foram avaliados três frames do cartão e quatro da animação. O controle adicional passou os frames EC por H.264 com CRF 20 e preset veryfast. Os quatro recortes do título em movimento ficaram dentro de SSIM >= 0,99 e MAE <= 2 bytes no controle, com diferença de bounds de até um pixel de preview. Os 12 recortes do cartão e os quatro da sentinela ficaram fora dos limites visuais. Nenhuma tolerância foi alterada.
+
+Cinco folhas de contato foram realmente vistas, cobrindo logo, título, subtítulo, curva e sentinela em todos os frames selecionados dessas regiões. As silhuetas, a ordem de pintura e as progressões aparecem correspondentes nas amostras, com diferenças de fundo e bordas/raster ainda visíveis. A causa completa dessas diferenças continua em investigação. Os controles usam clipes de um frame e a referência foi codificada em sequência, e a identidade histórica dos arquivos Arial está indisponível.
+
+O ensaio preservou os 2.598 AEPs e snapshots preexistentes. A prova TIFF do quinto marco foi executada novamente para conferir compatibilidade do worker. Paridade visual sem perdas, fontes históricas, efeitos/máscaras/mattes e playback humano permanecem pendentes. [Relatório e outliers](ec0-visual-diagnostic-milestone.json)

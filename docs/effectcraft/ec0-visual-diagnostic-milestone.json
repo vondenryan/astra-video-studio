@@ -1,0 +1,924 @@
+{
+  "original": {
+    "scope": "Offline comparison with archived AE H.264 previews. Diagnostic metrics only. Historical font binary identity and lossless native frames are unavailable.",
+    "plan_sha256": "cb77f2d3e9c71ca0f8c750e3272d47d52ed0cb038828677741c05ebaac922339",
+    "worker_sha256": "27221271009c0df6148ebda549d61e675e9ce1aa41b07a9b5d0db9765182c9f7",
+    "font_policy": "Use explicit current Arial files with pinned SHA and PostScript identity. No system scan or substitution. No claim of historical byte identity.",
+    "fonts": [
+      {
+        "file": "arial.ttf",
+        "postscript": "ArialMT",
+        "sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a"
+      },
+      {
+        "file": "arialbd.ttf",
+        "postscript": "Arial-BoldMT",
+        "sha256": "e8f4e3baf6cc35fed6fcce3a540e8b39e8f6cda1d22a28f2ec8f526fef7a43f5"
+      }
+    ],
+    "cases": [
+      {
+        "name": "design",
+        "status": "diagnosed",
+        "provenance": {
+          "acceptance_sha256": "9874b41dedb012e4ae7fef6912e693387e5b7bc632304bfd61149023bcc72141",
+          "job_sha256": "a20ecd630799aee4b7555ec87ff33763435b4490d0688e055877e539f1a2e132",
+          "version_sha256": "25d6f9808f222c75615d33d787d7ca86be395cfb988933394b2528360949f708",
+          "native_ack_sha256": "83c9da610f6ab968117d6efa940aa1b7a4c2925f19acfa37736da2527fc14d2d",
+          "source_sha256": "e86f37a3bc444610e8b2319ba4ea9ba7662fe488d5eb495e52cc8c09681d9092",
+          "video_sha256": "28db132d2eddad24b993bf285db32e7a21991a61c79601d0b0cc6d9014912667"
+        },
+        "semantics": {
+          "checks": 70,
+          "keys": 0,
+          "samples": 0,
+          "pass": true,
+          "differences": []
+        },
+        "frames": [
+          {
+            "frame": 0,
+            "regions": {
+              "logo": {
+                "ssim": 0.941683567003335,
+                "rgb_mae_bytes": 2.695806100217865,
+                "diagnostic_threshold_pass": false
+              },
+              "title": {
+                "ssim": 0.9266723592002323,
+                "rgb_mae_bytes": 2.0,
+                "diagnostic_threshold_pass": false
+              },
+              "subtitle": {
+                "ssim": 0.9266723592002322,
+                "rgb_mae_bytes": 2.0,
+                "diagnostic_threshold_pass": false
+              },
+              "bezier_path": {
+                "ssim": 0.9266723592002322,
+                "rgb_mae_bytes": 2.0,
+                "diagnostic_threshold_pass": false
+              }
+            },
+            "ae_png_sha256": "288cec7e9da3b5624524c4307a012bfb235dba6f88fe7f6bdeb70a25d02a78f4",
+            "ec_png_sha256": "d7944676ea236f2c0598674828cca45baa8aac784e36a60ba4331341a073f6fc"
+          },
+          {
+            "frame": 24,
+            "regions": {
+              "logo": {
+                "ssim": 0.9416800827917536,
+                "rgb_mae_bytes": 2.6944274237472765,
+                "diagnostic_threshold_pass": false
+              },
+              "title": {
+                "ssim": 0.8980971553865301,
+                "rgb_mae_bytes": 7.527708333333333,
+                "diagnostic_threshold_pass": false
+              },
+              "subtitle": {
+                "ssim": 0.9310238196331774,
+                "rgb_mae_bytes": 2.7732950846354165,
+                "diagnostic_threshold_pass": false
+              },
+              "bezier_path": {
+                "ssim": 0.9289330683607151,
+                "rgb_mae_bytes": 2.4076704545454546,
+                "diagnostic_threshold_pass": false
+              }
+            },
+            "ae_png_sha256": "2bf1393b6a6823b1a18e6df183bca5ac6ba8d45c8e56ba242d012b87ea3c101d",
+            "ec_png_sha256": "93582afea7d6a549ed7fff21cf4e2ed2773a56a69e088fcacf4fd6a55fc0aabe"
+          },
+          {
+            "frame": 60,
+            "regions": {
+              "logo": {
+                "ssim": 0.9416800827917536,
+                "rgb_mae_bytes": 2.6944274237472765,
+                "diagnostic_threshold_pass": false
+              },
+              "title": {
+                "ssim": 0.8937346552200333,
+                "rgb_mae_bytes": 9.382410714285715,
+                "diagnostic_threshold_pass": false
+              },
+              "subtitle": {
+                "ssim": 0.942978642813887,
+                "rgb_mae_bytes": 3.1322021484375,
+                "diagnostic_threshold_pass": false
+              },
+              "bezier_path": {
+                "ssim": 0.9287694851414616,
+                "rgb_mae_bytes": 2.541161616161616,
+                "diagnostic_threshold_pass": false
+              }
+            },
+            "ae_png_sha256": "b5883d3af39cef87559a8d6e3788f208d482ffa5118354d8aa3df9cc81180c60",
+            "ec_png_sha256": "0c7807ed2b2f6d84884431d0a8cd735718563e172cda258ba2e96767903b2627"
+          }
+        ],
+        "import_report": {
+          "aeVersion": {
+            "fileVersion": "25.5.0x4",
+            "savedBy": "25.5.0x4",
+            "tested": true
+          },
+          "imported": {
+            "adjustmentLayers": 0,
+            "cameras": 0,
+            "compositions": 1,
+            "effects": 0,
+            "expressions": 0,
+            "folders": 1,
+            "footage": 0,
+            "footageLayers": 0,
+            "keyframes": 8,
+            "layerStyles": 0,
+            "layers": 5,
+            "lights": 0,
+            "markers": 0,
+            "masks": 0,
+            "nullLayers": 0,
+            "precompLayers": 0,
+            "shapeItems": 11,
+            "shapeLayers": 2,
+            "solidLayers": 1,
+            "solids": 1,
+            "textAnimators": 2,
+            "textLayers": 2,
+            "timeRemaps": 0,
+            "trackMattes": 0
+          },
+          "limitations": [
+            "Frame blending, 3D material options, audio levels, guides are not decoded and not imported.",
+            "Mask colour, lock, feather falloff, motion blur and RotoBezier are not decoded: imported masks get the default colour, unlocked, Smooth falloff, motion blur Same As Layer and no RotoBezier.",
+            "Text: per-character 3D, text on a path and several style slots of unknown meaning are not decoded (stored values that differ from the default are reported as text layer features).",
+            "Footage that is not a solid is linked by its stored path with its stored frame rate and duration; the importer never opens the files (use Reload Footage after the files are found)."
+          ],
+          "losses": [],
+          "missingFonts": [],
+          "missingFootage": []
+        },
+        "worker_report_sha256": "b5b9029c7d8850425ed9a938a22855e68740fe3bd523bd6891a0a5e2e7d5b3ec"
+      },
+      {
+        "name": "animation",
+        "status": "diagnosed",
+        "provenance": {
+          "acceptance_sha256": "c1abdb08952bd3248a8157ed7cc23ea00fee05a690402bdbed01fbfa8cafc4c9",
+          "job_sha256": "ecdfa01cde37cabb4b4c73edd4ef426248af1c0ba4d9e119f1ce532ad28c6b76",
+          "version_sha256": "5d5e8058668366a69e0924b7f6d32c535a3ee315fd251166ada15b72ee42ff78",
+          "native_ack_sha256": "ed18772b083c34395f208a9bd1540828e26807afb164b3dc8bbbd1c6fb2b0757",
+          "source_sha256": "8e844209a8c04065650c8203bcffde20affb88e81d6f1acedcd0e24f852dfe6e",
+          "video_sha256": "31c63b257568a60641656d4a22d6b0445e7c8124f8f7f298e9bbe068384ed099"
+        },
+        "semantics": {
+          "checks": 304,
+          "keys": 16,
+          "samples": 20,
+          "pass": true,
+          "differences": []
+        },
+        "frames": [
+          {
+            "frame": 12,
+            "regions": {
+              "moving_title": {
+                "ssim": 0.9913478520948575,
+                "rgb_mae_bytes": 1.4115559895833334,
+                "diagnostic_threshold_pass": true
+              },
+              "sentinel": {
+                "ssim": 0.9690624948244403,
+                "rgb_mae_bytes": 3.5671061197916667,
+                "diagnostic_threshold_pass": false
+              }
+            },
+            "ae_png_sha256": "76331a76913555d403c3483a0af1ecb304da56efc469bb44bfb268b1fbb4c9ce",
+            "ec_png_sha256": "d20177b66e99790bbccde1e63cc79cf6fb9c681eaaf891ccff3cd4d6772cd27d"
+          },
+          {
+            "frame": 24,
+            "regions": {
+              "moving_title": {
+                "ssim": 0.9907928051916113,
+                "rgb_mae_bytes": 1.4505549355158731,
+                "diagnostic_threshold_pass": true
+              },
+              "sentinel": {
+                "ssim": 0.969067113335432,
+                "rgb_mae_bytes": 3.5669759114583335,
+                "diagnostic_threshold_pass": false
+              }
+            },
+            "ae_png_sha256": "991dca9839ba22bf8f36990399ac924b850c6eca141291eabe3823c3f1823279",
+            "ec_png_sha256": "892b52941cb4d5ba5745ffd674966b9716cc10b9bbbe260f7d76750fda9b7bb5"
+          },
+          {
+            "frame": 60,
+            "regions": {
+              "moving_title": {
+                "ssim": 0.9892468074292834,
+                "rgb_mae_bytes": 1.4160481770833333,
+                "diagnostic_threshold_pass": false
+              },
+              "sentinel": {
+                "ssim": 0.969067113335432,
+                "rgb_mae_bytes": 3.5669759114583335,
+                "diagnostic_threshold_pass": false
+              }
+            },
+            "ae_png_sha256": "5ea9b9761a68fa6c17e6a80419b781a4490fe9d2b5cc64d370173fd70bba4f0b",
+            "ec_png_sha256": "9026cac6f11d7f4ccbefdae2aff507f687471411335386ab00590d1b17843e7d"
+          },
+          {
+            "frame": 108,
+            "regions": {
+              "moving_title": {
+                "ssim": 0.98977479478347,
+                "rgb_mae_bytes": 1.1968765500992065,
+                "diagnostic_threshold_pass": false
+              },
+              "sentinel": {
+                "ssim": 0.9720264360043821,
+                "rgb_mae_bytes": 3.3641764322916665,
+                "diagnostic_threshold_pass": false
+              }
+            },
+            "ae_png_sha256": "f1d38222935239acd3d7aac42d26df10d7f4c63754315245f436b769598ce350",
+            "ec_png_sha256": "eca4f464a4a2e2e0158d19cc2bdbca31324cd001dcef06b6ce2318592e68fa88"
+          }
+        ],
+        "import_report": {
+          "aeVersion": {
+            "fileVersion": "25.5.0x4",
+            "savedBy": "25.5.0x4",
+            "tested": true
+          },
+          "imported": {
+            "adjustmentLayers": 0,
+            "cameras": 0,
+            "compositions": 1,
+            "effects": 0,
+            "expressions": 0,
+            "folders": 0,
+            "footage": 0,
+            "footageLayers": 0,
+            "keyframes": 16,
+            "layerStyles": 0,
+            "layers": 2,
+            "lights": 0,
+            "markers": 0,
+            "masks": 0,
+            "nullLayers": 0,
+            "precompLayers": 0,
+            "shapeItems": 0,
+            "shapeLayers": 0,
+            "solidLayers": 0,
+            "solids": 0,
+            "textAnimators": 0,
+            "textLayers": 2,
+            "timeRemaps": 0,
+            "trackMattes": 0
+          },
+          "limitations": [
+            "Frame blending, 3D material options, audio levels, guides are not decoded and not imported.",
+            "Mask colour, lock, feather falloff, motion blur and RotoBezier are not decoded: imported masks get the default colour, unlocked, Smooth falloff, motion blur Same As Layer and no RotoBezier.",
+            "Text: per-character 3D, text on a path and several style slots of unknown meaning are not decoded (stored values that differ from the default are reported as text layer features).",
+            "Footage that is not a solid is linked by its stored path with its stored frame rate and duration; the importer never opens the files (use Reload Footage after the files are found)."
+          ],
+          "losses": [],
+          "missingFonts": [],
+          "missingFootage": []
+        },
+        "worker_report_sha256": "edc8b62ae440089e56246ee6d3049a3c3228213f795691c9fcdbc531384e5b91"
+      }
+    ],
+    "preexisting_managed_aeps_preserved": 2598,
+    "acceptance": "Lossless AE visual parity and historical font identity remain pending"
+  },
+  "codec_control": {
+    "scope": "Additional codec control for archived lossy previews; original diagnostic measurements remain intact",
+    "limits": "Each candidate is encoded as a one-frame clip. The reference used multi-frame encoding. This control cannot prove lossless parity or historical font identity.",
+    "plan_sha256": "835a179c6897500db439455666f03640001eea118f8c2f2f0aa7037f672f5594",
+    "original_summary_sha256": "f1f59bcdcef6c90b6ae634f233d43725bdef5c71410295073cf1dba56e371bc5",
+    "ffmpeg_version": "ffmpeg version 8.0.1-essentials_build-www.gyan.dev Copyright (c) 2000-2025 the FFmpeg developers",
+    "cases": [
+      {
+        "name": "design",
+        "frames": [
+          {
+            "frame": 0,
+            "regions": {
+              "logo": {
+                "ssim": 0.928566200024558,
+                "rgb_mae_bytes": 2.2508510348583877,
+                "diagnostic_threshold_pass": false,
+                "ae_bounds": [
+                  421,
+                  64,
+                  539,
+                  175
+                ],
+                "ec_bounds": [
+                  421,
+                  64,
+                  540,
+                  176
+                ],
+                "bounds_max_delta_reference_px": 1,
+                "diagnostic_bounds_pass": true
+              },
+              "title": {
+                "ssim": 0.9086229901791595,
+                "rgb_mae_bytes": 1.0,
+                "diagnostic_threshold_pass": false,
+                "ae_bounds": null,
+                "ec_bounds": null,
+                "bounds_max_delta_reference_px": null,
+                "diagnostic_bounds_pass": true
+              },
+              "subtitle": {
+                "ssim": 0.9086229901791595,
+                "rgb_mae_bytes": 1.0,
+                "diagnostic_threshold_pass": false,
+                "ae_bounds": null,
+                "ec_bounds": null,
+                "bounds_max_delta_reference_px": null,
+                "diagnostic_bounds_pass": true
+              },
+              "bezier_path": {
+                "ssim": 0.9086229901791595,
+                "rgb_mae_bytes": 1.0,
+                "diagnostic_threshold_pass": false,
+                "ae_bounds": null,
+                "ec_bounds": null,
+                "bounds_max_delta_reference_px": null,
+                "diagnostic_bounds_pass": true
+              }
+            },
+            "control_mp4_sha256": "a10315917632739618054e450c780b442db527619e6a47d6210831a6c7a6370f",
+            "control_png_sha256": "7ed6e14dbce05c364947861ff3db1f2d2ac37958a6fc4e90cb5e4161d0e9970c",
+            "ae_background_rgb": [
+              3,
+              3,
+              13
+            ],
+            "ec_background_rgb": [
+              1,
+              4,
+              11
+            ]
+          },
+          {
+            "frame": 24,
+            "regions": {
+              "logo": {
+                "ssim": 0.9285642407381812,
+                "rgb_mae_bytes": 2.252433959694989,
+                "diagnostic_threshold_pass": false,
+                "ae_bounds": [
+                  421,
+                  64,
+                  539,
+                  175
+                ],
+                "ec_bounds": [
+                  421,
+                  64,
+                  540,
+                  176
+                ],
+                "bounds_max_delta_reference_px": 1,
+                "diagnostic_bounds_pass": true
+              },
+              "title": {
+                "ssim": 0.8901588100522586,
+                "rgb_mae_bytes": 7.047321428571428,
+                "diagnostic_threshold_pass": false,
+                "ae_bounds": [
+                  305,
+                  220,
+                  655,
+                  261
+                ],
+                "ec_bounds": [
+                  304,
+                  220,
+                  654,
+                  261
+                ],
+                "bounds_max_delta_reference_px": 1,
+                "diagnostic_bounds_pass": true
+              },
+              "subtitle": {
+                "ssim": 0.9180239490417863,
+                "rgb_mae_bytes": 2.3466389973958335,
+                "diagnostic_threshold_pass": false,
+                "ae_bounds": [
+                  387,
+                  327,
+                  573,
+                  361
+                ],
+                "ec_bounds": [
+                  387,
+                  327,
+                  573,
+                  364
+                ],
+                "bounds_max_delta_reference_px": 3,
+                "diagnostic_bounds_pass": false
+              },
+              "bezier_path": {
+                "ssim": 0.911409785401112,
+                "rgb_mae_bytes": 1.4732796717171717,
+                "diagnostic_threshold_pass": false,
+                "ae_bounds": [
+                  389,
+                  420,
+                  502,
+                  447
+                ],
+                "ec_bounds": [
+                  388,
+                  421,
+                  504,
+                  447
+                ],
+                "bounds_max_delta_reference_px": 2,
+                "diagnostic_bounds_pass": false
+              }
+            },
+            "control_mp4_sha256": "3f689cf392b6f7a3fce5379791313857a512c73bf2389ea23f7aba020f1837d5",
+            "control_png_sha256": "9de8be2763ff380f09de24be01f6e282d5bee715f71252012512b33024f1dd63",
+            "ae_background_rgb": [
+              3,
+              3,
+              13
+            ],
+            "ec_background_rgb": [
+              1,
+              4,
+              11
+            ]
+          },
+          {
+            "frame": 60,
+            "regions": {
+              "logo": {
+                "ssim": 0.9285642407381812,
+                "rgb_mae_bytes": 2.252433959694989,
+                "diagnostic_threshold_pass": false,
+                "ae_bounds": [
+                  421,
+                  64,
+                  539,
+                  175
+                ],
+                "ec_bounds": [
+                  421,
+                  64,
+                  540,
+                  176
+                ],
+                "bounds_max_delta_reference_px": 1,
+                "diagnostic_bounds_pass": true
+              },
+              "title": {
+                "ssim": 0.8867344648695167,
+                "rgb_mae_bytes": 8.871755952380953,
+                "diagnostic_threshold_pass": false,
+                "ae_bounds": [
+                  305,
+                  220,
+                  655,
+                  256
+                ],
+                "ec_bounds": [
+                  304,
+                  220,
+                  655,
+                  256
+                ],
+                "bounds_max_delta_reference_px": 1,
+                "diagnostic_bounds_pass": true
+              },
+              "subtitle": {
+                "ssim": 0.9327645811093106,
+                "rgb_mae_bytes": 3.1512858072916665,
+                "diagnostic_threshold_pass": false,
+                "ae_bounds": [
+                  387,
+                  327,
+                  573,
+                  364
+                ],
+                "ec_bounds": [
+                  387,
+                  327,
+                  573,
+                  364
+                ],
+                "bounds_max_delta_reference_px": 0,
+                "diagnostic_bounds_pass": true
+              },
+              "bezier_path": {
+                "ssim": 0.9152896121229418,
+                "rgb_mae_bytes": 1.607733585858586,
+                "diagnostic_threshold_pass": false,
+                "ae_bounds": [
+                  389,
+                  427,
+                  571,
+                  447
+                ],
+                "ec_bounds": [
+                  389,
+                  427,
+                  571,
+                  448
+                ],
+                "bounds_max_delta_reference_px": 1,
+                "diagnostic_bounds_pass": true
+              }
+            },
+            "control_mp4_sha256": "11c29b42ff19acb5c5c47522443c8553fe6b1ef1c819f8b309788af24123ac83",
+            "control_png_sha256": "b529e2fd15e2c4b8def8d0fca94cfe6aa6341f4ab5e15d8d0e484ed0ee29b060",
+            "ae_background_rgb": [
+              3,
+              3,
+              13
+            ],
+            "ec_background_rgb": [
+              1,
+              4,
+              11
+            ]
+          }
+        ]
+      },
+      {
+        "name": "animation",
+        "frames": [
+          {
+            "frame": 12,
+            "regions": {
+              "moving_title": {
+                "ssim": 0.9965624663206059,
+                "rgb_mae_bytes": 0.9614614335317461,
+                "diagnostic_threshold_pass": true,
+                "ae_bounds": [
+                  0,
+                  150,
+                  563,
+                  208
+                ],
+                "ec_bounds": [
+                  0,
+                  150,
+                  564,
+                  207
+                ],
+                "bounds_max_delta_reference_px": 1,
+                "diagnostic_bounds_pass": true
+              },
+              "sentinel": {
+                "ssim": 0.9674844221961244,
+                "rgb_mae_bytes": 3.6249674479166667,
+                "diagnostic_threshold_pass": false,
+                "ae_bounds": [
+                  342,
+                  431,
+                  618,
+                  449
+                ],
+                "ec_bounds": [
+                  341,
+                  431,
+                  618,
+                  450
+                ],
+                "bounds_max_delta_reference_px": 1,
+                "diagnostic_bounds_pass": true
+              }
+            },
+            "control_mp4_sha256": "68e1a0583d0470f676db52b26fa6e9243a6cf05fe993b43f9b59b28718b54a74",
+            "control_png_sha256": "fde74711737053466b53a127c287efa93874c6c3fe21966c8595c904b9a83465",
+            "ae_background_rgb": [
+              5,
+              8,
+              17
+            ],
+            "ec_background_rgb": [
+              5,
+              8,
+              17
+            ]
+          },
+          {
+            "frame": 24,
+            "regions": {
+              "moving_title": {
+                "ssim": 0.994946840580276,
+                "rgb_mae_bytes": 1.0382703993055555,
+                "diagnostic_threshold_pass": true,
+                "ae_bounds": [
+                  114,
+                  154,
+                  708,
+                  213
+                ],
+                "ec_bounds": [
+                  115,
+                  154,
+                  708,
+                  214
+                ],
+                "bounds_max_delta_reference_px": 1,
+                "diagnostic_bounds_pass": true
+              },
+              "sentinel": {
+                "ssim": 0.967495463917312,
+                "rgb_mae_bytes": 3.6245768229166666,
+                "diagnostic_threshold_pass": false,
+                "ae_bounds": [
+                  342,
+                  431,
+                  618,
+                  449
+                ],
+                "ec_bounds": [
+                  341,
+                  431,
+                  618,
+                  450
+                ],
+                "bounds_max_delta_reference_px": 1,
+                "diagnostic_bounds_pass": true
+              }
+            },
+            "control_mp4_sha256": "a4f630f071f88ad17877d5e182867aed5d80b9f70cc89852996fa0f6178557f0",
+            "control_png_sha256": "8d6973b1a4fb43f25bab0b3b266f11c96adb6b663adcaeaab24a038343d47bcd",
+            "ae_background_rgb": [
+              5,
+              8,
+              17
+            ],
+            "ec_background_rgb": [
+              5,
+              8,
+              17
+            ]
+          },
+          {
+            "frame": 60,
+            "regions": {
+              "moving_title": {
+                "ssim": 0.9945905268776972,
+                "rgb_mae_bytes": 1.012411644345238,
+                "diagnostic_threshold_pass": true,
+                "ae_bounds": [
+                  192,
+                  242,
+                  768,
+                  298
+                ],
+                "ec_bounds": [
+                  192,
+                  242,
+                  768,
+                  298
+                ],
+                "bounds_max_delta_reference_px": 0,
+                "diagnostic_bounds_pass": true
+              },
+              "sentinel": {
+                "ssim": 0.967495463917312,
+                "rgb_mae_bytes": 3.6245768229166666,
+                "diagnostic_threshold_pass": false,
+                "ae_bounds": [
+                  342,
+                  431,
+                  618,
+                  449
+                ],
+                "ec_bounds": [
+                  341,
+                  431,
+                  618,
+                  450
+                ],
+                "bounds_max_delta_reference_px": 1,
+                "diagnostic_bounds_pass": true
+              }
+            },
+            "control_mp4_sha256": "f769de35fcbfd9cb8d6a122e959e56162eb392a12632625472e647f032aa84fb",
+            "control_png_sha256": "a9b96c191355c3c6a68ab2690b20324b21b1f908d7e703e32ddf7a21c623ab8f",
+            "ae_background_rgb": [
+              5,
+              8,
+              17
+            ],
+            "ec_background_rgb": [
+              5,
+              8,
+              17
+            ]
+          },
+          {
+            "frame": 108,
+            "regions": {
+              "moving_title": {
+                "ssim": 0.9936575565128298,
+                "rgb_mae_bytes": 0.7653382316468254,
+                "diagnostic_threshold_pass": true,
+                "ae_bounds": [
+                  333,
+                  242,
+                  912,
+                  298
+                ],
+                "ec_bounds": [
+                  334,
+                  242,
+                  912,
+                  298
+                ],
+                "bounds_max_delta_reference_px": 1,
+                "diagnostic_bounds_pass": true
+              },
+              "sentinel": {
+                "ssim": 0.9721155506362252,
+                "rgb_mae_bytes": 3.2898763020833335,
+                "diagnostic_threshold_pass": false,
+                "ae_bounds": [
+                  342,
+                  431,
+                  618,
+                  449
+                ],
+                "ec_bounds": [
+                  341,
+                  431,
+                  618,
+                  450
+                ],
+                "bounds_max_delta_reference_px": 1,
+                "diagnostic_bounds_pass": true
+              }
+            },
+            "control_mp4_sha256": "41ae1386026e2d0909451954ab2a9d860db118246065c1a950313270c6e452d8",
+            "control_png_sha256": "d51b831aba4667b5660614c24a3a6728cc11de970213733751e5fad168431b96",
+            "ae_background_rgb": [
+              5,
+              8,
+              17
+            ],
+            "ec_background_rgb": [
+              5,
+              8,
+              17
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "outliers": [
+    {
+      "case": "design",
+      "frame": 0,
+      "region": "logo",
+      "ssim": 0.928566200024558,
+      "rgb_mae_bytes": 2.2508510348583877,
+      "bounds_max_delta_reference_px": 1
+    },
+    {
+      "case": "design",
+      "frame": 0,
+      "region": "title",
+      "ssim": 0.9086229901791595,
+      "rgb_mae_bytes": 1.0,
+      "bounds_max_delta_reference_px": null
+    },
+    {
+      "case": "design",
+      "frame": 0,
+      "region": "subtitle",
+      "ssim": 0.9086229901791595,
+      "rgb_mae_bytes": 1.0,
+      "bounds_max_delta_reference_px": null
+    },
+    {
+      "case": "design",
+      "frame": 0,
+      "region": "bezier_path",
+      "ssim": 0.9086229901791595,
+      "rgb_mae_bytes": 1.0,
+      "bounds_max_delta_reference_px": null
+    },
+    {
+      "case": "design",
+      "frame": 24,
+      "region": "logo",
+      "ssim": 0.9285642407381812,
+      "rgb_mae_bytes": 2.252433959694989,
+      "bounds_max_delta_reference_px": 1
+    },
+    {
+      "case": "design",
+      "frame": 24,
+      "region": "title",
+      "ssim": 0.8901588100522586,
+      "rgb_mae_bytes": 7.047321428571428,
+      "bounds_max_delta_reference_px": 1
+    },
+    {
+      "case": "design",
+      "frame": 24,
+      "region": "subtitle",
+      "ssim": 0.9180239490417863,
+      "rgb_mae_bytes": 2.3466389973958335,
+      "bounds_max_delta_reference_px": 3
+    },
+    {
+      "case": "design",
+      "frame": 24,
+      "region": "bezier_path",
+      "ssim": 0.911409785401112,
+      "rgb_mae_bytes": 1.4732796717171717,
+      "bounds_max_delta_reference_px": 2
+    },
+    {
+      "case": "design",
+      "frame": 60,
+      "region": "logo",
+      "ssim": 0.9285642407381812,
+      "rgb_mae_bytes": 2.252433959694989,
+      "bounds_max_delta_reference_px": 1
+    },
+    {
+      "case": "design",
+      "frame": 60,
+      "region": "title",
+      "ssim": 0.8867344648695167,
+      "rgb_mae_bytes": 8.871755952380953,
+      "bounds_max_delta_reference_px": 1
+    },
+    {
+      "case": "design",
+      "frame": 60,
+      "region": "subtitle",
+      "ssim": 0.9327645811093106,
+      "rgb_mae_bytes": 3.1512858072916665,
+      "bounds_max_delta_reference_px": 0
+    },
+    {
+      "case": "design",
+      "frame": 60,
+      "region": "bezier_path",
+      "ssim": 0.9152896121229418,
+      "rgb_mae_bytes": 1.607733585858586,
+      "bounds_max_delta_reference_px": 1
+    },
+    {
+      "case": "animation",
+      "frame": 12,
+      "region": "sentinel",
+      "ssim": 0.9674844221961244,
+      "rgb_mae_bytes": 3.6249674479166667,
+      "bounds_max_delta_reference_px": 1
+    },
+    {
+      "case": "animation",
+      "frame": 24,
+      "region": "sentinel",
+      "ssim": 0.967495463917312,
+      "rgb_mae_bytes": 3.6245768229166666,
+      "bounds_max_delta_reference_px": 1
+    },
+    {
+      "case": "animation",
+      "frame": 60,
+      "region": "sentinel",
+      "ssim": 0.967495463917312,
+      "rgb_mae_bytes": 3.6245768229166666,
+      "bounds_max_delta_reference_px": 1
+    },
+    {
+      "case": "animation",
+      "frame": 108,
+      "region": "sentinel",
+      "ssim": 0.9721155506362252,
+      "rgb_mae_bytes": 3.2898763020833335,
+      "bounds_max_delta_reference_px": 1
+    }
+  ],
+  "evidence_directory": "visual-diagnostic-68893060beb44e79a7da49341113acd0",
+  "original_summary_sha256": "f1f59bcdcef6c90b6ae634f233d43725bdef5c71410295073cf1dba56e371bc5",
+  "codec_control_sha256": "52834fdb0c0885836b6674acb6117c1c1b7fa5766e17b868ce79d0e9cefc5fff",
+  "sampled_review_sha256": "850f9788886e5db9f42e063a6dff1c375ff833a6a85352f41c3d84b8c4aa331d",
+  "acceptance": "Visual parity remains pending; diagnostic comparison completed with recorded outliers."
+}

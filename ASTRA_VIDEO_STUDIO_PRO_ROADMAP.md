@@ -2,7 +2,7 @@
 
 **Versão:** 1.4
 **Data:** 10 de novembro de 2026 (origem: 6 de novembro)
-**Estado:** Sprints 0–13 tecnicamente implementados, otimização de criação entregue e 77 ferramentas disponíveis. O aceite externo das três rotas de edição no Claude Desktop 9.3 permanece pendente. A EC-0 chegou ao oitavo marco, com SBOM validado e evidências de licenças para 96 pacotes e sete fontes, além dos ensaios anteriores de AEP, comparação delimitada e stress CPU. A comparação de desempenho com AE, a ampliação visual e a revisão de distribuição continuam pendentes para fechar a EC-0. Ver docs/test-report.md e docs/effectcraft/ec0-progress.md.
+**Estado:** Sprints 0–13 tecnicamente implementados, otimização de criação entregue e 77 ferramentas disponíveis. O aceite externo das três rotas de edição no Claude Desktop 9.3 permanece pendente. A EC-0 chegou ao nono marco, com diagnóstico de vetores, texto e curvas contra referências arquivadas. Os 16 keyframes e 20 amostras transformacionais passaram, e 16 regiões visuais continuam como outliers no controle H.264. A paridade sem perdas, a comparação de desempenho com AE e a revisão de distribuição continuam pendentes. Ver docs/test-report.md e docs/effectcraft/ec0-progress.md.
 **Base:** MVP das Sprints 0–5, desenvolvido para After Effects 2025 no Windows.
 
 ## 1. Objetivo e uso deste documento
@@ -410,7 +410,7 @@ IR próprio deverá explicitar UUIDs/dependências, tempo/FPS/frames, start/stre
 
 ### 11.3 EC-0 — prova de conceito isolada
 
-**Estado:** em execução. Primeiro marco verificado: worker CPU mínimo, persistência/reabertura de sólidos, três renders determinísticos e encode/probe/decode independente. Segundo marco: Inter-Regular por identidade/hash sem fallback, texto point/box/faixa de cor por pontos de código e curvas manuais Linear/Hold/Bezier/espaciais confrontadas com referências independentes; três sequências determinísticas, recusas de fonte e preservação de2.439 AEPs. Grafo atual95pacotes sem frontend GUI identificado. Terceiro marco verificado em casos fixos de Fill, Gaussian Blur, paths nativos, Trim Paths, morph, máscaras, mattes e dependências. Quarto marco verificado com importação SVG pelo parser do Astra para paths editáveis e animação de opacidade por caractere com JetBrainsMono-Regular fixada. A comparação AE/EC, a cobertura geral de fontes e animadores, o corpus AEP, desempenho e a auditoria completa de licenças seguem pendentes. Ver [andamento e evidências](docs/effectcraft/ec0-progress.md). Aprovar resultado desta sprint não troca backend padrão nem autoriza migração geral/distribuição comercial.
+**Estado:** em execução. Os quatro primeiros marcos verificaram as fixtures CPU de persistência, texto/fontes, curvas, vetores, efeitos, máscaras/mattes, SVG e seletor de caracteres. O quinto comparou um gráfico TIFF e uma curva escalar com AE. O sexto passou 602 testes de integração AEP com corpus obrigatório, com cinco ignorados. O sétimo mediu sólidos/precomp com 3/40/80 camadas em 1080p e uma sequência completa de 900 frames. O oitavo gerou SBOM validado para 96 pacotes e sete fontes. O nono verificou transformações e diagnosticou texto/vetores sobre MP4s históricos, com outliers preservados. A aceitação completa e a decisão de avançar para EC-1 continuam pendentes. Ver [andamento e evidências](docs/effectcraft/ec0-progress.md).
 
 **Entregas:** build Windows x64 fixado e grafo mínimo sem GUI; commands estruturados de composição/texto/curvas/Fill/Blur; persistência e inspeção; frames headless integrados experimentalmente ao pipeline Astra; comparação AE/EC CPU, depois GPU/encoder nativo em provas separadas. Manter PNG → FFmpeg/ffprobe/decode como verificação independente inicial. API experimental opt-in e fixtures/cópias privadas; não alterar a sessão aberta.
 
@@ -432,7 +432,7 @@ IR próprio deverá explicitar UUIDs/dependências, tempo/FPS/frames, start/stre
 
 Os números são critérios propostos, não resultados. Mudança de tolerância exige decisão explícita justificada, não relaxamento após falha. Comparação global não pode esconder diferenças em texto/edges/objetos. GPU precisa resultado próprio; skip não conta como aprovação. Exigir corpus AEP presente nos testes correspondentes, incluindo EFFECTCRAFT_AEP_FIXTURES_REQUIRED=1.
 
-**Licenças:** raiz MIT/Apache, 14 documentos git e22 versões registry foram examinados, não todo o lockfile de746 pacotes nem o binário futuro. Uso comercial depende de cumprir notices/fontes/marcas e avaliar codecs/patentes. Não concluir liberação jurídica geral nem ausência de copyleft em todo o grafo pela amostra.
+**Licenças:** o oitavo marco verificou o grafo Windows resolvido de 96 pacotes, gerou SBOM com as sete fontes embutidas e reuniu 104 textos distintos. A revisão das obrigações de distribuição, dados incorporados, marcas e builds/codecs externos continua pendente. O inventário de fontes e dependências está vinculado aos arquivos consultados, com comprovação do conteúdo efetivo do binário ainda pendente.
 
 **Saída:** relatório gate a gate; seguir experimentalmente, seguir com subset explicitamente restrito ou adiar. Guardar falhas. AEP import/export com loss count zero não basta: verificar limitações permanentes, fontes e identidade. Regressão funcional após mudança de código e testes nativos opt-in/sequenciais, sem matar AE nem limpar pendências.
 
