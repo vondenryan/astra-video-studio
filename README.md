@@ -123,6 +123,8 @@ Jobs incertos ficam protegidos para inspeção. O Astra não mata o After Effect
 
 Um motor alternativo baseado no EffectCraft está em avaliação experimental isolada. O quinto marco comparou um gráfico estático e uma curva de opacidade com evidência arquivada do After Effects e diagnosticou 17 projetos sintéticos AEP/AEPX. O Astra usa o After Effects como backend padrão. [Andamento da EC-0](docs/effectcraft/ec0-progress.md)
 
+O sexto marco executou o alvo de integração AEP do upstream com o corpus obrigatório. Foram 602 testes aprovados e cinco ignorados pelo upstream. A avaliação continua com comparação visual ampliada, desempenho, memória e licenças pendentes.
+
 A avaliação cobre persistência, fontes fixadas, animação de texto, curvas manuais e composição CPU com efeitos, importação SVG editável, máscaras e mattes. A comparação com o After Effects segue como etapa da avaliação.
 
 ## Desenvolvimento

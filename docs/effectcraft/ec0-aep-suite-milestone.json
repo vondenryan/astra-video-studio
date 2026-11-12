@@ -1,0 +1,58 @@
+{
+  "scope": "Unmodified pinned upstream AEP integration target, hosted by the isolated Astra probe dependency graph",
+  "effectcraft_revision": "a41ff5015c6687db15a6f074a47b870b8f09fece",
+  "corpus_revision": "97262276f625afdeeb61787e4cbb74b3f17af510",
+  "source_files": 101,
+  "source_inventory_sha256": "e33d9d079a7a9062d8af00054034521738333d8a6ce0749eb0a880ce1828cd6c",
+  "corpus_files": {
+    "3d.aep": "4a51318c4b37fa95e2c02682183d3982fdfbe1870dc50ba729b776d1826f982e",
+    "aepx-pair.aep": "da8ba17d095ddb1576db658ad28a3966d7231244cf0391f77d71d7aa68c6e085",
+    "aepx-pair.aepx": "59e79c1621de108a4960d2bb6b14bc54e39df658f459af777b50fa95f2b7b32b",
+    "effects.aep": "2e1a59562b52eb97ce32ccc7810a54f0671eae567d1d9869041b391d3cc4a20c",
+    "empty.aep": "1e10b8ee47f43c5cd6e19710fbab28f498f8b73dbfa1a8f830ae41ad3b1c19ef",
+    "footage-precomp.aep": "b4ee29ebd0d46b6013efc05c0f8cce4be61ce2d5b8bc38c5a814b86bceeee286",
+    "fx-switch.aep": "7e162f536d422daffbe909b50fdd83d7160c6b150ce6c34216c65dba46ab87cb",
+    "inputs/curves-red-mid-down.ffx": "f6ce60a8ed0fa786625078f61995e1184ef0b016efaeeb0b4ae6337831697821",
+    "inputs/curves-rgb-two-points.ffx": "e3992190150366b01859e32adcb9bbe2e0ef492bd2259a8b7e85b571afeca24f",
+    "inputs/meshwarp-3x3-center-right.ffx": "4a0cd5a0e52d8d14ee0f895b0a3e054199d399094b410a7b2a620eb484d5cba8",
+    "keyframes.aep": "baad5a326f255797c03b3cc0a776524b7eabfb217fbc301b0596ac3e4e97d71b",
+    "layers-comps.aep": "57184fec75ec8892ac6c8ac360274fdaa4fc4ed39093f969f30a45fbf2afaf9e",
+    "markers.aep": "fca73b3e4f5398a0ab686b74d8eb3e1c2dd37c7db0e8a31b2e0f45ba0bb3c8ff",
+    "masks.aep": "93d6a9f2a2980d999bcb628a4e7220d1922b1c535d535663f69043778322d72f",
+    "settings-a.aep": "c3255249dd29279cc6a14c156a0acb82b0bc255a0be77c0178a9c4bc891206a5",
+    "settings-b.aep": "b4a61e988743b0f6b5a7ad6875f958ccf173fcf0d7d6097c441a0aa71c5e1fd7",
+    "settings-c.aep": "71ba74dade2ef411026a55a945d573cf059ff03aeb2d527fe2c6833e13174df3",
+    "shapes.aep": "9035039df7c34f04c33337719a2fef5ba93db5d2317434eb3476906571654d3b",
+    "styles.aep": "5fe35e08d05e72583fdd19e02878cc974136736e39090fab9d84d132fb2b4d35",
+    "text.aep": "fded434b54532f9001c53a3482deed0c157f76ee067b354a801ec9c2747002db"
+  },
+  "cargo_lock_sha256": "52f373b88a4e4af1661b3ba912e00411fbdfe20cfad0646b2a091f7aef76fe1e",
+  "manifest_sha256": "19514ba621994a478c207dc4a0c15c156b720bd03baf4fdbac5889873eda192f",
+  "fixtures_required": true,
+  "preexisting_managed_aeps_preserved": 2498,
+  "suite": {
+    "status": "ok",
+    "passed": 602,
+    "failed": 0,
+    "ignored": 5,
+    "measured": 0,
+    "filtered": 0,
+    "exit_code": 0,
+    "ignored_cases": [
+      "container::aepx::every_corpus_pair_gives_the_same_chunk_tree",
+      "import::aepx::every_corpus_pair_imports_alike",
+      "import::cryptomatte::the_after_effects_sample_arrives_as_after_effects_shows_it",
+      "import::versions::copies_saved_as_25x_and_24x_import_like_the_2026_file",
+      "import::versions::the_container_of_a_copy_states_its_version_in_head_and_the_writer_in_svap"
+    ],
+    "stdout_sha256": "c26e3236c38ad1ef5a15234b499be3090a9aa8c64da4825964663bef8d66ba6d",
+    "stderr_sha256": "035fff2b2af384f42ed015761990674961e766d607456cc72c3143b4b204a55b"
+  },
+  "pending": [
+    "Upstream library unit tests and example tests",
+    "Five upstream ignored exploratory/version-family/Cryptomatte tests"
+  ],
+  "evidence_directory": "aep-suite-cfeac096f37f4589a1181cfc965c7696",
+  "summary_sha256": "0bbc0fcd53749e913c636fa2407dd77e5469e91ed9a255cc397a8c510197bb9c",
+  "post_exit_inspection_sha256": "5c73dbf22f7fa75fadd8326f76806fa02e58eafb8e6aff3e9c3c40c99998e7a1"
+}

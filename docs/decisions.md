@@ -255,3 +255,9 @@ Reuse the production Astra SVG subset for parsing. Convert its normalized groups
 Use the hash-verified Sprint 11 AEP, acknowledged inspection and native TIFFs to avoid scheduling work in the active AE session. Compare a disjoint graphic region with binary alpha so transparent matte RGB can be canonicalized without guessing partial-alpha color conversion. Record the original title's opacity track separately. The historical font file is unavailable for pixel comparison.
 
 Use the upstream commit's corpus lock to verify the synthetic inputs. Deny external font and media lookup. Report losses, documented limitations and unresolved dependencies separately. Strict import refusal must preserve the scratch project. Acceptance in scratch leaves the production AE backend and original AEP files untouched.
+
+### 2026-11-11 — EC-0 mandatory AEP integration corpus
+
+Host the unmodified pinned upstream AEP integration target in a temporary package using the existing probe dependencies and lockfile. Extract tests and embedded fixtures directly from Git and verify all locked corpus bytes. Require fixtures and check exact ignored-test identities. Keep library unit tests, examples, ignored exploratory tests and the full upstream workspace as separate scopes.
+
+Archive a completed suite's retained dispatch only after inspecting its exit journal and verifying the result, source bytes, corpus and original project baseline. An output-count processing error requires an evidence audit. It does not require resubmitting the suite.

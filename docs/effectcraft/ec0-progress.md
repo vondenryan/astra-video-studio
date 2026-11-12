@@ -19,15 +19,15 @@ O build inicial do recorte levou1m33s em perfil dev, sem representar benchmark d
 | Gate | Estado atual |
 | --- | --- |
 | Build Windows fixado e recorte sem frontend GUI | Verificado no worker CPU mínimo. |
-| Persistência/reabertura | Verificada apenas na fixture fixa de sólidos; sem edição/revisão geral. |
-| Render headless e encode/decode independente | Verificados na fixture estática; o harness inicia o processo sem janela. |
-| Determinismo CPU | Três execuções, incluindo1/2 threads, verificadas para a fixture estática. |
-| Fontes/texto/missing-font | Segundo marco: Inter-Regular embutida por hash, point/box e faixa de cor por pontos de código verificados; fontes arbitrárias e animadores de texto pendentes. |
-| Curvas, tangentes, boundaries e semântica de tempo | Segundo marco: fixtures manuais Linear/Hold/Bezier, tangentes espaciais, amostras fora das chaves, start/stretch e conversão de frames verificadas; edição/retiming geral e comparação AE pendentes. |
-| Fill/Blur, vetores, máscaras/mattes e dependências | Pendente. |
+| Persistência/reabertura | Verificada nas fixtures de sólidos, texto, curvas, composição, SVG e seletor de caracteres. Revisões gerais pendentes. |
+| Render headless e encode/decode independente | PNGs verificados nas fixtures e H.264 com decode completo nos marcos de sólidos e texto/curvas. |
+| Determinismo CPU | Séries de três execuções com 1/2/1 threads verificadas nas fixtures dos quatro primeiros marcos. |
+| Fontes/texto/missing-font | Inter-Regular e JetBrainsMono-Regular fixadas por hash, texto point/box, faixa de cor e seletor de caracteres verificados. Fontes arbitrárias e paridade tipográfica com AE pendentes. |
+| Curvas, tangentes, boundaries e semântica de tempo | Fixtures manuais e comparação de uma curva escalar com inspeção AE verificadas. Edição e retiming gerais pendentes. |
+| Fill/Blur, vetores, máscaras/mattes e dependências | Terceiro e quarto marcos verificaram as fixtures CPU. Comparação visual equivalente com AE pendente. |
 | Identidade Astra/IR/revisões/conflicts | Pendente; IDs internos EC não foram apresentados como IDs AE. |
-| AEP dry-run/corpus e limitações permanentes | Pendente. |
-| Comparação visual/semântica com AE | Pendente; não há claim de paridade. |
+| AEP dry-run/corpus e limitações permanentes | Quinto marco analisou 17 projetos do corpus fixado e verificou as recusas com perdas. Ver o sexto marco para a suíte upstream. |
+| Comparação visual/semântica com AE | Gráfico estático e curva escalar verificados no quinto marco. Texto e cenas animadas pendentes. |
 | Stress1080p, memória,5cold/10warm e p95 | Pendente. |
 | Closure de licenças/notices/SBOM | Inventário de manifests/features disponível; auditoria completa pendente. |
 | GPU e encoder nativo | Não executados; têm gates separados. |
@@ -86,3 +86,13 @@ As regiões interna e de borda passaram nos três frames. Todas tiveram SSIM 1, 
 O dry run verificou os 20 hashes do corpus fixado e analisou os 17 AEP/AEPX sem resolver mídia ou fontes externas. Em modo estrito, 15 importaram em memória. Dois foram recusados, e a recusa preservou o projeto temporário. `effects.aep` registrou cinco perdas em efeitos ou parâmetros e `text.aep` registrou quatro perdas em recursos tipográficos. Fontes e mídias indisponíveis pelo desenho do ensaio aparecem separadamente. Os três arquivos FFX tiveram apenas verificação de hash.
 
 Continuam pendentes a suíte upstream com corpus obrigatório, a paridade visual de texto, efeitos e cenas animadas, as medições de desempenho e memória e a auditoria completa de licenças e notices. [Plano e tolerâncias](../../experimental/ec0/parity-plan.json) · [Medições e hashes](ec0-parity-milestone.json)
+
+## Sexto marco — suíte upstream AEP com corpus obrigatório
+
+O controlador extraiu diretamente do commit fixado os 101 arquivos dos testes e fixtures do crate AEP. Executou o alvo de integração completo, com as dependências e o lockfile do probe isolado, `EFFECTCRAFT_AEP_FIXTURES_REQUIRED=1` e os 20 arquivos do corpus verificados por SHA-256. Os fontes e insumos conservaram os hashes após a execução.
+
+O alvo de integração upstream teve 602 testes aprovados, zero falhas e cinco ignorados, cobrindo leitura, importação, exportação e resistência a bytes corrompidos. Nenhuma fixture obrigatória foi pulada. Os cinco ignorados são dois exploratórios de pares AEP/AEPX, dois de famílias de versões e um de Cryptomatte cuja fixture ainda não está fixada nesse corpus. Os testes unitários da biblioteca e os exemplos são alvos distintos e seguem pendentes.
+
+O primeiro processamento do resultado esperava quatro ignorados e reteve a pendência. A inspeção identificou o quinto caso no fonte fixado, conferiu novamente stdout, saída do processo, fontes, corpus e os 2.498 hashes de AEPs preexistentes. O controlador foi corrigido para conferir a identidade dos cinco casos. A execução concluída foi finalizada por auditoria dos arquivos retidos, com registro próprio e sem reenvio da suíte.
+
+Este marco cobre o alvo de integração hospedado pelo probe. A paridade visual de texto, efeitos e cenas animadas, os benchmarks e a auditoria de licenças continuam pendentes. [Relatório da suíte](ec0-aep-suite-milestone.json)

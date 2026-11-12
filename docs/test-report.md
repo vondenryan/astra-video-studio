@@ -673,3 +673,11 @@ The offline integration used the retained Sprint 11 AE 25.5 inspection and verif
 The corpus probe verified 20 locked hashes, analyzed all 17 AEP/AEPX projects and exercised strict import in scratch memory. Fifteen imports succeeded and two refused with the scratch project unchanged. The three FFX fixtures were hash-checked only. The upstream suite with mandatory corpus was outside this run. Four Rust tests passed and the Windows dependency inventory found 96 reachable packages and no identified GUI frontend. See `docs/effectcraft/ec0-parity-milestone.json` and `workspace/ec0/parity-5ff6a64b30a644b0935fd77f25ba1b43`.
 
 The comparator accepted identical pixels and irrelevant RGB under zero alpha. It rejected a wrong visible color and a missing opaque pixel. The full Python regression completed with 499 passes and 19 skips in 101.17 s using a workspace pytest temp directory and host subprocess access. Native AE tests remained disabled.
+
+### 2026-11-11 — EC-0 sixth milestone
+
+The unmodified upstream AEP integration target ran with the isolated probe dependency graph, pinned corpus and `EFFECTCRAFT_AEP_FIXTURES_REQUIRED=1`. It passed 602 tests, failed zero and ignored five in 168.21 s. All 101 archived upstream test/fixture files, 20 locked corpus files and 2,498 preexisting managed AEPs retained their hashes. No mandatory fixture was skipped. The five ignored cases cover two exploratory AEP/AEPX checks, two version-family checks and an unpinned Cryptomatte fixture. Library unit and example targets remain pending.
+
+The controller initially expected four ignored cases. Its successful child exit and raw outputs were preserved, then audited against the pinned source and corrected parser. The post-exit inspection finalized that same run without resubmission. The report binds both the raw output and inspection hashes. See `docs/effectcraft/ec0-aep-suite-milestone.json` and `workspace/ec0/aep-suite-cfeac096f37f4589a1181cfc965c7696`.
+
+The final Python regression passed 499 tests with 19 skips in 101.72 s. Native AE tests remained disabled.

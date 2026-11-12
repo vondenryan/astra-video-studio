@@ -69,3 +69,11 @@ O quinto marco comparou um gráfico estático e uma curva escalar com evidência
 Para reproduzir a comparação no workspace que contém a referência da Sprint 11, mantenha o corpus fixado em `workspace/ec0/corpus-97262276`, atualize o inventário e compile com `prepare.ps1 -Action metadata` e `prepare.ps1 -Action build`. Execute `.\.venv\Scripts\python.exe experimental/ec0/run_parity.py` na raiz do repositório. Cada tentativa guarda cópias dos insumos verificados, o inventário, os relatórios e os hashes em `workspace/ec0/parity-<UUID>`. O controlador trabalha com arquivos arquivados e não se conecta ao AE.
 
 Estado e evidências: [andamento da EC-0](../../docs/effectcraft/ec0-progress.md). A EC-1 continua condicionada ao relatório gate a gate e a uma decisão específica.
+
+## Suíte de integração AEP do upstream
+
+Execute `.\.venv\Scripts\python.exe experimental/ec0/run_aep_suite.py` na raiz, após preparar o build privado e obter o corpus fixado. O controlador extrai os testes diretamente do commit upstream, confere os 20 hashes das fixtures e cria um pacote de teste temporário com as dependências e o lockfile do probe. Os fontes dos testes permanecem byte a byte iguais ao archive Git.
+
+O alvo executado corresponde a `crates/aep/tests/it/main.rs`, com `EFFECTCRAFT_AEP_FIXTURES_REQUIRED=1`. O alvo usa somente as fixtures sintéticas copiadas. A biblioteca e os exemplos têm testes próprios fora deste comando. Cinco testes exploratórios, de famílias de versões ou de Cryptomatte continuam marcados como ignorados pelo upstream e aparecem no relatório.
+
+Cada execução retém manifest, lockfile, inventário dos fontes, fixtures, baseline dos AEPs, stdout, stderr, PID, código de saída e resumo em `workspace/ec0/aep-suite-<UUID>`. Um timeout conserva `pending.json` e bloqueia nova execução desse controlador até a inspeção da pendência.
