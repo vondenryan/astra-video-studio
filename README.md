@@ -127,6 +127,8 @@ O sexto marco executou o alvo de integração AEP do upstream com o corpus obrig
 
 O sétimo marco mediu cenas de 3, 40 e 80 camadas em 1080p e verificou uma sequência completa de 30 segundos, incluindo H.264 e decode. As medições de desempenho com conteúdo equivalente no AE e a auditoria de licenças seguem pendentes.
 
+O oitavo marco gerou um SBOM com 96 pacotes e sete fontes embutidas, acompanhado dos textos de licenças e avisos e de suas evidências de origem. A revisão para distribuição continua pendente. [Inventário e andamento](docs/effectcraft/ec0-progress.md)
+
 A avaliação cobre persistência, fontes fixadas, animação de texto, curvas manuais e composição CPU com efeitos, importação SVG editável, máscaras e mattes. A comparação com o After Effects segue como etapa da avaliação.
 
 ## Desenvolvimento

@@ -29,7 +29,7 @@ O build inicial do recorte levou1m33s em perfil dev, sem representar benchmark d
 | AEP dry-run/corpus e limitações permanentes | Quinto marco analisou 17 projetos do corpus fixado e verificou as recusas com perdas. Ver o sexto marco para a suíte upstream. |
 | Comparação visual/semântica com AE | Gráfico estático e curva escalar verificados no quinto marco. Texto e cenas animadas pendentes. |
 | Stress1080p, memória,5cold/10warm e p95 | Sétimo marco verificou sólidos/precomp com 3/40/80 camadas, cinco processos novos e dez medições após aquecimento. Referência AE equivalente e cenas com texto/efeitos pendentes. |
-| Closure de licenças/notices/SBOM | Inventário de manifests/features disponível; auditoria completa pendente. |
+| Closure de licenças/notices/SBOM | Oitavo marco gerou SBOM validado e pacote de evidências com fontes e textos conferidos. Revisão de obrigações, dados incorporados, marcas e codecs externos pendente. |
 | GPU e encoder nativo | Não executados; têm gates separados. |
 | Integração MCP/adapter de produção | Não implementada;77 ferramentas atuais inalteradas. |
 
@@ -116,3 +116,17 @@ O maior PeakWorkingSetSize entre os workers foi 73,77 MiB, abaixo do limite fixa
 Os 900 hashes RGBA dos PNGs decodificados coincidiram com os do worker. O H.264 confirmou 1920×1080, 30 fps, 900 frames e 30 s e passou no decode completo. Todas as repetições preservaram os hashes dos frames amostrados, e os 2.526 AEPs e snapshots preexistentes conservaram seus hashes.
 
 O recorte cobre sólidos, uma precomp e movimento linear. A medição comparável com AE, a repetição da sequência completa, cenas com fontes/efeitos, VRAM e a auditoria de licenças seguem pendentes. Não houve playback ou aprovação artística humana neste ensaio. [Plano](../../experimental/ec0/stress-plan.json) · [Métricas completas](ec0-stress-milestone.json)
+
+## Oitavo marco — evidências de licenças e SBOM
+
+O SBOM CycloneDX 1.6 contém 103 componentes, correspondentes aos 96 pacotes do grafo Cargo resolvido para Windows e às sete fontes embutidas. A validação passou com os schemas oficiais fixados por SHA-256. As relações de dependência têm referências completas, e as features resolvidas aparecem por pacote.
+
+A auditoria fez 4.166 verificações de arquivos por pacote. Os archives de registry foram conferidos contra Cargo.lock e seus arquivos contra o conteúdo extraído no cache. Os arquivos dos pacotes Git foram comparados aos objetos dos commits fixados, com equivalência CRLF/LF registrada quando aplicável. Avisos herdados da raiz entram em cada pacote correspondente, portanto a contagem inclui verificações repetidas desses arquivos comuns.
+
+Foram reunidos 104 textos distintos de licença, notices, copyright, créditos, autores e atribuições. A conferência adicional incluiu os arquivos COPYRIGHT de euclid e unicode-bidi. Os sete arquivos de fonte, suas licenças OFL e atribuições passaram na comparação com o inventário fixado e com os objetos Git. A seleção de fontes corresponde às declarações include_bytes do crate de texto.
+
+Todos os identificadores declarados encontraram os marcadores textuais previstos nos materiais coletados. O relatório mantém a expressão original, a normalização explícita das três declarações legadas MIT/Apache-2.0, os hashes e a origem de cada texto. A escolha entre alternativas de licença continua fora desta automação.
+
+Os testes negativos recusaram um arquivo de origem adulterado, um archive com checksum incorreto, uma referência de dependência ausente e um identificador SPDX inventado. Os 2.578 AEPs e snapshots preexistentes conservaram seus hashes.
+
+A revisão de obrigações de distribuição, material incorporado e marcas continua pendente. FFmpeg e FFprobe têm versões e hashes registrados, com a auditoria integral de seus builds e codecs pendente. O status da EC-0 continua em andamento. [SBOM](ec0-bom.cdx.json) · [Textos coletados](ec0-third-party-notices.txt) · [Relatório](ec0-license-milestone.json)

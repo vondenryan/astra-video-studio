@@ -267,3 +267,9 @@ Archive a completed suite's retained dispatch only after inspecting its exit jou
 Use a separate fixed release executable with 3/40/80 root layers and three nested solid layers at 1080p30. Measure five fresh processes with the same two-thread setting and ten warm iterations after one excluded warmup. OS caches stay active. Keep the 1/2/1-thread determinism series separate from the timed distributions.
 
 Repeated performance samples span five fixed frames of a 30-second composition. Render the full 900-frame 80-layer sequence once, verify every decoded PNG hash, encode and fully decode the H.264. Record render, RGBA/hash, PNG, process-wall and encoder phases separately. Query native-process PeakWorkingSetSize with PID/creation identity and a post-exit counter check. The 4 GiB gate applies to the native fixture worker. A matched AE baseline and broader content remain required for performance acceptance.
+
+### 2026-11-12 — EC-0 source-bound license evidence
+
+Build a CycloneDX 1.6 inventory from the frozen Windows Cargo graph and validate it offline against hash-pinned official schemas. Bind registry text evidence to locked crate archives and Git text evidence to fixed commits. Record inherited notices, standalone COPYRIGHT files and font attribution sidecars. Preserve both declared expressions and an explicit mapping for the legacy MIT/Apache-2.0 form.
+
+Marker checks report mechanical text coverage. Keep distribution-obligation review, embedded-data and trademark review, binary-content attestation and external FFmpeg/codec closure pending. Preserve exact source texts in the evidence bundle. Collect FFmpeg/FFprobe versions and executable hashes outside the Rust dependency BOM.

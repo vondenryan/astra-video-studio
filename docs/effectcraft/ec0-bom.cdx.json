@@ -1,0 +1,3871 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.6",
+  "version": 1,
+  "metadata": {
+    "component": {
+      "type": "application",
+      "bom-ref": "urn:sha256:45e9239fb211cab7c442eb78f0bb4677e6f6b287bf1fc06d8a4cc9b338e15624",
+      "name": "astra-ec0-probe",
+      "version": "0.1.0",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "MIT"
+        }
+      ]
+    },
+    "properties": [
+      {
+        "name": "astra:scope",
+        "value": "Pinned Windows Cargo closure and embedded fonts; technical license evidence and CycloneDX 1.6 inventory"
+      },
+      {
+        "name": "astra:target",
+        "value": "x86_64-pc-windows-msvc"
+      },
+      {
+        "name": "astra:cargo-lock-sha256",
+        "value": "52f373b88a4e4af1661b3ba912e00411fbdfe20cfad0646b2a091f7aef76fe1e"
+      }
+    ]
+  },
+  "components": [
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:aebee4ff6e9bc8e569d742f30a2104f5f3177790c1876f7df78b6a3021ce4ef6",
+      "name": "adler2",
+      "version": "2.0.1",
+      "licenses": [
+        {
+          "expression": "0BSD OR MIT OR Apache-2.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "0BSD OR MIT OR Apache-2.0"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "registry+https://github.com/rust-lang/crates.io-index"
+        }
+      ],
+      "purl": "pkg:cargo/adler2@2.0.1",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "320119579fcad9c21884f5c4861d16174d0e06250625266f50fe6898340abefa"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:ae912670350682be15659c0228cba009a3c503ec1dfd090fbbe133d6ad254b90",
+      "name": "arrayref",
+      "version": "0.3.9",
+      "licenses": [
+        {
+          "expression": "BSD-2-Clause"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "BSD-2-Clause"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "registry+https://github.com/rust-lang/crates.io-index"
+        }
+      ],
+      "purl": "pkg:cargo/arrayref@0.3.9",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "76a2e8124351fda1ef8aaaa3bbd7ebbcb486bbcd4225aca0aa0d84bb2db8fecb"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:a01a77d34fe054f8d8c147ca96a78f217632503c7c9617b311c93d2afb412353",
+      "name": "arrayvec",
+      "version": "0.7.8",
+      "licenses": [
+        {
+          "expression": "MIT OR Apache-2.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[\"default\", \"serde\", \"std\"]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "MIT OR Apache-2.0"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "registry+https://github.com/rust-lang/crates.io-index"
+        }
+      ],
+      "purl": "pkg:cargo/arrayvec@0.7.8",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "d3fb67a6e08acf24fdeccbac2cb6ac4305825bd1f117462e0e6f2f193345ad56"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:a6cca9c73d95aa5b9e7ea66e129f9ff1a034ef64fea9d50f6ae18ddd8cd6ab76",
+      "name": "autocfg",
+      "version": "1.5.1",
+      "licenses": [
+        {
+          "expression": "Apache-2.0 OR MIT"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "Apache-2.0 OR MIT"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "registry+https://github.com/rust-lang/crates.io-index"
+        }
+      ],
+      "purl": "pkg:cargo/autocfg@1.5.1",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "f2032f911046de80f0a198e0901378627c33f59ea0ac00e363d481118bd70a53"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:d6392fe03c55987b709d3d416b46c194f70b6086a8abf913d496a6242e8e04fe",
+      "name": "bitflags",
+      "version": "2.13.2",
+      "licenses": [
+        {
+          "expression": "MIT OR Apache-2.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[\"std\"]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "MIT OR Apache-2.0"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "registry+https://github.com/rust-lang/crates.io-index"
+        }
+      ],
+      "purl": "pkg:cargo/bitflags@2.13.2",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "3ded4057c258ba199e2d26386d3af3780957ecaee6c4ef4041c6b4b8b97c0b06"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:ebebeb6811177738448a537e917a651005a98bbde86f42abb52e270ae8d01839",
+      "name": "block-buffer",
+      "version": "0.10.4",
+      "licenses": [
+        {
+          "expression": "MIT OR Apache-2.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "MIT OR Apache-2.0"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "registry+https://github.com/rust-lang/crates.io-index"
+        }
+      ],
+      "purl": "pkg:cargo/block-buffer@0.10.4",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "3078c7629b62d3f0439517fa394996acacc5cbc91c5a20d8c658e77abd503a71"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:3ad3a1068b74284ad6e9bbed54c3a9365ad456b684f87ac3567b310cd38ad5c6",
+      "name": "bytemuck",
+      "version": "1.25.2",
+      "licenses": [
+        {
+          "expression": "Zlib OR Apache-2.0 OR MIT"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[\"aarch64_simd\", \"bytemuck_derive\", \"derive\", \"extern_crate_alloc\", \"min_const_generics\"]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "Zlib OR Apache-2.0 OR MIT"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "registry+https://github.com/rust-lang/crates.io-index"
+        }
+      ],
+      "purl": "pkg:cargo/bytemuck@1.25.2",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "95832e849adfb21180ccb6826a99da14e5d266ae5c2e668e1602cf234f153797"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:f3aa2b1ad3ed712b983c1111fab1c71929338071f79db9d19109d920a830f1ae",
+      "name": "bytemuck_derive",
+      "version": "1.12.1",
+      "licenses": [
+        {
+          "expression": "Zlib OR Apache-2.0 OR MIT"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "Zlib OR Apache-2.0 OR MIT"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "registry+https://github.com/rust-lang/crates.io-index"
+        }
+      ],
+      "purl": "pkg:cargo/bytemuck_derive@1.12.1",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "6a1f896587b6f2c069c73d2f0913e2d590c3990285cd2f0b6aa02b786b4c679c"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:5df3608dd464d4d7e1663ca83eac39fc3ebe1ac621e2b0b99d324755b6920b2b",
+      "name": "byteorder-lite",
+      "version": "0.1.0",
+      "licenses": [
+        {
+          "expression": "Unlicense OR MIT"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[\"default\", \"std\"]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "Unlicense OR MIT"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "registry+https://github.com/rust-lang/crates.io-index"
+        }
+      ],
+      "purl": "pkg:cargo/byteorder-lite@0.1.0",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "8f1fe948ff07f4bd06c30984e69f5b4899c516a3ef74f34df92a2df2ab535495"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:c54faec0c2c7ef88d64f5903c41cf73f836f02a97554955be9a8e522e19b6bce",
+      "name": "cfg-if",
+      "version": "1.0.5",
+      "licenses": [
+        {
+          "expression": "MIT OR Apache-2.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "MIT OR Apache-2.0"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "registry+https://github.com/rust-lang/crates.io-index"
+        }
+      ],
+      "purl": "pkg:cargo/cfg-if@1.0.5",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "4e7648175b45a9a48536d676f68d918270699102aa8dab5496df06904c914600"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:7fc9e44c8c2f76da65c73928d3f6d0bf0702b4f89a2185149987ca26680b3c94",
+      "name": "chrono",
+      "version": "0.4.45",
+      "licenses": [
+        {
+          "expression": "MIT OR Apache-2.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[\"alloc\", \"std\"]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "MIT OR Apache-2.0"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "registry+https://github.com/rust-lang/crates.io-index"
+        }
+      ],
+      "purl": "pkg:cargo/chrono@0.4.45",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "1aa79e62e7697b8e29b513a68abacf485adcd1fe8284a4316c5ae868e6633327"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:4dcf15136d5c3a9432d27b793190c2dad76166218d81dce459fe4cabb8679b0a",
+      "name": "cpufeatures",
+      "version": "0.2.17",
+      "licenses": [
+        {
+          "expression": "MIT OR Apache-2.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "MIT OR Apache-2.0"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "registry+https://github.com/rust-lang/crates.io-index"
+        }
+      ],
+      "purl": "pkg:cargo/cpufeatures@0.2.17",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "59ed5838eebb26a2bb2e58f6d5b5316989ae9d08bab10e0e6d103e656d1b0280"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:82fa898b56693738a925a6740260c068970f9f5efbab2319a1b0b155e8aeea2a",
+      "name": "craft-ecproj-format",
+      "version": "0.1.0",
+      "licenses": [
+        {
+          "expression": "MIT OR Apache-2.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "MIT OR Apache-2.0"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "git+https://github.com/storytold/craft-libs?rev=ca1b5e2edb8568335c6c14f390307bd5beae8238#ca1b5e2edb8568335c6c14f390307bd5beae8238"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:d854b065c44078d6eab2caf08a7c7d16d28ed8596d79f382d7e9814a52710626",
+      "name": "crc32fast",
+      "version": "1.5.5",
+      "licenses": [
+        {
+          "expression": "MIT OR Apache-2.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[\"default\", \"std\"]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "MIT OR Apache-2.0"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "registry+https://github.com/rust-lang/crates.io-index"
+        }
+      ],
+      "purl": "pkg:cargo/crc32fast@1.5.5",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "2b929dd2a135771f40afabd1073f85eed59c800b7c61901e5c254270497dad64"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:d3a8966bfc455fcb76d71ed7b35ca2e156a81a7a35b6f3a93b1f860c36f2d9a0",
+      "name": "crossbeam-deque",
+      "version": "0.8.8",
+      "licenses": [
+        {
+          "expression": "MIT OR Apache-2.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[\"default\", \"std\"]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "MIT OR Apache-2.0"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "registry+https://github.com/rust-lang/crates.io-index"
+        }
+      ],
+      "purl": "pkg:cargo/crossbeam-deque@0.8.8",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "622f3fc73690be383c7214310406f28a90e6edeadc3cea882f9d71e495b9711a"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:348f4a6b2fb65072e8f36e519bdc9de1f4e1e8b50a8d300a2c4eae7b65f6df90",
+      "name": "crossbeam-epoch",
+      "version": "0.9.21",
+      "licenses": [
+        {
+          "expression": "MIT OR Apache-2.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[\"alloc\", \"std\"]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "MIT OR Apache-2.0"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "registry+https://github.com/rust-lang/crates.io-index"
+        }
+      ],
+      "purl": "pkg:cargo/crossbeam-epoch@0.9.21",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "dc74980687109a3b14c72fd458107bf0baa1da1a1a805e178d15501ba9b86d9d"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:16360ca7336f09c2161ecdc1d3cc2a46ac50ef3878411d8942d7e60659feeb9a",
+      "name": "crossbeam-utils",
+      "version": "0.8.23",
+      "licenses": [
+        {
+          "expression": "MIT OR Apache-2.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[\"default\", \"std\"]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "MIT OR Apache-2.0"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "registry+https://github.com/rust-lang/crates.io-index"
+        }
+      ],
+      "purl": "pkg:cargo/crossbeam-utils@0.8.23",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "a31eee39dddec8330830986fcd7625edb5a24ec90ea038215273bbc3adb08ac6"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:b21839460dae3e23b599806de36b5a4e0807be8d415041091700c8054ffb6ed0",
+      "name": "crypto-common",
+      "version": "0.1.7",
+      "licenses": [
+        {
+          "expression": "MIT OR Apache-2.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[\"std\"]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "MIT OR Apache-2.0"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "registry+https://github.com/rust-lang/crates.io-index"
+        }
+      ],
+      "purl": "pkg:cargo/crypto-common@0.1.7",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "78c8292055d1c1df0cce5d180393dc8cce0abec0a7102adb6c7b1eef6016d60a"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:02c08ace33348cde6a4a3bbb867d5c40ef96f79633e0b4db4a5750914d822b09",
+      "name": "digest",
+      "version": "0.10.7",
+      "licenses": [
+        {
+          "expression": "MIT OR Apache-2.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[\"alloc\", \"block-buffer\", \"core-api\", \"default\", \"std\"]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "MIT OR Apache-2.0"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "registry+https://github.com/rust-lang/crates.io-index"
+        }
+      ],
+      "purl": "pkg:cargo/digest@0.10.7",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "9ed9a281f7bc9b7576e61468ba615a66a5c8cfdff42420a70aa82701a3b1e292"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:c4825cef47b191f8514d4848497e3d4c4a28b3f284bb2d44a1625f865d8f404c",
+      "name": "effectcraft-aep",
+      "version": "0.21.0",
+      "licenses": [
+        {
+          "expression": "MIT OR Apache-2.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "MIT OR Apache-2.0"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "git+https://github.com/storytold/effectcraft?rev=a41ff5015c6687db15a6f074a47b870b8f09fece#a41ff5015c6687db15a6f074a47b870b8f09fece"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:981c5526abf476c178a2ca304f9bc3e606b9a18784e281c83a61ef1f375fac05",
+      "name": "effectcraft-color",
+      "version": "0.21.0",
+      "licenses": [
+        {
+          "expression": "MIT OR Apache-2.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "MIT OR Apache-2.0"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "git+https://github.com/storytold/effectcraft?rev=a41ff5015c6687db15a6f074a47b870b8f09fece#a41ff5015c6687db15a6f074a47b870b8f09fece"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:c2cc99be693b7eaa9bd4c48c61f83478e6cbefcb19e393789daba9236f2fb135",
+      "name": "effectcraft-effects",
+      "version": "0.21.0",
+      "licenses": [
+        {
+          "expression": "MIT OR Apache-2.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "MIT OR Apache-2.0"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "git+https://github.com/storytold/effectcraft?rev=a41ff5015c6687db15a6f074a47b870b8f09fece#a41ff5015c6687db15a6f074a47b870b8f09fece"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:4f63aee1d12a7379aa576c3a413e36869b40c304f08226b77b77e3fb6ddfa12a",
+      "name": "effectcraft-geom",
+      "version": "0.21.0",
+      "licenses": [
+        {
+          "expression": "MIT OR Apache-2.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "MIT OR Apache-2.0"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "git+https://github.com/storytold/effectcraft?rev=a41ff5015c6687db15a6f074a47b870b8f09fece#a41ff5015c6687db15a6f074a47b870b8f09fece"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:b03f8fd610cded0f8f3225ca15370b4b092a03e33118218a96406715ded76ab2",
+      "name": "effectcraft-keyframe",
+      "version": "0.21.0",
+      "licenses": [
+        {
+          "expression": "MIT OR Apache-2.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "MIT OR Apache-2.0"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "git+https://github.com/storytold/effectcraft?rev=a41ff5015c6687db15a6f074a47b870b8f09fece#a41ff5015c6687db15a6f074a47b870b8f09fece"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:8fa20960811e7badeabfa91deb3921006ddf05f308d27cc37f426662dc75c9df",
+      "name": "effectcraft-model",
+      "version": "0.21.0",
+      "licenses": [
+        {
+          "expression": "MIT OR Apache-2.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "MIT OR Apache-2.0"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "git+https://github.com/storytold/effectcraft?rev=a41ff5015c6687db15a6f074a47b870b8f09fece#a41ff5015c6687db15a6f074a47b870b8f09fece"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:00e768f298d13efa6ad27b8dd5ac072f223dfb6b53fe8c36e8c8af1069a04467",
+      "name": "effectcraft-path",
+      "version": "0.21.0",
+      "licenses": [
+        {
+          "expression": "MIT OR Apache-2.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "MIT OR Apache-2.0"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "git+https://github.com/storytold/effectcraft?rev=a41ff5015c6687db15a6f074a47b870b8f09fece#a41ff5015c6687db15a6f074a47b870b8f09fece"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:cd5dc922e6595a560e8c4a467dc950cc157d6f9e0e19fb0261cde25559b16e3c",
+      "name": "effectcraft-project",
+      "version": "0.21.0",
+      "licenses": [
+        {
+          "expression": "MIT OR Apache-2.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "MIT OR Apache-2.0"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "git+https://github.com/storytold/effectcraft?rev=a41ff5015c6687db15a6f074a47b870b8f09fece#a41ff5015c6687db15a6f074a47b870b8f09fece"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:1442d8c866f14224d2abd4f22c7e0e9d722945fd0224a9decbed9298550b8fdd",
+      "name": "effectcraft-raster",
+      "version": "0.21.0",
+      "licenses": [
+        {
+          "expression": "MIT OR Apache-2.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "MIT OR Apache-2.0"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "git+https://github.com/storytold/effectcraft?rev=a41ff5015c6687db15a6f074a47b870b8f09fece#a41ff5015c6687db15a6f074a47b870b8f09fece"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:053fbf071a1f36ad5aecef49d41b11ee576abf33fae4f2d6c37ba14bd9f799b6",
+      "name": "effectcraft-render",
+      "version": "0.21.0",
+      "licenses": [
+        {
+          "expression": "MIT OR Apache-2.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "MIT OR Apache-2.0"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "git+https://github.com/storytold/effectcraft?rev=a41ff5015c6687db15a6f074a47b870b8f09fece#a41ff5015c6687db15a6f074a47b870b8f09fece"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:53dc4dbd90f415e9b4c5b527ea0088f21170f3724d3a164dd624a2ef22590c44",
+      "name": "effectcraft-segment",
+      "version": "0.21.0",
+      "licenses": [
+        {
+          "expression": "MIT OR Apache-2.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "MIT OR Apache-2.0"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "git+https://github.com/storytold/effectcraft?rev=a41ff5015c6687db15a6f074a47b870b8f09fece#a41ff5015c6687db15a6f074a47b870b8f09fece"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:1b6ab595465312b2fb716df0800cad1ce1af0f6e4ac6d45333f766aff55dad6f",
+      "name": "effectcraft-text",
+      "version": "0.21.0",
+      "licenses": [
+        {
+          "expression": "MIT OR Apache-2.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "MIT OR Apache-2.0"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "git+https://github.com/storytold/effectcraft?rev=a41ff5015c6687db15a6f074a47b870b8f09fece#a41ff5015c6687db15a6f074a47b870b8f09fece"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:f69cf1d77751cdbcdef9cc16e301ab91ccd6477806aa8b7327cd95a42e78bdee",
+      "name": "effectcraft-time",
+      "version": "0.21.0",
+      "licenses": [
+        {
+          "expression": "MIT OR Apache-2.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "MIT OR Apache-2.0"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "git+https://github.com/storytold/effectcraft?rev=a41ff5015c6687db15a6f074a47b870b8f09fece#a41ff5015c6687db15a6f074a47b870b8f09fece"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:a9e45ec270f8b48f40703d10d63400375b9e66b26dc2082a7f76f11d37e2c757",
+      "name": "effectcraft-track",
+      "version": "0.21.0",
+      "licenses": [
+        {
+          "expression": "MIT OR Apache-2.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "MIT OR Apache-2.0"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "git+https://github.com/storytold/effectcraft?rev=a41ff5015c6687db15a6f074a47b870b8f09fece#a41ff5015c6687db15a6f074a47b870b8f09fece"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:ad758b028c655c6ba2e0a3cfa65e4f71c887c1df931f4469614617ac7c130f2f",
+      "name": "either",
+      "version": "1.19.0",
+      "licenses": [
+        {
+          "expression": "MIT OR Apache-2.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "MIT OR Apache-2.0"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "registry+https://github.com/rust-lang/crates.io-index"
+        }
+      ],
+      "purl": "pkg:cargo/either@1.19.0",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "0e9c71c2167ca323c882b99918929403426e2373ea17242ff5653e0d5e1058be"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:fbecc7793787db16ab193deb99b4a9d9ff19bb0786558762e502358769d3ad0a",
+      "name": "euclid",
+      "version": "0.22.14",
+      "licenses": [
+        {
+          "expression": "MIT OR Apache-2.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[\"std\"]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "MIT OR Apache-2.0"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "registry+https://github.com/rust-lang/crates.io-index"
+        }
+      ],
+      "purl": "pkg:cargo/euclid@0.22.14",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "f1a05365e3b1c6d1650318537c7460c6923f1abdd272ad6842baa2b509957a06"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:2a64bba88e2c2765451068923bd1c57fc2279d86f0b925342271249e003961c7",
+      "name": "fastrand",
+      "version": "2.5.0",
+      "licenses": [
+        {
+          "expression": "Apache-2.0 OR MIT"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[\"alloc\", \"default\", \"std\"]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "Apache-2.0 OR MIT"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "registry+https://github.com/rust-lang/crates.io-index"
+        }
+      ],
+      "purl": "pkg:cargo/fastrand@2.5.0",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "da7c62ceae207dd37ea5b845da6a0696c799f85e97da1ab5b7910be3c1c80223"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:5aef0f811bfe1aa466cb945072f6421b503300d9af4a28b7d1f31ee9651858fc",
+      "name": "fdeflate",
+      "version": "0.3.7",
+      "licenses": [
+        {
+          "expression": "MIT OR Apache-2.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "MIT OR Apache-2.0"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "registry+https://github.com/rust-lang/crates.io-index"
+        }
+      ],
+      "purl": "pkg:cargo/fdeflate@0.3.7",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "1e6853b52649d4ac5c0bd02320cddc5ba956bdb407c4b75a2c6b75bf51500f8c"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:71794d6eb19bc04f9bb2aefdee2a63df798a98015ca758a6968817d2f9a83a15",
+      "name": "flate2",
+      "version": "1.1.11",
+      "licenses": [
+        {
+          "expression": "MIT OR Apache-2.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[\"any_impl\", \"default\", \"miniz_oxide\", \"runtime_detection\", \"rust_backend\"]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "MIT OR Apache-2.0"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "registry+https://github.com/rust-lang/crates.io-index"
+        }
+      ],
+      "purl": "pkg:cargo/flate2@1.1.11",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "626d4928326b646e70f65ed36fc7cf9f206bdb68a0019ee7c6b4709da4e084c4"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:5e2331abc0d8b6f0cf40ed4ce24f4afd05989ed1445de741243a625f43a3287d",
+      "name": "font-types",
+      "version": "0.12.7",
+      "licenses": [
+        {
+          "expression": "MIT OR Apache-2.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[\"bytemuck\", \"std\"]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "MIT OR Apache-2.0"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "registry+https://github.com/rust-lang/crates.io-index"
+        }
+      ],
+      "purl": "pkg:cargo/font-types@0.12.7",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "835ae9d781464a79026cde387f9cbc650c9a4909d7cf7e658b127e3c35d2f35d"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:ff8459e60c5b1d696d6856eeb8fd1fd096f8005e568029c908ce8229463daf46",
+      "name": "generic-array",
+      "version": "0.14.7",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[\"more_lengths\"]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "MIT"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "registry+https://github.com/rust-lang/crates.io-index"
+        }
+      ],
+      "purl": "pkg:cargo/generic-array@0.14.7",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "85649ca51fd72272d7821adaf274ad91c288277713d9c18820d8499a7ff69e9a"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:c5ab9d2eb1fa8f7299e442d051683ded0857dc9e4ce3bea53f09a00d89beb118",
+      "name": "getrandom",
+      "version": "0.4.3",
+      "licenses": [
+        {
+          "expression": "MIT OR Apache-2.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "MIT OR Apache-2.0"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "registry+https://github.com/rust-lang/crates.io-index"
+        }
+      ],
+      "purl": "pkg:cargo/getrandom@0.4.3",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "300e883d756b2e4ec94e02791f39b04b522276138852cfc41d9fb7e904106099"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:538b903c6c87b29f079d1f434d3ebfd21f2763dd7da69412f565c91fa3c02a86",
+      "name": "harfrust",
+      "version": "0.12.0",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[\"std\"]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "MIT"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "registry+https://github.com/rust-lang/crates.io-index"
+        }
+      ],
+      "purl": "pkg:cargo/harfrust@0.12.0",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "c03d949a14aa089bbb282f7dd76a498a7f684428e4257202efc119ec010376f9"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:a2ed68f29ac5568e440d67c2cec1d8f6f17a27953b110b17cc6453a401e56a88",
+      "name": "image",
+      "version": "0.25.10",
+      "licenses": [
+        {
+          "expression": "MIT OR Apache-2.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[\"jpeg\", \"png\"]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "MIT OR Apache-2.0"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "registry+https://github.com/rust-lang/crates.io-index"
+        }
+      ],
+      "purl": "pkg:cargo/image@0.25.10",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "85ab80394333c02fe689eaf900ab500fbd0c2213da414687ebf995a65d5a6104"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:089a2a389e460262515d154be23b141c4c4b026badbee8b223f1e85294c346f5",
+      "name": "itoa",
+      "version": "1.0.19",
+      "licenses": [
+        {
+          "expression": "MIT OR Apache-2.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "MIT OR Apache-2.0"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "registry+https://github.com/rust-lang/crates.io-index"
+        }
+      ],
+      "purl": "pkg:cargo/itoa@1.0.19",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "3bd1574e617a9a6c1f8f8181bd7e841e1f20e4277607ef28945765188d6284d4"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:7d21ddcb2487bf81aa882b7b7e2666851288dc27765530760b2d981a5c89249d",
+      "name": "kurbo",
+      "version": "0.13.1",
+      "licenses": [
+        {
+          "expression": "Apache-2.0 OR MIT"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[\"default\", \"serde\", \"std\"]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "Apache-2.0 OR MIT"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "registry+https://github.com/rust-lang/crates.io-index"
+        }
+      ],
+      "purl": "pkg:cargo/kurbo@0.13.1",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "4b60dfc32f652b926df6192e55525b16d186c69d47876c3ead4da5cc9f8450e2"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:5ac9a9d2608b4bfc0d96c22b94d43865767af10801c5731569377afecb5420c3",
+      "name": "linesweeper",
+      "version": "0.5.0",
+      "licenses": [
+        {
+          "expression": "MIT OR Apache-2.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "MIT OR Apache-2.0"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "registry+https://github.com/rust-lang/crates.io-index"
+        }
+      ],
+      "purl": "pkg:cargo/linesweeper@0.5.0",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "a25df1b0c5432893f41bba817150e323703ee5f6d974f3a6808ac7fd7f046d18"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:62639c34bafa238da030fe7ce87d0e0359307636475f9fd99af08dffa0b37419",
+      "name": "log",
+      "version": "0.4.35",
+      "licenses": [
+        {
+          "expression": "MIT OR Apache-2.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "MIT OR Apache-2.0"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "registry+https://github.com/rust-lang/crates.io-index"
+        }
+      ],
+      "purl": "pkg:cargo/log@0.4.35",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "5d15f86d12da44cd8d4ec3c73984537eb7f4cadcb9776a575a0a8a05ca11005c"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:35453973e4c395956a296d87da91c2b44b881dfcc0dee33f153cd5272c89c5a9",
+      "name": "lz4_flex",
+      "version": "0.14.0",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[\"alloc\", \"checked-decode\", \"safe-decode\", \"safe-encode\", \"std\"]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "MIT"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "registry+https://github.com/rust-lang/crates.io-index"
+        }
+      ],
+      "purl": "pkg:cargo/lz4_flex@0.14.0",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "ecbdfe44b1bd960b68170b417450a628c43f7cf56bb3c5317e61cb230ee7f226"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:790bfe81d31642a626a57dece4f35c9713bc440d68872d6cc291bd7b2d8a8784",
+      "name": "matrixmultiply",
+      "version": "0.3.11",
+      "licenses": [
+        {
+          "expression": "MIT OR Apache-2.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[\"cgemm\", \"std\"]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "MIT/Apache-2.0"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "registry+https://github.com/rust-lang/crates.io-index"
+        }
+      ],
+      "purl": "pkg:cargo/matrixmultiply@0.3.11",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "3f607c237553f086e7043417a51df26b2eb899d3caff94e6a67592ff992fedc7"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:170d0de08a648ef761f4d1c407e52126fa14427e1213bf041bfad232a3a571b7",
+      "name": "memchr",
+      "version": "2.8.3",
+      "licenses": [
+        {
+          "expression": "Unlicense OR MIT"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[\"alloc\", \"std\"]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "Unlicense OR MIT"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "registry+https://github.com/rust-lang/crates.io-index"
+        }
+      ],
+      "purl": "pkg:cargo/memchr@2.8.3",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "cf8baf1c55e62ffcace7a9f06f4bd9cd3f0c4beb022d3b367256b91b87513d98"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:3367dbeaf5fdd7e7133e1e57a4097feb575c5b722edea787aad6d1c556d39ff7",
+      "name": "miniz_oxide",
+      "version": "0.8.9",
+      "licenses": [
+        {
+          "expression": "MIT OR Zlib OR Apache-2.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[\"default\", \"simd\", \"simd-adler32\", \"with-alloc\"]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "MIT OR Zlib OR Apache-2.0"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "registry+https://github.com/rust-lang/crates.io-index"
+        }
+      ],
+      "purl": "pkg:cargo/miniz_oxide@0.8.9",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "1fa76a2c86f704bdb222d66965fb3d63269ce38518b83cb0575fca855ebb6316"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:7116d16dce202db475454b9e1631d9765246f2c9ee925ed7ed18831c30f40e84",
+      "name": "miniz_oxide",
+      "version": "0.9.1",
+      "licenses": [
+        {
+          "expression": "MIT OR Zlib OR Apache-2.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[\"default\", \"simd\", \"simd-adler32\", \"with-alloc\"]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "MIT OR Zlib OR Apache-2.0"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "registry+https://github.com/rust-lang/crates.io-index"
+        }
+      ],
+      "purl": "pkg:cargo/miniz_oxide@0.9.1",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "b63fbc4a50860e98e7b2aa7804ded1db5cbc3aff9193adaff57a6931bf7c4b4c"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:02bcb2337f61f97fe876f143c4b06a9b0e5b25788f527ef3318ccd690f068d2f",
+      "name": "moxcms",
+      "version": "0.8.1",
+      "licenses": [
+        {
+          "expression": "BSD-3-Clause OR Apache-2.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[\"avx\", \"avx_luts\", \"avx_shaper_fixed_point_paths\", \"avx_shaper_paths\", \"default\", \"lut\", \"neon\", \"neon_luts\", \"neon_shaper_fixed_point_paths\", \"neon_shaper_paths\", \"sse\", \"sse_luts\", \"sse_shaper_fixed_point_paths\", \"sse_shaper_paths\"]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "BSD-3-Clause OR Apache-2.0"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "registry+https://github.com/rust-lang/crates.io-index"
+        }
+      ],
+      "purl": "pkg:cargo/moxcms@0.8.1",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "bb85c154ba489f01b25c0d36ae69a87e4a1c73a72631fc6c0eb6dde34a73e44b"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:49c15917f23f9d3685be85f5512ce13990462506dd9d769234db8b7a5d5e10a1",
+      "name": "ndarray",
+      "version": "0.17.2",
+      "licenses": [
+        {
+          "expression": "MIT OR Apache-2.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[\"std\"]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "MIT OR Apache-2.0"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "registry+https://github.com/rust-lang/crates.io-index"
+        }
+      ],
+      "purl": "pkg:cargo/ndarray@0.17.2",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "520080814a7a6b4a6e9070823bb24b4531daac8c4627e08ba5de8c5ef2f2752d"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:c5f61791ae553533276c0d74b3447216c42db7f77dc06d7f73f18601281249cc",
+      "name": "num-complex",
+      "version": "0.4.6",
+      "licenses": [
+        {
+          "expression": "MIT OR Apache-2.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "MIT OR Apache-2.0"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "registry+https://github.com/rust-lang/crates.io-index"
+        }
+      ],
+      "purl": "pkg:cargo/num-complex@0.4.6",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "73f88a1307638156682bada9d7604135552957b7818057dcef22705b4d509495"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:efd6cbb2a0a704ec92e84256fcf3a07dd122fc268f479a7828308af4fc1a3f40",
+      "name": "num-integer",
+      "version": "0.1.47",
+      "licenses": [
+        {
+          "expression": "MIT OR Apache-2.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "MIT OR Apache-2.0"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "registry+https://github.com/rust-lang/crates.io-index"
+        }
+      ],
+      "purl": "pkg:cargo/num-integer@0.1.47",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "7ce2d95d4b3734dc35aa2f45e1aa22cd416814592a4f9d9205e11affd5b8e10b"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:7e6965707da347bb3243f77bbd2d9f736789b23dbc49053014b037e4770ec493",
+      "name": "num-traits",
+      "version": "0.2.19",
+      "licenses": [
+        {
+          "expression": "MIT OR Apache-2.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[\"default\", \"i128\", \"std\"]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "MIT OR Apache-2.0"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "registry+https://github.com/rust-lang/crates.io-index"
+        }
+      ],
+      "purl": "pkg:cargo/num-traits@0.2.19",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "071dfc062690e90b734c0b2273ce72ad0ffa95f0c74596bc250dcfd960262841"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:d875d0342d85a6a1febeb12400f5246f318b91ece920ba21b9023f309d837ed5",
+      "name": "once_cell",
+      "version": "1.21.4",
+      "licenses": [
+        {
+          "expression": "MIT OR Apache-2.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[\"alloc\", \"race\", \"std\"]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "MIT OR Apache-2.0"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "registry+https://github.com/rust-lang/crates.io-index"
+        }
+      ],
+      "purl": "pkg:cargo/once_cell@1.21.4",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "9f7c3e4beb33f85d45ae3e3a1792185706c8e16d043238c593331cc7cd313b50"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:a38bad6a35986ef1c430dc0140af5e1670467170af185f78578a9b9c5e71a5fd",
+      "name": "png",
+      "version": "0.18.1",
+      "licenses": [
+        {
+          "expression": "MIT OR Apache-2.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "MIT OR Apache-2.0"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "registry+https://github.com/rust-lang/crates.io-index"
+        }
+      ],
+      "purl": "pkg:cargo/png@0.18.1",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "60769b8b31b2a9f263dae2776c37b1b28ae246943cf719eb6946a1db05128a61"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:7b3763fe196f70332b1014f6dc77f0bc2b2c3bb7be89e8cf330d53aadd75e17b",
+      "name": "polycool",
+      "version": "0.4.0",
+      "licenses": [
+        {
+          "expression": "MIT OR Apache-2.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[\"default\", \"std\"]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "MIT OR Apache-2.0"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "registry+https://github.com/rust-lang/crates.io-index"
+        }
+      ],
+      "purl": "pkg:cargo/polycool@0.4.0",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "50596ddc09eb5ad5f75cacd40209568e66df71baf86e1499a0e99c4cff12a5a6"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:2f35b3b4e1060ccd3eeb00076731dbe8421aba15f5f1c41277838046c3b2d226",
+      "name": "proc-macro2",
+      "version": "1.0.107",
+      "licenses": [
+        {
+          "expression": "MIT OR Apache-2.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[\"default\", \"proc-macro\"]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "MIT OR Apache-2.0"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "registry+https://github.com/rust-lang/crates.io-index"
+        }
+      ],
+      "purl": "pkg:cargo/proc-macro2@1.0.107",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "985e7ec9bb745e6ce6535b544d84d6cd6f7ad8bd711c398938ae983b91a766d9"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:96f87c79550bd50dc7263c09e15bcb302cffb0668f4d90e01c8d748ec835aee3",
+      "name": "pxfm",
+      "version": "0.1.30",
+      "licenses": [
+        {
+          "expression": "BSD-3-Clause OR Apache-2.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "BSD-3-Clause OR Apache-2.0"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "registry+https://github.com/rust-lang/crates.io-index"
+        }
+      ],
+      "purl": "pkg:cargo/pxfm@0.1.30",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "d55d956fa96f5ec02be2e13af0e20391a5aa83d6a074e3ad368959d0fab299ea"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:43f395c24079f779dcac4d28bb57a37d7c92f0d60eeedec3d709f3426a1f332e",
+      "name": "quote",
+      "version": "1.0.47",
+      "licenses": [
+        {
+          "expression": "MIT OR Apache-2.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[\"default\", \"proc-macro\"]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "MIT OR Apache-2.0"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "registry+https://github.com/rust-lang/crates.io-index"
+        }
+      ],
+      "purl": "pkg:cargo/quote@1.0.47",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "1fbf4db142a473a8d80c26bbf18454ed458bf8d26c8219c331daecfdbd079001"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:5efe3e64ec7ff2cbfadf8b4db7862ad78cb7610e163555d43e6dbf03d1c33c8e",
+      "name": "rawpointer",
+      "version": "0.2.1",
+      "licenses": [
+        {
+          "expression": "MIT OR Apache-2.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "MIT/Apache-2.0"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "registry+https://github.com/rust-lang/crates.io-index"
+        }
+      ],
+      "purl": "pkg:cargo/rawpointer@0.2.1",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "60a357793950651c4ed0f3f52338f53b2f809f32d83a07f72909fa13e4c6c1e3"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:196b4e8c261c59fbb3bdf14df6c84e2992529053d215353c257aa16fc3cf77e2",
+      "name": "rayon",
+      "version": "1.12.0",
+      "licenses": [
+        {
+          "expression": "MIT OR Apache-2.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "MIT OR Apache-2.0"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "registry+https://github.com/rust-lang/crates.io-index"
+        }
+      ],
+      "purl": "pkg:cargo/rayon@1.12.0",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "fb39b166781f92d482534ef4b4b1b2568f42613b53e5b6c160e24cfbfa30926d"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:9873ab067013947b40ceac72e985457b5d767c8837adfa1fe89b36fb8df2027f",
+      "name": "rayon-core",
+      "version": "1.13.0",
+      "licenses": [
+        {
+          "expression": "MIT OR Apache-2.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "MIT OR Apache-2.0"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "registry+https://github.com/rust-lang/crates.io-index"
+        }
+      ],
+      "purl": "pkg:cargo/rayon-core@1.13.0",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "22e18b0f0062d30d4230b2e85ff77fdfe4326feb054b9783a3460d8435c8ab91"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:e5470dddb702836a06b3a819ac810a8b8ed7222a459f37fcaf549d8c6cc51ec9",
+      "name": "read-fonts",
+      "version": "0.41.0",
+      "licenses": [
+        {
+          "expression": "MIT OR Apache-2.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[\"experimental_font_api\", \"std\"]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "MIT OR Apache-2.0"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "registry+https://github.com/rust-lang/crates.io-index"
+        }
+      ],
+      "purl": "pkg:cargo/read-fonts@0.41.0",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "046a7d674daf459825b32f5062056d6882db0d2f5a479fbd76ccfc870ac18709"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:ac5b1202e8e8649c7b5434e58808fc2f0c9bb6caa4fad548af00c7f6927ef66f",
+      "name": "rustc-hash",
+      "version": "2.1.3",
+      "licenses": [
+        {
+          "expression": "Apache-2.0 OR MIT"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[\"default\", \"std\"]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "Apache-2.0 OR MIT"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "registry+https://github.com/rust-lang/crates.io-index"
+        }
+      ],
+      "purl": "pkg:cargo/rustc-hash@2.1.3",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "6b1e7f9a428571be2dc5bc0505c13fb6bf936822b894ec87abf8a08a4e51742d"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:f51c0b56b8d0883c754a5847568d9aaaaed4d15b7665d1419d3a324529119bfc",
+      "name": "serde",
+      "version": "1.0.229",
+      "licenses": [
+        {
+          "expression": "MIT OR Apache-2.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[\"alloc\", \"default\", \"derive\", \"rc\", \"serde_derive\", \"std\"]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "MIT OR Apache-2.0"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "registry+https://github.com/rust-lang/crates.io-index"
+        }
+      ],
+      "purl": "pkg:cargo/serde@1.0.229",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "4148590afebada386688f18773da617792bf2ef03ffc1e4cbd2b1d45b023e0ba"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:710291ff5d48934b1eb01f59c4645d1696dec465f49e4e65bb6010743396d617",
+      "name": "serde_core",
+      "version": "1.0.229",
+      "licenses": [
+        {
+          "expression": "MIT OR Apache-2.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[\"alloc\", \"rc\", \"result\", \"std\"]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "MIT OR Apache-2.0"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "registry+https://github.com/rust-lang/crates.io-index"
+        }
+      ],
+      "purl": "pkg:cargo/serde_core@1.0.229",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "67dca2c9c51e58a4791a4b1ed58308b39c64224d349a935ab5039aa360942a48"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:93b538e0a47fc75069bd94ccd11eba6fc4b41188a02198b1112663b74b256b3d",
+      "name": "serde_derive",
+      "version": "1.0.229",
+      "licenses": [
+        {
+          "expression": "MIT OR Apache-2.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[\"default\"]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "MIT OR Apache-2.0"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "registry+https://github.com/rust-lang/crates.io-index"
+        }
+      ],
+      "purl": "pkg:cargo/serde_derive@1.0.229",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "e7a5d71263a5a7d47b41f6b3f06ba276f10cc18b0931f1799f710578e2309348"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:ea2862b795e156cd04328cc69e58d8a799470149cdd04b9fb2437fd9e8505fe0",
+      "name": "serde_json",
+      "version": "1.0.154",
+      "licenses": [
+        {
+          "expression": "MIT OR Apache-2.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[\"default\", \"float_roundtrip\", \"std\"]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "MIT OR Apache-2.0"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "registry+https://github.com/rust-lang/crates.io-index"
+        }
+      ],
+      "purl": "pkg:cargo/serde_json@1.0.154",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "e7e9cc8b1b85264074fbcc02a88680c4096b1e47df8f739dceb03bf482f04bd6"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:f232c8e1a3740d8fb898728d0ded24da71e3a24a3cbe86b0e54b91e6a3740aad",
+      "name": "sha2",
+      "version": "0.10.9",
+      "licenses": [
+        {
+          "expression": "MIT OR Apache-2.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[\"default\", \"std\"]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "MIT OR Apache-2.0"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "registry+https://github.com/rust-lang/crates.io-index"
+        }
+      ],
+      "purl": "pkg:cargo/sha2@0.10.9",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "a7507d819769d01a365ab707794a4084392c824f54a7a6a7862f8c3d0892b283"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:a800b2f1161b13daebbc4f2174d52443315120acd6bd90121750263d5df84e64",
+      "name": "simd-adler32",
+      "version": "0.3.10",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[\"const-generics\", \"default\", \"std\"]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "MIT"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "registry+https://github.com/rust-lang/crates.io-index"
+        }
+      ],
+      "purl": "pkg:cargo/simd-adler32@0.3.10",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "3a219298ac11a56ea9a6d2120044824d6f01aeb034955e7af7bc16858527deea"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:68bd2e75ff7822a823c736ab8b8a194a19f81bb045f7b1a844ebf58464ba0000",
+      "name": "skrifa",
+      "version": "0.44.0",
+      "licenses": [
+        {
+          "expression": "MIT OR Apache-2.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[\"std\"]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "MIT OR Apache-2.0"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "registry+https://github.com/rust-lang/crates.io-index"
+        }
+      ],
+      "purl": "pkg:cargo/skrifa@0.44.0",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "819ab7d62b1d3e72d9d9dea5650bac30424f9111364bb94928dbf5ecad1baa68"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:eda26d8c73388b418e1875891a1556fad3e6ed3f8c28cc0ef647434f963d207f",
+      "name": "smallvec",
+      "version": "1.16.5",
+      "licenses": [
+        {
+          "expression": "MIT OR Apache-2.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[\"const_generics\", \"const_new\", \"serde\"]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "MIT OR Apache-2.0"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "registry+https://github.com/rust-lang/crates.io-index"
+        }
+      ],
+      "purl": "pkg:cargo/smallvec@1.16.5",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "149309498a5f7334b12ddae0cad8aba81ce785fe91755068867e017cf98fee46"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:ae41e4f021971a96fdb8458e0dcf47ffaf79484dbe1d8e30eb87262d8f4004a1",
+      "name": "strict-num",
+      "version": "0.1.1",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "MIT"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "registry+https://github.com/rust-lang/crates.io-index"
+        }
+      ],
+      "purl": "pkg:cargo/strict-num@0.1.1",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "6637bab7722d379c8b41ba849228d680cc12d0a45ba1fa2b48f2a30577a06731"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:cac39b85c48b52a9e159d3fc21ec15ee31f2b3bca52f7a0552d50fccd1b8ba6d",
+      "name": "syn",
+      "version": "3.0.10",
+      "licenses": [
+        {
+          "expression": "MIT OR Apache-2.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[\"clone-impls\", \"default\", \"derive\", \"extra-traits\", \"full\", \"parsing\", \"printing\", \"proc-macro\", \"visit\", \"visit-mut\"]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "MIT OR Apache-2.0"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "registry+https://github.com/rust-lang/crates.io-index"
+        }
+      ],
+      "purl": "pkg:cargo/syn@3.0.10",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "4ae9ccbea3a7b0b09443036490c8f34a8b1b760fd345e5c0dae0aac718faea79"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:dd68cc2cb204a7b3516b3978c43d96b147eb128ddc3f274fd86c31b4e5581b04",
+      "name": "tempfile",
+      "version": "3.27.0",
+      "licenses": [
+        {
+          "expression": "MIT OR Apache-2.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[\"default\", \"getrandom\"]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "MIT OR Apache-2.0"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "registry+https://github.com/rust-lang/crates.io-index"
+        }
+      ],
+      "purl": "pkg:cargo/tempfile@3.27.0",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "32497e9a4c7b38532efcdebeef879707aa9f794296a4f0244f6f69e9bc8574bd"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:65ff63ce1d3305ce99ec3ec48da62e480e91abbbea1495b4b586bdd52f80a036",
+      "name": "thiserror",
+      "version": "2.0.21",
+      "licenses": [
+        {
+          "expression": "MIT OR Apache-2.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[\"default\", \"std\"]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "MIT OR Apache-2.0"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "registry+https://github.com/rust-lang/crates.io-index"
+        }
+      ],
+      "purl": "pkg:cargo/thiserror@2.0.21",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "09e52cb86a36cede5cb101bf8908837b3e4c6e5e59fe7fd85c23fb56200d189e"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:7d657f0c9d58e66d1c2eb385d6f5f4f0a305db64c776f13425d31f508a74dc02",
+      "name": "thiserror-impl",
+      "version": "2.0.21",
+      "licenses": [
+        {
+          "expression": "MIT OR Apache-2.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "MIT OR Apache-2.0"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "registry+https://github.com/rust-lang/crates.io-index"
+        }
+      ],
+      "purl": "pkg:cargo/thiserror-impl@2.0.21",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "fe5197923287db20a58125f0bc85c062f7f2c892de97b18c356f9efb14b28524"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:52c90be4bdc8bde053381ccb59ef880b0d34fb0febf8d99059b4269812c985a4",
+      "name": "tiny-skia",
+      "version": "0.12.0",
+      "licenses": [
+        {
+          "expression": "BSD-3-Clause"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[\"simd\", \"std\"]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "BSD-3-Clause"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "registry+https://github.com/rust-lang/crates.io-index"
+        }
+      ],
+      "purl": "pkg:cargo/tiny-skia@0.12.0",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "47ffee5eaaf5527f630fb0e356b90ebdec84d5d18d937c5e440350f88c5a91ea"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:465c7859d126ac9c1c074b3ed6b5ae24b0b5d71318feacfe46f1955514208f77",
+      "name": "tiny-skia-path",
+      "version": "0.12.0",
+      "licenses": [
+        {
+          "expression": "BSD-3-Clause"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[\"std\"]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "BSD-3-Clause"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "registry+https://github.com/rust-lang/crates.io-index"
+        }
+      ],
+      "purl": "pkg:cargo/tiny-skia-path@0.12.0",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "edca365c3faccca67d06593c5980fa6c57687de727a03131735bb85f01fdeeb9"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:788b7517dbb33927b69aad547a866365940ae02eb7ea5d10f184df1e43d5c676",
+      "name": "typenum",
+      "version": "1.20.1",
+      "licenses": [
+        {
+          "expression": "MIT OR Apache-2.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "MIT OR Apache-2.0"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "registry+https://github.com/rust-lang/crates.io-index"
+        }
+      ],
+      "purl": "pkg:cargo/typenum@1.20.1",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "b6f5e870be6c3b371b77fe0ee0bafb859fa4964b4404c27de1d380043c4dda20"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:1865b723514f8b6bf40b6c74bcc92c3378b9d171035c3d049bec0e12709455b0",
+      "name": "unicode-bidi",
+      "version": "0.3.18",
+      "licenses": [
+        {
+          "expression": "MIT OR Apache-2.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[\"default\", \"hardcoded-data\", \"std\"]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "MIT OR Apache-2.0"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "registry+https://github.com/rust-lang/crates.io-index"
+        }
+      ],
+      "purl": "pkg:cargo/unicode-bidi@0.3.18",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "5c1cb5db39152898a79168971543b1cb5020dff7fe43c8dc468b0885f5e29df5"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:69d80c13e38d4ba9c83fffcde72e18cd58beb7bb716573594d6860e049b484e0",
+      "name": "unicode-ident",
+      "version": "1.0.27",
+      "licenses": [
+        {
+          "expression": "(MIT OR Apache-2.0) AND Unicode-3.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "(MIT OR Apache-2.0) AND Unicode-3.0"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "registry+https://github.com/rust-lang/crates.io-index"
+        }
+      ],
+      "purl": "pkg:cargo/unicode-ident@1.0.27",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "a2c754d6c33795a1c324727428e5a7dedb5b06195f9890bdbcba760d3e246563"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:04020f8c9bd9fa04bd8e7ab2ebc7ce112d3f9a5d213841545c3072bfbbbc7ce6",
+      "name": "unicode-linebreak",
+      "version": "0.1.5",
+      "licenses": [
+        {
+          "expression": "Apache-2.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "Apache-2.0"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "registry+https://github.com/rust-lang/crates.io-index"
+        }
+      ],
+      "purl": "pkg:cargo/unicode-linebreak@0.1.5",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "3b09c83c3c29d37506a3e260c08c03743a6bb66a9cd432c6934ab501a190571f"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:417ec732d2c83beecccb56b35b03dc7f0686488ca08402b5f5c9710db34fbd5f",
+      "name": "version_check",
+      "version": "0.9.5",
+      "licenses": [
+        {
+          "expression": "MIT OR Apache-2.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "MIT/Apache-2.0"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "registry+https://github.com/rust-lang/crates.io-index"
+        }
+      ],
+      "purl": "pkg:cargo/version_check@0.9.5",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "0b928f33d975fc6ad9f86c8f283853ad26bdd5b10b7f1542aa2fa15e2289105a"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:15ac57f2721b2557be9b44c3d1b2e8260bb582981022fd049054583b0a60ef48",
+      "name": "web-time",
+      "version": "1.1.0",
+      "licenses": [
+        {
+          "expression": "MIT OR Apache-2.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "MIT OR Apache-2.0"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "registry+https://github.com/rust-lang/crates.io-index"
+        }
+      ],
+      "purl": "pkg:cargo/web-time@1.1.0",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "5a6580f308b1fad9207618087a65c04e7a10bc77e02c8e84e9b00dd4b12fa0bb"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:2a9245d49635e4a31b1e4448986e74a1c6b9301841ff35e7d7ae7069223b66ae",
+      "name": "windows-link",
+      "version": "0.2.1",
+      "licenses": [
+        {
+          "expression": "MIT OR Apache-2.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "MIT OR Apache-2.0"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "registry+https://github.com/rust-lang/crates.io-index"
+        }
+      ],
+      "purl": "pkg:cargo/windows-link@0.2.1",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "f0805222e57f7521d6a62e36fa9163bc891acd422f971defe97d64e70d0a4fe5"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:a67a06120cb522d546a9366d0c849b0b7da5269ffac4b0e42a77cf7ab1c58a92",
+      "name": "windows-sys",
+      "version": "0.61.2",
+      "licenses": [
+        {
+          "expression": "MIT OR Apache-2.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[\"Win32\", \"Win32_Foundation\", \"Win32_Networking\", \"Win32_Networking_WinSock\", \"Win32_Storage\", \"Win32_Storage_FileSystem\", \"Win32_System\", \"Win32_System_Diagnostics\", \"Win32_System_Diagnostics_Debug\", \"default\"]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "MIT OR Apache-2.0"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "registry+https://github.com/rust-lang/crates.io-index"
+        }
+      ],
+      "purl": "pkg:cargo/windows-sys@0.61.2",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "ae137229bcbd6cdf0f7b80a31df61766145077ddf49416a728b02cb3921ff3fc"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:be3def383d6239a669b98643a8f1a875dcaea9d4faad14d56d6dec6dad4efde1",
+      "name": "zlib-rs",
+      "version": "0.6.8",
+      "licenses": [
+        {
+          "expression": "Zlib"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[\"rust-allocator\", \"std\"]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "Zlib"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "registry+https://github.com/rust-lang/crates.io-index"
+        }
+      ],
+      "purl": "pkg:cargo/zlib-rs@0.6.8",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "b268e58e7c693d7c271f93ffc4ba3b380412554231c85bf61ca7af91042a4112"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:31342b9c8ff5435a6b36c22504ba23d4349ba3f1542462e66e5209d344c26b37",
+      "name": "zmij",
+      "version": "1.0.23",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "MIT"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "registry+https://github.com/rust-lang/crates.io-index"
+        }
+      ],
+      "purl": "pkg:cargo/zmij@1.0.23",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "29666d0abbfad1e3dc4dcf6144730dd3a3ab225bbbdac83319345b1b44ccfc1b"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:fdc6170c3e3a16066d849aa418c9a8892faecdac1112626e09774d4c2d51e15c",
+      "name": "zune-core",
+      "version": "0.5.3",
+      "licenses": [
+        {
+          "expression": "MIT OR Apache-2.0 OR Zlib"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[\"std\"]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "MIT OR Apache-2.0 OR Zlib"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "registry+https://github.com/rust-lang/crates.io-index"
+        }
+      ],
+      "purl": "pkg:cargo/zune-core@0.5.3",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "d56377fd46368984a170bc5aac5567e52ca5da874caa60bea39fcbca78fb658b"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:sha256:cbb2eec39ed7d35bb16fd6cf432c7ba055bf31ac22122bbadee7e4c43cf64f8f",
+      "name": "zune-jpeg",
+      "version": "0.5.15",
+      "licenses": [
+        {
+          "expression": "MIT OR Apache-2.0 OR Zlib"
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:cargo:features",
+          "value": "[\"default\", \"neon\", \"std\", \"x86\"]"
+        },
+        {
+          "name": "astra:cargo:declared-license",
+          "value": "MIT OR Apache-2.0 OR Zlib"
+        },
+        {
+          "name": "astra:cargo:source",
+          "value": "registry+https://github.com/rust-lang/crates.io-index"
+        }
+      ],
+      "purl": "pkg:cargo/zune-jpeg@0.5.15",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "27bc9d5b815bc103f142aa054f561d9187d191692ec7c2d1e2b4737f8dbd7296"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "urn:sha256:40d692fce188e4471e2b3cba937be967878f631ad3ebbbdcd587687c7ebe0c82",
+      "name": "Inter-Regular.ttf",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "40d692fce188e4471e2b3cba937be967878f631ad3ebbbdcd587687c7ebe0c82"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "OFL-1.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:font:author",
+          "value": "The Inter Project Authors (Rasmus Andersson et al.)"
+        },
+        {
+          "name": "astra:font:license-sha256",
+          "value": "262481e844521b326f5ecd053e59b98c8b2da78c8ee1bdbb6e8174305e54935a"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "urn:sha256:97ad806f526e41546d46365bb3a393145f75b7b1568913db74549ad8b8dba872",
+      "name": "Inter-Medium.ttf",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "97ad806f526e41546d46365bb3a393145f75b7b1568913db74549ad8b8dba872"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "OFL-1.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:font:author",
+          "value": "The Inter Project Authors (Rasmus Andersson et al.)"
+        },
+        {
+          "name": "astra:font:license-sha256",
+          "value": "262481e844521b326f5ecd053e59b98c8b2da78c8ee1bdbb6e8174305e54935a"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "urn:sha256:78a843fade9d4612a5567302fb595b56976eb5fcebf4fea5a5912d638bafcde3",
+      "name": "Inter-SemiBold.ttf",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "78a843fade9d4612a5567302fb595b56976eb5fcebf4fea5a5912d638bafcde3"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "OFL-1.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:font:author",
+          "value": "The Inter Project Authors (Rasmus Andersson et al.)"
+        },
+        {
+          "name": "astra:font:license-sha256",
+          "value": "262481e844521b326f5ecd053e59b98c8b2da78c8ee1bdbb6e8174305e54935a"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "urn:sha256:288316099b1e0a47a4716d159098005eef7c0066921f34e3200393dbdb01947f",
+      "name": "Inter-Bold.ttf",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "288316099b1e0a47a4716d159098005eef7c0066921f34e3200393dbdb01947f"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "OFL-1.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:font:author",
+          "value": "The Inter Project Authors (Rasmus Andersson et al.)"
+        },
+        {
+          "name": "astra:font:license-sha256",
+          "value": "262481e844521b326f5ecd053e59b98c8b2da78c8ee1bdbb6e8174305e54935a"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "urn:sha256:bbc051dd204b5019a1aa0bc0ae2aa8a05ab13e7a3f979fa357631dc7feb6833a",
+      "name": "Inter-Italic.ttf",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "bbc051dd204b5019a1aa0bc0ae2aa8a05ab13e7a3f979fa357631dc7feb6833a"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "OFL-1.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:font:author",
+          "value": "The Inter Project Authors (Rasmus Andersson et al.)"
+        },
+        {
+          "name": "astra:font:license-sha256",
+          "value": "262481e844521b326f5ecd053e59b98c8b2da78c8ee1bdbb6e8174305e54935a"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "urn:sha256:e6fd0d7e91550b3ed2b735d4312474362c4716edc4fc0577a0f61ed782d5aed1",
+      "name": "JetBrainsMono-Regular.ttf",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "e6fd0d7e91550b3ed2b735d4312474362c4716edc4fc0577a0f61ed782d5aed1"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "OFL-1.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:font:author",
+          "value": "The JetBrains Mono Project Authors"
+        },
+        {
+          "name": "astra:font:license-sha256",
+          "value": "a76abf002c49097d146e86740a3105a5d00450b1592e820a1109a8c5680cd697"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "urn:sha256:a15cfbbc1539d707115111d672d590a3d70d4f74b4c0a315956da20ae19a14e1",
+      "name": "NotoSerif-Regular.ttf",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "a15cfbbc1539d707115111d672d590a3d70d4f74b4c0a315956da20ae19a14e1"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "OFL-1.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "astra:font:author",
+          "value": "The Noto Project Authors"
+        },
+        {
+          "name": "astra:font:license-sha256",
+          "value": "cee9892f9f0cc8fe882c9e9537ee6a89621d86ee7ceaf70b02e2b2b1c25c061a"
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "urn:sha256:aebee4ff6e9bc8e569d742f30a2104f5f3177790c1876f7df78b6a3021ce4ef6",
+      "dependsOn": []
+    },
+    {
+      "ref": "urn:sha256:ae912670350682be15659c0228cba009a3c503ec1dfd090fbbe133d6ad254b90",
+      "dependsOn": []
+    },
+    {
+      "ref": "urn:sha256:a01a77d34fe054f8d8c147ca96a78f217632503c7c9617b311c93d2afb412353",
+      "dependsOn": [
+        "urn:sha256:f51c0b56b8d0883c754a5847568d9aaaaed4d15b7665d1419d3a324529119bfc"
+      ]
+    },
+    {
+      "ref": "urn:sha256:45e9239fb211cab7c442eb78f0bb4677e6f6b287bf1fc06d8a4cc9b338e15624",
+      "dependsOn": [
+        "urn:sha256:053fbf071a1f36ad5aecef49d41b11ee576abf33fae4f2d6c37ba14bd9f799b6",
+        "urn:sha256:1b6ab595465312b2fb716df0800cad1ce1af0f6e4ac6d45333f766aff55dad6f",
+        "urn:sha256:981c5526abf476c178a2ca304f9bc3e606b9a18784e281c83a61ef1f375fac05",
+        "urn:sha256:a2ed68f29ac5568e440d67c2cec1d8f6f17a27953b110b17cc6453a401e56a88",
+        "urn:sha256:b03f8fd610cded0f8f3225ca15370b4b092a03e33118218a96406715ded76ab2",
+        "urn:sha256:c2cc99be693b7eaa9bd4c48c61f83478e6cbefcb19e393789daba9236f2fb135",
+        "urn:sha256:c4825cef47b191f8514d4848497e3d4c4a28b3f284bb2d44a1625f865d8f404c",
+        "urn:sha256:cd5dc922e6595a560e8c4a467dc950cc157d6f9e0e19fb0261cde25559b16e3c",
+        "urn:sha256:ea2862b795e156cd04328cc69e58d8a799470149cdd04b9fb2437fd9e8505fe0",
+        "urn:sha256:f232c8e1a3740d8fb898728d0ded24da71e3a24a3cbe86b0e54b91e6a3740aad",
+        "urn:sha256:f69cf1d77751cdbcdef9cc16e301ab91ccd6477806aa8b7327cd95a42e78bdee"
+      ]
+    },
+    {
+      "ref": "urn:sha256:a6cca9c73d95aa5b9e7ea66e129f9ff1a034ef64fea9d50f6ae18ddd8cd6ab76",
+      "dependsOn": []
+    },
+    {
+      "ref": "urn:sha256:d6392fe03c55987b709d3d416b46c194f70b6086a8abf913d496a6242e8e04fe",
+      "dependsOn": []
+    },
+    {
+      "ref": "urn:sha256:ebebeb6811177738448a537e917a651005a98bbde86f42abb52e270ae8d01839",
+      "dependsOn": [
+        "urn:sha256:ff8459e60c5b1d696d6856eeb8fd1fd096f8005e568029c908ce8229463daf46"
+      ]
+    },
+    {
+      "ref": "urn:sha256:3ad3a1068b74284ad6e9bbed54c3a9365ad456b684f87ac3567b310cd38ad5c6",
+      "dependsOn": [
+        "urn:sha256:f3aa2b1ad3ed712b983c1111fab1c71929338071f79db9d19109d920a830f1ae"
+      ]
+    },
+    {
+      "ref": "urn:sha256:f3aa2b1ad3ed712b983c1111fab1c71929338071f79db9d19109d920a830f1ae",
+      "dependsOn": [
+        "urn:sha256:2f35b3b4e1060ccd3eeb00076731dbe8421aba15f5f1c41277838046c3b2d226",
+        "urn:sha256:43f395c24079f779dcac4d28bb57a37d7c92f0d60eeedec3d709f3426a1f332e",
+        "urn:sha256:cac39b85c48b52a9e159d3fc21ec15ee31f2b3bca52f7a0552d50fccd1b8ba6d"
+      ]
+    },
+    {
+      "ref": "urn:sha256:5df3608dd464d4d7e1663ca83eac39fc3ebe1ac621e2b0b99d324755b6920b2b",
+      "dependsOn": []
+    },
+    {
+      "ref": "urn:sha256:c54faec0c2c7ef88d64f5903c41cf73f836f02a97554955be9a8e522e19b6bce",
+      "dependsOn": []
+    },
+    {
+      "ref": "urn:sha256:7fc9e44c8c2f76da65c73928d3f6d0bf0702b4f89a2185149987ca26680b3c94",
+      "dependsOn": [
+        "urn:sha256:7e6965707da347bb3243f77bbd2d9f736789b23dbc49053014b037e4770ec493"
+      ]
+    },
+    {
+      "ref": "urn:sha256:4dcf15136d5c3a9432d27b793190c2dad76166218d81dce459fe4cabb8679b0a",
+      "dependsOn": []
+    },
+    {
+      "ref": "urn:sha256:82fa898b56693738a925a6740260c068970f9f5efbab2319a1b0b155e8aeea2a",
+      "dependsOn": [
+        "urn:sha256:65ff63ce1d3305ce99ec3ec48da62e480e91abbbea1495b4b586bdd52f80a036",
+        "urn:sha256:ea2862b795e156cd04328cc69e58d8a799470149cdd04b9fb2437fd9e8505fe0",
+        "urn:sha256:f51c0b56b8d0883c754a5847568d9aaaaed4d15b7665d1419d3a324529119bfc"
+      ]
+    },
+    {
+      "ref": "urn:sha256:d854b065c44078d6eab2caf08a7c7d16d28ed8596d79f382d7e9814a52710626",
+      "dependsOn": [
+        "urn:sha256:c54faec0c2c7ef88d64f5903c41cf73f836f02a97554955be9a8e522e19b6bce"
+      ]
+    },
+    {
+      "ref": "urn:sha256:d3a8966bfc455fcb76d71ed7b35ca2e156a81a7a35b6f3a93b1f860c36f2d9a0",
+      "dependsOn": [
+        "urn:sha256:16360ca7336f09c2161ecdc1d3cc2a46ac50ef3878411d8942d7e60659feeb9a",
+        "urn:sha256:348f4a6b2fb65072e8f36e519bdc9de1f4e1e8b50a8d300a2c4eae7b65f6df90"
+      ]
+    },
+    {
+      "ref": "urn:sha256:348f4a6b2fb65072e8f36e519bdc9de1f4e1e8b50a8d300a2c4eae7b65f6df90",
+      "dependsOn": [
+        "urn:sha256:16360ca7336f09c2161ecdc1d3cc2a46ac50ef3878411d8942d7e60659feeb9a"
+      ]
+    },
+    {
+      "ref": "urn:sha256:16360ca7336f09c2161ecdc1d3cc2a46ac50ef3878411d8942d7e60659feeb9a",
+      "dependsOn": []
+    },
+    {
+      "ref": "urn:sha256:b21839460dae3e23b599806de36b5a4e0807be8d415041091700c8054ffb6ed0",
+      "dependsOn": [
+        "urn:sha256:788b7517dbb33927b69aad547a866365940ae02eb7ea5d10f184df1e43d5c676",
+        "urn:sha256:ff8459e60c5b1d696d6856eeb8fd1fd096f8005e568029c908ce8229463daf46"
+      ]
+    },
+    {
+      "ref": "urn:sha256:02c08ace33348cde6a4a3bbb867d5c40ef96f79633e0b4db4a5750914d822b09",
+      "dependsOn": [
+        "urn:sha256:b21839460dae3e23b599806de36b5a4e0807be8d415041091700c8054ffb6ed0",
+        "urn:sha256:ebebeb6811177738448a537e917a651005a98bbde86f42abb52e270ae8d01839"
+      ]
+    },
+    {
+      "ref": "urn:sha256:c4825cef47b191f8514d4848497e3d4c4a28b3f284bb2d44a1625f865d8f404c",
+      "dependsOn": [
+        "urn:sha256:65ff63ce1d3305ce99ec3ec48da62e480e91abbbea1495b4b586bdd52f80a036",
+        "urn:sha256:981c5526abf476c178a2ca304f9bc3e606b9a18784e281c83a61ef1f375fac05",
+        "urn:sha256:b03f8fd610cded0f8f3225ca15370b4b092a03e33118218a96406715ded76ab2",
+        "urn:sha256:c2cc99be693b7eaa9bd4c48c61f83478e6cbefcb19e393789daba9236f2fb135",
+        "urn:sha256:cd5dc922e6595a560e8c4a467dc950cc157d6f9e0e19fb0261cde25559b16e3c",
+        "urn:sha256:f51c0b56b8d0883c754a5847568d9aaaaed4d15b7665d1419d3a324529119bfc",
+        "urn:sha256:f69cf1d77751cdbcdef9cc16e301ab91ccd6477806aa8b7327cd95a42e78bdee"
+      ]
+    },
+    {
+      "ref": "urn:sha256:981c5526abf476c178a2ca304f9bc3e606b9a18784e281c83a61ef1f375fac05",
+      "dependsOn": [
+        "urn:sha256:f51c0b56b8d0883c754a5847568d9aaaaed4d15b7665d1419d3a324529119bfc"
+      ]
+    },
+    {
+      "ref": "urn:sha256:c2cc99be693b7eaa9bd4c48c61f83478e6cbefcb19e393789daba9236f2fb135",
+      "dependsOn": [
+        "urn:sha256:1442d8c866f14224d2abd4f22c7e0e9d722945fd0224a9decbed9298550b8fdd",
+        "urn:sha256:196b4e8c261c59fbb3bdf14df6c84e2992529053d215353c257aa16fc3cf77e2",
+        "urn:sha256:4f63aee1d12a7379aa576c3a413e36869b40c304f08226b77b77e3fb6ddfa12a",
+        "urn:sha256:53dc4dbd90f415e9b4c5b527ea0088f21170f3724d3a164dd624a2ef22590c44",
+        "urn:sha256:62639c34bafa238da030fe7ce87d0e0359307636475f9fd99af08dffa0b37419",
+        "urn:sha256:7fc9e44c8c2f76da65c73928d3f6d0bf0702b4f89a2185149987ca26680b3c94",
+        "urn:sha256:981c5526abf476c178a2ca304f9bc3e606b9a18784e281c83a61ef1f375fac05",
+        "urn:sha256:a9e45ec270f8b48f40703d10d63400375b9e66b26dc2082a7f76f11d37e2c757",
+        "urn:sha256:b03f8fd610cded0f8f3225ca15370b4b092a03e33118218a96406715ded76ab2",
+        "urn:sha256:cd5dc922e6595a560e8c4a467dc950cc157d6f9e0e19fb0261cde25559b16e3c",
+        "urn:sha256:ea2862b795e156cd04328cc69e58d8a799470149cdd04b9fb2437fd9e8505fe0",
+        "urn:sha256:f51c0b56b8d0883c754a5847568d9aaaaed4d15b7665d1419d3a324529119bfc"
+      ]
+    },
+    {
+      "ref": "urn:sha256:4f63aee1d12a7379aa576c3a413e36869b40c304f08226b77b77e3fb6ddfa12a",
+      "dependsOn": [
+        "urn:sha256:f51c0b56b8d0883c754a5847568d9aaaaed4d15b7665d1419d3a324529119bfc"
+      ]
+    },
+    {
+      "ref": "urn:sha256:b03f8fd610cded0f8f3225ca15370b4b092a03e33118218a96406715ded76ab2",
+      "dependsOn": [
+        "urn:sha256:4f63aee1d12a7379aa576c3a413e36869b40c304f08226b77b77e3fb6ddfa12a",
+        "urn:sha256:981c5526abf476c178a2ca304f9bc3e606b9a18784e281c83a61ef1f375fac05",
+        "urn:sha256:ea2862b795e156cd04328cc69e58d8a799470149cdd04b9fb2437fd9e8505fe0",
+        "urn:sha256:f51c0b56b8d0883c754a5847568d9aaaaed4d15b7665d1419d3a324529119bfc",
+        "urn:sha256:f69cf1d77751cdbcdef9cc16e301ab91ccd6477806aa8b7327cd95a42e78bdee"
+      ]
+    },
+    {
+      "ref": "urn:sha256:8fa20960811e7badeabfa91deb3921006ddf05f308d27cc37f426662dc75c9df",
+      "dependsOn": [
+        "urn:sha256:4f63aee1d12a7379aa576c3a413e36869b40c304f08226b77b77e3fb6ddfa12a",
+        "urn:sha256:62639c34bafa238da030fe7ce87d0e0359307636475f9fd99af08dffa0b37419",
+        "urn:sha256:65ff63ce1d3305ce99ec3ec48da62e480e91abbbea1495b4b586bdd52f80a036",
+        "urn:sha256:7116d16dce202db475454b9e1631d9765246f2c9ee925ed7ed18831c30f40e84",
+        "urn:sha256:a2ed68f29ac5568e440d67c2cec1d8f6f17a27953b110b17cc6453a401e56a88",
+        "urn:sha256:ea2862b795e156cd04328cc69e58d8a799470149cdd04b9fb2437fd9e8505fe0",
+        "urn:sha256:f51c0b56b8d0883c754a5847568d9aaaaed4d15b7665d1419d3a324529119bfc"
+      ]
+    },
+    {
+      "ref": "urn:sha256:00e768f298d13efa6ad27b8dd5ac072f223dfb6b53fe8c36e8c8af1069a04467",
+      "dependsOn": [
+        "urn:sha256:1442d8c866f14224d2abd4f22c7e0e9d722945fd0224a9decbed9298550b8fdd",
+        "urn:sha256:4f63aee1d12a7379aa576c3a413e36869b40c304f08226b77b77e3fb6ddfa12a",
+        "urn:sha256:52c90be4bdc8bde053381ccb59ef880b0d34fb0febf8d99059b4269812c985a4",
+        "urn:sha256:5ac9a9d2608b4bfc0d96c22b94d43865767af10801c5731569377afecb5420c3",
+        "urn:sha256:7d21ddcb2487bf81aa882b7b7e2666851288dc27765530760b2d981a5c89249d",
+        "urn:sha256:b03f8fd610cded0f8f3225ca15370b4b092a03e33118218a96406715ded76ab2"
+      ]
+    },
+    {
+      "ref": "urn:sha256:cd5dc922e6595a560e8c4a467dc950cc157d6f9e0e19fb0261cde25559b16e3c",
+      "dependsOn": [
+        "urn:sha256:4f63aee1d12a7379aa576c3a413e36869b40c304f08226b77b77e3fb6ddfa12a",
+        "urn:sha256:65ff63ce1d3305ce99ec3ec48da62e480e91abbbea1495b4b586bdd52f80a036",
+        "urn:sha256:82fa898b56693738a925a6740260c068970f9f5efbab2319a1b0b155e8aeea2a",
+        "urn:sha256:981c5526abf476c178a2ca304f9bc3e606b9a18784e281c83a61ef1f375fac05",
+        "urn:sha256:b03f8fd610cded0f8f3225ca15370b4b092a03e33118218a96406715ded76ab2",
+        "urn:sha256:ea2862b795e156cd04328cc69e58d8a799470149cdd04b9fb2437fd9e8505fe0",
+        "urn:sha256:f51c0b56b8d0883c754a5847568d9aaaaed4d15b7665d1419d3a324529119bfc",
+        "urn:sha256:f69cf1d77751cdbcdef9cc16e301ab91ccd6477806aa8b7327cd95a42e78bdee"
+      ]
+    },
+    {
+      "ref": "urn:sha256:1442d8c866f14224d2abd4f22c7e0e9d722945fd0224a9decbed9298550b8fdd",
+      "dependsOn": [
+        "urn:sha256:196b4e8c261c59fbb3bdf14df6c84e2992529053d215353c257aa16fc3cf77e2",
+        "urn:sha256:4f63aee1d12a7379aa576c3a413e36869b40c304f08226b77b77e3fb6ddfa12a",
+        "urn:sha256:981c5526abf476c178a2ca304f9bc3e606b9a18784e281c83a61ef1f375fac05",
+        "urn:sha256:dd68cc2cb204a7b3516b3978c43d96b147eb128ddc3f274fd86c31b4e5581b04"
+      ]
+    },
+    {
+      "ref": "urn:sha256:053fbf071a1f36ad5aecef49d41b11ee576abf33fae4f2d6c37ba14bd9f799b6",
+      "dependsOn": [
+        "urn:sha256:00e768f298d13efa6ad27b8dd5ac072f223dfb6b53fe8c36e8c8af1069a04467",
+        "urn:sha256:1442d8c866f14224d2abd4f22c7e0e9d722945fd0224a9decbed9298550b8fdd",
+        "urn:sha256:15ac57f2721b2557be9b44c3d1b2e8260bb582981022fd049054583b0a60ef48",
+        "urn:sha256:196b4e8c261c59fbb3bdf14df6c84e2992529053d215353c257aa16fc3cf77e2",
+        "urn:sha256:1b6ab595465312b2fb716df0800cad1ce1af0f6e4ac6d45333f766aff55dad6f",
+        "urn:sha256:35453973e4c395956a296d87da91c2b44b881dfcc0dee33f153cd5272c89c5a9",
+        "urn:sha256:4f63aee1d12a7379aa576c3a413e36869b40c304f08226b77b77e3fb6ddfa12a",
+        "urn:sha256:62639c34bafa238da030fe7ce87d0e0359307636475f9fd99af08dffa0b37419",
+        "urn:sha256:7d21ddcb2487bf81aa882b7b7e2666851288dc27765530760b2d981a5c89249d",
+        "urn:sha256:8fa20960811e7badeabfa91deb3921006ddf05f308d27cc37f426662dc75c9df",
+        "urn:sha256:981c5526abf476c178a2ca304f9bc3e606b9a18784e281c83a61ef1f375fac05",
+        "urn:sha256:b03f8fd610cded0f8f3225ca15370b4b092a03e33118218a96406715ded76ab2",
+        "urn:sha256:c2cc99be693b7eaa9bd4c48c61f83478e6cbefcb19e393789daba9236f2fb135",
+        "urn:sha256:cd5dc922e6595a560e8c4a467dc950cc157d6f9e0e19fb0261cde25559b16e3c",
+        "urn:sha256:f51c0b56b8d0883c754a5847568d9aaaaed4d15b7665d1419d3a324529119bfc",
+        "urn:sha256:f69cf1d77751cdbcdef9cc16e301ab91ccd6477806aa8b7327cd95a42e78bdee"
+      ]
+    },
+    {
+      "ref": "urn:sha256:53dc4dbd90f415e9b4c5b527ea0088f21170f3724d3a164dd624a2ef22590c44",
+      "dependsOn": [
+        "urn:sha256:196b4e8c261c59fbb3bdf14df6c84e2992529053d215353c257aa16fc3cf77e2",
+        "urn:sha256:49c15917f23f9d3685be85f5512ce13990462506dd9d769234db8b7a5d5e10a1",
+        "urn:sha256:7116d16dce202db475454b9e1631d9765246f2c9ee925ed7ed18831c30f40e84"
+      ]
+    },
+    {
+      "ref": "urn:sha256:1b6ab595465312b2fb716df0800cad1ce1af0f6e4ac6d45333f766aff55dad6f",
+      "dependsOn": [
+        "urn:sha256:04020f8c9bd9fa04bd8e7ab2ebc7ce112d3f9a5d213841545c3072bfbbbc7ce6",
+        "urn:sha256:1865b723514f8b6bf40b6c74bcc92c3378b9d171035c3d049bec0e12709455b0",
+        "urn:sha256:538b903c6c87b29f079d1f434d3ebfd21f2763dd7da69412f565c91fa3c02a86",
+        "urn:sha256:68bd2e75ff7822a823c736ab8b8a194a19f81bb045f7b1a844ebf58464ba0000",
+        "urn:sha256:7d21ddcb2487bf81aa882b7b7e2666851288dc27765530760b2d981a5c89249d",
+        "urn:sha256:b03f8fd610cded0f8f3225ca15370b4b092a03e33118218a96406715ded76ab2",
+        "urn:sha256:40d692fce188e4471e2b3cba937be967878f631ad3ebbbdcd587687c7ebe0c82",
+        "urn:sha256:97ad806f526e41546d46365bb3a393145f75b7b1568913db74549ad8b8dba872",
+        "urn:sha256:78a843fade9d4612a5567302fb595b56976eb5fcebf4fea5a5912d638bafcde3",
+        "urn:sha256:288316099b1e0a47a4716d159098005eef7c0066921f34e3200393dbdb01947f",
+        "urn:sha256:bbc051dd204b5019a1aa0bc0ae2aa8a05ab13e7a3f979fa357631dc7feb6833a",
+        "urn:sha256:e6fd0d7e91550b3ed2b735d4312474362c4716edc4fc0577a0f61ed782d5aed1",
+        "urn:sha256:a15cfbbc1539d707115111d672d590a3d70d4f74b4c0a315956da20ae19a14e1"
+      ]
+    },
+    {
+      "ref": "urn:sha256:f69cf1d77751cdbcdef9cc16e301ab91ccd6477806aa8b7327cd95a42e78bdee",
+      "dependsOn": [
+        "urn:sha256:f51c0b56b8d0883c754a5847568d9aaaaed4d15b7665d1419d3a324529119bfc"
+      ]
+    },
+    {
+      "ref": "urn:sha256:a9e45ec270f8b48f40703d10d63400375b9e66b26dc2082a7f76f11d37e2c757",
+      "dependsOn": [
+        "urn:sha256:1442d8c866f14224d2abd4f22c7e0e9d722945fd0224a9decbed9298550b8fdd",
+        "urn:sha256:15ac57f2721b2557be9b44c3d1b2e8260bb582981022fd049054583b0a60ef48",
+        "urn:sha256:196b4e8c261c59fbb3bdf14df6c84e2992529053d215353c257aa16fc3cf77e2",
+        "urn:sha256:53dc4dbd90f415e9b4c5b527ea0088f21170f3724d3a164dd624a2ef22590c44",
+        "urn:sha256:ea2862b795e156cd04328cc69e58d8a799470149cdd04b9fb2437fd9e8505fe0",
+        "urn:sha256:f51c0b56b8d0883c754a5847568d9aaaaed4d15b7665d1419d3a324529119bfc"
+      ]
+    },
+    {
+      "ref": "urn:sha256:ad758b028c655c6ba2e0a3cfa65e4f71c887c1df931f4469614617ac7c130f2f",
+      "dependsOn": []
+    },
+    {
+      "ref": "urn:sha256:fbecc7793787db16ab193deb99b4a9d9ff19bb0786558762e502358769d3ad0a",
+      "dependsOn": [
+        "urn:sha256:7e6965707da347bb3243f77bbd2d9f736789b23dbc49053014b037e4770ec493"
+      ]
+    },
+    {
+      "ref": "urn:sha256:2a64bba88e2c2765451068923bd1c57fc2279d86f0b925342271249e003961c7",
+      "dependsOn": []
+    },
+    {
+      "ref": "urn:sha256:5aef0f811bfe1aa466cb945072f6421b503300d9af4a28b7d1f31ee9651858fc",
+      "dependsOn": [
+        "urn:sha256:a800b2f1161b13daebbc4f2174d52443315120acd6bd90121750263d5df84e64"
+      ]
+    },
+    {
+      "ref": "urn:sha256:71794d6eb19bc04f9bb2aefdee2a63df798a98015ca758a6968817d2f9a83a15",
+      "dependsOn": [
+        "urn:sha256:7116d16dce202db475454b9e1631d9765246f2c9ee925ed7ed18831c30f40e84",
+        "urn:sha256:be3def383d6239a669b98643a8f1a875dcaea9d4faad14d56d6dec6dad4efde1",
+        "urn:sha256:d854b065c44078d6eab2caf08a7c7d16d28ed8596d79f382d7e9814a52710626"
+      ]
+    },
+    {
+      "ref": "urn:sha256:5e2331abc0d8b6f0cf40ed4ce24f4afd05989ed1445de741243a625f43a3287d",
+      "dependsOn": [
+        "urn:sha256:3ad3a1068b74284ad6e9bbed54c3a9365ad456b684f87ac3567b310cd38ad5c6"
+      ]
+    },
+    {
+      "ref": "urn:sha256:ff8459e60c5b1d696d6856eeb8fd1fd096f8005e568029c908ce8229463daf46",
+      "dependsOn": [
+        "urn:sha256:417ec732d2c83beecccb56b35b03dc7f0686488ca08402b5f5c9710db34fbd5f",
+        "urn:sha256:788b7517dbb33927b69aad547a866365940ae02eb7ea5d10f184df1e43d5c676"
+      ]
+    },
+    {
+      "ref": "urn:sha256:c5ab9d2eb1fa8f7299e442d051683ded0857dc9e4ce3bea53f09a00d89beb118",
+      "dependsOn": [
+        "urn:sha256:c54faec0c2c7ef88d64f5903c41cf73f836f02a97554955be9a8e522e19b6bce"
+      ]
+    },
+    {
+      "ref": "urn:sha256:538b903c6c87b29f079d1f434d3ebfd21f2763dd7da69412f565c91fa3c02a86",
+      "dependsOn": [
+        "urn:sha256:3ad3a1068b74284ad6e9bbed54c3a9365ad456b684f87ac3567b310cd38ad5c6",
+        "urn:sha256:d6392fe03c55987b709d3d416b46c194f70b6086a8abf913d496a6242e8e04fe",
+        "urn:sha256:e5470dddb702836a06b3a819ac810a8b8ed7222a459f37fcaf549d8c6cc51ec9",
+        "urn:sha256:eda26d8c73388b418e1875891a1556fad3e6ed3f8c28cc0ef647434f963d207f"
+      ]
+    },
+    {
+      "ref": "urn:sha256:a2ed68f29ac5568e440d67c2cec1d8f6f17a27953b110b17cc6453a401e56a88",
+      "dependsOn": [
+        "urn:sha256:02bcb2337f61f97fe876f143c4b06a9b0e5b25788f527ef3318ccd690f068d2f",
+        "urn:sha256:3ad3a1068b74284ad6e9bbed54c3a9365ad456b684f87ac3567b310cd38ad5c6",
+        "urn:sha256:5df3608dd464d4d7e1663ca83eac39fc3ebe1ac621e2b0b99d324755b6920b2b",
+        "urn:sha256:7e6965707da347bb3243f77bbd2d9f736789b23dbc49053014b037e4770ec493",
+        "urn:sha256:a38bad6a35986ef1c430dc0140af5e1670467170af185f78578a9b9c5e71a5fd",
+        "urn:sha256:cbb2eec39ed7d35bb16fd6cf432c7ba055bf31ac22122bbadee7e4c43cf64f8f",
+        "urn:sha256:fdc6170c3e3a16066d849aa418c9a8892faecdac1112626e09774d4c2d51e15c"
+      ]
+    },
+    {
+      "ref": "urn:sha256:089a2a389e460262515d154be23b141c4c4b026badbee8b223f1e85294c346f5",
+      "dependsOn": []
+    },
+    {
+      "ref": "urn:sha256:7d21ddcb2487bf81aa882b7b7e2666851288dc27765530760b2d981a5c89249d",
+      "dependsOn": [
+        "urn:sha256:7b3763fe196f70332b1014f6dc77f0bc2b2c3bb7be89e8cf330d53aadd75e17b",
+        "urn:sha256:a01a77d34fe054f8d8c147ca96a78f217632503c7c9617b311c93d2afb412353",
+        "urn:sha256:eda26d8c73388b418e1875891a1556fad3e6ed3f8c28cc0ef647434f963d207f",
+        "urn:sha256:f51c0b56b8d0883c754a5847568d9aaaaed4d15b7665d1419d3a324529119bfc",
+        "urn:sha256:fbecc7793787db16ab193deb99b4a9d9ff19bb0786558762e502358769d3ad0a"
+      ]
+    },
+    {
+      "ref": "urn:sha256:5ac9a9d2608b4bfc0d96c22b94d43865767af10801c5731569377afecb5420c3",
+      "dependsOn": [
+        "urn:sha256:7b3763fe196f70332b1014f6dc77f0bc2b2c3bb7be89e8cf330d53aadd75e17b",
+        "urn:sha256:7d21ddcb2487bf81aa882b7b7e2666851288dc27765530760b2d981a5c89249d",
+        "urn:sha256:a01a77d34fe054f8d8c147ca96a78f217632503c7c9617b311c93d2afb412353",
+        "urn:sha256:ac5b1202e8e8649c7b5434e58808fc2f0c9bb6caa4fad548af00c7f6927ef66f",
+        "urn:sha256:eda26d8c73388b418e1875891a1556fad3e6ed3f8c28cc0ef647434f963d207f"
+      ]
+    },
+    {
+      "ref": "urn:sha256:62639c34bafa238da030fe7ce87d0e0359307636475f9fd99af08dffa0b37419",
+      "dependsOn": []
+    },
+    {
+      "ref": "urn:sha256:35453973e4c395956a296d87da91c2b44b881dfcc0dee33f153cd5272c89c5a9",
+      "dependsOn": []
+    },
+    {
+      "ref": "urn:sha256:790bfe81d31642a626a57dece4f35c9713bc440d68872d6cc291bd7b2d8a8784",
+      "dependsOn": [
+        "urn:sha256:5efe3e64ec7ff2cbfadf8b4db7862ad78cb7610e163555d43e6dbf03d1c33c8e",
+        "urn:sha256:a6cca9c73d95aa5b9e7ea66e129f9ff1a034ef64fea9d50f6ae18ddd8cd6ab76"
+      ]
+    },
+    {
+      "ref": "urn:sha256:170d0de08a648ef761f4d1c407e52126fa14427e1213bf041bfad232a3a571b7",
+      "dependsOn": []
+    },
+    {
+      "ref": "urn:sha256:3367dbeaf5fdd7e7133e1e57a4097feb575c5b722edea787aad6d1c556d39ff7",
+      "dependsOn": [
+        "urn:sha256:a800b2f1161b13daebbc4f2174d52443315120acd6bd90121750263d5df84e64",
+        "urn:sha256:aebee4ff6e9bc8e569d742f30a2104f5f3177790c1876f7df78b6a3021ce4ef6"
+      ]
+    },
+    {
+      "ref": "urn:sha256:7116d16dce202db475454b9e1631d9765246f2c9ee925ed7ed18831c30f40e84",
+      "dependsOn": [
+        "urn:sha256:a800b2f1161b13daebbc4f2174d52443315120acd6bd90121750263d5df84e64",
+        "urn:sha256:aebee4ff6e9bc8e569d742f30a2104f5f3177790c1876f7df78b6a3021ce4ef6"
+      ]
+    },
+    {
+      "ref": "urn:sha256:02bcb2337f61f97fe876f143c4b06a9b0e5b25788f527ef3318ccd690f068d2f",
+      "dependsOn": [
+        "urn:sha256:7e6965707da347bb3243f77bbd2d9f736789b23dbc49053014b037e4770ec493",
+        "urn:sha256:96f87c79550bd50dc7263c09e15bcb302cffb0668f4d90e01c8d748ec835aee3"
+      ]
+    },
+    {
+      "ref": "urn:sha256:49c15917f23f9d3685be85f5512ce13990462506dd9d769234db8b7a5d5e10a1",
+      "dependsOn": [
+        "urn:sha256:5efe3e64ec7ff2cbfadf8b4db7862ad78cb7610e163555d43e6dbf03d1c33c8e",
+        "urn:sha256:790bfe81d31642a626a57dece4f35c9713bc440d68872d6cc291bd7b2d8a8784",
+        "urn:sha256:7e6965707da347bb3243f77bbd2d9f736789b23dbc49053014b037e4770ec493",
+        "urn:sha256:c5f61791ae553533276c0d74b3447216c42db7f77dc06d7f73f18601281249cc",
+        "urn:sha256:efd6cbb2a0a704ec92e84256fcf3a07dd122fc268f479a7828308af4fc1a3f40"
+      ]
+    },
+    {
+      "ref": "urn:sha256:c5f61791ae553533276c0d74b3447216c42db7f77dc06d7f73f18601281249cc",
+      "dependsOn": [
+        "urn:sha256:7e6965707da347bb3243f77bbd2d9f736789b23dbc49053014b037e4770ec493"
+      ]
+    },
+    {
+      "ref": "urn:sha256:efd6cbb2a0a704ec92e84256fcf3a07dd122fc268f479a7828308af4fc1a3f40",
+      "dependsOn": [
+        "urn:sha256:7e6965707da347bb3243f77bbd2d9f736789b23dbc49053014b037e4770ec493"
+      ]
+    },
+    {
+      "ref": "urn:sha256:7e6965707da347bb3243f77bbd2d9f736789b23dbc49053014b037e4770ec493",
+      "dependsOn": [
+        "urn:sha256:a6cca9c73d95aa5b9e7ea66e129f9ff1a034ef64fea9d50f6ae18ddd8cd6ab76"
+      ]
+    },
+    {
+      "ref": "urn:sha256:d875d0342d85a6a1febeb12400f5246f318b91ece920ba21b9023f309d837ed5",
+      "dependsOn": []
+    },
+    {
+      "ref": "urn:sha256:a38bad6a35986ef1c430dc0140af5e1670467170af185f78578a9b9c5e71a5fd",
+      "dependsOn": [
+        "urn:sha256:3367dbeaf5fdd7e7133e1e57a4097feb575c5b722edea787aad6d1c556d39ff7",
+        "urn:sha256:5aef0f811bfe1aa466cb945072f6421b503300d9af4a28b7d1f31ee9651858fc",
+        "urn:sha256:71794d6eb19bc04f9bb2aefdee2a63df798a98015ca758a6968817d2f9a83a15",
+        "urn:sha256:d6392fe03c55987b709d3d416b46c194f70b6086a8abf913d496a6242e8e04fe",
+        "urn:sha256:d854b065c44078d6eab2caf08a7c7d16d28ed8596d79f382d7e9814a52710626"
+      ]
+    },
+    {
+      "ref": "urn:sha256:7b3763fe196f70332b1014f6dc77f0bc2b2c3bb7be89e8cf330d53aadd75e17b",
+      "dependsOn": [
+        "urn:sha256:a01a77d34fe054f8d8c147ca96a78f217632503c7c9617b311c93d2afb412353"
+      ]
+    },
+    {
+      "ref": "urn:sha256:2f35b3b4e1060ccd3eeb00076731dbe8421aba15f5f1c41277838046c3b2d226",
+      "dependsOn": [
+        "urn:sha256:69d80c13e38d4ba9c83fffcde72e18cd58beb7bb716573594d6860e049b484e0"
+      ]
+    },
+    {
+      "ref": "urn:sha256:96f87c79550bd50dc7263c09e15bcb302cffb0668f4d90e01c8d748ec835aee3",
+      "dependsOn": []
+    },
+    {
+      "ref": "urn:sha256:43f395c24079f779dcac4d28bb57a37d7c92f0d60eeedec3d709f3426a1f332e",
+      "dependsOn": [
+        "urn:sha256:2f35b3b4e1060ccd3eeb00076731dbe8421aba15f5f1c41277838046c3b2d226"
+      ]
+    },
+    {
+      "ref": "urn:sha256:5efe3e64ec7ff2cbfadf8b4db7862ad78cb7610e163555d43e6dbf03d1c33c8e",
+      "dependsOn": []
+    },
+    {
+      "ref": "urn:sha256:196b4e8c261c59fbb3bdf14df6c84e2992529053d215353c257aa16fc3cf77e2",
+      "dependsOn": [
+        "urn:sha256:9873ab067013947b40ceac72e985457b5d767c8837adfa1fe89b36fb8df2027f",
+        "urn:sha256:ad758b028c655c6ba2e0a3cfa65e4f71c887c1df931f4469614617ac7c130f2f"
+      ]
+    },
+    {
+      "ref": "urn:sha256:9873ab067013947b40ceac72e985457b5d767c8837adfa1fe89b36fb8df2027f",
+      "dependsOn": [
+        "urn:sha256:16360ca7336f09c2161ecdc1d3cc2a46ac50ef3878411d8942d7e60659feeb9a",
+        "urn:sha256:d3a8966bfc455fcb76d71ed7b35ca2e156a81a7a35b6f3a93b1f860c36f2d9a0"
+      ]
+    },
+    {
+      "ref": "urn:sha256:e5470dddb702836a06b3a819ac810a8b8ed7222a459f37fcaf549d8c6cc51ec9",
+      "dependsOn": [
+        "urn:sha256:3ad3a1068b74284ad6e9bbed54c3a9365ad456b684f87ac3567b310cd38ad5c6",
+        "urn:sha256:5e2331abc0d8b6f0cf40ed4ce24f4afd05989ed1445de741243a625f43a3287d",
+        "urn:sha256:d875d0342d85a6a1febeb12400f5246f318b91ece920ba21b9023f309d837ed5"
+      ]
+    },
+    {
+      "ref": "urn:sha256:ac5b1202e8e8649c7b5434e58808fc2f0c9bb6caa4fad548af00c7f6927ef66f",
+      "dependsOn": []
+    },
+    {
+      "ref": "urn:sha256:f51c0b56b8d0883c754a5847568d9aaaaed4d15b7665d1419d3a324529119bfc",
+      "dependsOn": [
+        "urn:sha256:710291ff5d48934b1eb01f59c4645d1696dec465f49e4e65bb6010743396d617",
+        "urn:sha256:93b538e0a47fc75069bd94ccd11eba6fc4b41188a02198b1112663b74b256b3d"
+      ]
+    },
+    {
+      "ref": "urn:sha256:710291ff5d48934b1eb01f59c4645d1696dec465f49e4e65bb6010743396d617",
+      "dependsOn": []
+    },
+    {
+      "ref": "urn:sha256:93b538e0a47fc75069bd94ccd11eba6fc4b41188a02198b1112663b74b256b3d",
+      "dependsOn": [
+        "urn:sha256:2f35b3b4e1060ccd3eeb00076731dbe8421aba15f5f1c41277838046c3b2d226",
+        "urn:sha256:43f395c24079f779dcac4d28bb57a37d7c92f0d60eeedec3d709f3426a1f332e",
+        "urn:sha256:cac39b85c48b52a9e159d3fc21ec15ee31f2b3bca52f7a0552d50fccd1b8ba6d"
+      ]
+    },
+    {
+      "ref": "urn:sha256:ea2862b795e156cd04328cc69e58d8a799470149cdd04b9fb2437fd9e8505fe0",
+      "dependsOn": [
+        "urn:sha256:089a2a389e460262515d154be23b141c4c4b026badbee8b223f1e85294c346f5",
+        "urn:sha256:170d0de08a648ef761f4d1c407e52126fa14427e1213bf041bfad232a3a571b7",
+        "urn:sha256:31342b9c8ff5435a6b36c22504ba23d4349ba3f1542462e66e5209d344c26b37",
+        "urn:sha256:710291ff5d48934b1eb01f59c4645d1696dec465f49e4e65bb6010743396d617"
+      ]
+    },
+    {
+      "ref": "urn:sha256:f232c8e1a3740d8fb898728d0ded24da71e3a24a3cbe86b0e54b91e6a3740aad",
+      "dependsOn": [
+        "urn:sha256:02c08ace33348cde6a4a3bbb867d5c40ef96f79633e0b4db4a5750914d822b09",
+        "urn:sha256:4dcf15136d5c3a9432d27b793190c2dad76166218d81dce459fe4cabb8679b0a",
+        "urn:sha256:c54faec0c2c7ef88d64f5903c41cf73f836f02a97554955be9a8e522e19b6bce"
+      ]
+    },
+    {
+      "ref": "urn:sha256:a800b2f1161b13daebbc4f2174d52443315120acd6bd90121750263d5df84e64",
+      "dependsOn": []
+    },
+    {
+      "ref": "urn:sha256:68bd2e75ff7822a823c736ab8b8a194a19f81bb045f7b1a844ebf58464ba0000",
+      "dependsOn": [
+        "urn:sha256:3ad3a1068b74284ad6e9bbed54c3a9365ad456b684f87ac3567b310cd38ad5c6",
+        "urn:sha256:e5470dddb702836a06b3a819ac810a8b8ed7222a459f37fcaf549d8c6cc51ec9"
+      ]
+    },
+    {
+      "ref": "urn:sha256:eda26d8c73388b418e1875891a1556fad3e6ed3f8c28cc0ef647434f963d207f",
+      "dependsOn": [
+        "urn:sha256:f51c0b56b8d0883c754a5847568d9aaaaed4d15b7665d1419d3a324529119bfc"
+      ]
+    },
+    {
+      "ref": "urn:sha256:ae41e4f021971a96fdb8458e0dcf47ffaf79484dbe1d8e30eb87262d8f4004a1",
+      "dependsOn": []
+    },
+    {
+      "ref": "urn:sha256:cac39b85c48b52a9e159d3fc21ec15ee31f2b3bca52f7a0552d50fccd1b8ba6d",
+      "dependsOn": [
+        "urn:sha256:2f35b3b4e1060ccd3eeb00076731dbe8421aba15f5f1c41277838046c3b2d226",
+        "urn:sha256:43f395c24079f779dcac4d28bb57a37d7c92f0d60eeedec3d709f3426a1f332e",
+        "urn:sha256:69d80c13e38d4ba9c83fffcde72e18cd58beb7bb716573594d6860e049b484e0"
+      ]
+    },
+    {
+      "ref": "urn:sha256:dd68cc2cb204a7b3516b3978c43d96b147eb128ddc3f274fd86c31b4e5581b04",
+      "dependsOn": [
+        "urn:sha256:2a64bba88e2c2765451068923bd1c57fc2279d86f0b925342271249e003961c7",
+        "urn:sha256:a67a06120cb522d546a9366d0c849b0b7da5269ffac4b0e42a77cf7ab1c58a92",
+        "urn:sha256:c5ab9d2eb1fa8f7299e442d051683ded0857dc9e4ce3bea53f09a00d89beb118",
+        "urn:sha256:d875d0342d85a6a1febeb12400f5246f318b91ece920ba21b9023f309d837ed5"
+      ]
+    },
+    {
+      "ref": "urn:sha256:65ff63ce1d3305ce99ec3ec48da62e480e91abbbea1495b4b586bdd52f80a036",
+      "dependsOn": [
+        "urn:sha256:7d657f0c9d58e66d1c2eb385d6f5f4f0a305db64c776f13425d31f508a74dc02"
+      ]
+    },
+    {
+      "ref": "urn:sha256:7d657f0c9d58e66d1c2eb385d6f5f4f0a305db64c776f13425d31f508a74dc02",
+      "dependsOn": [
+        "urn:sha256:2f35b3b4e1060ccd3eeb00076731dbe8421aba15f5f1c41277838046c3b2d226",
+        "urn:sha256:43f395c24079f779dcac4d28bb57a37d7c92f0d60eeedec3d709f3426a1f332e",
+        "urn:sha256:cac39b85c48b52a9e159d3fc21ec15ee31f2b3bca52f7a0552d50fccd1b8ba6d"
+      ]
+    },
+    {
+      "ref": "urn:sha256:52c90be4bdc8bde053381ccb59ef880b0d34fb0febf8d99059b4269812c985a4",
+      "dependsOn": [
+        "urn:sha256:3ad3a1068b74284ad6e9bbed54c3a9365ad456b684f87ac3567b310cd38ad5c6",
+        "urn:sha256:465c7859d126ac9c1c074b3ed6b5ae24b0b5d71318feacfe46f1955514208f77",
+        "urn:sha256:62639c34bafa238da030fe7ce87d0e0359307636475f9fd99af08dffa0b37419",
+        "urn:sha256:a01a77d34fe054f8d8c147ca96a78f217632503c7c9617b311c93d2afb412353",
+        "urn:sha256:ae912670350682be15659c0228cba009a3c503ec1dfd090fbbe133d6ad254b90",
+        "urn:sha256:c54faec0c2c7ef88d64f5903c41cf73f836f02a97554955be9a8e522e19b6bce"
+      ]
+    },
+    {
+      "ref": "urn:sha256:465c7859d126ac9c1c074b3ed6b5ae24b0b5d71318feacfe46f1955514208f77",
+      "dependsOn": [
+        "urn:sha256:3ad3a1068b74284ad6e9bbed54c3a9365ad456b684f87ac3567b310cd38ad5c6",
+        "urn:sha256:ae41e4f021971a96fdb8458e0dcf47ffaf79484dbe1d8e30eb87262d8f4004a1",
+        "urn:sha256:ae912670350682be15659c0228cba009a3c503ec1dfd090fbbe133d6ad254b90"
+      ]
+    },
+    {
+      "ref": "urn:sha256:788b7517dbb33927b69aad547a866365940ae02eb7ea5d10f184df1e43d5c676",
+      "dependsOn": []
+    },
+    {
+      "ref": "urn:sha256:1865b723514f8b6bf40b6c74bcc92c3378b9d171035c3d049bec0e12709455b0",
+      "dependsOn": []
+    },
+    {
+      "ref": "urn:sha256:69d80c13e38d4ba9c83fffcde72e18cd58beb7bb716573594d6860e049b484e0",
+      "dependsOn": []
+    },
+    {
+      "ref": "urn:sha256:04020f8c9bd9fa04bd8e7ab2ebc7ce112d3f9a5d213841545c3072bfbbbc7ce6",
+      "dependsOn": []
+    },
+    {
+      "ref": "urn:sha256:417ec732d2c83beecccb56b35b03dc7f0686488ca08402b5f5c9710db34fbd5f",
+      "dependsOn": []
+    },
+    {
+      "ref": "urn:sha256:15ac57f2721b2557be9b44c3d1b2e8260bb582981022fd049054583b0a60ef48",
+      "dependsOn": []
+    },
+    {
+      "ref": "urn:sha256:2a9245d49635e4a31b1e4448986e74a1c6b9301841ff35e7d7ae7069223b66ae",
+      "dependsOn": []
+    },
+    {
+      "ref": "urn:sha256:a67a06120cb522d546a9366d0c849b0b7da5269ffac4b0e42a77cf7ab1c58a92",
+      "dependsOn": [
+        "urn:sha256:2a9245d49635e4a31b1e4448986e74a1c6b9301841ff35e7d7ae7069223b66ae"
+      ]
+    },
+    {
+      "ref": "urn:sha256:be3def383d6239a669b98643a8f1a875dcaea9d4faad14d56d6dec6dad4efde1",
+      "dependsOn": []
+    },
+    {
+      "ref": "urn:sha256:31342b9c8ff5435a6b36c22504ba23d4349ba3f1542462e66e5209d344c26b37",
+      "dependsOn": []
+    },
+    {
+      "ref": "urn:sha256:fdc6170c3e3a16066d849aa418c9a8892faecdac1112626e09774d4c2d51e15c",
+      "dependsOn": []
+    },
+    {
+      "ref": "urn:sha256:cbb2eec39ed7d35bb16fd6cf432c7ba055bf31ac22122bbadee7e4c43cf64f8f",
+      "dependsOn": [
+        "urn:sha256:fdc6170c3e3a16066d849aa418c9a8892faecdac1112626e09774d4c2d51e15c"
+      ]
+    },
+    {
+      "ref": "urn:sha256:40d692fce188e4471e2b3cba937be967878f631ad3ebbbdcd587687c7ebe0c82",
+      "dependsOn": []
+    },
+    {
+      "ref": "urn:sha256:97ad806f526e41546d46365bb3a393145f75b7b1568913db74549ad8b8dba872",
+      "dependsOn": []
+    },
+    {
+      "ref": "urn:sha256:78a843fade9d4612a5567302fb595b56976eb5fcebf4fea5a5912d638bafcde3",
+      "dependsOn": []
+    },
+    {
+      "ref": "urn:sha256:288316099b1e0a47a4716d159098005eef7c0066921f34e3200393dbdb01947f",
+      "dependsOn": []
+    },
+    {
+      "ref": "urn:sha256:bbc051dd204b5019a1aa0bc0ae2aa8a05ab13e7a3f979fa357631dc7feb6833a",
+      "dependsOn": []
+    },
+    {
+      "ref": "urn:sha256:e6fd0d7e91550b3ed2b735d4312474362c4716edc4fc0577a0f61ed782d5aed1",
+      "dependsOn": []
+    },
+    {
+      "ref": "urn:sha256:a15cfbbc1539d707115111d672d590a3d70d4f74b4c0a315956da20ae19a14e1",
+      "dependsOn": []
+    }
+  ]
+}

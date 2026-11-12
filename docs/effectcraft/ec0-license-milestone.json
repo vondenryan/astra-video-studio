@@ -1,0 +1,36 @@
+{
+  "scope": "Pinned Windows Cargo closure and embedded fonts; technical license evidence and CycloneDX 1.6 inventory",
+  "plan_sha256": "13d5f4d7a861c028899a26fff8a4bfa9c18bf2cee0e023666588d2028310c6dc",
+  "cargo_lock_sha256": "52f373b88a4e4af1661b3ba912e00411fbdfe20cfad0646b2a091f7aef76fe1e",
+  "dependency_closure_sha256": "584757d567c997b25dff52ac6a9801cae9555ef38d4da573b9a64db5ad9ad879",
+  "packages": 96,
+  "embedded_font_components": 7,
+  "bom_components_including_root": 103,
+  "license_texts_deduplicated": 104,
+  "source_files_verified": 4166,
+  "bom_schema_validation": "passed",
+  "bom_sha256": "abb46a28fe2030c107ad916c28e4b6159d5dba14bec0c8d561b30dd6f91c36d5",
+  "license_evidence_sha256": "4eaef9cbc6f0b9d572a98703e9a0701e8e5472fc94ac746132f9252055e94842",
+  "font_evidence_sha256": "41e64b21a342a54091433eb6f59fb029d4379b1830286df2fc35a48654e35f58",
+  "notices_sha256": "613c55fc458e88f6ecb1fad9ee4d15a4c2eb22b4c8be7fe88883538841756c8d",
+  "unmatched_text_markers": [],
+  "external_tools": {
+    "ffmpeg": {
+      "available": true,
+      "version": "ffmpeg version 8.0.1-essentials_build-www.gyan.dev Copyright (c) 2000-2025 the FFmpeg developers",
+      "executable_sha256": "5af82a0d4fe2b9eae211b967332ea97edfc51c6b328ca35b827e73eac560dc0d"
+    },
+    "ffprobe": {
+      "available": true,
+      "version": "ffprobe version 8.0.1-essentials_build-www.gyan.dev Copyright (c) 2007-2025 the FFmpeg developers",
+      "executable_sha256": "192a1d6899059765ac8c39764fc3148d4e6049955956dc2029f81f4bd6a8972d"
+    }
+  },
+  "preexisting_managed_aeps_preserved": 2578,
+  "pending": [
+    "Pending manual review of obligations, attribution coverage, brands and external codecs",
+    "FFmpeg/FFprobe are identified separately; their complete build dependency/license audit remains pending",
+    "Embedded data and source-level copyright obligations require manual review.",
+    "Resolved graph inventory is not an attestation of linked binary contents."
+  ]
+}

@@ -1,0 +1,4 @@
+# Preserve byte hashes of the generated EC-0 license evidence exports.
+/docs/effectcraft/ec0-bom.cdx.json text eol=lf
+/docs/effectcraft/ec0-license-milestone.json text eol=lf
+/docs/effectcraft/ec0-third-party-notices.txt text eol=lf whitespace=-blank-at-eol,-blank-at-eof

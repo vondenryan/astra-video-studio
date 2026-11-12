@@ -693,3 +693,15 @@ All 900 PNGs decoded to the expected RGBA hashes. H.264 encoding took 4.957 s, a
 Python regression passed 499 tests with 19 skips in 103.46 s. Four Rust unit tests passed and the experimental stress integration completed. The first release build attempt had an argument-splatting failure, followed by a build that found two layer-container type mismatches. Both were corrected before measurements, and the final release build passed. Logs remain under `workspace/ec0/evidence/stress-*`.
 
 These measurements cover the solids/precomp fixture and sampled repetitions. Full-sequence repeat distributions, matched AE performance, text/effect-heavy stress, VRAM and complete license/notices acceptance remain pending.
+
+### 2026-11-12 — EC-0 eighth milestone
+
+The audit produced a schema-validated CycloneDX 1.6 BOM for 96 resolved Cargo packages and seven embedded fonts. Dependency references and component identities passed semantic checks. Registry archives matched Cargo.lock, and source files matched their verified archive bytes. Git package files and inherited notices matched pinned commits, with CRLF/LF equivalence recorded for text. The audit recorded 4,166 per-package file checks and retained 104 distinct text candidates. Shared repository notices count in each applicable package's checks.
+
+The font inventory matched the seven include_bytes declarations, exact font bytes, OFL license hashes, attribution hashes and Git objects. All declared license identifiers had matching text markers. Both COPYRIGHT files found during the final scan, in euclid and unicode-bidi, are included. A modified source, wrong archive checksum, dangling BOM reference and invented SPDX ID were refused in independent negative probes.
+
+The initial run failed on a font path resolved relative to the crate. The corrected run resolved fonts from the pinned repository root. A subsequent scan added the two COPYRIGHT files and generated a fresh final audit. All earlier evidence remains. The 2,578 prior managed AEP and snapshot hashes were preserved. No native AE work was dispatched.
+
+Final evidence is under `workspace/ec0/license-audit-cec6c264c6854a789a4801f3e91a40af`. Versioned files are `docs/effectcraft/ec0-bom.cdx.json`, `ec0-third-party-notices.txt` and `ec0-license-milestone.json`. Marker coverage and schema validation leave distribution obligations, embedded-data/source-level review, trademarks, linked-binary attestation and full external encoder closure pending.
+
+Final Python regression passed 499 tests with 19 skips in 95.57 s. The three generated export files use explicit LF checkout rules so their recorded byte hashes survive Windows Git newline conversion.

@@ -87,3 +87,13 @@ Cada cena tem cinco medições em processos novos com duas threads e dez mediç�
 A cena de 80 camadas também gera os 900 PNGs. O FFmpeg decodifica a sequência e confronta os 900 hashes RGBA antes de codificar um H.264 e fazer seu decode completo. A verificação de memória usa PeakWorkingSetSize do processo nativo, com consulta final após sua saída e limite fixado de 4 GiB por worker. O limite se refere a esse recorte de sólidos e precomp.
 
 Os dados ficam em `workspace/ec0/stress-<UUID>`. Falhas ou timeouts retêm o marcador do processo e seus arquivos. A comparação de desempenho com AE requer uma referência com o mesmo conteúdo e condições de medição.
+
+## Inventário de licenças e SBOM
+
+Execute `.\.venv\Scripts\python.exe experimental/ec0/audit_licenses.py` após gerar os metadados do build fixado. O ambiente Python precisa de `jsonschema` e `referencing`, presentes no ambiente usado nesta aceitação. Os três schemas oficiais listados em `license-audit-plan.json` devem estar em `workspace/ec0/schemas`, com os hashes indicados. A validação usa esses arquivos locais.
+
+A auditoria verifica os arquivos dos pacotes de registry contra os archives cujo SHA-256 está no Cargo.lock. Para pacotes Git, compara o conteúdo com o commit fixado, aceitando equivalência de finais de linha CRLF/LF em arquivos de texto. Reúne licenças, notices, copyright, créditos, autores e atribuições, incluindo avisos herdados da raiz do repositório.
+
+O SBOM CycloneDX 1.6 descreve o grafo Cargo resolvido para Windows, suas features e as sete fontes embutidas declaradas no fonte do crate de texto. Os bytes das fontes, das licenças OFL e das atribuições são conferidos contra os hashes do inventário e os objetos Git. A expressão legada `MIT/Apache-2.0` tem uma normalização explícita no plano. O valor declarado e todos os textos coletados são preservados. A sintaxe de expressões está documentada pelo Cargo. [Referência Cargo](https://doc.rust-lang.org/cargo/reference/manifest.html#the-license-and-license-file-fields)
+
+Cada execução cria `workspace/ec0/license-audit-<UUID>` com SBOM, evidências por pacote, fontes, textos deduplicados e `THIRD-PARTY-NOTICES.txt`. Os marcadores textuais são uma checagem mecânica de cobertura. A revisão de obrigações de distribuição, dados incorporados, marcas e codecs externos continua pendente. O inventário registra o grafo resolvido e os arquivos consultados. A composição efetiva do binário precisa de comprovação própria.
