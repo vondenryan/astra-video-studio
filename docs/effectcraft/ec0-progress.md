@@ -142,3 +142,11 @@ Foram avaliados três frames do cartão e quatro da animação. O controle adici
 Cinco folhas de contato foram realmente vistas, cobrindo logo, título, subtítulo, curva e sentinela em todos os frames selecionados dessas regiões. As silhuetas, a ordem de pintura e as progressões aparecem correspondentes nas amostras, com diferenças de fundo e bordas/raster ainda visíveis. A causa completa dessas diferenças continua em investigação. Os controles usam clipes de um frame e a referência foi codificada em sequência, e a identidade histórica dos arquivos Arial está indisponível.
 
 O ensaio preservou os 2.598 AEPs e snapshots preexistentes. A prova TIFF do quinto marco foi executada novamente para conferir compatibilidade do worker. Paridade visual sem perdas, fontes históricas, efeitos/máscaras/mattes e playback humano permanecem pendentes. [Relatório e outliers](ec0-visual-diagnostic-milestone.json)
+
+## Próxima etapa preparada — novas referências TIFF
+
+O controlador de captura foi preparado com cópias dos dois AEPs e dos dois arquivos Arial em `workspace/ec0/lossless-40f58a46e5554ea9a67ae436cbc6a37e`. A geração das novas referências ainda não foi executada. A sessão recebia operações recentes de outro cliente, e a reserva do AE foi solicitada ao operador.
+
+As consultas nativas somente de leitura passaram. O AE informou ArialMT em arial.ttf e Arial-BoldMT em arialbd.ttf, com os caminhos e hashes esperados. A consulta explícita de contexto informou um projeto gerenciado salvo e limpo. Na versão final, caminhos e contexto são solicitados por flags independentes, ambas desativadas por padrão. Os dois modos foram verificados nativamente.
+
+O comparador separa RGB armazenado e alfa e conserva os TIFFs originais. O teste com o gráfico TIFF arquivado passou com SSIM 1, erro RGB 0, erro alfa 0 e bounds idênticos. Valores sintéticos de alfa parcial também passaram, e erros de alfa e matte foram recusados. Isso verifica o comparador nesse recorte. O fluxo novo de abrir cópias, renderizar e restaurar o projeto ativo continua pendente de aceitação nativa coordenada.

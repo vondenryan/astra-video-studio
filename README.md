@@ -131,6 +131,8 @@ O oitavo marco gerou um SBOM com 96 pacotes e sete fontes embutidas, acompanhado
 
 O nono marco acrescentou um diagnóstico com AEPs arquivados de vetores, texto e curvas. Os 16 keyframes de transformação e 20 amostras da animação coincidiram com a inspeção do AE. As diferenças visuais registradas continuam em investigação.
 
+A captura de novas referências TIFF está preparada e aguarda uma sessão coordenada no AE. A consulta de fontes permite solicitar explicitamente os caminhos nativos disponíveis e o contexto salvo do projeto.
+
 A avaliação cobre persistência, fontes fixadas, animação de texto, curvas manuais e composição CPU com efeitos, importação SVG editável, máscaras e mattes. A comparação com o After Effects segue como etapa da avaliação.
 
 ## Desenvolvimento

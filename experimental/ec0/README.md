@@ -107,3 +107,13 @@ As fontes ArialMT e Arial-BoldMT são lidas de dois arquivos explícitos do Wind
 O diagnóstico compara regiões por SSIM e erro RGB com os limites fixados. A referência disponível é H.264. A aceitação definitiva exige dados sem perdas e identificação histórica das fontes. Para acrescentar o controle de codec, execute `.\.venv\Scripts\python.exe experimental/ec0/run_codec_control.py visual-diagnostic-<UUID>`. Esse comando cria um subdiretório novo e preserva os resultados originais.
 
 O controle codifica cada frame EC como um clipe H.264 de um frame com CRF 20 e preset veryfast, mede novamente e extrai bounds por contraste com o fundo. A referência usa compressão de uma sequência. Os bounds são medidos na resolução do preview. Relatórios e hashes ficam nos arquivos locais. O campo de passagem numérica descreve somente o diagnóstico.
+
+## Preparação de referências sem perdas
+
+Execute `.\.venv\Scripts\python.exe experimental/ec0/capture_lossless.py` para criar uma pasta `lossless-<UUID>` com fontes e cópias dos AEPs fixadas por hash. Essa preparação trabalha com arquivos. A opção `--capture lossless-<UUID>` executa a parte nativa e requer coordenação exclusiva do AE com o operador.
+
+A captura usa os serviços existentes de abertura protegida de cópia e render final TIFF. Consulta os caminhos Arial retornados pelo AE, confere seus hashes antes e depois, exige projeto ativo salvo e limpo, cria um backup desse arquivo e registra a intenção antes de abrir as cópias. Ao concluir, restaura o caminho salvo original e verifica os AEPs preexistentes. Uma falha registra a tentativa. Uma restauração após falha só é tentada com bridge disponível e sem pendências nativas. Não há reenvio automático.
+
+Após uma captura concluída, execute `.\.venv\Scripts\python.exe experimental/ec0/compare_lossless.py lossless-<UUID>`. O comparador preserva os TIFFs, valida a associação Premultiplied (Matted), compara seus valores RGB armazenados com a saída EC composta sobre o fundo confirmado pelo AE e compara alfa separadamente com a saída RGBA EC. Pixels nativos transparentes precisam corresponder ao matte confirmado. As regiões são ampliadas para a resolução nativa por fatores inteiros, mantendo os limites fixados de SSIM, erro RGB, alfa e bounds.
+
+O worker agora grava também `ec-rgba-<frame>.png` no modo de diagnóstico. A etapa nativa completa de captura e comparação está preparada e aguarda execução coordenada. Os testes locais usam valores sintéticos conhecidos e o TIFF arquivado do quinto marco.

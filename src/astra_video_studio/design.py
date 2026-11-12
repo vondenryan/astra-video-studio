@@ -39,6 +39,8 @@ class FontSelection(StrictModel):
 class FontsQuery(StrictModel):
     query: str = Field(default='', max_length=100)
     limit: int = Field(default=200, ge=1, le=1000)
+    include_locations: bool = False
+    include_project_context: bool = False
 
 
 class CharacterStyle(StrictModel):

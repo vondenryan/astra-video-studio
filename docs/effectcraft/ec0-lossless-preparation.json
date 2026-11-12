@@ -1,0 +1,91 @@
+{
+  "status": "prepared_native_capture_pending_operator_coordination",
+  "prepared_directory": "lossless-40f58a46e5554ea9a67ae436cbc6a37e",
+  "prepared_plan_sha256": "c00ecab746eef0cb04f8b27034007454d9773c34aec78bc3750417770a34915f",
+  "native_queries": [
+    {
+      "operation_id": "ff05d655a15b4c84b25ece1afba205aa",
+      "status": "succeeded",
+      "evidence_sha256": "e2859e64b70b6a8dd1aceefc5c1ca035818ce18d9dafe737ab522885e33f11fc",
+      "project_context_returned": false
+    },
+    {
+      "operation_id": "c80955d3eeb046139b41f7ae8d151488",
+      "status": "succeeded",
+      "evidence_sha256": "07a69249b3cda58473e750b1c0d2d376895e9527d19e4b22653ac6f57f445aec",
+      "project_context_returned": true
+    },
+    {
+      "operation_id": "b9af7dcc909848618b09120cc98d4cde",
+      "status": "succeeded",
+      "evidence_sha256": "be2e8b347a155700a3dd3ef3a8675ae7cebbc80aa7797066e6415a438c0853e0",
+      "project_context_returned": false
+    }
+  ],
+  "fonts": [
+    {
+      "file": "arial.ttf",
+      "postscript": "ArialMT",
+      "sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a"
+    },
+    {
+      "file": "arialbd.ttf",
+      "postscript": "Arial-BoldMT",
+      "sha256": "e8f4e3baf6cc35fed6fcce3a540e8b39e8f6cda1d22a28f2ec8f526fef7a43f5"
+    }
+  ],
+  "legacy_tiff_comparator": {
+    "native_tiff_sha256": "31393494ab951e6092c94278e76be10bf43a596b12d9b5f648fd14cd9bb44a89",
+    "ec_png_sha256": "7d6c14ad81c78be67a5c466c2533a386ae89ae9b82d9d0e8225dcc11f09c7ffe",
+    "scope": "Archived opaque mark and transparent edge ROI only",
+    "result": {
+      "ssim": 1.0,
+      "rgb_mae_bytes": 0.0,
+      "rgb_pass": true,
+      "alpha_max_error_bytes": 0,
+      "alpha_mae_bytes": 0.0,
+      "alpha_pass": true,
+      "transparent_pixels_checked": 5120,
+      "transparent_matte_max_error_bytes": 0,
+      "native_matte_matches_acknowledged_background": true,
+      "ae_bounds": [
+        368,
+        668,
+        432,
+        732
+      ],
+      "ec_bounds": [
+        368,
+        668,
+        432,
+        732
+      ],
+      "bounds_max_delta_native_px": 0,
+      "bounds_pass": true,
+      "pass": true
+    }
+  },
+  "worker_rgba_outputs": 7,
+  "python_regression": {
+    "passed": 499,
+    "skipped": 19,
+    "seconds": 95.03
+  },
+  "rust_unit_tests_passed": 4,
+  "native_capture_restore_acceptance": "pending",
+  "final_optin_contract_queries": [
+    {
+      "mode": "optin",
+      "operation_id": "b31ccc11403548518e36c431218907b8",
+      "evidence_sha256": "553df8d44f85b4aa7b30d41a15a2684a640075c8f59a750d878b03a8d2cdd0a3",
+      "status": "succeeded"
+    },
+    {
+      "mode": "default",
+      "operation_id": "10e151dc7365445fbc3048f84004628b",
+      "evidence_sha256": "6dce1fc2b9d3d2fa457ceaed077ae2b40f9cb09c5f6c74b19add805be04c5f07",
+      "status": "succeeded"
+    }
+  ],
+  "native_metadata_defaults": "locations and project context both omitted unless explicitly requested"
+}

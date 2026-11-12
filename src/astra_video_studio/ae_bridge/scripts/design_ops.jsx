@@ -15,8 +15,13 @@ function alignName(value) {
     for (var i = 0; i < names.length; i++) { if (Number(value) - Number(alignValue(names[i])) == 0) { return names[i]; } }
     return String(value);
 }
-function fontInfo(font) {
-    return {postscript_name: font.postScriptName, font_id: font.fontID, family: font.familyName, style: font.styleName, substitute: font.isSubstitute === true};
+function fontInfo(font, includeLocation) {
+    var info = {postscript_name: font.postScriptName, font_id: font.fontID, family: font.familyName, style: font.styleName, substitute: font.isSubstitute === true};
+    if (includeLocation === true) {
+        info.location = null;
+        try { if (typeof font.location === 'string' && font.location.length) { info.location = font.location; } } catch (error) {}
+    }
+    return info;
 }
 function listDesignFonts(query) {
     var groups = app.fonts.allFonts, fonts = [], count = 0, needle = query.query.toLowerCase(), i, j, f;
@@ -24,12 +29,17 @@ function listDesignFonts(query) {
         for (j = 0; j < groups[i].length; j++) {
             f = groups[i][j];
             if (f.isSubstitute === true || (f.postScriptName + ' ' + f.familyName + ' ' + f.styleName).toLowerCase().indexOf(needle) < 0) { continue; }
-            count++; if (fonts.length < query.limit) { fonts.push(fontInfo(f)); }
+            count++; if (fonts.length < query.limit) { fonts.push(fontInfo(f, query.include_locations)); }
         }
     }
-    return {fonts: fonts, matched_count: count, truncated: count > fonts.length,
+    var answer = {fonts: fonts, matched_count: count, truncated: count > fonts.length,
         capabilities: {character_ranges: true, box_overflow: true, native_paths: true, text_animators: true,
         svg_import: 'strict native-path subset', gradient_color_editing: false, gradient_limitation: 'No supported gradient color serialization contract in this bridge'}};
+    if (query.include_project_context === true) {
+        answer.project_context = {project_path: app.project && app.project.file ? app.project.file.fsName : null,
+            dirty: app.project ? app.project.dirty : null, item_count: app.project ? app.project.numItems : 0};
+    }
+    return answer;
 }
 function resolveDesignFont(selection) {
     var groups = app.fonts.allFonts, matches = [], i, j, f;

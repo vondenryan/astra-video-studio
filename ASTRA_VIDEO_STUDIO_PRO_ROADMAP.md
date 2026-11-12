@@ -2,7 +2,7 @@
 
 **Versão:** 1.4
 **Data:** 10 de novembro de 2026 (origem: 6 de novembro)
-**Estado:** Sprints 0–13 tecnicamente implementados, otimização de criação entregue e 77 ferramentas disponíveis. O aceite externo das três rotas de edição no Claude Desktop 9.3 permanece pendente. A EC-0 chegou ao nono marco, com diagnóstico de vetores, texto e curvas contra referências arquivadas. Os 16 keyframes e 20 amostras transformacionais passaram, e 16 regiões visuais continuam como outliers no controle H.264. A paridade sem perdas, a comparação de desempenho com AE e a revisão de distribuição continuam pendentes. Ver docs/test-report.md e docs/effectcraft/ec0-progress.md.
+**Estado:** Sprints 0–13 tecnicamente implementados, otimização de criação entregue e 77 ferramentas disponíveis. O aceite externo das três rotas de edição no Claude Desktop 9.3 permanece pendente. A EC-0 chegou ao nono marco, com diagnóstico de vetores, texto e curvas contra referências arquivadas. Os 16 keyframes e 20 amostras transformacionais passaram, e 16 regiões visuais continuam como outliers no controle H.264. A captura de novas referências TIFF está preparada e aguarda coordenação da sessão AE. A paridade sem perdas, a comparação de desempenho com AE e a revisão de distribuição continuam pendentes. Ver docs/test-report.md e docs/effectcraft/ec0-progress.md.
 **Base:** MVP das Sprints 0–5, desenvolvido para After Effects 2025 no Windows.
 
 ## 1. Objetivo e uso deste documento

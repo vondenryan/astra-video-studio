@@ -253,6 +253,8 @@ fn compare(directory: &Path) -> Result<Json> {
         let pixels = image.to_rgba8_over(background);
         image::codecs::png::PngEncoder::new(fs::File::create_new(directory.join(format!("ec-{frame}.png")))?)
             .write_image(&pixels, comp.width, comp.height, image::ExtendedColorType::Rgba8)?;
+        image::codecs::png::PngEncoder::new(fs::File::create_new(directory.join(format!("ec-rgba-{frame}.png")))?)
+            .write_image(&image.to_rgba8(), comp.width, comp.height, image::ExtendedColorType::Rgba8)?;
     }
     Ok(json!({"mode": "compare", "status": "rendered", "import_report": imported.report, "layers": layers, "fonts": font_records,
         "font_system_scanned": effectcraft_text::fonts::system_scanned()}))

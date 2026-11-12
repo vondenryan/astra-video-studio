@@ -717,3 +717,15 @@ Three design and four animation frames were compared against hash-verified H.264
 Evidence is under `workspace/ec0/visual-diagnostic-68893060beb44e79a7da49341113acd0`. The original summary, codec-control summary, sampled-review record and images retain separate hashes. The diagnostic preserved 2,598 preexisting managed AEP/snapshot hashes. Four Rust tests passed. The previous TIFF/corpus probe was rerun with the modified worker. See `docs/effectcraft/ec0-visual-diagnostic-milestone.json`.
 
 Final Python regression passed 499 tests with 19 skips in 99.24 s. The TIFF/corpus compatibility run passed in `workspace/ec0/parity-cc5b7ac1ef0e4736a3e9fc36f39a60e8`. Initial build errors in the new mode were corrected to use the unit Text source with its property document, Project::item and the PNG encoder's actual return type before execution.
+
+### 2026-11-12 — Lossless-reference preparation
+
+The protected capture and native-resolution TIFF comparison controllers are implemented. The source/font copies and frozen plan were prepared in `workspace/ec0/lossless-40f58a46e5554ea9a67ae436cbc6a37e`. New native TIFF collection and active-project restoration have not run. Recent operations from another client prompted a request to coordinate exclusive AE use.
+
+Read-only font queries succeeded with matching native acknowledgements. Operation ff05d655a15b4c84b25ece1afba205aa returned actual Arial locations. Operation c80955d3eeb046139b41f7ae8d151488 returned the explicitly requested active saved path and a false dirty flag. Operation b9af7dcc909848618b09120cc98d4cde confirmed that the default query omits project context. Evidence is retained under `workspace/ec0/evidence/lossless-*-query-*.json`.
+
+The RGB/alpha comparator passed independent known partial-alpha values and refused a two-byte alpha error and an incorrect transparent matte. It also passed the archived native mark/edge ROI with SSIM 1, RGB MAE 0, alpha maximum error 0 and equal bounds. Native TIFF bytes were preserved. That check is retained in `workspace/ec0/evidence/lossless-comparator-legacy.json`.
+
+The updated worker compiled and four Rust tests passed. Python regression passed 499 tests with 19 skips in 95.50 s. The full offline design/animation diagnostic was rerun with separate RGBA outputs in `workspace/ec0/visual-diagnostic-e9ec1c37cd6c48749aca0eaf9c790e1b`. The new native capture/restore workflow remains unverified.
+
+Final font metadata flags are independently opt-in. Operation b31ccc11403548518e36c431218907b8 returned locations and project context when requested. Operation 10e151dc7365445fbc3048f84004628b omitted both from the default response. The final Python regression passed 499 tests with 19 skips in 95.03 s. A synthetic preflight accepted a matching acknowledged bootstrap and refused an unresolved native submission without dispatch. Preparation evidence is versioned in `docs/effectcraft/ec0-lossless-preparation.json`.

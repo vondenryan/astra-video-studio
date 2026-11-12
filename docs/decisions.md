@@ -279,3 +279,9 @@ Marker checks report mechanical text coverage. Keep distribution-obligation revi
 Use verified historical AEPs, inline native acknowledgements and H.264 previews for an offline diagnostic. Load two explicit current Arial files by SHA/PostScript and check font resolution, glyph coverage and the absence of system scanning. Keep historical font identity and lossless pixel parity pending.
 
 Retain raw-frame comparisons and append a separately hashed codec-control analysis. One-frame CRF20/veryfast encoding approximates the preview path while leaving inter-frame coding differences unresolved. Keep SSIM/MAE limits fixed, measure bounds in preview pixels and preserve every outlier. Record sampled review only for contact sheets actually viewed. This diagnostic performs no AE dispatch.
+
+### 2026-11-12 — Lossless-reference preparation and explicit font binding
+
+Make native font locations and active-project context independently opt-in in fonts_list. Default responses preserve the previous fields. Use the explicit read-only records to bind current Arial files and coordinate the session before reference capture. Reuse protected copy opening, shared render admission, TIFF verification and existing native quarantine.
+
+Prepare source/font copies before dispatch. Capture must snapshot a checked-clean saved active source, retain attempt intent and restore the original saved path after verified work. On failure, defer restoration while native work is unresolved. Compare stored matted RGB and alpha through separate EC outputs, with native transparent matte samples verified against the acknowledged background. Keep the full capture/restore route unverified until it actually runs.

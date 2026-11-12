@@ -6,7 +6,7 @@ Ten tools extend the local server to 42 MCP tools. They use controlled native te
 
 | Tool | Main input | Result |
 | --- | --- | --- |
-| `fonts_list` | request.query, limit | Actual available AE fonts, PostScript names, family/style, session font IDs and capability flags; no project edit |
+| `fonts_list` | request.query, limit, optional include_locations/include_project_context | Available AE fonts with PostScript names, IDs and capabilities. File locations and project context are explicitly requested. |
 | `text_style_set` | target IDs, optional font/font_size/tracking/fill/leading/alignment/box_size/ranges | Verified typography and optional character-range styles |
 | `text_animator_apply` | target IDs, based_on, position, scale, opacity, start_time, duration | Appended native word/character entry with range-selector keys |
 | `shape_path_set` | target IDs, path, optional group_id/name | New managed Bezier group or replacement of its static geometry |
@@ -22,6 +22,8 @@ CLI names use hyphens and `--request` JSON. Use a persistent MCP host for queued
 ## Fonts and text
 
 Call `fonts_list` first. Font selection is `{ "postscript_name": "Arial-BoldMT", "font_id": 6 }`, using IDs actually returned on the current AE session. The example ID is not portable. `font_id` is optional for a unique PostScript name; use it to disambiguate duplicates. A stored token with a session-specific ID can require a new token record after AE restarts. Missing, substitute or ambiguous fonts are refused before mutation rather than assigned by an unchecked string. Glyph coverage/fallback for every writing system is not guaranteed by font availability alone.
+
+Set `include_locations=true` to obtain each font's native `location` when available, otherwise null. This identifies the file to verify independently. A location alone establishes no byte hash. Set `include_project_context=true` to include the active saved path, dirty flag and item count. Both flags default to false. These opt-in fields support coordinated lossless-reference capture without adding a new tool or changing a project.
 
 `text_style_set` supports font size 8–500 px, tracking −100–500, RGB fill in [0,1], explicit leading 1–1000 and left/center/right alignment. Requested font sizes are normalized to **0.01 px**, consistently in native assignment and verification. This avoids AE retaining an old value for a very small requested size change.
 
