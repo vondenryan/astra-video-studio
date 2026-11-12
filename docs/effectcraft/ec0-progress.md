@@ -28,7 +28,7 @@ O build inicial do recorte levou1m33s em perfil dev, sem representar benchmark d
 | Identidade Astra/IR/revisões/conflicts | Pendente; IDs internos EC não foram apresentados como IDs AE. |
 | AEP dry-run/corpus e limitações permanentes | Quinto marco analisou 17 projetos do corpus fixado e verificou as recusas com perdas. Ver o sexto marco para a suíte upstream. |
 | Comparação visual/semântica com AE | Gráfico estático e curva escalar verificados no quinto marco. Texto e cenas animadas pendentes. |
-| Stress1080p, memória,5cold/10warm e p95 | Pendente. |
+| Stress1080p, memória,5cold/10warm e p95 | Sétimo marco verificou sólidos/precomp com 3/40/80 camadas, cinco processos novos e dez medições após aquecimento. Referência AE equivalente e cenas com texto/efeitos pendentes. |
 | Closure de licenças/notices/SBOM | Inventário de manifests/features disponível; auditoria completa pendente. |
 | GPU e encoder nativo | Não executados; têm gates separados. |
 | Integração MCP/adapter de produção | Não implementada;77 ferramentas atuais inalteradas. |
@@ -96,3 +96,23 @@ O alvo de integração upstream teve 602 testes aprovados, zero falhas e cinco i
 O primeiro processamento do resultado esperava quatro ignorados e reteve a pendência. A inspeção identificou o quinto caso no fonte fixado, conferiu novamente stdout, saída do processo, fontes, corpus e os 2.498 hashes de AEPs preexistentes. O controlador foi corrigido para conferir a identidade dos cinco casos. A execução concluída foi finalizada por auditoria dos arquivos retidos, com registro próprio e sem reenvio da suíte.
 
 Este marco cobre o alvo de integração hospedado pelo probe. A paridade visual de texto, efeitos e cenas animadas, os benchmarks e a auditoria de licenças continuam pendentes. [Relatório da suíte](ec0-aep-suite-milestone.json)
+
+## Sétimo marco — stress CPU em 1080p
+
+O build release fixado renderizou cenas de sólidos com movimento linear, com 3, 40 e 80 camadas principais e três camadas adicionais em uma precomp. Cada cena tem duração de 900 frames a 30 fps. Cinco processos novos e dez medições no mesmo renderer, após um aquecimento excluído, percorreram os frames 0, 225, 450, 675 e 899. Os caches do sistema operacional ficaram ativos. A comparação com 1/2/1 threads foi feita adicionalmente na cena de 80 camadas.
+
+Os tempos abaixo cobrem somente as chamadas de render para o conjunto dos cinco frames. O p95 usa nearest-rank, com cinco amostras em processos novos e dez após aquecimento.
+
+| Camadas principais | Mediana processo novo | p95 processo novo | Mediana após aquecimento | p95 após aquecimento |
+| --- | --- | --- | --- | --- |
+| 3 | 66,39 ms | 70,18 ms | 64,84 ms | 69,83 ms |
+| 40 | 81,69 ms | 86,47 ms | 81,33 ms | 86,77 ms |
+| 80 | 94,85 ms | 99,55 ms | 95,42 ms | 100,51 ms |
+
+A cena de 80 camadas gerou os 900 PNGs. Foram 18,60 s nas chamadas de render, 36,44 s na conversão RGBA e hashes e 2,81 s na gravação PNG. O processo completo levou 59,65 s. A codificação H.264 levou mais 4,96 s. Esses tempos têm escopos distintos e a verificação adicional de decode tem seus próprios registros.
+
+O maior PeakWorkingSetSize entre os workers foi 73,77 MiB, abaixo do limite fixado de 4 GiB. O monitor consultou os contadores durante a execução e após a saída do mesmo processo, identificado por PID e data de criação. Uma alocação conhecida de 32 MiB validou o monitor no processo Python real. O primeiro teste mediu apenas o lançador da venv, foi excluído e teve sua evidência preservada. A memória do encoder aparece separadamente no relatório.
+
+Os 900 hashes RGBA dos PNGs decodificados coincidiram com os do worker. O H.264 confirmou 1920×1080, 30 fps, 900 frames e 30 s e passou no decode completo. Todas as repetições preservaram os hashes dos frames amostrados, e os 2.526 AEPs e snapshots preexistentes conservaram seus hashes.
+
+O recorte cobre sólidos, uma precomp e movimento linear. A medição comparável com AE, a repetição da sequência completa, cenas com fontes/efeitos, VRAM e a auditoria de licenças seguem pendentes. Não houve playback ou aprovação artística humana neste ensaio. [Plano](../../experimental/ec0/stress-plan.json) · [Métricas completas](ec0-stress-milestone.json)

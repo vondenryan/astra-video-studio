@@ -125,6 +125,8 @@ Um motor alternativo baseado no EffectCraft está em avaliação experimental is
 
 O sexto marco executou o alvo de integração AEP do upstream com o corpus obrigatório. Foram 602 testes aprovados e cinco ignorados pelo upstream. A avaliação continua com comparação visual ampliada, desempenho, memória e licenças pendentes.
 
+O sétimo marco mediu cenas de 3, 40 e 80 camadas em 1080p e verificou uma sequência completa de 30 segundos, incluindo H.264 e decode. As medições de desempenho com conteúdo equivalente no AE e a auditoria de licenças seguem pendentes.
+
 A avaliação cobre persistência, fontes fixadas, animação de texto, curvas manuais e composição CPU com efeitos, importação SVG editável, máscaras e mattes. A comparação com o After Effects segue como etapa da avaliação.
 
 ## Desenvolvimento

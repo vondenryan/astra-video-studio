@@ -1,0 +1,745 @@
+{
+  "scope": "EffectCraft CPU solids and nested precomposition stress; isolated release build",
+  "plan_sha256": "c8896a7d6e1c0b40ebbeff694406acdc2306ec83bb55c3a933df600c21bc0886",
+  "worker_sha256": "e5aeba0922bf474177ac25aaf9a4eb023a869318a0abe6b0c80111df7535135e",
+  "cargo_lock_sha256": "52f373b88a4e4af1661b3ba912e00411fbdfe20cfad0646b2a091f7aef76fe1e",
+  "profile": "release",
+  "environment": {
+    "windows": "10.0.26200",
+    "machine": "AMD64",
+    "logical_cpus": 12
+  },
+  "scenes": [
+    {
+      "root_layers": 3,
+      "nested_layers": 3,
+      "project_sha256": "cea8dfea0d9725dc7c6e3b663a180be334cf5cd4cdd0dfc2cf2c028b80ba9e48",
+      "sample_rgba_sha256": [
+        "c8f6818850a9c7974454ca396e16f8b4221938e4262c96c02870ff1251b76461",
+        "9481afbc6688e4307dcfea6cfac8dd052f3254d1f6994f0b178da728879ab28b",
+        "d1b9dc495e40da9a42f7bd7bbad6059fa9e1aa7a117c08f2fd76733bf2fa0dbd",
+        "8e767de7423a7a22239fcea188b284b5a546b2668f5cc127eab9580666c3a890",
+        "e7a597e4126010d44df17b385268dc82ae8c6e379a35a592c49cabf14d6be75b"
+      ],
+      "fresh": {
+        "render_ms": {
+          "count": 5,
+          "median_ms": 66.3853,
+          "p95_ms": 70.1786,
+          "values_ms": [
+            66.4058,
+            70.1786,
+            66.11670000000001,
+            66.3853,
+            65.7214
+          ]
+        },
+        "rgba_hash_ms": {
+          "count": 5,
+          "median_ms": 201.1285,
+          "p95_ms": 203.9802,
+          "values_ms": [
+            201.1285,
+            201.5517,
+            200.4341,
+            199.25039999999998,
+            203.9802
+          ]
+        },
+        "png_write_ms": {
+          "count": 5,
+          "median_ms": 13.5285,
+          "p95_ms": 14.234399999999999,
+          "values_ms": [
+            13.5285,
+            13.0531,
+            14.104999999999999,
+            12.5247,
+            14.234399999999999
+          ]
+        }
+      },
+      "warm": {
+        "render_ms": {
+          "count": 10,
+          "median_ms": 64.84219999999999,
+          "p95_ms": 69.8251,
+          "values_ms": [
+            65.59270000000001,
+            67.96940000000001,
+            65.8649,
+            64.842,
+            64.82169999999999,
+            69.8251,
+            63.891000000000005,
+            64.284,
+            64.8424,
+            64.0221
+          ]
+        },
+        "rgba_hash_ms": {
+          "count": 10,
+          "median_ms": 200.45534999999998,
+          "p95_ms": 205.02880000000002,
+          "values_ms": [
+            199.6929,
+            202.7117,
+            201.4417,
+            200.3823,
+            199.37640000000002,
+            205.02880000000002,
+            200.49989999999997,
+            200.4108,
+            203.7823,
+            199.86679999999998
+          ]
+        }
+      },
+      "fresh_process_wall": {
+        "count": 5,
+        "median_ms": 361.2933999975212,
+        "p95_ms": 722.2742999438196,
+        "values_ms": [
+          722.2742999438196,
+          359.9839000380598,
+          361.2933999975212,
+          361.80210002930835,
+          360.65639997832477
+        ]
+      }
+    },
+    {
+      "root_layers": 40,
+      "nested_layers": 3,
+      "project_sha256": "bc65639bcb0530640dea4296e7f24ea5e17dd579f07ceff073a55c477c7b794d",
+      "sample_rgba_sha256": [
+        "8d04693f8558859ad2537cf54dd631065792d65a77c462d52f1be6726386cf16",
+        "a4651c02fcd8ae0654ac8bf9dce8fd0ac850dcee74033c9f4889c9479543b6b5",
+        "7bc5ba62dc2ce6547b0443933707a07e955f44ac4d5192348c666768a539aa68",
+        "1430a7f582d869a65504adfbd21c0c6000cf1a2fe1e8212bd9ef261287825846",
+        "4f7fef1d9be19cdf0c35aa7b45ffeb1375eb60a2f265cff3d24d3b191000f848"
+      ],
+      "fresh": {
+        "render_ms": {
+          "count": 5,
+          "median_ms": 81.69430000000001,
+          "p95_ms": 86.4701,
+          "values_ms": [
+            81.5051,
+            86.4701,
+            81.69430000000001,
+            81.6271,
+            85.2449
+          ]
+        },
+        "rgba_hash_ms": {
+          "count": 5,
+          "median_ms": 201.5854,
+          "p95_ms": 203.26579999999998,
+          "values_ms": [
+            201.44289999999998,
+            203.26579999999998,
+            200.1618,
+            201.5854,
+            202.73469999999998
+          ]
+        },
+        "png_write_ms": {
+          "count": 5,
+          "median_ms": 12.995800000000001,
+          "p95_ms": 16.4598,
+          "values_ms": [
+            16.4598,
+            14.702200000000001,
+            12.5639,
+            12.995800000000001,
+            12.5602
+          ]
+        }
+      },
+      "warm": {
+        "render_ms": {
+          "count": 10,
+          "median_ms": 81.33305,
+          "p95_ms": 86.76639999999999,
+          "values_ms": [
+            81.04289999999999,
+            86.76639999999999,
+            81.7787,
+            80.45129999999999,
+            85.84599999999999,
+            80.92269999999999,
+            81.4393,
+            81.2268,
+            82.5614,
+            81.0682
+          ]
+        },
+        "rgba_hash_ms": {
+          "count": 10,
+          "median_ms": 200.76624999999996,
+          "p95_ms": 209.6422,
+          "values_ms": [
+            201.72299999999998,
+            201.3012,
+            200.1619,
+            200.76999999999998,
+            204.3138,
+            200.47170000000003,
+            199.63139999999999,
+            200.76249999999996,
+            209.6422,
+            199.7822
+          ]
+        }
+      },
+      "fresh_process_wall": {
+        "count": 5,
+        "median_ms": 360.4756999993697,
+        "p95_ms": 386.88049995107576,
+        "values_ms": [
+          360.3995000012219,
+          360.4756999993697,
+          386.88049995107576,
+          360.2031000191346,
+          360.8026000438258
+        ]
+      }
+    },
+    {
+      "root_layers": 80,
+      "nested_layers": 3,
+      "project_sha256": "f2cf6be521a80a37980d4dfbf0ccc66bb69770417680785d6adc9b248e5d951a",
+      "sample_rgba_sha256": [
+        "d99d943017267f3f27a6c47a3882dbfefe54bbb0da15566d8bcd3c8de7f639ca",
+        "d101d2222b6be438c813258e61eaad6564aa2bcb1fa9fbec578532cd2031f2a6",
+        "13d58580e4d6168305af0db883bd221fa9f3db35cb3faee227f66e4855af183e",
+        "60aeda6caa174bdf189855c388235261ef4c58c2298030ddfac0d7a33f639882",
+        "e7aac3e042dbdb170b5a2d1647ed75e4128b60ca7892b437282821149d9ace68"
+      ],
+      "fresh": {
+        "render_ms": {
+          "count": 5,
+          "median_ms": 94.84509999999999,
+          "p95_ms": 99.5547,
+          "values_ms": [
+            93.8664,
+            95.0095,
+            94.84509999999999,
+            99.5547,
+            94.83790000000002
+          ]
+        },
+        "rgba_hash_ms": {
+          "count": 5,
+          "median_ms": 201.2767,
+          "p95_ms": 207.16899999999998,
+          "values_ms": [
+            200.59040000000002,
+            207.16899999999998,
+            201.2767,
+            202.75060000000002,
+            199.86890000000002
+          ]
+        },
+        "png_write_ms": {
+          "count": 5,
+          "median_ms": 13.214699999999999,
+          "p95_ms": 14.302399999999999,
+          "values_ms": [
+            13.214699999999999,
+            13.4767,
+            12.5061,
+            12.9901,
+            14.302399999999999
+          ]
+        }
+      },
+      "warm": {
+        "render_ms": {
+          "count": 10,
+          "median_ms": 95.41625,
+          "p95_ms": 100.5122,
+          "values_ms": [
+            100.5122,
+            97.74589999999999,
+            96.8343,
+            94.5198,
+            94.4202,
+            93.6307,
+            99.488,
+            94.44189999999999,
+            96.3127,
+            93.2186
+          ]
+        },
+        "rgba_hash_ms": {
+          "count": 10,
+          "median_ms": 200.98255,
+          "p95_ms": 205.25490000000002,
+          "values_ms": [
+            203.06069999999997,
+            199.5554,
+            200.53289999999998,
+            203.172,
+            205.25490000000002,
+            198.6817,
+            202.8453,
+            200.3981,
+            199.7637,
+            201.43220000000002
+          ]
+        }
+      },
+      "fresh_process_wall": {
+        "count": 5,
+        "median_ms": 410.5318000074476,
+        "p95_ms": 412.4039000016637,
+        "values_ms": [
+          410.5392000055872,
+          409.73990003112704,
+          410.5318000074476,
+          412.4039000016637,
+          409.36649998184294
+        ]
+      }
+    }
+  ],
+  "processes": [
+    {
+      "directory": "3-fresh-0",
+      "threads": 2,
+      "exit_code": 0,
+      "wall_ms": 722.2742999438196,
+      "peak_working_set_bytes": 73740288,
+      "memory_samples": 8,
+      "last_working_set_bytes": 32768,
+      "pid": 34508,
+      "creation_filetime": 134389247846517802,
+      "post_exit_memory_query_succeeded": true,
+      "memory_method": "Maximum queried Windows PeakWorkingSetSize, sampled while running and queried after exit",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "report_sha256": "f72b93c778a8b335ef1df69db6ed3d67e3d6328e082d56afa52f0a474e1080a4"
+    },
+    {
+      "directory": "3-fresh-1",
+      "threads": 2,
+      "exit_code": 0,
+      "wall_ms": 359.9839000380598,
+      "peak_working_set_bytes": 73342976,
+      "memory_samples": 8,
+      "last_working_set_bytes": 32768,
+      "pid": 19928,
+      "creation_filetime": 134389247850217154,
+      "post_exit_memory_query_succeeded": true,
+      "memory_method": "Maximum queried Windows PeakWorkingSetSize, sampled while running and queried after exit",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "report_sha256": "cce684fd2883c3ffa16ab148d6c6977d193e369fa065085a94b3fe4fecdb1110"
+    },
+    {
+      "directory": "3-fresh-2",
+      "threads": 2,
+      "exit_code": 0,
+      "wall_ms": 361.2933999975212,
+      "peak_working_set_bytes": 73564160,
+      "memory_samples": 8,
+      "last_working_set_bytes": 32768,
+      "pid": 40928,
+      "creation_filetime": 134389247853866498,
+      "post_exit_memory_query_succeeded": true,
+      "memory_method": "Maximum queried Windows PeakWorkingSetSize, sampled while running and queried after exit",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "report_sha256": "5b4abfd8c14950440110e1f25bfbf1ffcecb537fd227e678191b1366e473fda3"
+    },
+    {
+      "directory": "3-fresh-3",
+      "threads": 2,
+      "exit_code": 0,
+      "wall_ms": 361.80210002930835,
+      "peak_working_set_bytes": 73326592,
+      "memory_samples": 8,
+      "last_working_set_bytes": 32768,
+      "pid": 8856,
+      "creation_filetime": 134389247857525883,
+      "post_exit_memory_query_succeeded": true,
+      "memory_method": "Maximum queried Windows PeakWorkingSetSize, sampled while running and queried after exit",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "report_sha256": "9a936063784179b5062acfa8ac6371091e07cabcfd46fd7c79fd88e7d7eb18fc"
+    },
+    {
+      "directory": "3-fresh-4",
+      "threads": 2,
+      "exit_code": 0,
+      "wall_ms": 360.65639997832477,
+      "peak_working_set_bytes": 73326592,
+      "memory_samples": 8,
+      "last_working_set_bytes": 28672,
+      "pid": 34504,
+      "creation_filetime": 134389247861194824,
+      "post_exit_memory_query_succeeded": true,
+      "memory_method": "Maximum queried Windows PeakWorkingSetSize, sampled while running and queried after exit",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "report_sha256": "07b1c404398cdac45edb94c9f31ea8e542dd34c05f3709c49dc5a168dee5e0e1"
+    },
+    {
+      "directory": "3-warm-0",
+      "threads": 2,
+      "exit_code": 0,
+      "wall_ms": 3131.3583999872208,
+      "peak_working_set_bytes": 73564160,
+      "memory_samples": 63,
+      "last_working_set_bytes": 32768,
+      "pid": 32088,
+      "creation_filetime": 134389247864849462,
+      "post_exit_memory_query_succeeded": true,
+      "memory_method": "Maximum queried Windows PeakWorkingSetSize, sampled while running and queried after exit",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "report_sha256": "d9f507ddf77f4cb51dd52c644cc86d9630768325e4081435558446612b92e994"
+    },
+    {
+      "directory": "40-fresh-0",
+      "threads": 2,
+      "exit_code": 0,
+      "wall_ms": 360.3995000012219,
+      "peak_working_set_bytes": 75603968,
+      "memory_samples": 8,
+      "last_working_set_bytes": 32768,
+      "pid": 28888,
+      "creation_filetime": 134389247896229474,
+      "post_exit_memory_query_succeeded": true,
+      "memory_method": "Maximum queried Windows PeakWorkingSetSize, sampled while running and queried after exit",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "report_sha256": "a83b4d8e07a284246f211c2e49525f0d2eff95165bda7b65b8d7652c78cdec91"
+    },
+    {
+      "directory": "40-fresh-1",
+      "threads": 2,
+      "exit_code": 0,
+      "wall_ms": 360.4756999993697,
+      "peak_working_set_bytes": 75644928,
+      "memory_samples": 8,
+      "last_working_set_bytes": 32768,
+      "pid": 8224,
+      "creation_filetime": 134389247899888700,
+      "post_exit_memory_query_succeeded": true,
+      "memory_method": "Maximum queried Windows PeakWorkingSetSize, sampled while running and queried after exit",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "report_sha256": "ce8ea1db091de5c1c3751eab9dbd5b47465b8c7c9c1f12c5cbcd73b2eeda034f"
+    },
+    {
+      "directory": "40-fresh-2",
+      "threads": 2,
+      "exit_code": 0,
+      "wall_ms": 386.88049995107576,
+      "peak_working_set_bytes": 75665408,
+      "memory_samples": 8,
+      "last_working_set_bytes": 32768,
+      "pid": 27924,
+      "creation_filetime": 134389247903552065,
+      "post_exit_memory_query_succeeded": true,
+      "memory_method": "Maximum queried Windows PeakWorkingSetSize, sampled while running and queried after exit",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "report_sha256": "2020585bd468b6b83175328e3ee0644d0f63e6c2cc8ed3860b968882143f4e49"
+    },
+    {
+      "directory": "40-fresh-3",
+      "threads": 2,
+      "exit_code": 0,
+      "wall_ms": 360.2031000191346,
+      "peak_working_set_bytes": 75517952,
+      "memory_samples": 8,
+      "last_working_set_bytes": 32768,
+      "pid": 25120,
+      "creation_filetime": 134389247907490893,
+      "post_exit_memory_query_succeeded": true,
+      "memory_method": "Maximum queried Windows PeakWorkingSetSize, sampled while running and queried after exit",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "report_sha256": "008244e1e994d7ade7943b84da2885cc32aa9cd22a282d58807b0f831ad9ad1e"
+    },
+    {
+      "directory": "40-fresh-4",
+      "threads": 2,
+      "exit_code": 0,
+      "wall_ms": 360.8026000438258,
+      "peak_working_set_bytes": 75649024,
+      "memory_samples": 8,
+      "last_working_set_bytes": 32768,
+      "pid": 41380,
+      "creation_filetime": 134389247911155464,
+      "post_exit_memory_query_succeeded": true,
+      "memory_method": "Maximum queried Windows PeakWorkingSetSize, sampled while running and queried after exit",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "report_sha256": "543fd797a059b6df35ab6813276bca31d5affea2975212d7ef753887f04a9c34"
+    },
+    {
+      "directory": "40-warm-0",
+      "threads": 2,
+      "exit_code": 0,
+      "wall_ms": 3278.1993999960832,
+      "peak_working_set_bytes": 75563008,
+      "memory_samples": 66,
+      "last_working_set_bytes": 32768,
+      "pid": 39760,
+      "creation_filetime": 134389247914822394,
+      "post_exit_memory_query_succeeded": true,
+      "memory_method": "Maximum queried Windows PeakWorkingSetSize, sampled while running and queried after exit",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "report_sha256": "943eacee8fb499b5ee58c8b415b93433a726819ccd21b1e018e9b5213c42b19e"
+    },
+    {
+      "directory": "80-fresh-0",
+      "threads": 2,
+      "exit_code": 0,
+      "wall_ms": 410.5392000055872,
+      "peak_working_set_bytes": 77139968,
+      "memory_samples": 9,
+      "last_working_set_bytes": 32768,
+      "pid": 40524,
+      "creation_filetime": 134389247947690660,
+      "post_exit_memory_query_succeeded": true,
+      "memory_method": "Maximum queried Windows PeakWorkingSetSize, sampled while running and queried after exit",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "report_sha256": "8a7111ef3d5fb0841aa043f21184b8b2c52397719c053e78ea3b47c9ec613798"
+    },
+    {
+      "directory": "80-fresh-1",
+      "threads": 2,
+      "exit_code": 0,
+      "wall_ms": 409.73990003112704,
+      "peak_working_set_bytes": 77029376,
+      "memory_samples": 9,
+      "last_working_set_bytes": 32768,
+      "pid": 9264,
+      "creation_filetime": 134389247951869798,
+      "post_exit_memory_query_succeeded": true,
+      "memory_method": "Maximum queried Windows PeakWorkingSetSize, sampled while running and queried after exit",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "report_sha256": "d6a662c62c5e8973c4749f5ab09b56c56675bb3e853d92ca8294f5f1641664dd"
+    },
+    {
+      "directory": "80-fresh-2",
+      "threads": 2,
+      "exit_code": 0,
+      "wall_ms": 410.5318000074476,
+      "peak_working_set_bytes": 77139968,
+      "memory_samples": 9,
+      "last_working_set_bytes": 32768,
+      "pid": 35292,
+      "creation_filetime": 134389247956045665,
+      "post_exit_memory_query_succeeded": true,
+      "memory_method": "Maximum queried Windows PeakWorkingSetSize, sampled while running and queried after exit",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "report_sha256": "c4c497946d69aabf24e8c159688692c71c600410d8f57b0ad3cace10e423f8d5"
+    },
+    {
+      "directory": "80-fresh-3",
+      "threads": 2,
+      "exit_code": 0,
+      "wall_ms": 412.4039000016637,
+      "peak_working_set_bytes": 76955648,
+      "memory_samples": 9,
+      "last_working_set_bytes": 32768,
+      "pid": 21404,
+      "creation_filetime": 134389247960254146,
+      "post_exit_memory_query_succeeded": true,
+      "memory_method": "Maximum queried Windows PeakWorkingSetSize, sampled while running and queried after exit",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "report_sha256": "7de7bb2ec87efb30f81ea7d70f1c846208e58236faee7659cc687cc6fc241105"
+    },
+    {
+      "directory": "80-fresh-4",
+      "threads": 2,
+      "exit_code": 0,
+      "wall_ms": 409.36649998184294,
+      "peak_working_set_bytes": 76820480,
+      "memory_samples": 9,
+      "last_working_set_bytes": 32768,
+      "pid": 22496,
+      "creation_filetime": 134389247964452153,
+      "post_exit_memory_query_succeeded": true,
+      "memory_method": "Maximum queried Windows PeakWorkingSetSize, sampled while running and queried after exit",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "report_sha256": "7a9e09046326993787262304860acaada5436434799702af680557887d95cd89"
+    },
+    {
+      "directory": "80-warm-0",
+      "threads": 2,
+      "exit_code": 0,
+      "wall_ms": 3432.0928000379354,
+      "peak_working_set_bytes": 77074432,
+      "memory_samples": 69,
+      "last_working_set_bytes": 32768,
+      "pid": 37372,
+      "creation_filetime": 134389247968617568,
+      "post_exit_memory_query_succeeded": true,
+      "memory_method": "Maximum queried Windows PeakWorkingSetSize, sampled while running and queried after exit",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "report_sha256": "b3dd34a59f995a8e2ea3f1f2ee2eaf089f802fdbe0ad4bbad0073442c2896be8"
+    },
+    {
+      "directory": "80-fresh-10",
+      "threads": 1,
+      "exit_code": 0,
+      "wall_ms": 463.6793999816291,
+      "peak_working_set_bytes": 77352960,
+      "memory_samples": 10,
+      "last_working_set_bytes": 32768,
+      "pid": 39960,
+      "creation_filetime": 134389248003047918,
+      "post_exit_memory_query_succeeded": true,
+      "memory_method": "Maximum queried Windows PeakWorkingSetSize, sampled while running and queried after exit",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "report_sha256": "dda342e5b5388382953ffffae09acebb8bc8dcacbe66eccc96f104d5e02fc5fd"
+    },
+    {
+      "directory": "80-fresh-11",
+      "threads": 2,
+      "exit_code": 0,
+      "wall_ms": 416.23739997157827,
+      "peak_working_set_bytes": 76750848,
+      "memory_samples": 9,
+      "last_working_set_bytes": 32768,
+      "pid": 35728,
+      "creation_filetime": 134389248007753865,
+      "post_exit_memory_query_succeeded": true,
+      "memory_method": "Maximum queried Windows PeakWorkingSetSize, sampled while running and queried after exit",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "report_sha256": "29d34e59cf8e8378a7a9be84bfbd7349e0e31b997a7a14087fdef2fb91223625"
+    },
+    {
+      "directory": "80-fresh-12",
+      "threads": 1,
+      "exit_code": 0,
+      "wall_ms": 460.8579999767244,
+      "peak_working_set_bytes": 76996608,
+      "memory_samples": 10,
+      "last_working_set_bytes": 32768,
+      "pid": 40536,
+      "creation_filetime": 134389248011999537,
+      "post_exit_memory_query_succeeded": true,
+      "memory_method": "Maximum queried Windows PeakWorkingSetSize, sampled while running and queried after exit",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "report_sha256": "c85f7cf42514b9be4ccf9d4da6ca9a87131dff37182a425fbe67ddb44499786d"
+    },
+    {
+      "directory": "80-sequence-0",
+      "threads": 2,
+      "exit_code": 0,
+      "wall_ms": 59646.319499996025,
+      "peak_working_set_bytes": 77320192,
+      "memory_samples": 1185,
+      "last_working_set_bytes": 32768,
+      "pid": 21428,
+      "creation_filetime": 134389248016687237,
+      "post_exit_memory_query_succeeded": true,
+      "memory_method": "Maximum queried Windows PeakWorkingSetSize, sampled while running and queried after exit",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "report_sha256": "4ef0946ff9fd4c3ffb70205e4b4e13828ddc1ab9aab76ec44630c3ca1240faea"
+    }
+  ],
+  "determinism": [
+    {
+      "threads": 1,
+      "directory": "80-fresh-10",
+      "report_sha256": "dda342e5b5388382953ffffae09acebb8bc8dcacbe66eccc96f104d5e02fc5fd"
+    },
+    {
+      "threads": 2,
+      "directory": "80-fresh-11",
+      "report_sha256": "29d34e59cf8e8378a7a9be84bfbd7349e0e31b997a7a14087fdef2fb91223625"
+    },
+    {
+      "threads": 1,
+      "directory": "80-fresh-12",
+      "report_sha256": "c85f7cf42514b9be4ccf9d4da6ca9a87131dff37182a425fbe67ddb44499786d"
+    }
+  ],
+  "full_sequence": {
+    "excluded_warmup": false,
+    "iteration": 0,
+    "png_write_ms": 2809.018300000007,
+    "render_ms": 18604.266400000004,
+    "rgba_hash_ms": 36443.9089
+  },
+  "full_sequence_report_sha256": "4ef0946ff9fd4c3ffb70205e4b4e13828ddc1ab9aab76ec44630c3ca1240faea",
+  "video": {
+    "png_decode": {
+      "exit_code": 0,
+      "wall_ms": 30965.544900042005,
+      "peak_working_set_bytes": 427569152,
+      "memory_samples": 615,
+      "last_working_set_bytes": 32768,
+      "pid": 19200,
+      "creation_filetime": 134389248614444501,
+      "post_exit_memory_query_succeeded": true,
+      "memory_method": "Maximum queried Windows PeakWorkingSetSize, sampled while running and queried after exit",
+      "stdout_sha256": "2601c0b7bee8239e02c10cbe3c5b328a16aa15608de39d2cefb9d4279904708d",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "encode": {
+      "exit_code": 0,
+      "wall_ms": 4957.345200004056,
+      "peak_working_set_bytes": 983072768,
+      "memory_samples": 95,
+      "last_working_set_bytes": 32768,
+      "pid": 39200,
+      "creation_filetime": 134389248924235284,
+      "post_exit_memory_query_succeeded": true,
+      "memory_method": "Maximum queried Windows PeakWorkingSetSize, sampled while running and queried after exit",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "full_decode": {
+      "exit_code": 0,
+      "wall_ms": 670.9105000481941,
+      "peak_working_set_bytes": 149835776,
+      "memory_samples": 14,
+      "last_working_set_bytes": 28672,
+      "pid": 32896,
+      "creation_filetime": 134389248992647146,
+      "post_exit_memory_query_succeeded": true,
+      "memory_method": "Maximum queried Windows PeakWorkingSetSize, sampled while running and queried after exit",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stream": {
+      "codec_name": "h264",
+      "width": 1920,
+      "height": 1080,
+      "pix_fmt": "yuv420p",
+      "avg_frame_rate": "30/1",
+      "duration": "30.000000",
+      "nb_read_frames": "900"
+    },
+    "sha256": "d90de2bbe720cdbce09246b4cedc96c6494ec2d4dbe8e35557fe184e746a0bd0",
+    "ffmpeg_version": "ffmpeg version 8.0.1-essentials_build-www.gyan.dev Copyright (c) 2000-2025 the FFmpeg developers",
+    "ffprobe_version": "ffprobe version 8.0.1-essentials_build-www.gyan.dev Copyright (c) 2007-2025 the FFmpeg developers"
+  },
+  "rss_budget_bytes": 4294967296,
+  "preexisting_managed_aeps_preserved": 2526,
+  "limits": "Repeated timings cover five sampled frames, not full-sequence repetitions. No matched AE benchmark, GPU, font/effect-heavy stress or speedup claim.",
+  "evidence_directory": "stress-bcaddadb9ec1468fa31ed49298a6765e",
+  "summary_sha256": "04637bafdec7b8ad766190809085c918831ede556cb1060acc974fa93c0caa4e"
+}

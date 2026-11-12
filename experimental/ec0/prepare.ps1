@@ -1,4 +1,4 @@
-param([ValidateSet('build','test','metadata')][string]$Action='build')
+param([ValidateSet('build','test','metadata')][string]$Action='build', [switch]$Release)
 $ErrorActionPreference='Stop'
 $repoRoot=[IO.Path]::GetFullPath((Join-Path $PSScriptRoot '..\..'))
 $workspaceRoot=if ($env:ASTRA_WORKSPACE) { [IO.Path]::GetFullPath($env:ASTRA_WORKSPACE) } else { Join-Path $repoRoot 'workspace' }
@@ -33,6 +33,8 @@ if ($Action -eq 'metadata') {
     if ($LASTEXITCODE -ne 0) { throw 'Locked Cargo metadata failed; inspect retained log' }
     & (Join-Path $repoRoot '.venv\Scripts\python.exe') (Join-Path $PSScriptRoot 'check_dependencies.py') "$metadataDir\cargo-metadata.json" "$metadataDir\dependency-closure.json"
 } else {
-    & $cargo +1.95.0 $Action --locked --manifest-path $manifest -j 2
+    [string[]]$profileArgs=@()
+    if ($Release) { $profileArgs=@('--release') }
+    & $cargo +1.95.0 $Action --locked --manifest-path $manifest -j 2 @profileArgs
 }
 if ($LASTEXITCODE -ne 0) { throw "EC0 $Action failed; no automatic retry" }

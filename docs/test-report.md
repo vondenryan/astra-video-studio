@@ -681,3 +681,15 @@ The unmodified upstream AEP integration target ran with the isolated probe depen
 The controller initially expected four ignored cases. Its successful child exit and raw outputs were preserved, then audited against the pinned source and corrected parser. The post-exit inspection finalized that same run without resubmission. The report binds both the raw output and inspection hashes. See `docs/effectcraft/ec0-aep-suite-milestone.json` and `workspace/ec0/aep-suite-cfeac096f37f4589a1181cfc965c7696`.
 
 The final Python regression passed 499 tests with 19 skips in 101.72 s. Native AE tests remained disabled.
+
+### 2026-11-11 — EC-0 seventh milestone
+
+The fixed release worker passed sampled 1080p CPU stress for 3/40/80 root layers plus three nested layers. Each scene had five fresh-process two-thread runs and ten warm runs after an excluded warmup. The repeated sample consists of frames 0/225/450/675/899. The 80-layer case additionally matched hashes across a 1/2/1-thread series and a complete 900-frame sequence. Warm and fresh sample hashes matched for every scene, and the fixture exercised visible motion.
+
+The full sequence used 18.604 s of renderer calls, 36.444 s of RGBA conversion/hash and 2.809 s of PNG writes. Native process wall time was 59.646 s. The maximum native-worker PeakWorkingSetSize was 77,352,960 bytes, with successful post-exit queries and a 4 GiB fixed ceiling. The monitor passed a known-allocation check against the real Python interpreter. An initial venv-launcher-only check was excluded and retained with its inspection record.
+
+All 900 PNGs decoded to the expected RGBA hashes. H.264 encoding took 4.957 s, and FFprobe confirmed 1920×1080, 30 fps, 900 frames and 30 seconds. Full video decode passed. The 2,526 prior managed AEP and snapshot hashes were preserved. There were no AE commands or human playback/artistic approval. See `docs/effectcraft/ec0-stress-milestone.json` and `workspace/ec0/stress-bcaddadb9ec1468fa31ed49298a6765e`.
+
+Python regression passed 499 tests with 19 skips in 103.46 s. Four Rust unit tests passed and the experimental stress integration completed. The first release build attempt had an argument-splatting failure, followed by a build that found two layer-container type mismatches. Both were corrected before measurements, and the final release build passed. Logs remain under `workspace/ec0/evidence/stress-*`.
+
+These measurements cover the solids/precomp fixture and sampled repetitions. Full-sequence repeat distributions, matched AE performance, text/effect-heavy stress, VRAM and complete license/notices acceptance remain pending.

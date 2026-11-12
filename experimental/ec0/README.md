@@ -77,3 +77,13 @@ Execute `.\.venv\Scripts\python.exe experimental/ec0/run_aep_suite.py` na raiz, 
 O alvo executado corresponde a `crates/aep/tests/it/main.rs`, com `EFFECTCRAFT_AEP_FIXTURES_REQUIRED=1`. O alvo usa somente as fixtures sintéticas copiadas. A biblioteca e os exemplos têm testes próprios fora deste comando. Cinco testes exploratórios, de famílias de versões ou de Cryptomatte continuam marcados como ignorados pelo upstream e aparecem no relatório.
 
 Cada execução retém manifest, lockfile, inventário dos fontes, fixtures, baseline dos AEPs, stdout, stderr, PID, código de saída e resumo em `workspace/ec0/aep-suite-<UUID>`. Um timeout conserva `pending.json` e bloqueia nova execução desse controlador até a inspeção da pendência.
+
+## Stress CPU e medições de recursos
+
+Compile com `.\experimental\ec0\prepare.ps1 -Action build -Release` e execute `.\.venv\Scripts\python.exe experimental/ec0/run_stress.py`. O plano fixa cenas 1920×1080/30 fps com 3, 40 e 80 camadas na composição principal, mais três camadas em uma precomp. As cenas usam sólidos e movimento linear.
+
+Cada cena tem cinco medições em processos novos com duas threads e dez medições no mesmo renderer após um aquecimento excluído. Cada medição percorre os frames 0, 225, 450, 675 e 899. Os caches do sistema operacional ficam ativos. O ensaio calcula mediana e p95 pelo método nearest-rank, mede as fases separadamente e confere determinismo adicional com 1/2/1 threads.
+
+A cena de 80 camadas também gera os 900 PNGs. O FFmpeg decodifica a sequência e confronta os 900 hashes RGBA antes de codificar um H.264 e fazer seu decode completo. A verificação de memória usa PeakWorkingSetSize do processo nativo, com consulta final após sua saída e limite fixado de 4 GiB por worker. O limite se refere a esse recorte de sólidos e precomp.
+
+Os dados ficam em `workspace/ec0/stress-<UUID>`. Falhas ou timeouts retêm o marcador do processo e seus arquivos. A comparação de desempenho com AE requer uma referência com o mesmo conteúdo e condições de medição.

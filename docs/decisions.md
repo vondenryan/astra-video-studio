@@ -261,3 +261,9 @@ Use the upstream commit's corpus lock to verify the synthetic inputs. Deny exter
 Host the unmodified pinned upstream AEP integration target in a temporary package using the existing probe dependencies and lockfile. Extract tests and embedded fixtures directly from Git and verify all locked corpus bytes. Require fixtures and check exact ignored-test identities. Keep library unit tests, examples, ignored exploratory tests and the full upstream workspace as separate scopes.
 
 Archive a completed suite's retained dispatch only after inspecting its exit journal and verifying the result, source bytes, corpus and original project baseline. An output-count processing error requires an evidence audit. It does not require resubmitting the suite.
+
+### 2026-11-11 — EC-0 sampled CPU performance and full-sequence stress
+
+Use a separate fixed release executable with 3/40/80 root layers and three nested solid layers at 1080p30. Measure five fresh processes with the same two-thread setting and ten warm iterations after one excluded warmup. OS caches stay active. Keep the 1/2/1-thread determinism series separate from the timed distributions.
+
+Repeated performance samples span five fixed frames of a 30-second composition. Render the full 900-frame 80-layer sequence once, verify every decoded PNG hash, encode and fully decode the H.264. Record render, RGBA/hash, PNG, process-wall and encoder phases separately. Query native-process PeakWorkingSetSize with PID/creation identity and a post-exit counter check. The 4 GiB gate applies to the native fixture worker. A matched AE baseline and broader content remain required for performance acceptance.
