@@ -1,8 +1,8 @@
 # Astra Video Studio — evolução para produção de motion profissional
 
 **Versão:** 1.4
-**Data:** 10 de novembro de 2026 (origem: 6 de novembro)
-**Estado:** Sprints 0–13 tecnicamente implementados, otimização de criação entregue e 77 ferramentas disponíveis. O aceite externo das três rotas de edição no Claude Desktop 9.3 permanece pendente. A EC-0 chegou ao nono marco, com diagnóstico de vetores, texto e curvas contra referências arquivadas. Os 16 keyframes e 20 amostras transformacionais passaram, e 16 regiões visuais continuam como outliers no controle H.264. A captura de novas referências TIFF está preparada e aguarda coordenação da sessão AE. A paridade sem perdas, a comparação de desempenho com AE e a revisão de distribuição continuam pendentes. Ver docs/test-report.md e docs/effectcraft/ec0-progress.md.
+**Data:** 12 de novembro de 2026 (origem: 6 de novembro)
+**Estado:** Sprints 0–13 tecnicamente implementados, otimização de criação entregue e 77 ferramentas disponíveis. O aceite externo das três rotas de edição no Claude Desktop 9.3 permanece pendente. A EC-0 chegou ao décimo marco com 170 TIFFs nativos verificados e restauração do projeto original. Os vetores avaliados passaram, e 12 regiões de texto continuam fora dos critérios em resolução nativa. A fidelidade de texto/alfa, a comparação de desempenho com AE e a revisão de distribuição continuam pendentes. Ver docs/test-report.md e docs/effectcraft/ec0-progress.md.
 **Base:** MVP das Sprints 0–5, desenvolvido para After Effects 2025 no Windows.
 
 ## 1. Objetivo e uso deste documento
@@ -410,7 +410,7 @@ IR próprio deverá explicitar UUIDs/dependências, tempo/FPS/frames, start/stre
 
 ### 11.3 EC-0 — prova de conceito isolada
 
-**Estado:** em execução. Os quatro primeiros marcos verificaram as fixtures CPU de persistência, texto/fontes, curvas, vetores, efeitos, máscaras/mattes, SVG e seletor de caracteres. O quinto comparou um gráfico TIFF e uma curva escalar com AE. O sexto passou 602 testes de integração AEP com corpus obrigatório, com cinco ignorados. O sétimo mediu sólidos/precomp com 3/40/80 camadas em 1080p e uma sequência completa de 900 frames. O oitavo gerou SBOM validado para 96 pacotes e sete fontes. O nono verificou transformações e diagnosticou texto/vetores sobre MP4s históricos, com outliers preservados. A aceitação completa e a decisão de avançar para EC-1 continuam pendentes. Ver [andamento e evidências](docs/effectcraft/ec0-progress.md).
+**Estado:** em execução. Os quatro primeiros marcos verificaram as fixtures CPU de persistência, texto/fontes, curvas, vetores, efeitos, máscaras/mattes, SVG e seletor de caracteres. O quinto comparou um gráfico TIFF e uma curva escalar com AE. O sexto passou 602 testes de integração AEP com corpus obrigatório, com cinco ignorados. O sétimo mediu sólidos/precomp com 3/40/80 camadas em 1080p e uma sequência completa de 900 frames. O oitavo gerou SBOM validado para 96 pacotes e sete fontes. O nono verificou transformações e diagnosticou texto/vetores sobre MP4s históricos, com outliers preservados. O décimo gerou 170 TIFFs nativos e restaurou o projeto original, com vetores aprovados nas amostras e 12 regiões de texto fora dos critérios. A aceitação completa e a decisão de avançar para EC-1 continuam pendentes. Ver [andamento e evidências](docs/effectcraft/ec0-progress.md).
 
 **Entregas:** build Windows x64 fixado e grafo mínimo sem GUI; commands estruturados de composição/texto/curvas/Fill/Blur; persistência e inspeção; frames headless integrados experimentalmente ao pipeline Astra; comparação AE/EC CPU, depois GPU/encoder nativo em provas separadas. Manter PNG → FFmpeg/ffprobe/decode como verificação independente inicial. API experimental opt-in e fixtures/cópias privadas; não alterar a sessão aberta.
 

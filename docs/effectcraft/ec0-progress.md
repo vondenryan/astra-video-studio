@@ -143,10 +143,24 @@ Cinco folhas de contato foram realmente vistas, cobrindo logo, título, subtítu
 
 O ensaio preservou os 2.598 AEPs e snapshots preexistentes. A prova TIFF do quinto marco foi executada novamente para conferir compatibilidade do worker. Paridade visual sem perdas, fontes históricas, efeitos/máscaras/mattes e playback humano permanecem pendentes. [Relatório e outliers](ec0-visual-diagnostic-milestone.json)
 
-## Próxima etapa preparada — novas referências TIFF
+## Preparação das novas referências TIFF
 
-O controlador de captura foi preparado com cópias dos dois AEPs e dos dois arquivos Arial em `workspace/ec0/lossless-40f58a46e5554ea9a67ae436cbc6a37e`. A geração das novas referências ainda não foi executada. A sessão recebia operações recentes de outro cliente, e a reserva do AE foi solicitada ao operador.
+O controlador de captura foi preparado com cópias dos dois AEPs e dos dois arquivos Arial em `workspace/ec0/lossless-40f58a46e5554ea9a67ae436cbc6a37e`. A sessão recebia operações recentes de outro cliente, e a reserva do AE foi solicitada ao operador. A execução autorizada está registrada no décimo marco.
 
 As consultas nativas somente de leitura passaram. O AE informou ArialMT em arial.ttf e Arial-BoldMT em arialbd.ttf, com os caminhos e hashes esperados. A consulta explícita de contexto informou um projeto gerenciado salvo e limpo. Na versão final, caminhos e contexto são solicitados por flags independentes, ambas desativadas por padrão. Os dois modos foram verificados nativamente.
 
-O comparador separa RGB armazenado e alfa e conserva os TIFFs originais. O teste com o gráfico TIFF arquivado passou com SSIM 1, erro RGB 0, erro alfa 0 e bounds idênticos. Valores sintéticos de alfa parcial também passaram, e erros de alfa e matte foram recusados. Isso verifica o comparador nesse recorte. O fluxo novo de abrir cópias, renderizar e restaurar o projeto ativo continua pendente de aceitação nativa coordenada.
+O comparador separa RGB armazenado e alfa e conserva os TIFFs originais. O teste com o gráfico TIFF arquivado passou com SSIM 1, erro RGB 0, erro alfa 0 e bounds idênticos. Valores sintéticos de alfa parcial também passaram, e erros de alfa e matte foram recusados.
+
+## Décimo marco — referências nativas sem perdas
+
+O operador reservou a sessão AE. A captura abriu cópias protegidas dos AEPs das Sprints 7 e 8 e gerou 61 TIFFs em 1920×1080 e 109 TIFFs em 960×540, todos a 24 fps. Os 170 arquivos RGBA8 foram conferidos por hash e decode completo. A associação nativa Premultiplied (Matted) foi preservada.
+
+Antes da troca de projetos, o controlador criou um backup byte a byte do arquivo ativo salvo e limpo. Ao concluir os dois renders, o AE confirmou a reabertura do caminho original com dirty=false. Os 2.610 AEPs e snapshots preexistentes conservaram seus hashes. As fontes ArialMT e Arial-BoldMT mantiveram caminhos, IDs e hashes antes e depois dos renders.
+
+Sete frames foram comparados em resolução nativa. Os controles e as 20 amostras dos 16 keyframes transformacionais continuaram correspondentes. O logo passou nos três frames, e a curva passou durante sua revelação. A composição de design usa fundo opaco. As regiões de texto invisíveis no frame inicial também coincidiram.
+
+Persistiram 12 regiões de texto fora dos critérios. O título do cartão teve SSIM entre 0,8700 e 0,8842 e erro RGB médio entre 4,80 e 6,49 bytes nos dois frames visíveis. O subtítulo apresentou diferença de bounds de até cinco pixels durante a revelação. O título em movimento passou no RGB, com SSIM entre 0,9951 e 0,9981 e MAE entre 0,48 e 0,76 bytes, mas seu erro alfa máximo chegou a 94 bytes. A sentinela estática apresentou erro alfa máximo de 122 bytes. As tolerâncias permanecem fixadas.
+
+O diagnóstico adicional verificou a face efetiva de cada glifo dos quatro textos, sem substituição nem síntese, e associou cada layout ao hash do arquivo Arial carregado. As saídas RGB e RGBA permaneceram byte idênticas após essa verificação. Os bounds desse relatório de layout descrevem a geometria anterior aos animadores. A aceitação visual utiliza os bounds dos pixels em cada frame.
+
+Oito folhas de contato RGB/alfa foram realmente vistas. As silhuetas e a ordem de pintura dos vetores correspondem nas amostras. Os recortes de texto mostram diferenças de bordas, peso ou alinhamento, incluindo cobertura alfa. A causa completa dessas diferenças ainda precisa ser isolada entre layout, operadores de texto e rasterização. A paridade de texto/alfa continua pendente, assim como efeitos/máscaras/mattes, desempenho equivalente, contratos de edição e revisão de distribuição. Não houve playback integral ou aprovação artística humana. [Relatório sem perdas](ec0-lossless-milestone.json)

@@ -1,0 +1,1116 @@
+{
+  "status": "captured_compared_with_text_outliers",
+  "evidence_directory": "lossless-40f58a46e5554ea9a67ae436cbc6a37e",
+  "capture_summary_sha256": "6ca2acc6012590dbe5a49ccd9dbf0aafc8e1ba60be5a8444e49ee06f5829fa05",
+  "comparison_summary_sha256": "a60480b027b6efd69c80a01e61189e0acbcfafcd7137feb400c0ed959ccd111b",
+  "layout_audit_summary_sha256": "08a4dc9bc64c833c1737346ba1f59cd071470b0d2f890969e5a775ef57fb3bf9",
+  "sampled_review_sha256": "4763181143534fef9f44aff8edf93e2a615c107c3b94140f1755138e00a26ea7",
+  "original_project_restored": true,
+  "restoration_operation_id": "ef1edd5c93c6478dac7c63db92d44cf4",
+  "active_source_backup_sha256": "5cd6db4b34184adef14af6358ce248e5e738ed889b3da1791c8b9319f9b35026",
+  "preexisting_managed_aeps_preserved": 2610,
+  "native_references": [
+    {
+      "name": "design",
+      "open_operation_id": "49a2f41c2ef34ce7bc200d2f7173af04",
+      "render_job_id": "ec2c3188e0234bbfa9c066e0fec60dfb",
+      "source_sha256": "e86f37a3bc444610e8b2319ba4ea9ba7662fe488d5eb495e52cc8c09681d9092",
+      "sequence_manifest_sha256": "d4f70711af4656b1f6c95f3e4017c57e85bd3260e902ca1fd45d2007110f73b4",
+      "frame_count": 61,
+      "width": 1920,
+      "height": 1080,
+      "fps": 24,
+      "alpha_association": "Premultiplied (Matted)",
+      "alpha_min": 255,
+      "alpha_max": 255,
+      "source_color": {
+        "bits_per_channel": 8,
+        "working_space": "None",
+        "linearized": false
+      }
+    },
+    {
+      "name": "animation",
+      "open_operation_id": "a2982d2d1bc6422ba20d18b75c1a8804",
+      "render_job_id": "d2a8ae6a8ad54686bdbca46ee71c8490",
+      "source_sha256": "8e844209a8c04065650c8203bcffde20affb88e81d6f1acedcd0e24f852dfe6e",
+      "sequence_manifest_sha256": "2b140831d57cf9146be2762fc092d8b1c091d1b4d534ffae490cfd8f60869b85",
+      "frame_count": 109,
+      "width": 960,
+      "height": 540,
+      "fps": 24,
+      "alpha_association": "Premultiplied (Matted)",
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "source_color": {
+        "bits_per_channel": 8,
+        "working_space": "None",
+        "linearized": false
+      }
+    }
+  ],
+  "native_font_bindings": [
+    {
+      "postscript_name": "ArialMT",
+      "font_id": 4,
+      "family": "Arial",
+      "style": "Regular",
+      "substitute": false,
+      "location": "C:\\WINDOWS\\Fonts\\arial.ttf",
+      "sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a"
+    },
+    {
+      "postscript_name": "Arial-BoldMT",
+      "font_id": 6,
+      "family": "Arial",
+      "style": "Bold",
+      "substitute": false,
+      "location": "C:\\WINDOWS\\Fonts\\arialbd.ttf",
+      "sha256": "e8f4e3baf6cc35fed6fcce3a540e8b39e8f6cda1d22a28f2ec8f526fef7a43f5"
+    }
+  ],
+  "comparison": {
+    "capture_summary_sha256": "6ca2acc6012590dbe5a49ccd9dbf0aafc8e1ba60be5a8444e49ee06f5829fa05",
+    "plan_sha256": "c00ecab746eef0cb04f8b27034007454d9773c34aec78bc3750417770a34915f",
+    "scope": "Native-resolution preserved TIFF RGB/alpha compared separately with EC output using the same current font files",
+    "worker_sha256": "02921f6dff3cc4afc8ed58147d33a968760f613cf5357b0f38c42c68873732f5",
+    "cases": [
+      {
+        "name": "design",
+        "semantics": {
+          "checks": 70,
+          "keys": 0,
+          "samples": 0,
+          "pass": true,
+          "differences": []
+        },
+        "frames": [
+          {
+            "frame": 0,
+            "inputs_sha256": [
+              "68c2a87f744a1723620368b9daf39d565b98c70026bae2ab4bcb65dcdeacbdf0",
+              "b7015d5461c6d56f9a1ae69ff60bf54a1318085cef812b1d2ddf9b6ebd6c2475",
+              "b7015d5461c6d56f9a1ae69ff60bf54a1318085cef812b1d2ddf9b6ebd6c2475"
+            ],
+            "regions": {
+              "logo": {
+                "ssim": 0.99948015591628,
+                "rgb_mae_bytes": 0.14664181644880175,
+                "rgb_pass": true,
+                "alpha_max_error_bytes": 0,
+                "alpha_mae_bytes": 0.0,
+                "alpha_pass": true,
+                "transparent_pixels_checked": 0,
+                "transparent_matte_max_error_bytes": 0,
+                "native_matte_matches_acknowledged_background": true,
+                "ae_bounds": [
+                  843,
+                  127,
+                  1077,
+                  349
+                ],
+                "ec_bounds": [
+                  843,
+                  127,
+                  1077,
+                  348
+                ],
+                "bounds_max_delta_native_px": 1,
+                "bounds_pass": true,
+                "pass": true
+              },
+              "title": {
+                "ssim": 1.0,
+                "rgb_mae_bytes": 0.0,
+                "rgb_pass": true,
+                "alpha_max_error_bytes": 0,
+                "alpha_mae_bytes": 0.0,
+                "alpha_pass": true,
+                "transparent_pixels_checked": 0,
+                "transparent_matte_max_error_bytes": 0,
+                "native_matte_matches_acknowledged_background": true,
+                "ae_bounds": null,
+                "ec_bounds": null,
+                "bounds_max_delta_native_px": null,
+                "bounds_pass": true,
+                "pass": true
+              },
+              "subtitle": {
+                "ssim": 1.0,
+                "rgb_mae_bytes": 0.0,
+                "rgb_pass": true,
+                "alpha_max_error_bytes": 0,
+                "alpha_mae_bytes": 0.0,
+                "alpha_pass": true,
+                "transparent_pixels_checked": 0,
+                "transparent_matte_max_error_bytes": 0,
+                "native_matte_matches_acknowledged_background": true,
+                "ae_bounds": null,
+                "ec_bounds": null,
+                "bounds_max_delta_native_px": null,
+                "bounds_pass": true,
+                "pass": true
+              },
+              "bezier_path": {
+                "ssim": 1.0,
+                "rgb_mae_bytes": 0.0,
+                "rgb_pass": true,
+                "alpha_max_error_bytes": 0,
+                "alpha_mae_bytes": 0.0,
+                "alpha_pass": true,
+                "transparent_pixels_checked": 0,
+                "transparent_matte_max_error_bytes": 0,
+                "native_matte_matches_acknowledged_background": true,
+                "ae_bounds": null,
+                "ec_bounds": null,
+                "bounds_max_delta_native_px": null,
+                "bounds_pass": true,
+                "pass": true
+              }
+            }
+          },
+          {
+            "frame": 24,
+            "inputs_sha256": [
+              "05f23bd943e9a12cf9ac7165807bd3eb4bdee2cb0d67e49627488ad80ff5414e",
+              "889ec7e0bfcac8917315cc1cfb02178b52e729a2e3c50451d5267b1a38e7a38a",
+              "889ec7e0bfcac8917315cc1cfb02178b52e729a2e3c50451d5267b1a38e7a38a"
+            ],
+            "regions": {
+              "logo": {
+                "ssim": 0.99948015591628,
+                "rgb_mae_bytes": 0.14664181644880175,
+                "rgb_pass": true,
+                "alpha_max_error_bytes": 0,
+                "alpha_mae_bytes": 0.0,
+                "alpha_pass": true,
+                "transparent_pixels_checked": 0,
+                "transparent_matte_max_error_bytes": 0,
+                "native_matte_matches_acknowledged_background": true,
+                "ae_bounds": [
+                  843,
+                  127,
+                  1077,
+                  349
+                ],
+                "ec_bounds": [
+                  843,
+                  127,
+                  1077,
+                  348
+                ],
+                "bounds_max_delta_native_px": 1,
+                "bounds_pass": true,
+                "pass": true
+              },
+              "title": {
+                "ssim": 0.884198797487545,
+                "rgb_mae_bytes": 4.7967522321428575,
+                "rgb_pass": false,
+                "alpha_max_error_bytes": 0,
+                "alpha_mae_bytes": 0.0,
+                "alpha_pass": true,
+                "transparent_pixels_checked": 0,
+                "transparent_matte_max_error_bytes": 0,
+                "native_matte_matches_acknowledged_background": true,
+                "ae_bounds": [
+                  610,
+                  441,
+                  1310,
+                  522
+                ],
+                "ec_bounds": [
+                  608,
+                  441,
+                  1309,
+                  522
+                ],
+                "bounds_max_delta_native_px": 2,
+                "bounds_pass": false,
+                "pass": false
+              },
+              "subtitle": {
+                "ssim": 0.9919740096461874,
+                "rgb_mae_bytes": 1.465789794921875,
+                "rgb_pass": true,
+                "alpha_max_error_bytes": 0,
+                "alpha_mae_bytes": 0.0,
+                "alpha_pass": true,
+                "transparent_pixels_checked": 0,
+                "transparent_matte_max_error_bytes": 0,
+                "native_matte_matches_acknowledged_background": true,
+                "ae_bounds": [
+                  774,
+                  655,
+                  1146,
+                  722
+                ],
+                "ec_bounds": [
+                  774,
+                  655,
+                  1146,
+                  727
+                ],
+                "bounds_max_delta_native_px": 5,
+                "bounds_pass": false,
+                "pass": false
+              },
+              "bezier_path": {
+                "ssim": 0.999446444869482,
+                "rgb_mae_bytes": 0.13276909722222222,
+                "rgb_pass": true,
+                "alpha_max_error_bytes": 0,
+                "alpha_mae_bytes": 0.0,
+                "alpha_pass": true,
+                "transparent_pixels_checked": 0,
+                "transparent_matte_max_error_bytes": 0,
+                "native_matte_matches_acknowledged_background": true,
+                "ae_bounds": [
+                  778,
+                  842,
+                  1003,
+                  894
+                ],
+                "ec_bounds": [
+                  778,
+                  842,
+                  1003,
+                  894
+                ],
+                "bounds_max_delta_native_px": 0,
+                "bounds_pass": true,
+                "pass": true
+              }
+            }
+          },
+          {
+            "frame": 60,
+            "inputs_sha256": [
+              "0171453c6316e31ccf0937407feb859d00d88a6f95d4bf7941ee9e3538afccdd",
+              "bfb0111bea0db4e42be8fef8ffe8e4f3a24c2807c509288a66d43ed6042d4a6d",
+              "bfb0111bea0db4e42be8fef8ffe8e4f3a24c2807c509288a66d43ed6042d4a6d"
+            ],
+            "regions": {
+              "logo": {
+                "ssim": 0.99948015591628,
+                "rgb_mae_bytes": 0.14664181644880175,
+                "rgb_pass": true,
+                "alpha_max_error_bytes": 0,
+                "alpha_mae_bytes": 0.0,
+                "alpha_pass": true,
+                "transparent_pixels_checked": 0,
+                "transparent_matte_max_error_bytes": 0,
+                "native_matte_matches_acknowledged_background": true,
+                "ae_bounds": [
+                  843,
+                  127,
+                  1077,
+                  349
+                ],
+                "ec_bounds": [
+                  843,
+                  127,
+                  1077,
+                  348
+                ],
+                "bounds_max_delta_native_px": 1,
+                "bounds_pass": true,
+                "pass": true
+              },
+              "title": {
+                "ssim": 0.8699898541250904,
+                "rgb_mae_bytes": 6.488686755952381,
+                "rgb_pass": false,
+                "alpha_max_error_bytes": 0,
+                "alpha_mae_bytes": 0.0,
+                "alpha_pass": true,
+                "transparent_pixels_checked": 0,
+                "transparent_matte_max_error_bytes": 0,
+                "native_matte_matches_acknowledged_background": true,
+                "ae_bounds": [
+                  610,
+                  441,
+                  1310,
+                  510
+                ],
+                "ec_bounds": [
+                  608,
+                  441,
+                  1309,
+                  510
+                ],
+                "bounds_max_delta_native_px": 2,
+                "bounds_pass": false,
+                "pass": false
+              },
+              "subtitle": {
+                "ssim": 0.9896231581928673,
+                "rgb_mae_bytes": 2.4508260091145835,
+                "rgb_pass": false,
+                "alpha_max_error_bytes": 0,
+                "alpha_mae_bytes": 0.0,
+                "alpha_pass": true,
+                "transparent_pixels_checked": 0,
+                "transparent_matte_max_error_bytes": 0,
+                "native_matte_matches_acknowledged_background": true,
+                "ae_bounds": [
+                  774,
+                  655,
+                  1146,
+                  727
+                ],
+                "ec_bounds": [
+                  774,
+                  655,
+                  1146,
+                  728
+                ],
+                "bounds_max_delta_native_px": 1,
+                "bounds_pass": true,
+                "pass": false
+              },
+              "bezier_path": {
+                "ssim": 0.9960114655569619,
+                "rgb_mae_bytes": 0.24022648358585857,
+                "rgb_pass": true,
+                "alpha_max_error_bytes": 0,
+                "alpha_mae_bytes": 0.0,
+                "alpha_pass": true,
+                "transparent_pixels_checked": 0,
+                "transparent_matte_max_error_bytes": 0,
+                "native_matte_matches_acknowledged_background": true,
+                "ae_bounds": [
+                  779,
+                  855,
+                  1141,
+                  894
+                ],
+                "ec_bounds": [
+                  779,
+                  855,
+                  1141,
+                  894
+                ],
+                "bounds_max_delta_native_px": 0,
+                "bounds_pass": true,
+                "pass": true
+              }
+            }
+          }
+        ],
+        "worker_report_sha256": "b5b9029c7d8850425ed9a938a22855e68740fe3bd523bd6891a0a5e2e7d5b3ec",
+        "native_sequence_sha256": "d4f70711af4656b1f6c95f3e4017c57e85bd3260e902ca1fd45d2007110f73b4"
+      },
+      {
+        "name": "animation",
+        "semantics": {
+          "checks": 304,
+          "keys": 16,
+          "samples": 20,
+          "pass": true,
+          "differences": []
+        },
+        "frames": [
+          {
+            "frame": 12,
+            "inputs_sha256": [
+              "059b63bc6281b26ebf446ea7814b7cda8503c5c2701c05752bd269a41ccd1646",
+              "656f19cb55e26f4e38bd7bae0a50e847f2940f8492fbbf7135eedd392318d2e1",
+              "71d77149ca58afb48394edfaa21fdeffa65f1725b2afdb4cf3f8157cf372b893"
+            ],
+            "regions": {
+              "moving_title": {
+                "ssim": 0.9980489206013449,
+                "rgb_mae_bytes": 0.7556129092261905,
+                "rgb_pass": true,
+                "alpha_max_error_bytes": 38,
+                "alpha_mae_bytes": 0.8146251860119048,
+                "alpha_pass": false,
+                "transparent_pixels_checked": 196983,
+                "transparent_matte_max_error_bytes": 0,
+                "native_matte_matches_acknowledged_background": true,
+                "ae_bounds": [
+                  0,
+                  150,
+                  563,
+                  207
+                ],
+                "ec_bounds": [
+                  0,
+                  150,
+                  564,
+                  207
+                ],
+                "bounds_max_delta_native_px": 1,
+                "bounds_pass": true,
+                "pass": false
+              },
+              "sentinel": {
+                "ssim": 0.9782476182853773,
+                "rgb_mae_bytes": 2.4137532552083334,
+                "rgb_pass": false,
+                "alpha_max_error_bytes": 122,
+                "alpha_mae_bytes": 5.24267578125,
+                "alpha_pass": false,
+                "transparent_pixels_checked": 17430,
+                "transparent_matte_max_error_bytes": 0,
+                "native_matte_matches_acknowledged_background": true,
+                "ae_bounds": [
+                  342,
+                  431,
+                  618,
+                  449
+                ],
+                "ec_bounds": [
+                  341,
+                  431,
+                  618,
+                  449
+                ],
+                "bounds_max_delta_native_px": 1,
+                "bounds_pass": true,
+                "pass": false
+              }
+            }
+          },
+          {
+            "frame": 24,
+            "inputs_sha256": [
+              "b97518a27f98883de24e7d2931072d85812b205ecfdb43a712729e92b198c61a",
+              "4d33f721b7329947ed0ffdab9b9a80badb093f5665fedc915b198a1bec73c73f",
+              "4c229b6de659e98c396cd1a494ef72949bdaa4464f0a7f20192e207fca61bade"
+            ],
+            "regions": {
+              "moving_title": {
+                "ssim": 0.9974972694637001,
+                "rgb_mae_bytes": 0.7484499007936508,
+                "rgb_pass": true,
+                "alpha_max_error_bytes": 40,
+                "alpha_mae_bytes": 0.8095238095238095,
+                "alpha_pass": false,
+                "transparent_pixels_checked": 195656,
+                "transparent_matte_max_error_bytes": 0,
+                "native_matte_matches_acknowledged_background": true,
+                "ae_bounds": [
+                  115,
+                  154,
+                  708,
+                  214
+                ],
+                "ec_bounds": [
+                  115,
+                  154,
+                  709,
+                  214
+                ],
+                "bounds_max_delta_native_px": 1,
+                "bounds_pass": true,
+                "pass": false
+              },
+              "sentinel": {
+                "ssim": 0.9782476182853773,
+                "rgb_mae_bytes": 2.4137532552083334,
+                "rgb_pass": false,
+                "alpha_max_error_bytes": 122,
+                "alpha_mae_bytes": 5.24267578125,
+                "alpha_pass": false,
+                "transparent_pixels_checked": 17430,
+                "transparent_matte_max_error_bytes": 0,
+                "native_matte_matches_acknowledged_background": true,
+                "ae_bounds": [
+                  342,
+                  431,
+                  618,
+                  449
+                ],
+                "ec_bounds": [
+                  341,
+                  431,
+                  618,
+                  449
+                ],
+                "bounds_max_delta_native_px": 1,
+                "bounds_pass": true,
+                "pass": false
+              }
+            }
+          },
+          {
+            "frame": 60,
+            "inputs_sha256": [
+              "55ffd7b8f942da691a959c13f085c5e3f31a412e47d2f1aee2fa9e57f3ccbb4e",
+              "0ea7db06160903e410d3f2cb925329d93836389f7e8f5234ecc6cc8fdffb0df8",
+              "0a06a83a9e65e22eefcf406bec72cd96cbd48cae90c9c0533997acf170e8f12e"
+            ],
+            "regions": {
+              "moving_title": {
+                "ssim": 0.9950722305364691,
+                "rgb_mae_bytes": 0.7213433159722222,
+                "rgb_pass": true,
+                "alpha_max_error_bytes": 94,
+                "alpha_mae_bytes": 0.7779622395833333,
+                "alpha_pass": false,
+                "transparent_pixels_checked": 201930,
+                "transparent_matte_max_error_bytes": 0,
+                "native_matte_matches_acknowledged_background": true,
+                "ae_bounds": [
+                  192,
+                  242,
+                  768,
+                  298
+                ],
+                "ec_bounds": [
+                  192,
+                  242,
+                  769,
+                  298
+                ],
+                "bounds_max_delta_native_px": 1,
+                "bounds_pass": true,
+                "pass": false
+              },
+              "sentinel": {
+                "ssim": 0.9782476182853773,
+                "rgb_mae_bytes": 2.4137532552083334,
+                "rgb_pass": false,
+                "alpha_max_error_bytes": 122,
+                "alpha_mae_bytes": 5.24267578125,
+                "alpha_pass": false,
+                "transparent_pixels_checked": 17430,
+                "transparent_matte_max_error_bytes": 0,
+                "native_matte_matches_acknowledged_background": true,
+                "ae_bounds": [
+                  342,
+                  431,
+                  618,
+                  449
+                ],
+                "ec_bounds": [
+                  341,
+                  431,
+                  618,
+                  449
+                ],
+                "bounds_max_delta_native_px": 1,
+                "bounds_pass": true,
+                "pass": false
+              }
+            }
+          },
+          {
+            "frame": 108,
+            "inputs_sha256": [
+              "58e4caa4d3aba455b30d0ac8228ca1f2d203fd9cb431783aeb70493409012436",
+              "15ab05daea2a96e645ce8275b4b31d996840176a10640ef1ff285167cc2b0e4e",
+              "9fce7cfd093908654e2f71dcf76616556a24b52b954eba34c5911f0350dab57d"
+            ],
+            "regions": {
+              "moving_title": {
+                "ssim": 0.9970190154690999,
+                "rgb_mae_bytes": 0.4839084201388889,
+                "rgb_pass": true,
+                "alpha_max_error_bytes": 38,
+                "alpha_mae_bytes": 0.5226655505952381,
+                "alpha_pass": false,
+                "transparent_pixels_checked": 197020,
+                "transparent_matte_max_error_bytes": 0,
+                "native_matte_matches_acknowledged_background": true,
+                "ae_bounds": [
+                  333,
+                  242,
+                  912,
+                  298
+                ],
+                "ec_bounds": [
+                  333,
+                  242,
+                  912,
+                  298
+                ],
+                "bounds_max_delta_native_px": 0,
+                "bounds_pass": true,
+                "pass": false
+              },
+              "sentinel": {
+                "ssim": 0.9782476182853773,
+                "rgb_mae_bytes": 2.4137532552083334,
+                "rgb_pass": false,
+                "alpha_max_error_bytes": 122,
+                "alpha_mae_bytes": 5.24267578125,
+                "alpha_pass": false,
+                "transparent_pixels_checked": 17430,
+                "transparent_matte_max_error_bytes": 0,
+                "native_matte_matches_acknowledged_background": true,
+                "ae_bounds": [
+                  342,
+                  431,
+                  618,
+                  449
+                ],
+                "ec_bounds": [
+                  341,
+                  431,
+                  618,
+                  449
+                ],
+                "bounds_max_delta_native_px": 1,
+                "bounds_pass": true,
+                "pass": false
+              }
+            }
+          }
+        ],
+        "worker_report_sha256": "edc8b62ae440089e56246ee6d3049a3c3228213f795691c9fcdbc531384e5b91",
+        "native_sequence_sha256": "2b140831d57cf9146be2762fc092d8b1c091d1b4d534ffae490cfd8f60869b85"
+      }
+    ],
+    "status": "measured_with_outliers",
+    "limits": "Applies to the captured typography/vector/animation cases. Native TIFF bytes are unchanged."
+  },
+  "layout_audit": {
+    "worker_sha256": "304fc66e48c43af354643c82494dd82bbba6c8a69d8d8dced1ecbad26a5d0224",
+    "cases": [
+      {
+        "name": "design",
+        "layers": [
+          {
+            "name": "Brand subtitle",
+            "layout": {
+              "bounds": [
+                -17.5625,
+                -84.99424934387207,
+                353.765625,
+                -13.728622436523438
+              ],
+              "family": "Arial",
+              "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+              "glyph_faces_verified": true,
+              "glyphs": 50,
+              "postscript": "ArialMT",
+              "style": "Regular"
+            }
+          },
+          {
+            "name": "Title",
+            "layout": {
+              "bounds": [
+                -353.0286865234375,
+                -66.978515625,
+                346.86529541015625,
+                1.16796875
+              ],
+              "family": "Arial",
+              "font_sha256": "e8f4e3baf6cc35fed6fcce3a540e8b39e8f6cda1d22a28f2ec8f526fef7a43f5",
+              "glyph_faces_verified": true,
+              "glyphs": 12,
+              "postscript": "Arial-BoldMT",
+              "style": "Bold"
+            }
+          }
+        ],
+        "report_sha256": "a5bf2b305c204fa2398cd4bd2e482f67d2c6cd4621a677447a448830db7e2a6e",
+        "render_hashes_unchanged": true
+      },
+      {
+        "name": "animation",
+        "layers": [
+          {
+            "name": "Sentinel untouched",
+            "layout": {
+              "bounds": [
+                -137.3203125,
+                -17.47265625,
+                138.36328125,
+                0.3046875
+              ],
+              "family": "Arial",
+              "font_sha256": "e8f4e3baf6cc35fed6fcce3a540e8b39e8f6cda1d22a28f2ec8f526fef7a43f5",
+              "glyph_faces_verified": true,
+              "glyphs": 17,
+              "postscript": "Arial-BoldMT",
+              "style": "Bold"
+            }
+          },
+          {
+            "name": "Title",
+            "layout": {
+              "bounds": [
+                -287.7685546875,
+                -54.169921875,
+                287.6806640625,
+                0.76171875
+              ],
+              "family": "Arial",
+              "font_sha256": "e8f4e3baf6cc35fed6fcce3a540e8b39e8f6cda1d22a28f2ec8f526fef7a43f5",
+              "glyph_faces_verified": true,
+              "glyphs": 16,
+              "postscript": "Arial-BoldMT",
+              "style": "Bold"
+            }
+          }
+        ],
+        "report_sha256": "4e0a3136f5340dec7967f6781c5877331e6dd2d05c1059f08c72b5288606009d",
+        "render_hashes_unchanged": true
+      }
+    ]
+  },
+  "layout_bounds_scope": "Unanimated text-layout ink bounds before text animator transforms.",
+  "outlier_count": 12,
+  "outliers": [
+    {
+      "case": "design",
+      "frame": 24,
+      "region": "title",
+      "ssim": 0.884198797487545,
+      "rgb_mae_bytes": 4.7967522321428575,
+      "rgb_pass": false,
+      "alpha_max_error_bytes": 0,
+      "alpha_mae_bytes": 0.0,
+      "alpha_pass": true,
+      "transparent_pixels_checked": 0,
+      "transparent_matte_max_error_bytes": 0,
+      "native_matte_matches_acknowledged_background": true,
+      "ae_bounds": [
+        610,
+        441,
+        1310,
+        522
+      ],
+      "ec_bounds": [
+        608,
+        441,
+        1309,
+        522
+      ],
+      "bounds_max_delta_native_px": 2,
+      "bounds_pass": false,
+      "pass": false
+    },
+    {
+      "case": "design",
+      "frame": 24,
+      "region": "subtitle",
+      "ssim": 0.9919740096461874,
+      "rgb_mae_bytes": 1.465789794921875,
+      "rgb_pass": true,
+      "alpha_max_error_bytes": 0,
+      "alpha_mae_bytes": 0.0,
+      "alpha_pass": true,
+      "transparent_pixels_checked": 0,
+      "transparent_matte_max_error_bytes": 0,
+      "native_matte_matches_acknowledged_background": true,
+      "ae_bounds": [
+        774,
+        655,
+        1146,
+        722
+      ],
+      "ec_bounds": [
+        774,
+        655,
+        1146,
+        727
+      ],
+      "bounds_max_delta_native_px": 5,
+      "bounds_pass": false,
+      "pass": false
+    },
+    {
+      "case": "design",
+      "frame": 60,
+      "region": "title",
+      "ssim": 0.8699898541250904,
+      "rgb_mae_bytes": 6.488686755952381,
+      "rgb_pass": false,
+      "alpha_max_error_bytes": 0,
+      "alpha_mae_bytes": 0.0,
+      "alpha_pass": true,
+      "transparent_pixels_checked": 0,
+      "transparent_matte_max_error_bytes": 0,
+      "native_matte_matches_acknowledged_background": true,
+      "ae_bounds": [
+        610,
+        441,
+        1310,
+        510
+      ],
+      "ec_bounds": [
+        608,
+        441,
+        1309,
+        510
+      ],
+      "bounds_max_delta_native_px": 2,
+      "bounds_pass": false,
+      "pass": false
+    },
+    {
+      "case": "design",
+      "frame": 60,
+      "region": "subtitle",
+      "ssim": 0.9896231581928673,
+      "rgb_mae_bytes": 2.4508260091145835,
+      "rgb_pass": false,
+      "alpha_max_error_bytes": 0,
+      "alpha_mae_bytes": 0.0,
+      "alpha_pass": true,
+      "transparent_pixels_checked": 0,
+      "transparent_matte_max_error_bytes": 0,
+      "native_matte_matches_acknowledged_background": true,
+      "ae_bounds": [
+        774,
+        655,
+        1146,
+        727
+      ],
+      "ec_bounds": [
+        774,
+        655,
+        1146,
+        728
+      ],
+      "bounds_max_delta_native_px": 1,
+      "bounds_pass": true,
+      "pass": false
+    },
+    {
+      "case": "animation",
+      "frame": 12,
+      "region": "moving_title",
+      "ssim": 0.9980489206013449,
+      "rgb_mae_bytes": 0.7556129092261905,
+      "rgb_pass": true,
+      "alpha_max_error_bytes": 38,
+      "alpha_mae_bytes": 0.8146251860119048,
+      "alpha_pass": false,
+      "transparent_pixels_checked": 196983,
+      "transparent_matte_max_error_bytes": 0,
+      "native_matte_matches_acknowledged_background": true,
+      "ae_bounds": [
+        0,
+        150,
+        563,
+        207
+      ],
+      "ec_bounds": [
+        0,
+        150,
+        564,
+        207
+      ],
+      "bounds_max_delta_native_px": 1,
+      "bounds_pass": true,
+      "pass": false
+    },
+    {
+      "case": "animation",
+      "frame": 12,
+      "region": "sentinel",
+      "ssim": 0.9782476182853773,
+      "rgb_mae_bytes": 2.4137532552083334,
+      "rgb_pass": false,
+      "alpha_max_error_bytes": 122,
+      "alpha_mae_bytes": 5.24267578125,
+      "alpha_pass": false,
+      "transparent_pixels_checked": 17430,
+      "transparent_matte_max_error_bytes": 0,
+      "native_matte_matches_acknowledged_background": true,
+      "ae_bounds": [
+        342,
+        431,
+        618,
+        449
+      ],
+      "ec_bounds": [
+        341,
+        431,
+        618,
+        449
+      ],
+      "bounds_max_delta_native_px": 1,
+      "bounds_pass": true,
+      "pass": false
+    },
+    {
+      "case": "animation",
+      "frame": 24,
+      "region": "moving_title",
+      "ssim": 0.9974972694637001,
+      "rgb_mae_bytes": 0.7484499007936508,
+      "rgb_pass": true,
+      "alpha_max_error_bytes": 40,
+      "alpha_mae_bytes": 0.8095238095238095,
+      "alpha_pass": false,
+      "transparent_pixels_checked": 195656,
+      "transparent_matte_max_error_bytes": 0,
+      "native_matte_matches_acknowledged_background": true,
+      "ae_bounds": [
+        115,
+        154,
+        708,
+        214
+      ],
+      "ec_bounds": [
+        115,
+        154,
+        709,
+        214
+      ],
+      "bounds_max_delta_native_px": 1,
+      "bounds_pass": true,
+      "pass": false
+    },
+    {
+      "case": "animation",
+      "frame": 24,
+      "region": "sentinel",
+      "ssim": 0.9782476182853773,
+      "rgb_mae_bytes": 2.4137532552083334,
+      "rgb_pass": false,
+      "alpha_max_error_bytes": 122,
+      "alpha_mae_bytes": 5.24267578125,
+      "alpha_pass": false,
+      "transparent_pixels_checked": 17430,
+      "transparent_matte_max_error_bytes": 0,
+      "native_matte_matches_acknowledged_background": true,
+      "ae_bounds": [
+        342,
+        431,
+        618,
+        449
+      ],
+      "ec_bounds": [
+        341,
+        431,
+        618,
+        449
+      ],
+      "bounds_max_delta_native_px": 1,
+      "bounds_pass": true,
+      "pass": false
+    },
+    {
+      "case": "animation",
+      "frame": 60,
+      "region": "moving_title",
+      "ssim": 0.9950722305364691,
+      "rgb_mae_bytes": 0.7213433159722222,
+      "rgb_pass": true,
+      "alpha_max_error_bytes": 94,
+      "alpha_mae_bytes": 0.7779622395833333,
+      "alpha_pass": false,
+      "transparent_pixels_checked": 201930,
+      "transparent_matte_max_error_bytes": 0,
+      "native_matte_matches_acknowledged_background": true,
+      "ae_bounds": [
+        192,
+        242,
+        768,
+        298
+      ],
+      "ec_bounds": [
+        192,
+        242,
+        769,
+        298
+      ],
+      "bounds_max_delta_native_px": 1,
+      "bounds_pass": true,
+      "pass": false
+    },
+    {
+      "case": "animation",
+      "frame": 60,
+      "region": "sentinel",
+      "ssim": 0.9782476182853773,
+      "rgb_mae_bytes": 2.4137532552083334,
+      "rgb_pass": false,
+      "alpha_max_error_bytes": 122,
+      "alpha_mae_bytes": 5.24267578125,
+      "alpha_pass": false,
+      "transparent_pixels_checked": 17430,
+      "transparent_matte_max_error_bytes": 0,
+      "native_matte_matches_acknowledged_background": true,
+      "ae_bounds": [
+        342,
+        431,
+        618,
+        449
+      ],
+      "ec_bounds": [
+        341,
+        431,
+        618,
+        449
+      ],
+      "bounds_max_delta_native_px": 1,
+      "bounds_pass": true,
+      "pass": false
+    },
+    {
+      "case": "animation",
+      "frame": 108,
+      "region": "moving_title",
+      "ssim": 0.9970190154690999,
+      "rgb_mae_bytes": 0.4839084201388889,
+      "rgb_pass": true,
+      "alpha_max_error_bytes": 38,
+      "alpha_mae_bytes": 0.5226655505952381,
+      "alpha_pass": false,
+      "transparent_pixels_checked": 197020,
+      "transparent_matte_max_error_bytes": 0,
+      "native_matte_matches_acknowledged_background": true,
+      "ae_bounds": [
+        333,
+        242,
+        912,
+        298
+      ],
+      "ec_bounds": [
+        333,
+        242,
+        912,
+        298
+      ],
+      "bounds_max_delta_native_px": 0,
+      "bounds_pass": true,
+      "pass": false
+    },
+    {
+      "case": "animation",
+      "frame": 108,
+      "region": "sentinel",
+      "ssim": 0.9782476182853773,
+      "rgb_mae_bytes": 2.4137532552083334,
+      "rgb_pass": false,
+      "alpha_max_error_bytes": 122,
+      "alpha_mae_bytes": 5.24267578125,
+      "alpha_pass": false,
+      "transparent_pixels_checked": 17430,
+      "transparent_matte_max_error_bytes": 0,
+      "native_matte_matches_acknowledged_background": true,
+      "ae_bounds": [
+        342,
+        431,
+        618,
+        449
+      ],
+      "ec_bounds": [
+        341,
+        431,
+        618,
+        449
+      ],
+      "bounds_max_delta_native_px": 1,
+      "bounds_pass": true,
+      "pass": false
+    }
+  ],
+  "scope_limits": [
+    "Fixed two-reference dataset and current Arial files",
+    "Design composition has an opaque background",
+    "Effects/masks/mattes, matched performance, general edit identity/conflict/restore and distribution review remain pending",
+    "Full human playback and artistic approval remain pending"
+  ],
+  "sampled_review_superseded_sha256": "cba4af97c15951176a42c058768942d42260b99f72261616708ecbf5b604b0d6"
+}

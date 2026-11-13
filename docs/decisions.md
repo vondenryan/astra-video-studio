@@ -285,3 +285,9 @@ Retain raw-frame comparisons and append a separately hashed codec-control analys
 Make native font locations and active-project context independently opt-in in fonts_list. Default responses preserve the previous fields. Use the explicit read-only records to bind current Arial files and coordinate the session before reference capture. Reuse protected copy opening, shared render admission, TIFF verification and existing native quarantine.
 
 Prepare source/font copies before dispatch. Capture must snapshot a checked-clean saved active source, retain attempt intent and restore the original saved path after verified work. On failure, defer restoration while native work is unresolved. Compare stored matted RGB and alpha through separate EC outputs, with native transparent matte samples verified against the acknowledged background. Keep the full capture/restore route unverified until it actually runs.
+
+### 2026-11-12 — Native lossless reference acceptance
+
+The operator reserved AE and the prepared capture completed once through the protected services. Keep the 170 native TIFFs, their full hashes, font-binding records, original-source backup and acknowledged restoration. Use seven selected frames for native-resolution comparison. Record capture/restore success separately from the remaining text visual failures.
+
+Verify effective glyph face identity and synthesis flags in the offline worker. Keep layout ink bounds before animator transforms separate from measured frame bounds. The added audit must preserve the previously rendered pixel hashes. Retain the 12 text outliers with fixed limits. Vector success applies to the sampled design composition with its opaque background.

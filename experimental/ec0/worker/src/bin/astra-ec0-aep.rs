@@ -219,6 +219,7 @@ fn compare(directory: &Path) -> Result<Json> {
             tracks.insert(name.into(), json!({"value": property.value, "spatial": property.spatial,
                 "keys": property.keys, "samples": samples}));
         }
+        let mut text_layout = Json::Null;
         let text = match &layer.source {
             LayerSource::Text => {
                 let Value::Text(doc) = &layer.props.prop("text/sourceText").ok_or("Missing source text")?.value
@@ -228,14 +229,27 @@ fn compare(directory: &Path) -> Result<Json> {
                     return Err("Text font was substituted".into());
                 }
                 let face = effectcraft_text::fonts::face(resolved.face);
+                if face.info.postscript.as_deref() != Some(doc.font.as_str()) {
+                    return Err("Resolved face differs from the requested PostScript font".into());
+                }
                 if doc.text.chars().any(|c| c != '\n' && c != '\r' && !face.has_char(c)) {
                     return Err("Text requires a fallback glyph".into());
                 }
+                let layout = effectcraft_text::layout_doc(doc);
+                if layout.layout.missing_font || layout.layout.glyphs.iter().any(|glyph| {
+                    glyph.id == 0 || glyph.face != resolved.face || glyph.synth_bold || glyph.synth_italic
+                }) {
+                    return Err("Comparison glyph layout substituted a face or synthesized a style".into());
+                }
+                let font_index = faces.iter().position(|id| *id == resolved.face).ok_or("Unpinned layout font")?;
+                text_layout = json!({"bounds": layout.bounds, "glyphs": layout.layout.glyphs.len(),
+                    "postscript": face.info.postscript, "font_sha256": font_records[font_index]["sha256"],
+                    "family": face.info.family, "style": face.info.style, "glyph_faces_verified": true});
                 Some(json!(doc))
             }
             _ => None,
         };
-        layers.push(json!({"name": layer.name, "tracks": tracks, "text": text}));
+        layers.push(json!({"name": layer.name, "tracks": tracks, "text": text, "text_layout": text_layout}));
     }
     let frames = config["frames"].as_array().ok_or("Missing comparison frames")?;
     if frames.is_empty() || frames.len() > 8 { return Err("Unexpected comparison frame count".into()); }
